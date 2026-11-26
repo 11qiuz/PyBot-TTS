@@ -3,18 +3,18 @@
   "ml_weights_mb": 0.0,
   "allow_pickle": false,
   "n_train_utts": 2700,
-  "n_train_tokens": 129805,
+  "n_train_tokens": 134018,
   "n_zh_tokens": 88284,
-  "n_en_tokens": 41521,
-  "n_en_studio_warped_tokens": 19935,
-  "n_strict_tokens": 37041,
-  "npz_size_mb": 22.13,
+  "n_en_tokens": 45734,
+  "n_en_studio_warped_tokens": 45734,
+  "n_strict_tokens": 45466,
+  "npz_size_mb": 15.083,
   "speaker_f0_med_hz": 223.73,
   "ref_log_amp": -4.1984,
   "medoid_counts": {
-    "ctx_pns": 3288,
-    "ctx_pn": 933,
-    "ctx_ps": 173,
+    "ctx_pns": 1771,
+    "ctx_pn": 591,
+    "ctx_ps": 171,
     "ctx_p": 87,
     "ctx_base": 80,
     "ipa_shared": 62
@@ -23,10 +23,10 @@
     "w_shared": 62,
     "w_base": 80,
     "w_phone": 86,
-    "w_ps": 166,
-    "w_pns": 841,
-    "d_pns": 2447,
-    "w_bap_ps": 212
+    "w_ps": 165,
+    "w_pns": 647,
+    "d_pns": 1124,
+    "w_bap_ps": 210
   },
   "switch_stats": {
     "zero_gap": {
@@ -38,5 +38,5 @@
       "en_to_zh_med_f0_diff_st": 4.45
     }
   },
-  "build_time_s": 12.06
+  "build_time_s": 19.48
 }

@@ -28,9 +28,9 @@ _DB_TO_NEPER = 1.0 / NEPER_TO_DB
 _CEP_BRIDGE_K = 18
 _CEP_DCT18 = dct(np.eye(N_BINS, dtype=np.float64), type=2, norm="ortho", axis=1)[:, :_CEP_BRIDGE_K]
 
-# Physical glottal breathiness bounds preventing metallic buzz (floor) AND TV-static hiss (ceil)
-_SONORANT_BAP_FLOOR = np.array([0.045, 0.19, 0.36, 0.58, 0.74, 0.85], dtype=np.float64)
-_SONORANT_BAP_CEIL = np.array([0.14, 0.34, 0.54, 0.78, 0.88, 0.94], dtype=np.float64)
+# Physical glottal breathiness bounds preventing metallic buzz (floor) AND high-band noise veil / static (ceil)
+_SONORANT_BAP_FLOOR = np.array([0.045, 0.19, 0.30, 0.43, 0.52, 0.60], dtype=np.float64)
+_SONORANT_BAP_CEIL = np.array([0.16, 0.38, 0.54, 0.68, 0.78, 0.86], dtype=np.float64)
 _VOICED_OBST_BAP_FLOOR = np.array([0.08, 0.24, 0.44, 0.68, 0.80, 0.88], dtype=np.float64)
 _VOICED_OBST_BAP_CEIL = np.array([0.24, 0.48, 0.68, 0.86, 0.92, 0.96], dtype=np.float64)
 _VOT_BAP_CEIL = np.array([0.22, 0.44, 0.64, 0.82, 0.90, 0.95], dtype=np.float64)
@@ -249,9 +249,10 @@ class IPAObstruentCrispnessRule:
             v_med_db = float(np.median(v_rms))
         else:
             v_med_db = -21.0
-        uv_cap_db = v_med_db - 2.5
+        uv_cap_db = v_med_db - 1.5
+        n_evs = len(events)
 
-        for ev in events:
+        for ev_idx, ev in enumerate(events):
             if ev.is_pause:
                 continue
             a, b = _clipped_event_span(ev, n_fr)
@@ -260,6 +261,18 @@ class IPAObstruentCrispnessRule:
             info = lookup_ipa_info(ev.ipa)
             if info.manner not in _OBSTRUENT_MANNERS:
                 continue
+
+            nxt_is_c_stop_nasal = False
+            if ev_idx + 1 < n_evs:
+                nxt_ev = events[ev_idx + 1]
+                if (
+                    (not nxt_ev.is_pause)
+                    and int(nxt_ev.start_fr) - b <= 1
+                    and float(ev.pause_after_ms) < 20.0
+                    and float(nxt_ev.pause_prev_ms) < 20.0
+                ):
+                    nxt_info = lookup_ipa_info(nxt_ev.ipa)
+                    nxt_is_c_stop_nasal = nxt_info.manner in ("stop", "affricate", "fricative", "nasal")
 
             if not info.voiced:
                 # Enforce clean unvoiced excitation so pitch leakage cannot buzz inside stops/fricatives
@@ -275,21 +288,28 @@ class IPAObstruentCrispnessRule:
                 length = b - a
                 if info.manner == "stop" and length >= 4:
                     u = np.linspace(0.0, 1.0, length)
-                    # Clean physical stop closure attenuation before burst release
+                    clos_db = 10.0 if nxt_is_c_stop_nasal else 11.0
                     ramp = np.clip((u - 0.40) / 0.14, 0.0, 1.0)
                     clos_w = 0.5 * (1.0 + np.cos(math.pi * ramp))
                     ctrl.log_env[a:b] = np.clip(
-                        ctrl.log_env[a:b] - (11.0 * _DB_TO_NEPER) * clos_w[:, None],
+                        ctrl.log_env[a:b] - (clos_db * _DB_TO_NEPER) * clos_w[:, None],
                         -16.0,
                         2.5,
                     )
-                    burst = np.exp(-0.5 * ((u - 0.64) / 0.16) ** 2)
-                    hf = (_FREQS >= 1400.0).astype(np.float64)
-                    ctrl.log_env[a:b] = np.clip(
-                        ctrl.log_env[a:b] + (1.6 * _DB_TO_NEPER) * burst[:, None] * hf[None, :],
-                        -16.0,
-                        2.5,
-                    )
+                    if nxt_is_c_stop_nasal:
+                        # Unreleased English stop before another obstruent/nasal: soften trailing 2 frames
+                        tr_k = min(2, length)
+                        ctrl.log_env[b - tr_k : b] = np.clip(
+                            ctrl.log_env[b - tr_k : b] - (2.5 * _DB_TO_NEPER), -16.0, 2.5
+                        )
+                    else:
+                        burst = np.exp(-0.5 * ((u - 0.64) / 0.16) ** 2)
+                        hf = (_FREQS >= 1400.0).astype(np.float64)
+                        ctrl.log_env[a:b] = np.clip(
+                            ctrl.log_env[a:b] + (1.4 * _DB_TO_NEPER) * burst[:, None] * hf[None, :],
+                            -16.0,
+                            2.5,
+                        )
                 elif info.manner == "affricate" and length >= 4:
                     u = np.linspace(0.0, 1.0, length)
                     burst = np.exp(-0.5 * ((u - 0.62) / 0.18) ** 2)
@@ -316,13 +336,21 @@ class IPAObstruentCrispnessRule:
                 length = b - a
                 if info.manner == "stop" and length >= 4:
                     u = np.linspace(0.0, 1.0, length)
+                    vclos_db = 6.5 if nxt_is_c_stop_nasal else 7.0
                     ramp = np.clip((u - 0.42) / 0.14, 0.0, 1.0)
                     clos_w = 0.5 * (1.0 + np.cos(math.pi * ramp))
                     ctrl.log_env[a:b] = np.clip(
-                        ctrl.log_env[a:b] - (7.0 * _DB_TO_NEPER) * clos_w[:, None] * _VOICED_STOP_HI_MASK[None, :],
+                        ctrl.log_env[a:b] - (vclos_db * _DB_TO_NEPER) * clos_w[:, None] * _VOICED_STOP_HI_MASK[None, :],
                         -16.0,
                         2.5,
                     )
+                    if nxt_is_c_stop_nasal:
+                        tr_k = min(2, length)
+                        ctrl.log_env[b - tr_k : b] = np.clip(
+                            ctrl.log_env[b - tr_k : b] - (2.0 * _DB_TO_NEPER) * _VOICED_STOP_HI_MASK[None, :],
+                            -16.0,
+                            2.5,
+                        )
                 vm = ctrl.voiced[a:b]
                 if np.any(vm):
                     ctrl.bap[a:b][vm] = np.clip(

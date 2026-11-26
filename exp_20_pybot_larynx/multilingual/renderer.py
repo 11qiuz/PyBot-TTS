@@ -380,13 +380,23 @@ class EnglishFrontend:
         embedded_in_zh: bool = False,
         expressive_drive: float | None = None,
         range_scale: float = 1.0,
+        expressive_seg: ExpressiveSegment | None = None,
     ) -> tuple[list[PhoneEvent], np.ndarray, np.ndarray]:
         mdl = self._prosody_model or get_en_prosody_stage10_model(PROSODY_EN_STAGE10_PATH)
         # Anchor English F0 gently relative to speaker Mandarin baseline (~+2% natural EN lift)
         eff_base = float(np.clip(base_f0_hz * (1.02 if embedded_in_zh else 1.03), 65.0, 440.0))
-        # Slightly calibrate embedded conversational EN rate naturally to fit SF speaking rhythm
-        eff_rate = float(np.clip(speed * (1.00 if embedded_in_zh else 1.02), 0.60, 1.60))
+        eff_rate = float(np.clip(speed * (1.04 if embedded_in_zh else 1.12), 0.60, 1.60))
         eff_range_scale = range_scale * (1.05 if not embedded_in_zh else 1.0)
+        focus_spans = None
+
+        if expressive_seg is not None:
+            focus_spans = expressive_seg.focus_spans or None
+            if expressive_seg.intensity > 1e-4:
+                e_prof = EMOTION_PROFILES.get(expressive_seg.emotion, EMOTION_PROFILES["neutral"])
+                sc = float(expressive_seg.intensity)
+                eff_base = float(np.clip(eff_base * (2.0 ** ((float(e_prof["f0_shift_st"]) * sc) / 12.0)), 65.0, 460.0))
+                eff_range_scale = float(np.clip(eff_range_scale * (1.0 + (float(e_prof["f0_range_scale"]) - 1.0) * sc), 0.45, 1.50))
+                eff_rate = float(np.clip(eff_rate * (1.0 + (float(e_prof["speed_scale"]) - 1.0) * sc), 0.60, 1.60))
 
         pro = predict_en_prosody_stage10(
             text_or_units,
@@ -397,6 +407,7 @@ class EnglishFrontend:
             clause_pos=clause_pos,
             is_clause_final=is_clause_final,
             is_question=is_question,
+            focus_spans=focus_spans,
             include_pauses=True,
             seed=seed,
             model=mdl,
@@ -453,6 +464,14 @@ class EnglishFrontend:
 
             p_after = float(ph.get("pause_after_ms", 0.0))
             ptag = normalize_prosody_tag("en", ph.get("stress", 0), ipa)
+            is_func = bool(ph.get("is_func", False))
+            is_p_fin = bool(ph.get("is_phrase_final", False))
+            is_v = bool(ph.get("is_vowel", info.manner in ("vowel", "diphthong")))
+            g_db = float(ph.get("gain_db", 0.0))
+            if is_func and (not is_p_fin) and ptag == 0:
+                g_db -= 1.5
+            elif ptag == 1 and is_v and (not is_func):
+                g_db += 0.8
             prev_same = pi > 0 and phones[pi - 1].get("word_idx") == ph.get("word_idx") and prev_pause_ms < 20.0
             next_same = pi + 1 < len(phones) and phones[pi + 1].get("word_idx") == ph.get("word_idx") and p_after < 20.0
 
@@ -467,16 +486,16 @@ class EnglishFrontend:
                     end_fr=offset + b,
                     word_id=f"en_{ph.get('word_idx', pi)}_{ph.get('word', '')}",
                     word_pos=wpos,
-                    is_vowel=bool(ph.get("is_vowel", info.manner in ("vowel", "diphthong"))),
+                    is_vowel=is_v,
                     is_coda=is_coda,
-                    is_func_word=bool(ph.get("is_func", False)),
-                    is_phrase_final=bool(ph.get("is_phrase_final", False)),
+                    is_func_word=is_func,
+                    is_phrase_final=is_p_fin,
                     is_pause=False,
                     pause_prev_ms=prev_pause_ms,
                     pause_after_ms=p_after,
                     same_word_prev=prev_same,
                     same_word_next=next_same,
-                    gain_db=float(ph.get("gain_db", 0.0)),
+                    gain_db=g_db,
                 )
             )
             prev_pause_ms = 0.0
@@ -795,6 +814,7 @@ def build_multilingual_native_utterance(
                 extra_kw["embedded_in_zh"] = has_zh
                 extra_kw["expressive_drive"] = e_drive
                 extra_kw["range_scale"] = pitch_range
+                extra_kw["expressive_seg"] = seg if (seg.intensity > 1e-4 or getattr(seg, "focus_spans", None)) else None
 
             r_evs, r_f0, r_voi = fe.plan_run(
                 payload,

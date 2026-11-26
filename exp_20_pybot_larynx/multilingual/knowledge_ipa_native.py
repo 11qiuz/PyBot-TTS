@@ -37,7 +37,10 @@ D_ACOUSTIC_FEAT_M = 64
 _BIN_CENTERS_M = (np.arange(N_BINS_M, dtype=np.float64) + 0.5) / float(N_BINS_M)
 _ZERO_8 = np.zeros(8, dtype=np.float64)
 
-DEFAULT_MULTILINGUAL_TAPER_24 = np.array([0.84] * 8 + [0.44] * 8 + [0.18] * 8, dtype=np.float64)
+DEFAULT_MULTILINGUAL_TAPER_24 = np.array(
+    [0.84] * 6 + [0.44] * 2 + [0.22] * 4 + [0.10] * 4 + [0.04] * 8,
+    dtype=np.float64,
+)
 
 _KB_LOCK = Lock()
 _CACHED_KB_PATH: str | None = None
@@ -306,8 +309,8 @@ def build_multilingual_native_control(
     *,
     taper_vec: np.ndarray | None = None,
     bap_ridge_w: float = 0.25,
-    gv_strength: float = 0.14,
-    gain_scale: float = 0.10,
+    gv_strength: float = 0.22,
+    gain_scale: float = 0.16,
 ) -> tuple[LarynxControl, dict[str, Any]]:
     """Build native single-speaker multilingual `LarynxControl` in one unified Viterbi DP pass."""
     n_fr = len(f0_hz)
@@ -503,10 +506,16 @@ def build_multilingual_native_control(
         m_bap = bap_list[m_pos][k_sel].copy()
         m_vp = vp_list[m_pos][k_sel].copy()
 
+        info = lookup_ipa_info(base_ipa)
+        orig_m_cep = m_cep.copy()
         pr = pred_ceps[idx_ev]
         if pr is not None:
             av = t_vec[:c_dim][None, :]
             m_cep[:, :c_dim] = av * pr[:, :c_dim] + (1.0 - av) * m_cep[:, :c_dim]
+            if info.manner in ("vowel", "diphthong", "glide", "liquid", "nasal", "tap"):
+                orig_q = np.sqrt(np.sum(orig_m_cep[:, 8:24] ** 2, axis=1, keepdims=True) + 1e-12)
+                cur_q = np.sqrt(np.sum(m_cep[:, 8:24] ** 2, axis=1, keepdims=True) + 1e-12)
+                m_cep[:, 8:24] *= np.clip((1.04 * orig_q) / cur_q, 0.98, 1.18)
 
         pb = pred_baps[idx_ev]
         if pb is not None and br_w > 0.0:
@@ -514,7 +523,6 @@ def build_multilingual_native_control(
 
         nf = b - a
         u_ph = np.linspace(0.0, 1.0, nf, dtype=np.float64) if nf > 1 else np.array([0.5], dtype=np.float64)
-        info = lookup_ipa_info(base_ipa)
         covered[a:b] = True
 
         cep[a:b, :24] = _interp_phase_bins_cubic(m_cep[:, :24], u_ph, _BIN_CENTERS_M)

@@ -121,8 +121,9 @@ def _sanitize_bap_bins(base_ipa: str, bap: np.ndarray, vp: np.ndarray) -> np.nda
     vm = np.asarray(vp, dtype=np.float64) >= 0.45
     if np.any(vm):
         if info.manner in _SONORANT_MANNERS_KB:
-            out[vm, 0] = np.minimum(out[vm, 0], 0.18)
+            out[vm, 0] = np.minimum(out[vm, 0], 0.16)
             out[vm, 1] = np.minimum(out[vm, 1], 0.38)
+            out[vm, 2] = np.minimum(out[vm, 2], 0.54)
         else:
             out[vm, 0] = np.minimum(out[vm, 0], 0.28)
             out[vm, 1] = np.minimum(out[vm, 1], 0.50)
@@ -130,16 +131,13 @@ def _sanitize_bap_bins(base_ipa: str, bap: np.ndarray, vp: np.ndarray) -> np.nda
 
 
 def _warp_studio_en_tokens_ljspeech_to_sf(
-    sf_en_pns_counts: Counter[str],
-    sf_en_base_counts: Counter[str],
     *,
     sf_en_prof: VoiceCloneProfile,
     sf_ref_log_amp: float,
-    min_ctx_tokens: int = 12,
-    max_per_ctx: int = 18,
-    max_per_sparse_base: int = 180,
+    max_total_tokens: int = 55000,
+    max_per_ctx: int = 45,
 ) -> list[dict[str, Any]]:
-    """Pure EN->EN studio enrichment from LJSpeech -> SF_EN for missing (`ə`, `ɚ`, rare) and sparse triphones."""
+    """Build pure studio EN->SF_EN bank from high-purity LJSpeech tokens preserving formant contrast."""
     if not LJ_TRAIN_TOKENS_PATH.is_file() or not LJ_SOURCE_PROFILE_PATH.is_file():
         return []
     lj_prof = VoiceCloneProfile.from_json(LJ_SOURCE_PROFILE_PATH.read_text(encoding="utf-8"))
@@ -148,13 +146,10 @@ def _warp_studio_en_tokens_ljspeech_to_sf(
     lj_ref_amp = float(lj_data.get("ref_log_amp", -4.9631))
     lj_f0 = float(lj_data.get("speaker_f0_med_hz", 202.26))
 
-    missing_bases = {k for k in ("ə", "ɚ", "ð", "θ", "ʒ") if sf_en_base_counts.get(k, 0) < 40}
-    base_caps = {"ə": 3500, "ɚ": 1500}
     picked: list[dict[str, Any]] = []
     ctx_picked: Counter[str] = Counter()
-    base_picked: Counter[str] = Counter()
 
-    # Pass 1: strict purity_ok studio tokens filling sparse triphones & missing weak vowels/rhotics
+    # Pass 1: strict purity_ok stratified up to 45 per triphone; Pass 2: rescue ultra-rare contexts (< 3 tokens)
     for purity_req in (True, False):
         for raw_t in lj_data.get("tokens", []):
             if purity_req and not bool(raw_t.get("purity_ok", True)):
@@ -169,22 +164,17 @@ def _warp_studio_en_tokens_ljspeech_to_sf(
             ptag = normalize_prosody_tag("en", raw_t.get("stress"), base)
             ctx_k = f"{prev_c}|{pk}|{next_c}|{ptag}"
 
-            need_missing = base in missing_bases and base_picked[base] < base_caps.get(base, max_per_sparse_base)
-            need_ctx = sf_en_pns_counts.get(ctx_k, 0) < min_ctx_tokens
-            if not (need_missing or need_ctx):
-                continue
-            cap_ctx = max_per_ctx if base not in ("ə", "ɚ") else 24
+            cap_ctx = max_per_ctx if purity_req else 3
             if ctx_picked[ctx_k] >= cap_ctx:
                 continue
-            if len(picked) >= 44000:
+            if len(picked) >= max_total_tokens:
                 break
 
             ctx_picked[ctx_k] += 1
-            base_picked[base] += 1
             t_copy = dict(raw_t)
             t_copy["lang"] = "en"
             picked.append(t_copy)
-        if len(picked) >= 44000 or all(base_picked[b] >= 20 for b in missing_bases):
+        if len(picked) >= max_total_tokens:
             break
 
     if not picked:
@@ -194,7 +184,8 @@ def _warp_studio_en_tokens_ljspeech_to_sf(
     ceps = np.stack([np.asarray(t["cep_5"], dtype=np.float64) for t in picked], axis=0)
     baps = np.stack([np.asarray(t["bap_5"], dtype=np.float64) for t in picked], axis=0)
     vps = np.stack([np.asarray(t["vp_5"], dtype=np.float64) for t in picked], axis=0)
-    flat_log_env = cep_to_log_env(ceps.reshape(-1, N_CEP), n_bins=N_BINS) + lj_ref_amp
+    ceps_flat = ceps.reshape(-1, N_CEP)
+    flat_log_env = cep_to_log_env(ceps_flat, n_bins=N_BINS) + lj_ref_amp
     flat_vp = vps.reshape(-1) >= 0.45
     flat_f0 = np.where(flat_vp, lj_f0, 0.0)
 
@@ -210,9 +201,16 @@ def _warp_studio_en_tokens_ljspeech_to_sf(
         rd=np.ones(n_tok * N_BINS_M, dtype=np.float64),
     )
     warped_ctrl, _, _ = apply_clone_to_control(
-        ctrl, lj_prof, sf_en_prof, strength=0.95, clone_f0=False, clone_glottal=True
+        ctrl, lj_prof, sf_en_prof, strength=0.92, clone_f0=False, clone_glottal=True
     )
-    warped_cep = log_env_to_cep(warped_ctrl.log_env - sf_ref_log_amp, n_cep=N_CEP).reshape(n_tok, N_BINS_M, N_CEP)
+    warped_flat = log_env_to_cep(warped_ctrl.log_env - sf_ref_log_amp, n_cep=N_CEP)
+    # Preserve crisp studio LJSpeech F1/F2/F3 formant peak norm (`cep[8:24]`) under SF_EN tilt/VTLN warp
+    orig_q = np.sqrt(np.sum(ceps_flat[:, 8:24] ** 2, axis=1) + 1e-12)
+    warp_q = np.sqrt(np.sum(warped_flat[:, 8:24] ** 2, axis=1) + 1e-12)
+    scale_q = np.where(flat_vp, np.clip(orig_q / warp_q, 0.96, 1.18), 1.0)
+    warped_flat[:, 8:24] *= scale_q[:, None]
+
+    warped_cep = warped_flat.reshape(n_tok, N_BINS_M, N_CEP)
     warped_bap = warped_ctrl.bap.reshape(n_tok, N_BINS_M, N_BAP)
     for k, tok in enumerate(picked):
         clean_bap = _sanitize_bap_bins(str(tok.get("ipa", "ə")), warped_bap[k], vps[k])
@@ -310,51 +308,18 @@ def build_sf_native_multilingual_kb(
     kb_old: MultilingualIPAKnowledge | None = None
     reuse_p = Path(reuse_zh_from) if reuse_zh_from is not None else None
     if reuse_p is not None and reuse_p.is_file():
-        print(f"[SF-Stage13 Native] Reusing native ZH tables from {reuse_p} (fast EN studio enrichment mode)...", flush=True)
+        print(f"[SF-Stage13 Native] Reusing native ZH tables from {reuse_p} (100% pure studio EN upgrade)...", flush=True)
         kb_old = MultilingualIPAKnowledge.load(reuse_p)
         utt_phone_lists = []
-        for u in utterances:
-            phones = [dict(ph) for ph in u.get("phones", [])]
-            n_p = len(phones)
-            for i, row in enumerate(phones):
-                lang = str(row.get("lang", "zh"))
-                row["same_word_prev"] = bool(
-                    row.get("same_word_prev", i > 0 and phones[i - 1].get("lang") == lang and float(row.get("pause_prev_ms", 0.0)) < 20.0 and phones[i - 1].get("word_idx") == row.get("word_idx"))
-                )
-                row["same_word_next"] = bool(
-                    row.get("same_word_next", i + 1 < n_p and phones[i + 1].get("lang") == lang and float(row.get("pause_after_ms", 0.0)) < 20.0 and phones[i + 1].get("word_idx") == row.get("word_idx"))
-                )
-            utt_phone_lists.append(phones)
     else:
         print(f"[SF-Stage13 Native] Extracting native ZH TrueHarmEnv tokens across {len(utterances)} TRAIN utts (workers={workers})...", flush=True)
         utt_phone_lists = []
         with ProcessPoolExecutor(max_workers=workers, initializer=_worker_init) as ex:
             for i, plist in enumerate(ex.map(_worker_slice_native_utt, utterances, chunksize=32), start=1):
-                utt_phone_lists.append(plist)
+                # Keep native ZH tokens + drop accented embedded EN (replaced by 100% pure studio LJSpeech->SF_EN)
+                utt_phone_lists.append([ph for ph in plist if ph.get("lang") == "zh"])
                 if i % 600 == 0 or i == len(utterances):
                     print(f"[SF-Stage13 Native]   sliced {i}/{len(utterances)} utts ({time.perf_counter() - t0:.1f}s)", flush=True)
-
-    # Pure EN->EN studio enrichment from LJSpeech -> SF_EN (fills `ə`, `ɚ`, rare phones & sparse triphones)
-    en_base_cnt: Counter[str] = Counter()
-    en_pns_cnt: Counter[str] = Counter()
-    for plist in utt_phone_lists:
-        n_p = len(plist)
-        for i, ph in enumerate(plist):
-            if ph.get("lang") != "en":
-                continue
-            base = str(ph.get("ipa", "ə"))
-            en_base_cnt[base] += 1
-            if bool(ph.get("purity_ok", True)):
-                allo = strip_allophone_suffix(str(ph.get("allophone") or base))
-                is_c = str(ph.get("allophone") or "").endswith("_coda")
-                pk = f"en:{allo}_coda" if is_c else f"en:{allo}"
-                ptag = normalize_prosody_tag("en", ph.get("stress"), base)
-                prev_c = int(ph.get("prev_cls", 0))
-                next_c = int(ph.get("next_cls", 0))
-                en_pns_cnt[f"{prev_c}|{pk}|{next_c}|{ptag}"] += 1
-            # Sanitize outlier voiced BAP spikes on native EN tokens too
-            if ph.get("bap_5") is not None and ph.get("vp_5") is not None:
-                ph["bap_5"] = _sanitize_bap_bins(base, ph["bap_5"], ph["vp_5"]).astype(np.float16)
 
     speaker_f0_med_hz = float(tr.get("speaker_f0_med_hz", 223.73))
     ref_log_amp = float(tr.get("ref_log_amp", -4.1984))
@@ -364,15 +329,13 @@ def build_sf_native_multilingual_kb(
     if SF_EN_PROFILE_PATH.is_file():
         sf_en_prof = VoiceCloneProfile.from_json(SF_EN_PROFILE_PATH.read_text(encoding="utf-8"))
         b_toks = _warp_studio_en_tokens_ljspeech_to_sf(
-            en_pns_cnt,
-            en_base_cnt,
             sf_en_prof=sf_en_prof,
             sf_ref_log_amp=ref_log_amp,
         )
         n_studio_en = len(b_toks)
         for bt in b_toks:
             backstop_utts.append([bt])
-        print(f"[SF-Stage13 Native]   warped {n_studio_en} studio EN->EN tokens (LJSpeech -> SF_EN)", flush=True)
+        print(f"[SF-Stage13 Native]   warped {n_studio_en} pure studio EN->SF_EN tokens (LJSpeech -> SF_EN)", flush=True)
 
     all_lists = utt_phone_lists + backstop_utts
     sil_cep64 = np.zeros(N_CEP, dtype=np.float32)

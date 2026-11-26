@@ -32,6 +32,7 @@ from pybot_webui.presets import VoiceParams
 SAMPLES_S13_DIR = EXP_DIR / "samples_stage13_multilingual"
 SAMPLES_S12_DIR = EXP_DIR / "samples_stage12_bilingual"
 HELDOUT_PKL = EXP_DIR / "crossling_data" / "sf_bilingual_heldout.pkl"
+EN_HELDOUT_PKL = EXP_DIR / "crossling_data" / "en_stage10_heldout.pkl"
 S12_RESULTS_JSON = EXP_DIR / "stage12_sf_bilingual_results.json"
 
 HTML_PATH = EXP_DIR / "listen_stage13_multilingual.html"
@@ -140,7 +141,31 @@ def build_stage13_audition_and_report() -> dict[str, Any]:
             "wav_s13_native": f"samples_stage13_multilingual/s13_native_{uid}.wav",
         })
 
-    # 2. Core code-switching (5) + Pure EN (3) + Pure ZH (2) + Emotional mixed (1)
+    # 1b. Native English held-out benchmark (6 unseen LJSpeech utterances)
+    en_heldout_rows: list[dict[str, Any]] = []
+    if EN_HELDOUT_PKL.is_file():
+        with open(EN_HELDOUT_PKL, "rb") as f:
+            en_ho = pickle.load(f)
+        for idx, item in enumerate((en_ho.get("utterances") or [])[:6]):
+            txt = str(item["text"])
+            ref_wav = _rms_norm(np.asarray(item["wav"], dtype=np.float64), -19.5)
+            y_s13, c13, meta13 = synthesize_multilingual_native(txt, knowledge=kb, params=vp_std, seed=2026 + idx)
+            sd_13 = compute_spectral_distances(ref_wav, y_s13, sr=SR) or {}
+            m_hum = compute_forensic_metrics(ref_wav, SR)
+            m_13 = compute_forensic_metrics(y_s13, SR)
+            en_heldout_rows.append({
+                "id": str(item.get("id", f"lj_ho_{idx}")),
+                "text": txt,
+                "human": m_hum,
+                "s13_native": {
+                    **m_13,
+                    "mel_cd_db": round(float(sd_13.get("mel_lsd_db") or 0.0), 3),
+                    "sanity_ok": bool(check_wav_sanity(y_s13, SR, expected_sr=SR).get("ok", False)),
+                    "ipa_shared_fallbacks": sum(int(d.get("hits", {}).get("ipa_shared", 0)) for d in meta13.get("dp_stats", [])),
+                },
+            })
+
+    # 2. Core code-switching (5) + Pure EN (3) + Emotional EN (2) + Pure ZH (2) + Emotional mixed (1)
     bench_cases: list[tuple[str, str, VoiceParams, str]] = [
         ("mix_en_zh_vowel", "Let me know 你今天几点出发。", vp_std, "mixed"),
         ("mix_en_zh_nasal", "我选了 green tea 按你的清单买的。", vp_std, "mixed"),
@@ -259,6 +284,13 @@ def build_stage13_audition_and_report() -> dict[str, Any]:
             "s13_native_mel_cd_med_db": ho_mel_13,
             "s13_native_hnr_med_db": ho_hnr_13,
         },
+        "en_heldout_summary": {
+            "n_utterances": len(en_heldout_rows),
+            "s13_en_mel_cd_med_db": round(float(np.median([r["s13_native"]["mel_cd_db"] for r in en_heldout_rows])), 3) if en_heldout_rows else None,
+            "s13_en_q8_med": round(float(np.median([r["s13_native"]["q8_24"] for r in en_heldout_rows])), 3) if en_heldout_rows else None,
+            "s13_en_hnr_med_db": round(float(np.median([r["s13_native"]["hnr_db"] for r in en_heldout_rows])), 3) if en_heldout_rows else None,
+            "s13_en_f0_iqr_med_st": round(float(np.median([r["s13_native"]["f0_iqr_st"] for r in en_heldout_rows])), 3) if en_heldout_rows else None,
+        },
         "showcase_summary": {
             "mixed_hnr_med_db": round(float(np.median([r["s13_native"]["hnr_db"] for r in mix_rows])), 3),
             "mixed_q8_med": round(float(np.median([r["s13_native"]["q8_24"] for r in mix_rows])), 3),
@@ -355,7 +387,8 @@ document.getElementById("showcase").innerHTML = DATA.showcase.map(r => `
         f"- **Inventory**: `{kb_summary.get('n_zh_tokens', '?')}` native ZH tokens (`39` IPAs) + `{kb_summary.get('n_en_tokens', '?')}` EN tokens (`+ {kb_summary.get('n_en_studio_warped_tokens', kb_summary.get('n_en_backstop_tokens', 0))}` studio EN->EN LJSpeech->SF_EN)",
         f"- **Static Telemetry**: `max_voiced_bap0={max_vb0_all}`, `max_voiced_bap1={max_vb1_all}`, `en_studio_ipa_shared_fallbacks={en_studio_sh}`",
         f"- **Held-out 6 utterances (`com_SF_ce996..1001`)**: S13 Native Mel-CD median = **{ho_mel_13} dB** (Stage 12 SF = {ho_mel_12} dB), HNR median = **{ho_hnr_13} dB** (Human = {ho_hnr_hum} dB)",
-        f"- **Showcase medians**: Mixed HNR=`{summary['showcase_summary']['mixed_hnr_med_db']} dB`, Pure-EN HNR=`{summary['showcase_summary']['pure_en_hnr_med_db']} dB`, Pure-ZH HNR=`{summary['showcase_summary']['pure_zh_hnr_med_db']} dB`, RTF=`{summary['showcase_summary']['rtf_med']}`, All Sanity OK=`{all_san}`",
+        f"- **Native EN Held-out 6 utterances (`en_stage10_heldout`)**: Mel-CD median = **{summary['en_heldout_summary']['s13_en_mel_cd_med_db']} dB**, `q8_24` = **{summary['en_heldout_summary']['s13_en_q8_med']}**, HNR = **{summary['en_heldout_summary']['s13_en_hnr_med_db']} dB**, F0 IQR = **{summary['en_heldout_summary']['s13_en_f0_iqr_med_st']} st**",
+        f"- **Showcase medians**: Mixed HNR=`{summary['showcase_summary']['mixed_hnr_med_db']} dB`, Pure-EN HNR=`{summary['showcase_summary']['pure_en_hnr_med_db']} dB` (`q8_24={summary['showcase_summary']['pure_en_q8_med']}`), Pure-ZH HNR=`{summary['showcase_summary']['pure_zh_hnr_med_db']} dB`, RTF=`{summary['showcase_summary']['rtf_med']}`, All Sanity OK=`{all_san}`",
         f"- **DP lookup tier distribution**: `{hit_rates}`",
         "",
         "| Utterance | Stage 12 SF Mel-CD (dB) | Stage 13 Native Mel-CD (dB) | Human HNR (dB) | Stage 13 HNR (dB) | RTF |",
@@ -375,6 +408,7 @@ if __name__ == "__main__":
     print(json.dumps({
         "all_sanity_ok": out["all_sanity_ok"],
         "heldout_summary": out["heldout_summary"],
+        "en_heldout_summary": out["en_heldout_summary"],
         "showcase_summary": out["showcase_summary"],
         "tier_rates_pct": out["tier_rates_pct"],
     }, ensure_ascii=False, indent=2))
