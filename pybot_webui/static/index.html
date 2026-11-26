@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyBot-Larynx · 赛博声带 WebUI</title>
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --panel: #121826;
+      --panel-2: #171f31;
+      --border: #25304a;
+      --border-hi: #3a4b73;
+      --text: #e6ecf8;
+      --muted: #8e9bb8;
+      --accent: #4f8cff;
+      --accent-hi: #70a3ff;
+      --green: #22c55e;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --cyan: #06b6d4;
+      --purple: #a855f7;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Microsoft YaHei UI", "PingFang SC", "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    button, input, textarea, select {
+      font: inherit;
+      color: inherit;
+    }
+    .app {
+      max-width: 1580px;
+      margin: 0 auto;
+      padding: 14px 18px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    /* Header & Top Bars */
+    .topbar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(79, 140, 255, 0.14);
+      color: var(--accent-hi);
+      border: 1px solid rgba(79, 140, 255, 0.28);
+    }
+    .badge.ok {
+      background: rgba(34, 197, 94, 0.14);
+      color: #4ade80;
+      border-color: rgba(34, 197, 94, 0.3);
+    }
+    .badge.warn {
+      background: rgba(245, 158, 11, 0.16);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+    .badge.err {
+      background: rgba(239, 68, 68, 0.16);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+    .save-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      min-width: 320px;
+      max-width: 680px;
+    }
+    .save-bar label {
+      color: var(--muted);
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .save-bar input {
+      flex: 1;
+      min-width: 160px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 6px 10px;
+      outline: none;
+    }
+    .save-bar input:focus { border-color: var(--accent); }
+
+    /* Presets Bar */
+    .presets-bar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    .presets-title {
+      font-weight: 700;
+      color: var(--muted);
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .preset-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding-right: 10px;
+      border-right: 1px solid var(--border);
+    }
+    .preset-group:last-child { border-right: none; padding-right: 0; }
+    .preset-group-label {
+      font-size: 11px;
+      color: var(--muted);
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.04);
+    }
+    .preset-pill {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 11px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.14s ease;
+    }
+    .preset-pill:hover {
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .preset-pill.active {
+      background: var(--accent);
+      border-color: var(--accent-hi);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.25);
+    }
+
+    /* Clone Bar */
+    .clone-bar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .clone-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .clone-drop {
+      border: 1px dashed var(--border-hi);
+      background: var(--panel-2);
+      border-radius: 8px;
+      padding: 4px 9px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .clone-drop.dragover {
+      border-color: var(--accent-hi);
+      background: rgba(79, 140, 255, 0.14);
+    }
+    .clone-name-input {
+      background: var(--panel-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 5px 9px;
+      width: 175px;
+      outline: none;
+    }
+    .clone-name-input:focus { border-color: var(--accent); }
+    .pending-clips {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      padding-top: 2px;
+    }
+    .pending-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(79, 140, 255, 0.12);
+      border: 1px solid rgba(79, 140, 255, 0.35);
+      color: #cfe0ff;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+    }
+    .pending-chip button,
+    .clone-del-btn {
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      padding: 0 3px;
+      font-size: 13px;
+      line-height: 1;
+      opacity: 0.78;
+    }
+    .pending-chip button:hover,
+    .clone-del-btn:hover { opacity: 1; color: #fca5a5; }
+    .clone-pill-wrap {
+      display: inline-flex;
+      align-items: center;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      transition: all 0.14s ease;
+    }
+    .clone-pill-wrap:hover { border-color: var(--accent); }
+    .clone-pill-wrap.active {
+      background: var(--accent);
+      border-color: var(--accent-hi);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.25);
+    }
+    .clone-pill-btn {
+      background: transparent;
+      border: none;
+      color: inherit;
+      padding: 5px 8px 5px 11px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: inherit;
+    }
+    .clone-del-btn { padding: 4px 8px 4px 2px; }
+    .clone-tuning {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      background: rgba(79, 140, 255, 0.08);
+      border: 1px solid rgba(79, 140, 255, 0.28);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+    .clone-tuning input[type="range"] {
+      width: 120px;
+      accent-color: var(--accent);
+    }
+    @keyframes recPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.45); }
+      50% { box-shadow: 0 0 0 5px rgba(239, 68, 68, 0); }
+    }
+    .btn.recording {
+      background: rgba(239, 68, 68, 0.22);
+      border-color: rgba(239, 68, 68, 0.7);
+      color: #fecaca;
+      font-weight: 600;
+      animation: recPulse 1.2s infinite;
+    }
+
+    /* Buttons */
+    .btn {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 6px 11px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: background 0.12s, border-color 0.12s, opacity 0.12s;
+    }
+    .btn:hover:not(:disabled) {
+      border-color: var(--border-hi);
+      background: #1d273d;
+    }
+    .btn:disabled {
+      opacity: 0.48;
+      cursor: not-allowed;
+    }
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent-hi);
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn.primary:hover:not(:disabled) { background: #3e7cf0; }
+    .btn.success {
+      background: #16a34a;
+      border-color: #22c55e;
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn.success:hover:not(:disabled) { background: #15803d; }
+    .btn.warn {
+      background: rgba(245, 158, 11, 0.16);
+      border-color: rgba(245, 158, 11, 0.45);
+      color: #fcd34d;
+    }
+    .btn.danger {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.35);
+      color: #fca5a5;
+    }
+    .btn.sm { padding: 4px 8px; font-size: 12px; }
+
+    /* Two-column Main Layout */
+    .main-grid {
+      display: grid;
+      grid-template-columns: minmax(430px, 1.04fr) minmax(460px, 1.06fr);
+      gap: 14px;
+      align-items: start;
+    }
+    @media (max-width: 1020px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+    .col-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .section-hdr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .section-hdr h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    textarea.text-input {
+      width: 100%;
+      min-height: 118px;
+      resize: vertical;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      outline: none;
+      line-height: 1.55;
+    }
+    textarea.text-input:focus { border-color: var(--accent); }
+
+    /* Split Controls */
+    .split-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .seg-tabs {
+      display: inline-flex;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 2px;
+    }
+    .seg-tab {
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .seg-tab.active {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    .mini-num {
+      width: 62px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 7px;
+      text-align: center;
+    }
+    .chk-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      color: var(--muted);
+      user-select: none;
+    }
+    .chk-label input[type="checkbox"] {
+      accent-color: var(--accent);
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+    }
+
+    /* Segment Queue */
+    .queue-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 250px;
+      overflow-y: auto;
+      padding-right: 2px;
+    }
+    .queue-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 8px;
+    }
+    .queue-idx {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      min-width: 24px;
+      text-align: center;
+    }
+    .lang-pill {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    .lang-zh { background: rgba(79,140,255,0.16); color: #93c5fd; }
+    .lang-en { background: rgba(6,182,212,0.16); color: #67e8f9; }
+    .lang-mix { background: rgba(168,85,247,0.18); color: #d8b4fe; }
+
+    .queue-text {
+      flex: 1;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 4px 6px;
+      outline: none;
+      min-width: 100px;
+    }
+    .queue-text:focus {
+      border-color: var(--border-hi);
+      background: var(--panel-2);
+    }
+
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Knobs Area */
+    .knobs-box {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .knobs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 10px 14px;
+    }
+    @media (max-width: 600px) {
+      .knobs-grid { grid-template-columns: 1fr; }
+    }
+    .knob-card {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .knob-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+    .knob-name { color: var(--text); font-weight: 500; }
+    .knob-val {
+      font-family: ui-monospace, Consolas, monospace;
+      color: var(--accent-hi);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent);
+      cursor: pointer;
+      margin: 0;
+    }
+    .adv-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+    }
+    .adv-row select, .adv-row input[type="number"] {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+    }
+
+    /* Right Column: Results */
+    .results-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 10px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .results-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: calc(100vh - 230px);
+      min-height: 340px;
+      overflow-y: auto;
+      padding-right: 2px;
+    }
+    .empty-state {
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 48px 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .clip-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.14s;
+    }
+    .clip-card.selected { border-color: rgba(79, 140, 255, 0.55); }
+    .clip-card.generating { opacity: 0.72; border-color: var(--amber); }
+    .clip-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .clip-chk {
+      margin-top: 3px;
+      accent-color: var(--accent);
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+    .clip-text {
+      flex: 1;
+      font-weight: 600;
+      color: #f1f5f9;
+      word-break: break-word;
+    }
+    .clip-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .meta-tag {
+      padding: 1px 6px;
+      border-radius: 5px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+    }
+    .meta-tag.saved {
+      background: rgba(34, 197, 94, 0.14);
+      color: #4ade80;
+      border-color: rgba(34, 197, 94, 0.3);
+    }
+    .clip-bottom {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .clip-bottom audio {
+      flex: 1;
+      min-width: 210px;
+      height: 34px;
+    }
+
+    /* Toast */
+    .toast-wrap {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 999;
+      pointer-events: none;
+    }
+    .toast {
+      background: #1a2336;
+      border: 1px solid var(--border-hi);
+      color: var(--text);
+      padding: 9px 14px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      max-width: 440px;
+      font-size: 12px;
+      pointer-events: auto;
+    }
+    .toast.ok { border-color: rgba(34, 197, 94, 0.55); }
+    .toast.err { border-color: rgba(239, 68, 68, 0.65); color: #fecaca; }
+
+    /* Stage 8 Expressive & Physical Synthesizer UI */
+    .emo-bar, .synth-box {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .tag-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+    }
+    .tag-chip {
+      background: rgba(79, 140, 255, 0.11);
+      border: 1px solid rgba(79, 140, 255, 0.32);
+      color: #c7dcff;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .tag-chip:hover {
+      background: rgba(79, 140, 255, 0.25);
+      border-color: var(--accent-hi);
+      color: #fff;
+    }
+    .synth-svg-wrap {
+      background: #0b0f18;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 8px;
+    }
+    .synth-svg {
+      width: 100%;
+      height: 118px;
+      display: block;
+    }
+    .meta-tag.emo {
+      background: rgba(168, 85, 247, 0.16);
+      color: #e9d5ff;
+      border-color: rgba(168, 85, 247, 0.35);
+    }
+    .meta-tag.fmt {
+      background: rgba(14, 165, 233, 0.13);
+      color: #bae6fd;
+      border-color: rgba(14, 165, 233, 0.30);
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <h1>PyBot-Larynx · 赛博声带工作台</h1>
+      <span class="badge">0 MB 神经权重 · 电子声带 Stage 8 + 物理合成器 + 情绪演绎</span>
+      <span id="engineBadge" class="badge warn">引擎加载中...</span>
+    </div>
+    <div class="save-bar">
+      <label for="saveDirInput">保存文件夹</label>
+      <input id="saveDirInput" type="text" placeholder="选择或输入输出目录..." />
+      <button id="pickFolderBtn" class="btn sm" type="button">📁 选择文件夹</button>
+      <button id="openFolderBtn" class="btn sm" type="button">📂 打开</button>
+    </div>
+  </header>
+
+  <!-- Presets Bar -->
+  <section class="presets-bar" aria-label="音色预设">
+    <span class="presets-title">音色预设</span>
+    <div id="presetsContainer" style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;"></div>
+  </section>
+
+  <!-- Voice Clone Bar -->
+  <section class="clone-bar" aria-label="样本模仿">
+    <div class="clone-row">
+      <span class="presets-title">🎙 样本模仿（0 权重克隆）</span>
+      <div id="cloneDropZone" class="clone-drop" title="支持拖入或选择多段干净人声样本（1-10秒效果最佳）">
+        <input id="cloneFileInput" type="file" accept="audio/*" multiple hidden />
+        <button id="pickCloneFileBtn" class="btn sm" type="button">📂 上传样本 WAV/MP3/M4A</button>
+        <span style="color:var(--muted); font-size:12px;">或拖入音频至此</span>
+      </div>
+      <button id="micRecBtn" class="btn sm" type="button">● 麦克风录制</button>
+      <span id="micRecTimer" style="color:var(--muted); font-size:12px; font-variant-numeric:tabular-nums;"></span>
+      <input id="cloneNameInput" class="clone-name-input" type="text" maxlength="32" placeholder="新音色名称（如：朋友/旁白）" />
+      <button id="extractCloneBtn" class="btn sm primary" type="button" disabled>✨ 提取并启用音色</button>
+    </div>
+
+    <div id="pendingClipsBox" class="pending-clips" style="display:none;"></div>
+
+    <div class="clone-row" style="justify-content:space-between;">
+      <div id="cloneProfilesBox" class="clone-row" style="gap:8px;"></div>
+      <div id="cloneTuningBox" class="clone-tuning" style="display:none;">
+        <label style="display:inline-flex; align-items:center; gap:6px; font-weight:600;">
+          模仿强度
+          <input id="cloneStrengthSlider" type="range" min="0" max="100" step="5" value="85" />
+          <span id="cloneStrengthVal" class="knob-val">85%</span>
+        </label>
+        <label class="chk-label" title="按目标样本音高分布迁移基频">
+          <input id="cloneF0Chk" type="checkbox" checked />
+          模仿基频音高
+        </label>
+        <label class="chk-label" title="自动匹配目标样本语速节奏">
+          <input id="cloneRateChk" type="checkbox" />
+          匹配语速节奏
+        </label>
+        <button id="exitCloneBtn" class="btn sm" type="button">退出模仿</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Workspace -->
+  <main class="main-grid">
+    <!-- Left Column: Input + Split + Knobs -->
+    <section class="col-panel">
+      <div class="section-hdr">
+        <h2>① 文本输入与切分</h2>
+        <div style="display:flex; gap:6px; align-items:center;">
+          <span id="charCount" style="color:var(--muted); font-size:12px;">0 字</span>
+          <button id="emoSampleBtn" class="btn sm primary" type="button" title="填入包含情绪切换、叹气、吸气、轻笑和重读标记的演播文本">🎭 情绪演播示例</button>
+          <button id="sampleBtn" class="btn sm" type="button">填入中英示例</button>
+          <button id="clearTextBtn" class="btn sm" type="button">清空</button>
+        </div>
+      </div>
+
+      <textarea id="inputText" class="text-input" placeholder="输入中文、英文或中英混读文本，支持 [叹气] [吸气] [笑] [悲伤] [开心] *重点* 等表现力标注..."></textarea>
+
+      <!-- Inline Performance Tag Toolbar -->
+      <div id="inlineTagChips" class="tag-chips" title="点击即可在光标处插入 ElevenLabs 风格演技标注"></div>
+
+      <!-- Emotion & Style Panel -->
+      <div class="emo-bar" aria-label="情绪演绎控制">
+        <div class="section-hdr">
+          <span style="font-weight:700;">🎭 情绪演绎与韵律张力</span>
+          <label class="chk-label" title="在长句或高情绪句前自动插入轻微物理吸气换气声">
+            <input id="autoBreathChk" type="checkbox" checked />
+            自动呼吸换气
+          </label>
+        </div>
+        <div id="emotionPillsBox" style="display:flex; flex-wrap:wrap; gap:6px;"></div>
+        <div class="knobs-grid">
+          <div class="knob-card" title="类似 ElevenLabs Style 滑杆：控制情绪夸张幅度、语调跨度和音色张力">
+            <div class="knob-top"><span class="knob-name">情绪张力 (Style)</span><span id="val_emotion_intensity" class="knob-val">0.75</span></div>
+            <input id="knob_emotion_intensity" type="range" min="0.0" max="1.5" step="0.05" value="0.75" />
+          </div>
+          <div class="knob-card" title="类似 ElevenLabs Stability 滑杆：越低表现力微变化越丰富，越高播音越稳定">
+            <div class="knob-top"><span class="knob-name">表现稳定性 (Stability)</span><span id="val_stability" class="knob-val">0.55</span></div>
+            <input id="knob_stability" type="range" min="0.0" max="1.0" step="0.05" value="0.55" />
+          </div>
+        </div>
+      </div>
+
+      <div class="split-controls">
+        <span style="color:var(--muted); font-weight:600;">切分方式</span>
+        <div class="seg-tabs" id="splitModeTabs">
+          <button class="seg-tab active" data-mode="sentence" type="button">按句切分</button>
+          <button class="seg-tab" data-mode="line" type="button">按行切分</button>
+          <button class="seg-tab" data-mode="none" type="button">整段不切</button>
+        </div>
+        <label style="color:var(--muted); display:inline-flex; align-items:center; gap:5px;">
+          句长上限
+          <input id="maxCharsInput" class="mini-num" type="number" min="0" max="500" value="80" title="设为 0 表示不按逗号折行" />
+        </label>
+        <label class="chk-label">
+          <input id="autoSplitChk" type="checkbox" checked />
+          输入自动切分
+        </label>
+        <button id="doSplitBtn" class="btn sm" type="button">✂ 立即切分</button>
+      </div>
+
+      <div class="section-hdr">
+        <span style="color:var(--muted); font-weight:600;">待合成队列（<span id="queueCount">0</span> 条，可直接微调单句）</span>
+        <button id="addRowBtn" class="btn sm" type="button">＋ 新增一条</button>
+      </div>
+
+      <div id="queueList" class="queue-list"></div>
+
+      <div class="action-bar">
+        <button id="synthAllBtn" class="btn primary" type="button">⚡ 全部生成</button>
+        <button id="regenAllBtn" class="btn warn" type="button">🔄 一键全部重新生成</button>
+        <label class="chk-label" title="每次重新生成时随机切换声带微颤种子">
+          <input id="regenBumpSeedChk" type="checkbox" />
+          重生成换随机种子
+        </label>
+        <span id="progressHint" style="color:var(--muted); font-size:12px; margin-left:auto;"></span>
+      </div>
+
+      <!-- Physical Larynx Knobs -->
+      <div class="knobs-box">
+        <div class="section-hdr">
+          <span style="font-weight:700;">🎛 声带与韵律旋钮</span>
+          <button id="resetPresetBtn" class="btn sm" type="button">↺ 还原当前预设</button>
+        </div>
+        <div id="knobsGrid" class="knobs-grid"></div>
+
+        <div class="adv-row">
+          <label>声门激励
+            <select id="glottalModeSelect">
+              <option value="dynamic_coherent">dynamic_coherent（动态声门 + 相干胸声）</option>
+              <option value="speaker_coherent">speaker_coherent（原声带相干相位）</option>
+              <option value="parametric_lf">parametric_lf（参数化 LF 声门）</option>
+            </select>
+          </label>
+          <label>语言模式
+            <select id="crosslingModeSelect">
+              <option value="auto">中英混读（自动识别）</option>
+              <option value="zh_only">仅普通话</option>
+            </select>
+          </label>
+          <label>种子
+            <input id="seedInput" type="number" min="0" max="9999999" value="123" style="width:76px;" />
+          </label>
+          <button id="randSeedBtn" class="btn sm" type="button" title="随机种子">🎲</button>
+        </div>
+
+        <div id="rulesRow" class="adv-row" style="padding-top:6px;">
+          <span style="color:var(--muted); font-weight:600;">Arbiter 规则：</span>
+        </div>
+      </div>
+
+      <!-- Stage 8 Physical Spectrum Synthesizer (LSF-22) -->
+      <div class="synth-box">
+        <div class="section-hdr">
+          <span style="font-weight:700;">🎹 物理频谱合成器 (LSF-22 音色雕刻)</span>
+          <button id="resetSynthBtn" class="btn sm" type="button">↺ 重置合成器</button>
+        </div>
+        <div id="timbrePatchesBox" style="display:flex; flex-wrap:wrap; gap:6px;"></div>
+        <div class="synth-svg-wrap">
+          <svg id="synthEqSvg" class="synth-svg" viewBox="0 0 420 118" preserveAspectRatio="none"></svg>
+          <div id="synthSpectrumStats" style="color:var(--muted); font-size:11px; margin-top:4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;">
+            <span>实时 EQ / 共振峰雕刻传递函数</span>
+            <span>合成后将显示实测 F1/F2/F3 与 Tilt</span>
+          </div>
+        </div>
+        <div id="synthKnobsGrid" class="knobs-grid"></div>
+      </div>
+    </section>
+
+    <!-- Right Column: Generated Audio & Save -->
+    <section class="col-panel">
+      <div class="section-hdr">
+        <h2>② 生成结果与保存管理</h2>
+        <span id="selectionBadge" class="badge">已选 0 / 0 条</span>
+      </div>
+
+      <div class="results-toolbar">
+        <button id="selectAllBtn" class="btn sm" type="button">全选</button>
+        <button id="invertSelBtn" class="btn sm" type="button">反选</button>
+        <button id="saveSelectedBtn" class="btn success sm" type="button">💾 保存已选</button>
+        <button id="mergeSaveBtn" class="btn primary sm" type="button">🎬 合并保存整段</button>
+        <label style="color:var(--muted); font-size:12px; display:inline-flex; align-items:center; gap:4px;">
+          间隔
+          <input id="mergeGapInput" class="mini-num" type="number" min="0" max="3000" step="20" value="280" />ms
+        </label>
+        <button id="regenSelectedBtn" class="btn warn sm" type="button">🔄 重生成已选</button>
+        <button id="clearClipsBtn" class="btn danger sm" type="button" style="margin-left:auto;">🗑 清空</button>
+      </div>
+
+      <div id="resultsList" class="results-list">
+        <div class="empty-state">
+          左侧切分好文本后，点击 <b>「⚡ 全部生成」</b> 或单句 <b>「▶」</b>。<br/>
+          生成后的音频可在此逐条试听、勾选是否保存，或用当前旋钮一键重新生成。
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="toastWrap" class="toast-wrap"></div>
+
+<script>
+(() => {
+  const SAMPLE_TEXT =
+    "你好，欢迎来到赛博声带工作台！\n" +
+    "今天测试一下中英混读，Hello PyBot, 2026年一切顺利。\n" +
+    "你可以在上方切换男女老少预设，或者微调旋钮后一键重新生成。";
+
+  const EMO_SAMPLE_TEXT =
+    "[吸气] *天呐*，你真的不记得昨晚发生什么了吗？！\n" +
+    "[叹气] 我等了整整三个小时……算了，只要你没事就好。\n" +
+    "[开心] 哈哈，[笑] 别露出那种表情啦！Today is going to be **AWESOME**~";
+
+  const state = {
+    ready: false,
+    splitMode: "sentence",
+    presets: [],
+    knobs: [],
+    synthKnobs: [],
+    timbrePatches: [],
+    emotions: [],
+    inlineTags: [],
+    rules: [],
+    lastSpectralPreview: null,
+    cloneProfiles: [],
+    pendingCloneClips: [], // [{label, duration_s, wav_b64}]
+    recording: false,
+    params: {
+      preset_id: "female_std",
+      pitch_shift_st: 0.0,
+      vtln_scale: 1.0,
+      speed: 1.0,
+      pitch_range: 1.0,
+      rd_offset: 0.0,
+      breathiness: 0.0,
+      tilt_db_per_oct: 0.0,
+      hoarseness: 0.0,
+      pause_scale: 1.0,
+      glottal_mode: "speaker_coherent",
+      crossling_mode: "auto",
+      emotion_mode: "auto",
+      emotion_intensity: 0.75,
+      stability: 0.55,
+      auto_breath: true,
+      timbre_patch: "neutral",
+      chest_db: 0.0,
+      warmth_db: 0.0,
+      nasal_twang_db: 0.0,
+      presence_db: 0.0,
+      air_db: 0.0,
+      formant_q: 0.0,
+      vowel_openness: 0.0,
+      vocal_fry: 0.0,
+      vibrato_depth_st: 0.0,
+      vibrato_rate_hz: 5.4,
+      exciter_drive: 0.0,
+      bandpass_vintage: 0.0,
+      rules_enabled: {
+        glottal_f0_coupling: true,
+        obstruent_crispness: true,
+        nasal_antiresonance: true,
+        boundary_coarticulation: true,
+        prosodic_energy_tilt: true,
+        formant_dynamics: true,
+      },
+      seed: 123,
+      target_dbfs: -18.0,
+      clone_profile_id: null,
+      imitation_strength: 0.85,
+      clone_f0: true,
+      clone_rate: false,
+    },
+    segments: [],
+    clips: [], // [{clip, selected}]
+    busy: false,
+  };
+
+  const $ = (id) => document.getElementById(id);
+
+  function toast(msg, kind = "info") {
+    const wrap = $("toastWrap");
+    const el = document.createElement("div");
+    el.className = `toast ${kind === "ok" ? "ok" : kind === "err" ? "err" : ""}`;
+    el.textContent = msg;
+    wrap.appendChild(el);
+    setTimeout(() => { el.remove(); }, 4200);
+  }
+
+  async function api(url, method = "GET", body = null) {
+    const opts = { method, headers: {} };
+    if (body !== null) {
+      opts.headers["Content-Type"] = "application/json";
+      opts.body = JSON.stringify(body);
+    }
+    const resp = await fetch(url, opts);
+    const data = await resp.json().catch(() => ({}));
+    if (!resp.ok) {
+      throw new Error(data.error || `HTTP ${resp.status}`);
+    }
+    return data;
+  }
+
+  function langClass(tag) {
+    if (tag === "en") return ["lang-en", "英"];
+    if (tag === "zh+en") return ["lang-mix", "中英"];
+    return ["lang-zh", "中"];
+  }
+
+  function inferLangTag(txt) {
+    const zh = /[\u3400-\u9fff]/.test(txt);
+    const en = /[A-Za-z]/.test(txt);
+    if (zh && en) return "zh+en";
+    if (en) return "en";
+    return "zh";
+  }
+
+  function renderPresets() {
+    const box = $("presetsContainer");
+    box.innerHTML = "";
+    const groups = [];
+    const byGroup = new Map();
+    for (const p of state.presets) {
+      if (!byGroup.has(p.group)) {
+        byGroup.set(p.group, []);
+        groups.push(p.group);
+      }
+      byGroup.get(p.group).push(p);
+    }
+    for (const g of groups) {
+      const grpEl = document.createElement("div");
+      grpEl.className = "preset-group";
+      const lbl = document.createElement("span");
+      lbl.className = "preset-group-label";
+      lbl.textContent = g;
+      grpEl.appendChild(lbl);
+      for (const p of byGroup.get(g)) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        const isActive = !state.params.clone_profile_id && state.params.preset_id === p.id;
+        btn.className = `preset-pill ${isActive ? "active" : ""}`;
+        btn.textContent = p.name;
+        btn.title = p.desc;
+        btn.onclick = () => applyPreset(p.id);
+        grpEl.appendChild(btn);
+      }
+      box.appendChild(grpEl);
+    }
+  }
+
+  function applyPreset(presetId) {
+    const p = state.presets.find((x) => x.id === presetId);
+    if (!p) return;
+    state.params = {
+      ...state.params,
+      ...p.params,
+      preset_id: p.id,
+      clone_profile_id: null,
+      rules_enabled: { ...state.params.rules_enabled },
+    };
+    renderPresets();
+    renderCloneBar();
+    syncKnobsFromState();
+    toast(`已切换预设：${p.name}`, "ok");
+  }
+
+  function floatToPcm16WavBase64(samples, sampleRate) {
+    const n = samples.length;
+    const buf = new ArrayBuffer(44 + n * 2);
+    const view = new DataView(buf);
+    const writeStr = (off, str) => {
+      for (let i = 0; i < str.length; i++) view.setUint8(off + i, str.charCodeAt(i));
+    };
+    writeStr(0, "RIFF");
+    view.setUint32(4, 36 + n * 2, true);
+    writeStr(8, "WAVE");
+    writeStr(12, "fmt ");
+    view.setUint32(16, 16, true);
+    view.setUint16(20, 1, true);
+    view.setUint16(22, 1, true);
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * 2, true);
+    view.setUint16(32, 2, true);
+    view.setUint16(34, 16, true);
+    writeStr(36, "data");
+    view.setUint32(40, n * 2, true);
+    let offset = 44;
+    for (let i = 0; i < n; i++) {
+      const s = Math.max(-1, Math.min(1, samples[i]));
+      view.setInt16(offset, s < 0 ? Math.round(s * 32768) : Math.round(s * 32767), true);
+      offset += 2;
+    }
+    const bytes = new Uint8Array(buf);
+    let bin = "";
+    const CHUNK = 8192;
+    for (let i = 0; i < bytes.length; i += CHUNK) {
+      bin += String.fromCharCode(...bytes.subarray(i, i + CHUNK));
+    }
+    return btoa(bin);
+  }
+
+  async function resampleFloatTo24kMonoWavB64(monoFloat32, origSr) {
+    const sr = Math.max(8000, Math.round(origSr || 24000));
+    const maxLen = Math.min(monoFloat32.length, Math.floor(30.0 * sr));
+    const clipped = maxLen === monoFloat32.length ? monoFloat32 : monoFloat32.subarray(0, maxLen);
+    const targetSr = 24000;
+    if (sr === targetSr) {
+      return {
+        wav_b64: floatToPcm16WavBase64(clipped, targetSr),
+        duration_s: Number((clipped.length / targetSr).toFixed(2)),
+      };
+    }
+    const dur = Math.max(0.02, clipped.length / sr);
+    const targetLen = Math.max(1, Math.ceil(dur * targetSr));
+    const OfflineCtx = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+    if (!OfflineCtx) {
+      throw new Error("当前浏览器不支持 OfflineAudioContext 重采样");
+    }
+    const off = new OfflineCtx(1, targetLen, targetSr);
+    const buf = off.createBuffer(1, clipped.length, sr);
+    buf.copyToChannel(clipped, 0);
+    const src = off.createBufferSource();
+    src.buffer = buf;
+    src.connect(off.destination);
+    src.start(0);
+    const rendered = await off.startRendering();
+    const ch0 = rendered.getChannelData(0);
+    return {
+      wav_b64: floatToPcm16WavBase64(ch0, targetSr),
+      duration_s: Number((ch0.length / targetSr).toFixed(2)),
+    };
+  }
+
+  async function resampleTo24kMonoWavB64(audioBuffer) {
+    const origSr = audioBuffer.sampleRate || 24000;
+    const maxLen = Math.min(audioBuffer.length, Math.floor(30.0 * origSr));
+    const nCh = Math.max(1, audioBuffer.numberOfChannels || 1);
+    const mono = new Float32Array(maxLen);
+    for (let ch = 0; ch < nCh; ch++) {
+      const chData = audioBuffer.getChannelData(ch);
+      for (let i = 0; i < maxLen; i++) {
+        mono[i] += chData[i] / nCh;
+      }
+    }
+    return resampleFloatTo24kMonoWavB64(mono, origSr);
+  }
+
+  async function addCloneFiles(fileList) {
+    const files = Array.from(fileList || []);
+    if (files.length === 0) return;
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) {
+      toast("当前浏览器不支持 WebAudio 音频解码", "err");
+      return;
+    }
+    const ctx = new AudioCtx();
+    let added = 0;
+    try {
+      for (const f of files) {
+        if (state.pendingCloneClips.length >= 8) {
+          toast("单次最多添加 8 条参考样本", "err");
+          break;
+        }
+        try {
+          const arrBuf = await f.arrayBuffer();
+          const decoded = await ctx.decodeAudioData(arrBuf);
+          const conv = await resampleTo24kMonoWavB64(decoded);
+          if (conv.duration_s < 0.6) {
+            toast(`已跳过过短片段：${f.name} (${conv.duration_s}s)`, "err");
+            continue;
+          }
+          state.pendingCloneClips.push({
+            label: f.name,
+            duration_s: conv.duration_s,
+            wav_b64: conv.wav_b64,
+          });
+          if (!$("cloneNameInput").value.trim()) {
+            $("cloneNameInput").value = f.name.replace(/\.[^.]+$/, "").slice(0, 24);
+          }
+          added++;
+        } catch (err) {
+          toast(`无法解码 ${f.name}: ${err.message || err}`, "err");
+        }
+      }
+    } finally {
+      await ctx.close().catch(() => {});
+    }
+    renderCloneBar();
+    if (added > 0) {
+      toast(`已加入 ${added} 段样本，点击「提取并启用音色」即可克隆`, "ok");
+    }
+  }
+
+  const micRec = {
+    stream: null,
+    ctx: null,
+    proc: null,
+    gain: null,
+    chunks: [],
+    sr: 48000,
+    timerId: null,
+    startTs: 0,
+  };
+
+  async function stopMicRecording() {
+    if (!state.recording) return;
+    state.recording = false;
+    if (micRec.timerId) {
+      clearInterval(micRec.timerId);
+      micRec.timerId = null;
+    }
+    $("micRecBtn").classList.remove("recording");
+    $("micRecBtn").textContent = "● 麦克风录制";
+    $("micRecTimer").textContent = "";
+
+    try { if (micRec.proc) micRec.proc.disconnect(); } catch (_) {}
+    try { if (micRec.gain) micRec.gain.disconnect(); } catch (_) {}
+    try {
+      if (micRec.stream) micRec.stream.getTracks().forEach((t) => t.stop());
+    } catch (_) {}
+    const capturedSr = micRec.sr || 48000;
+    const chunks = micRec.chunks.slice();
+    micRec.chunks = [];
+    micRec.proc = null;
+    micRec.gain = null;
+    micRec.stream = null;
+    if (micRec.ctx) {
+      await micRec.ctx.close().catch(() => {});
+      micRec.ctx = null;
+    }
+
+    const totalLen = chunks.reduce((acc, c) => acc + c.length, 0);
+    if (totalLen < capturedSr * 0.7) {
+      toast("录制时间太短（需 >= 0.7 秒），请重新录制", "err");
+      return;
+    }
+    const merged = new Float32Array(totalLen);
+    let pos = 0;
+    for (const c of chunks) {
+      merged.set(c, pos);
+      pos += c.length;
+    }
+    try {
+      const conv = await resampleFloatTo24kMonoWavB64(merged, capturedSr);
+      if (state.pendingCloneClips.length >= 8) {
+        state.pendingCloneClips.shift();
+      }
+      state.pendingCloneClips.push({
+        label: `麦克风录音_${conv.duration_s.toFixed(1)}s`,
+        duration_s: conv.duration_s,
+        wav_b64: conv.wav_b64,
+      });
+      if (!$("cloneNameInput").value.trim()) {
+        $("cloneNameInput").value = "我的录音音色";
+      }
+      renderCloneBar();
+      toast(`录音完成（${conv.duration_s}s），请点击「提取并启用音色」`, "ok");
+    } catch (err) {
+      toast(`录音编码失败: ${err.message}`, "err");
+    }
+  }
+
+  async function toggleMicRecording() {
+    if (state.recording) {
+      await stopMicRecording();
+      return;
+    }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      toast("当前环境不支持麦克风访问（请用 localhost 打开工作台）", "err");
+      return;
+    }
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) {
+      toast("当前浏览器不支持 AudioContext", "err");
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const ctx = new AudioCtx();
+      const src = ctx.createMediaStreamSource(stream);
+      const proc = ctx.createScriptProcessor(4096, 1, 1);
+      const zeroGain = ctx.createGain();
+      zeroGain.gain.value = 0.0;
+
+      micRec.stream = stream;
+      micRec.ctx = ctx;
+      micRec.proc = proc;
+      micRec.gain = zeroGain;
+      micRec.chunks = [];
+      micRec.sr = ctx.sampleRate || 48000;
+      micRec.startTs = Date.now();
+
+      proc.onaudioprocess = (ev) => {
+        if (!state.recording) return;
+        micRec.chunks.push(new Float32Array(ev.inputBuffer.getChannelData(0)));
+      };
+      src.connect(proc);
+      proc.connect(zeroGain);
+      zeroGain.connect(ctx.destination);
+
+      state.recording = true;
+      $("micRecBtn").classList.add("recording");
+      $("micRecBtn").textContent = "■ 停止录制";
+      $("micRecTimer").textContent = "0.0s / 12s";
+      micRec.timerId = setInterval(() => {
+        const el = (Date.now() - micRec.startTs) / 1000.0;
+        $("micRecTimer").textContent = `${el.toFixed(1)}s / 12s`;
+        if (el >= 12.0) {
+          stopMicRecording();
+        }
+      }, 200);
+    } catch (err) {
+      toast(`无法启动麦克风: ${err.message || err}`, "err");
+    }
+  }
+
+  function activateCloneProfile(profileId, { silent = false } = {}) {
+    const prof = state.cloneProfiles.find((x) => x.profile_id === profileId);
+    if (!prof) return;
+    state.params = {
+      ...state.params,
+      preset_id: "female_std",
+      clone_profile_id: prof.profile_id,
+      pitch_shift_st: 0.0,
+      vtln_scale: 1.0,
+      speed: 1.0,
+      pitch_range: 1.0,
+      rd_offset: 0.0,
+      breathiness: 0.0,
+      tilt_db_per_oct: 0.0,
+      hoarseness: 0.0,
+      pause_scale: 1.0,
+      rules_enabled: { ...state.params.rules_enabled },
+    };
+    renderPresets();
+    renderCloneBar();
+    syncKnobsFromState();
+    if (!silent) {
+      toast(`已启用模仿音色：${prof.name}（${prof.voice_hint || ""}）`, "ok");
+    }
+  }
+
+  function deactivateCloneProfile() {
+    state.params.clone_profile_id = null;
+    renderPresets();
+    renderCloneBar();
+    toast("已退出样本模仿，恢复预设音色", "info");
+  }
+
+  async function extractCloneProfile() {
+    if (state.pendingCloneClips.length === 0) {
+      toast("请先上传音频样本或录制麦克风声音", "err");
+      return;
+    }
+    const name = ($("cloneNameInput").value || "").trim() || "自定义音色";
+    const btn = $("extractCloneBtn");
+    btn.disabled = true;
+    const oldTxt = btn.textContent;
+    btn.textContent = "提取特征中...";
+    try {
+      const res = await api("/api/clone/extract", "POST", {
+        name,
+        clips_b64: state.pendingCloneClips.map((c) => c.wav_b64),
+        save: true,
+      });
+      state.cloneProfiles = res.profiles || [];
+      state.pendingCloneClips = [];
+      $("cloneNameInput").value = "";
+      activateCloneProfile(res.profile.profile_id, { silent: true });
+      const kb = ((res.profile.size_bytes || 0) / 1024).toFixed(1);
+      toast(`已提取并启用音色「${res.profile.name}」(F0 ${res.profile.f0_median_hz} Hz, ${kb} KB)`, "ok");
+    } catch (err) {
+      toast(`样本提取失败: ${err.message}`, "err");
+    } finally {
+      btn.textContent = oldTxt;
+      renderCloneBar();
+    }
+  }
+
+  async function deleteCloneProfile(profileId) {
+    try {
+      const res = await api("/api/clone/delete", "POST", { profile_id: profileId });
+      state.cloneProfiles = res.profiles || [];
+      if (state.params.clone_profile_id === profileId) {
+        state.params.clone_profile_id = null;
+      }
+      renderPresets();
+      renderCloneBar();
+      toast("已删除音色档案", "info");
+    } catch (err) {
+      toast(`删除失败: ${err.message}`, "err");
+    }
+  }
+
+  function renderCloneBar() {
+    const pendBox = $("pendingClipsBox");
+    pendBox.innerHTML = "";
+    if (state.pendingCloneClips.length > 0) {
+      pendBox.style.display = "flex";
+      const lbl = document.createElement("span");
+      lbl.style.color = "var(--muted)";
+      lbl.style.fontSize = "12px";
+      lbl.textContent = `待提取样本 (${state.pendingCloneClips.length})：`;
+      pendBox.appendChild(lbl);
+      state.pendingCloneClips.forEach((c, idx) => {
+        const chip = document.createElement("span");
+        chip.className = "pending-chip";
+        const txt = document.createElement("span");
+        txt.textContent = `${c.label} (${c.duration_s}s)`;
+        const rm = document.createElement("button");
+        rm.type = "button";
+        rm.textContent = "×";
+        rm.title = "移除此样本";
+        rm.onclick = () => {
+          state.pendingCloneClips.splice(idx, 1);
+          renderCloneBar();
+        };
+        chip.appendChild(txt);
+        chip.appendChild(rm);
+        pendBox.appendChild(chip);
+      });
+    } else {
+      pendBox.style.display = "none";
+    }
+
+    const profBox = $("cloneProfilesBox");
+    profBox.innerHTML = "";
+    const pLbl = document.createElement("span");
+    pLbl.className = "preset-group-label";
+    pLbl.textContent = "已提取音色";
+    profBox.appendChild(pLbl);
+    if (state.cloneProfiles.length === 0) {
+      const hint = document.createElement("span");
+      hint.style.color = "var(--muted)";
+      hint.style.fontSize = "12px";
+      hint.textContent = "暂无已保存样本音色（上传或录制 1-10 秒声音即可提取 < 6 KB 纯物理档案）";
+      profBox.appendChild(hint);
+    } else {
+      for (const p of state.cloneProfiles) {
+        const active = state.params.clone_profile_id === p.profile_id;
+        const wrap = document.createElement("div");
+        wrap.className = `clone-pill-wrap ${active ? "active" : ""}`;
+        wrap.title = `${p.voice_hint || ""} | 样本 ${p.n_clips} 段 (${p.total_voiced_s}s 有效人声) | 体积 ${((p.size_bytes || 0) / 1024).toFixed(1)} KB`;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "clone-pill-btn";
+        btn.textContent = `${p.name} · ${Math.round(p.f0_median_hz || 0)}Hz`;
+        btn.onclick = () => activateCloneProfile(p.profile_id);
+
+        const del = document.createElement("button");
+        del.type = "button";
+        del.className = "clone-del-btn";
+        del.textContent = "×";
+        del.title = "删除该音色档案";
+        del.onclick = (ev) => {
+          ev.stopPropagation();
+          deleteCloneProfile(p.profile_id);
+        };
+
+        wrap.appendChild(btn);
+        wrap.appendChild(del);
+        profBox.appendChild(wrap);
+      }
+    }
+
+    const tuningBox = $("cloneTuningBox");
+    if (state.params.clone_profile_id) {
+      tuningBox.style.display = "flex";
+      const pct = Math.round((state.params.imitation_strength ?? 0.85) * 100);
+      $("cloneStrengthSlider").value = pct;
+      $("cloneStrengthVal").textContent = `${pct}%`;
+      $("cloneF0Chk").checked = state.params.clone_f0 !== false;
+      $("cloneRateChk").checked = Boolean(state.params.clone_rate);
+    } else {
+      tuningBox.style.display = "none";
+    }
+
+    $("extractCloneBtn").disabled = !state.ready || state.busy || state.pendingCloneClips.length === 0;
+  }
+
+  function renderKnobs() {
+    const grid = $("knobsGrid");
+    grid.innerHTML = "";
+    for (const k of state.knobs) {
+      const card = document.createElement("div");
+      card.className = "knob-card";
+      card.title = k.tooltip || "";
+
+      const top = document.createElement("div");
+      top.className = "knob-top";
+      const nameEl = document.createElement("span");
+      nameEl.className = "knob-name";
+      nameEl.textContent = k.label;
+      const valEl = document.createElement("span");
+      valEl.className = "knob-val";
+      valEl.id = `val_${k.key}`;
+      top.appendChild(nameEl);
+      top.appendChild(valEl);
+
+      const slider = document.createElement("input");
+      slider.type = "range";
+      slider.id = `knob_${k.key}`;
+      slider.min = k.min;
+      slider.max = k.max;
+      slider.step = k.step;
+      slider.value = state.params[k.key] ?? k.default;
+      slider.oninput = () => {
+        const num = parseFloat(slider.value);
+        state.params[k.key] = num;
+        updateKnobReadout(k, num);
+      };
+
+      card.appendChild(top);
+      card.appendChild(slider);
+      grid.appendChild(card);
+      updateKnobReadout(k, parseFloat(slider.value));
+    }
+
+    const rulesRow = $("rulesRow");
+    rulesRow.innerHTML = `<span style="color:var(--muted); font-weight:600;">Arbiter 规则：</span>`;
+    for (const r of state.rules) {
+      const lbl = document.createElement("label");
+      lbl.className = "chk-label";
+      lbl.title = r.desc || "";
+      const chk = document.createElement("input");
+      chk.type = "checkbox";
+      chk.id = `rule_${r.id}`;
+      chk.checked = state.params.rules_enabled[r.id] !== false;
+      chk.onchange = () => { state.params.rules_enabled[r.id] = chk.checked; };
+      lbl.appendChild(chk);
+      lbl.appendChild(document.createTextNode(r.label));
+      rulesRow.appendChild(lbl);
+    }
+  }
+
+  function updateKnobReadout(k, val) {
+    const el = $(`val_${k.key}`);
+    if (!el) return;
+    const dec = String(k.step).includes(".") ? String(k.step).split(".")[1].length : 0;
+    const prefix = (k.key === "pitch_shift_st" || k.key === "tilt_db_per_oct" || k.key === "rd_offset" || k.key === "breathiness") && val > 0 ? "+" : "";
+    el.textContent = `${prefix}${val.toFixed(dec)} ${k.unit || ""}`.trim();
+  }
+
+  function syncKnobsFromState() {
+    for (const k of state.knobs) {
+      const sl = $(`knob_${k.key}`);
+      const v = state.params[k.key] ?? k.default;
+      if (sl) sl.value = v;
+      updateKnobReadout(k, Number(v));
+    }
+    for (const k of state.synthKnobs) {
+      const sl = $(`knob_${k.key}`);
+      const v = state.params[k.key] ?? k.default;
+      if (sl) sl.value = v;
+      updateKnobReadout(k, Number(v));
+    }
+    $("knob_emotion_intensity").value = state.params.emotion_intensity ?? 0.75;
+    $("val_emotion_intensity").textContent = Number(state.params.emotion_intensity ?? 0.75).toFixed(2);
+    $("knob_stability").value = state.params.stability ?? 0.55;
+    $("val_stability").textContent = Number(state.params.stability ?? 0.55).toFixed(2);
+    $("autoBreathChk").checked = state.params.auto_breath !== false;
+    $("glottalModeSelect").value = state.params.glottal_mode;
+    $("crosslingModeSelect").value = state.params.crossling_mode;
+    $("seedInput").value = state.params.seed;
+    for (const r of state.rules) {
+      const chk = $(`rule_${r.id}`);
+      if (chk) chk.checked = state.params.rules_enabled[r.id] !== false;
+    }
+    renderSynthSvg();
+  }
+
+  function renderEmotionsAndTags() {
+    const eBox = $("emotionPillsBox");
+    if (eBox && state.emotions.length > 0) {
+      eBox.innerHTML = "";
+      for (const em of state.emotions) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `preset-pill ${state.params.emotion_mode === em.id ? "active" : ""}`;
+        btn.textContent = em.label;
+        btn.title = em.desc || "";
+        btn.onclick = () => {
+          state.params.emotion_mode = em.id;
+          renderEmotionsAndTags();
+        };
+        eBox.appendChild(btn);
+      }
+    }
+    const tBox = $("inlineTagChips");
+    if (tBox && state.inlineTags.length > 0 && tBox.children.length === 0) {
+      const lbl = document.createElement("span");
+      lbl.style.color = "var(--muted)";
+      lbl.style.fontSize = "11px";
+      lbl.textContent = "演技标注：";
+      tBox.appendChild(lbl);
+      for (const tc of state.inlineTags) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "tag-chip";
+        btn.textContent = `${tc.tag}`;
+        btn.title = tc.desc || "";
+        btn.onclick = () => insertTextAtCursor(tc.tag);
+        tBox.appendChild(btn);
+      }
+    }
+  }
+
+  function insertTextAtCursor(snippet) {
+    const ta = $("inputText");
+    const st = ta.selectionStart ?? ta.value.length;
+    const en = ta.selectionEnd ?? ta.value.length;
+    const before = ta.value.slice(0, st);
+    const after = ta.value.slice(en);
+    const padL = before && !before.endsWith(" ") && !before.endsWith("\n") ? " " : "";
+    const padR = after && !after.startsWith(" ") ? " " : "";
+    ta.value = before + padL + snippet + padR + after;
+    const newPos = (before + padL + snippet + padR).length;
+    ta.focus();
+    ta.setSelectionRange(newPos, newPos);
+    if ($("autoSplitChk").checked) doSplit();
+  }
+
+  function renderSynthUI() {
+    const pBox = $("timbrePatchesBox");
+    if (pBox) {
+      pBox.innerHTML = "";
+      for (const pat of state.timbrePatches) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `preset-pill ${state.params.timbre_patch === pat.id ? "active" : ""}`;
+        btn.textContent = pat.name;
+        btn.title = pat.desc || "";
+        btn.onclick = () => applyTimbrePatch(pat.id);
+        pBox.appendChild(btn);
+      }
+    }
+    const gBox = $("synthKnobsGrid");
+    if (gBox && gBox.children.length === 0 && state.synthKnobs.length > 0) {
+      for (const k of state.synthKnobs) {
+        const card = document.createElement("div");
+        card.className = "knob-card";
+        card.title = k.tooltip || "";
+        const top = document.createElement("div");
+        top.className = "knob-top";
+        const nm = document.createElement("span");
+        nm.className = "knob-name";
+        nm.textContent = k.label;
+        const vl = document.createElement("span");
+        vl.className = "knob-val";
+        vl.id = `val_${k.key}`;
+        top.appendChild(nm);
+        top.appendChild(vl);
+        const sl = document.createElement("input");
+        sl.type = "range";
+        sl.id = `knob_${k.key}`;
+        sl.min = k.min;
+        sl.max = k.max;
+        sl.step = k.step;
+        sl.value = state.params[k.key] ?? k.default;
+        sl.oninput = () => {
+          const num = parseFloat(sl.value);
+          state.params[k.key] = num;
+          updateKnobReadout(k, num);
+          renderSynthSvg();
+        };
+        card.appendChild(top);
+        card.appendChild(sl);
+        gBox.appendChild(card);
+        updateKnobReadout(k, parseFloat(sl.value));
+      }
+    }
+    renderSynthSvg();
+  }
+
+  function applyTimbrePatch(patchId) {
+    const pat = state.timbrePatches.find((x) => x.id === patchId);
+    if (!pat) return;
+    state.params = {
+      ...state.params,
+      ...pat.params,
+      timbre_patch: pat.id,
+    };
+    renderSynthUI();
+    syncKnobsFromState();
+    toast(`已加载合成器音色卡：${pat.name}`, "ok");
+  }
+
+  function evalSynthEqCurveDb(freqHz) {
+    const p = state.params;
+    let eq = 0.0;
+    eq += (p.chest_db || 0) / (1 + Math.pow((freqHz - 240) / 140, 2));
+    eq += (p.warmth_db || 0) / (1 + Math.pow((freqHz - 700) / 280, 2));
+    const tw = p.nasal_twang_db || 0;
+    eq += tw / (1 + Math.pow((freqHz - 1650) / 420, 2));
+    if (tw > 0.5) eq -= (0.28 * tw) / (1 + Math.pow((freqHz - 950) / 210, 2));
+    eq += (p.presence_db || 0) / (1 + Math.pow((freqHz - 3300) / 720, 2));
+    eq += (p.air_db || 0) * 0.5 * (1 + Math.tanh((freqHz - 6200) / 1600));
+    eq += 2.4 * (p.exciter_drive || 0) / (1 + Math.pow((freqHz - 3900) / 1350, 2));
+    const bp = p.bandpass_vintage || 0;
+    if (bp > 0.001) {
+      const lo = 0.5 * (1 - Math.tanh((freqHz - 360) / 120));
+      const hi = 0.5 * (1 + Math.tanh((freqHz - 3500) / 650));
+      const mid = 2.6 / (1 + Math.pow((freqHz - 1350) / 550, 2));
+      eq += bp * (-16 * lo - 22 * hi + mid);
+    }
+    return Math.max(-18, Math.min(12, eq));
+  }
+
+  function renderSynthSvg() {
+    const svg = $("synthEqSvg");
+    if (!svg) return;
+    const W = 420, H = 118, padX = 10, padY = 12;
+    const dbToY = (db) => padY + ((12 - Math.max(-18, Math.min(12, db))) / 30) * (H - 2 * padY);
+    const fMin = Math.log10(100), fMax = Math.log10(10000);
+    const fToX = (f) => padX + ((Math.log10(Math.max(100, Math.min(10000, f))) - fMin) / (fMax - fMin)) * (W - 2 * padX);
+
+    let html = "";
+    for (const db of [-12, -6, 0, 6]) {
+      const y = dbToY(db).toFixed(1);
+      html += `<line x1="${padX}" y1="${y}" x2="${W - padX}" y2="${y}" stroke="${db === 0 ? "#334155" : "#1e293b"}" stroke-width="1" stroke-dasharray="${db === 0 ? "" : "3,3"}"/>`;
+    }
+    for (const [f, lbl] of [[240, "240"], [700, "700"], [1650, "1.6k"], [3300, "3.3k"], [6500, "6.5k"]]) {
+      const x = fToX(f).toFixed(1);
+      html += `<line x1="${x}" y1="${padY}" x2="${x}" y2="${H - padY}" stroke="#1e293b" stroke-width="1"/>`;
+      html += `<text x="${x}" y="${H - 2}" fill="#64748b" font-size="9" text-anchor="middle">${lbl}</text>`;
+    }
+
+    // Optional measured envelope preview from last generated clip
+    const prev = state.lastSpectralPreview;
+    if (prev && Array.isArray(prev.curve_hz) && Array.isArray(prev.curve_db) && prev.curve_hz.length === prev.curve_db.length) {
+      const pts = prev.curve_hz.map((f, idx) => `${fToX(f).toFixed(1)},${dbToY(prev.curve_db[idx] * 0.45).toFixed(1)}`).join(" ");
+      html += `<polyline fill="none" stroke="rgba(34,197,94,0.45)" stroke-width="1.5" points="${pts}"/>`;
+      if (Array.isArray(prev.formants_hz)) {
+        prev.formants_hz.slice(0, 3).forEach((fz, fi) => {
+          const fx = fToX(fz).toFixed(1);
+          html += `<circle cx="${fx}" cy="${padY + 6}" r="2.5" fill="#38bdf8"/>`;
+          html += `<text x="${fx}" y="${padY + 17}" fill="#7dd3fc" font-size="8" text-anchor="middle">F${fi + 1}:${Math.round(fz)}</text>`;
+        });
+      }
+    }
+
+    // Live interactive EQ curve
+    const eqPts = [];
+    for (let i = 0; i <= 60; i++) {
+      const lf = fMin + (i / 60) * (fMax - fMin);
+      const f = Math.pow(10, lf);
+      eqPts.push(`${fToX(f).toFixed(1)},${dbToY(evalSynthEqCurveDb(f)).toFixed(1)}`);
+    }
+    html += `<polyline fill="none" stroke="#60a5fa" stroke-width="2.2" points="${eqPts.join(" ")}"/>`;
+    svg.innerHTML = html;
+
+    const stEl = $("synthSpectrumStats");
+    if (stEl) {
+      if (prev && Array.isArray(prev.formants_hz) && prev.formants_hz.length > 0) {
+        const fmts = prev.formants_hz.slice(0, 3).map((x, idx) => `F${idx + 1}=${Math.round(x)}Hz`).join(" ");
+        stEl.innerHTML = `<span>蓝线: 合成器 EQ 曲线 | 绿线: 实测声道包络</span><span>${fmts} | Tilt ${Number(prev.tilt_db_oct || 0).toFixed(1)} dB/oct</span>`;
+      } else {
+        stEl.innerHTML = `<span>蓝线: 实时 EQ / 共振峰雕刻曲线</span><span>合成任意语句后显示实测 LSF-22 F1/F2/F3</span>`;
+      }
+    }
+  }
+
+  function renderQueue() {
+    const list = $("queueList");
+    $("queueCount").textContent = state.segments.length;
+    list.innerHTML = "";
+    if (state.segments.length === 0) {
+      list.innerHTML = `<div style="color:var(--muted); text-align:center; padding:14px;">暂无待合成片段，请在上方输入文本。</div>`;
+      return;
+    }
+    state.segments.forEach((seg, idx) => {
+      const row = document.createElement("div");
+      row.className = "queue-item";
+
+      const num = document.createElement("span");
+      num.className = "queue-idx";
+      num.textContent = `#${idx + 1}`;
+
+      const [cls, ltxt] = langClass(seg.lang_tag || inferLangTag(seg.text));
+      const lpill = document.createElement("span");
+      lpill.className = `lang-pill ${cls}`;
+      lpill.textContent = ltxt;
+
+      const inp = document.createElement("input");
+      inp.type = "text";
+      inp.className = "queue-text";
+      inp.value = seg.text;
+      inp.oninput = () => {
+        seg.text = inp.value;
+        seg.lang_tag = inferLangTag(seg.text);
+        const [nc, nt] = langClass(seg.lang_tag);
+        lpill.className = `lang-pill ${nc}`;
+        lpill.textContent = nt;
+      };
+
+      const genBtn = document.createElement("button");
+      genBtn.type = "button";
+      genBtn.className = "btn sm primary";
+      genBtn.textContent = "▶ 生成";
+      genBtn.disabled = !state.ready || state.busy;
+      genBtn.onclick = () => synthesizeSingle(seg.text);
+
+      const delBtn = document.createElement("button");
+      delBtn.type = "button";
+      delBtn.className = "btn sm";
+      delBtn.textContent = "×";
+      delBtn.title = "移除此条";
+      delBtn.onclick = () => {
+        state.segments.splice(idx, 1);
+        renderQueue();
+      };
+
+      row.appendChild(num);
+      row.appendChild(lpill);
+      row.appendChild(inp);
+      row.appendChild(genBtn);
+      row.appendChild(delBtn);
+      list.appendChild(row);
+    });
+  }
+
+  function updateSelectionBadge() {
+    const total = state.clips.length;
+    const sel = state.clips.filter((c) => c.selected).length;
+    $("selectionBadge").textContent = `已选 ${sel} / ${total} 条`;
+  }
+
+  function renderClips() {
+    const list = $("resultsList");
+    updateSelectionBadge();
+    if (state.clips.length === 0) {
+      list.innerHTML = `<div class="empty-state">左侧切分好文本后，点击 <b>「⚡ 全部生成」</b> 或单句 <b>「▶」</b>。<br/>生成后的音频可在此逐条试听、勾选是否保存，或用当前旋钮一键重新生成。</div>`;
+      return;
+    }
+    list.innerHTML = "";
+    state.clips.forEach((item, idx) => {
+      const c = item.clip;
+      const card = document.createElement("div");
+      card.className = `clip-card ${item.selected ? "selected" : ""} ${item.generating ? "generating" : ""}`;
+
+      const top = document.createElement("div");
+      top.className = "clip-top";
+
+      const chk = document.createElement("input");
+      chk.type = "checkbox";
+      chk.className = "clip-chk";
+      chk.checked = item.selected;
+      chk.title = "勾选以参与批量保存或重生成";
+      chk.onchange = () => {
+        item.selected = chk.checked;
+        card.classList.toggle("selected", item.selected);
+        updateSelectionBadge();
+      };
+
+      const txt = document.createElement("div");
+      txt.className = "clip-text";
+      txt.textContent = `${idx + 1}. ${c.text}`;
+
+      top.appendChild(chk);
+      top.appendChild(txt);
+
+      const meta = document.createElement("div");
+      meta.className = "clip-meta";
+      const [cls, ltxt] = langClass(c.lang_tag);
+      const emoBadge = Array.isArray(c.detected_emotions) && c.detected_emotions.length
+        ? `<span class="meta-tag emo">🎭 ${escapeHtml(c.detected_emotions.join("→"))}</span>` : "";
+      const fmtList = c.spectral_preview && Array.isArray(c.spectral_preview.formants_hz) ? c.spectral_preview.formants_hz : [];
+      const fmtBadge = fmtList.length >= 2
+        ? `<span class="meta-tag fmt">F1/F2 ${Math.round(fmtList[0])}/${Math.round(fmtList[1])}Hz</span>` : "";
+      meta.innerHTML = `
+        <span class="lang-pill ${cls}">${ltxt}</span>
+        <span class="meta-tag">${escapeHtml(c.preset_name)}</span>
+        ${emoBadge}
+        ${fmtBadge}
+        <span class="meta-tag">${c.duration_s.toFixed(2)}s</span>
+        <span class="meta-tag">F0 ${c.f0_median_hz.toFixed(0)} Hz</span>
+        <span class="meta-tag">RTF ${c.rtf.toFixed(3)}</span>
+        <span class="meta-tag">v${c.version} · seed ${c.params.seed}</span>
+      `;
+      if (c.saved_path) {
+        const sp = document.createElement("span");
+        sp.className = "meta-tag saved";
+        const fname = c.saved_path.split(/[/\\]/).pop();
+        sp.textContent = `已保存: ${fname}`;
+        sp.title = c.saved_path;
+        meta.appendChild(sp);
+      }
+
+      const bottom = document.createElement("div");
+      bottom.className = "clip-bottom";
+
+      const audio = document.createElement("audio");
+      audio.controls = true;
+      audio.preload = "metadata";
+      audio.src = c.audio_url;
+
+      const regenBtn = document.createElement("button");
+      regenBtn.type = "button";
+      regenBtn.className = "btn sm warn";
+      regenBtn.textContent = "🔄 重新生成";
+      regenBtn.title = "用当前预设与旋钮重新合成这一句";
+      regenBtn.disabled = !state.ready || state.busy;
+      regenBtn.onclick = () => regenerateClip(item);
+
+      const saveBtn = document.createElement("button");
+      saveBtn.type = "button";
+      saveBtn.className = "btn sm success";
+      saveBtn.textContent = "💾 保存";
+      saveBtn.disabled = state.busy;
+      saveBtn.onclick = () => saveClipIds([c.clip_id], false);
+
+      const delBtn = document.createElement("button");
+      delBtn.type = "button";
+      delBtn.className = "btn sm";
+      delBtn.textContent = "✖";
+      delBtn.title = "删除该结果";
+      delBtn.onclick = async () => {
+        await api("/api/delete_clip", "POST", { clip_id: c.clip_id }).catch(() => {});
+        state.clips.splice(idx, 1);
+        renderClips();
+      };
+
+      bottom.appendChild(audio);
+      bottom.appendChild(regenBtn);
+      bottom.appendChild(saveBtn);
+      bottom.appendChild(delBtn);
+
+      card.appendChild(top);
+      card.appendChild(meta);
+      card.appendChild(bottom);
+      list.appendChild(card);
+    });
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (ch) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
+    }[ch]));
+  }
+
+  function setBusy(flag, hint = "") {
+    state.busy = flag;
+    $("progressHint").textContent = hint;
+    $("synthAllBtn").disabled = !state.ready || flag;
+    $("regenAllBtn").disabled = !state.ready || flag;
+    $("regenSelectedBtn").disabled = !state.ready || flag;
+    $("extractCloneBtn").disabled = !state.ready || flag || state.pendingCloneClips.length === 0;
+    renderQueue();
+    renderClips();
+  }
+
+  function currentParams({ bumpSeed = false } = {}) {
+    if (bumpSeed) {
+      state.params.seed = Math.floor(Math.random() * 900000) + 100;
+      $("seedInput").value = state.params.seed;
+    }
+    return {
+      ...state.params,
+      rules_enabled: { ...state.params.rules_enabled },
+    };
+  }
+
+  async function doSplit() {
+    const text = $("inputText").value;
+    $("charCount").textContent = `${text.length} 字`;
+    if (!text.trim()) {
+      state.segments = [];
+      renderQueue();
+      return;
+    }
+    try {
+      const res = await api("/api/split", "POST", {
+        text,
+        mode: state.splitMode,
+        max_chars: parseInt($("maxCharsInput").value || "80", 10) || 0,
+      });
+      state.segments = res.segments || [];
+      renderQueue();
+    } catch (err) {
+      toast(`切分失败: ${err.message}`, "err");
+    }
+  }
+
+  async function synthesizeSingle(text) {
+    const clean = (text || "").trim();
+    if (!clean) return;
+    setBusy(true, "正在合成...");
+    try {
+      const res = await api("/api/synthesize", "POST", {
+        text: clean,
+        params: currentParams(),
+      });
+      if (res.clip && res.clip.spectral_preview) {
+        state.lastSpectralPreview = res.clip.spectral_preview;
+        renderSynthSvg();
+      }
+      state.clips.push({ clip: res.clip, selected: true, generating: false });
+      toast(`已生成：${clean.slice(0, 20)}`, "ok");
+    } catch (err) {
+      toast(`合成失败: ${err.message}`, "err");
+    } finally {
+      setBusy(false, "");
+    }
+  }
+
+  async function synthesizeAll({ regenerateExisting = false } = {}) {
+    const bump = $("regenBumpSeedChk").checked;
+    const validSegs = state.segments.filter((s) => (s.text || "").trim());
+    if (regenerateExisting && state.clips.length > 0 && validSegs.length === 0) {
+      return regenerateClipItems(state.clips);
+    }
+    if (validSegs.length === 0) {
+      toast("请先输入或切分出至少一条文本", "err");
+      return;
+    }
+
+    if (regenerateExisting) {
+      await api("/api/delete_clip", "POST", { clear_all: true }).catch(() => {});
+      state.clips = [];
+    }
+
+    setBusy(true, `0 / ${validSegs.length}`);
+    let okCount = 0;
+    try {
+      const p = currentParams({ bumpSeed: regenerateExisting && bump });
+      for (let i = 0; i < validSegs.length; i++) {
+        $("progressHint").textContent = `合成中 ${i + 1} / ${validSegs.length}...`;
+        const res = await api("/api/synthesize", "POST", {
+          text: validSegs[i].text.trim(),
+          params: p,
+        });
+        if (res.clip && res.clip.spectral_preview) {
+          state.lastSpectralPreview = res.clip.spectral_preview;
+          renderSynthSvg();
+        }
+        state.clips.push({ clip: res.clip, selected: true, generating: false });
+        okCount++;
+        renderClips();
+      }
+      toast(`已完成 ${okCount} 条语音合成`, "ok");
+    } catch (err) {
+      toast(`批量合成中断: ${err.message}`, "err");
+    } finally {
+      setBusy(false, "");
+    }
+  }
+
+  async function regenerateClip(item) {
+    return regenerateClipItems([item]);
+  }
+
+  async function regenerateClipItems(items) {
+    if (!items || items.length === 0) {
+      toast("请先勾选至少一条需要重新生成的音频", "err");
+      return;
+    }
+    const bump = $("regenBumpSeedChk").checked;
+    setBusy(true, `重生成 0 / ${items.length}`);
+    try {
+      const p = currentParams({ bumpSeed: bump });
+      for (let i = 0; i < items.length; i++) {
+        const it = items[i];
+        it.generating = true;
+        renderClips();
+        $("progressHint").textContent = `重生成 ${i + 1} / ${items.length}...`;
+        const res = await api("/api/synthesize", "POST", {
+          text: it.clip.text,
+          params: p,
+          clip_id: it.clip.clip_id,
+        });
+        if (res.clip && res.clip.spectral_preview) {
+          state.lastSpectralPreview = res.clip.spectral_preview;
+          renderSynthSvg();
+        }
+        it.clip = res.clip;
+        it.generating = false;
+      }
+      toast(`已用当前旋钮重新生成 ${items.length} 条音频`, "ok");
+    } catch (err) {
+      items.forEach((it) => { it.generating = false; });
+      toast(`重新生成失败: ${err.message}`, "err");
+    } finally {
+      setBusy(false, "");
+    }
+  }
+
+  async function saveClipIds(clipIds, merge) {
+    if (!clipIds || clipIds.length === 0) {
+      toast("请先勾选要保存的音频", "err");
+      return;
+    }
+    const saveDir = $("saveDirInput").value.trim();
+    if (!saveDir) {
+      toast("请先选择或填写保存文件夹", "err");
+      return;
+    }
+    try {
+      const res = await api("/api/save", "POST", {
+        clip_ids: clipIds,
+        save_dir: saveDir,
+        merge: Boolean(merge),
+        merge_gap_ms: parseFloat($("mergeGapInput").value || "280") || 0,
+      });
+      if (merge && res.merged_path) {
+        toast(`已合并保存整段音频: ${res.merged_path}`, "ok");
+      } else {
+        for (const sf of res.saved_files || []) {
+          const hit = state.clips.find((x) => x.clip.clip_id === sf.clip_id);
+          if (hit) hit.clip.saved_path = sf.path;
+        }
+        renderClips();
+        toast(`已保存 ${res.saved_files.length} 个 WAV 到 ${res.save_dir}`, "ok");
+      }
+    } catch (err) {
+      toast(`保存失败: ${err.message}`, "err");
+    }
+  }
+
+  async function pollStatus() {
+    try {
+      const st = await api("/api/status");
+      if (!$("saveDirInput").value && st.default_save_dir) {
+        $("saveDirInput").value = st.default_save_dir;
+      }
+      if (state.presets.length === 0 && st.presets) {
+        state.presets = st.presets;
+        state.knobs = st.knobs || [];
+        state.synthKnobs = st.synth_knobs || [];
+        state.timbrePatches = st.timbre_patches || [];
+        state.emotions = st.emotions || [];
+        state.inlineTags = st.inline_tags || [];
+        state.rules = st.rules || [];
+        renderPresets();
+        renderEmotionsAndTags();
+        renderKnobs();
+        renderSynthUI();
+        syncKnobsFromState();
+      }
+      if (Array.isArray(st.clone_profiles)) {
+        state.cloneProfiles = st.clone_profiles;
+        renderCloneBar();
+      }
+      const badge = $("engineBadge");
+      if (st.ready) {
+        state.ready = true;
+        badge.className = "badge ok";
+        badge.textContent = st.engine_stage === "stage8"
+          ? "电子声带 Stage 8 (合成器+情绪) 就绪"
+          : (st.engine_stage === "stage7" ? "电子声带 Stage 7 就绪" : (st.engine_stage === "stage5" ? "电子声带 Stage 5 就绪" : "电子声带 Stage 4 就绪"));
+        $("synthAllBtn").disabled = state.busy;
+        $("regenAllBtn").disabled = state.busy;
+        $("regenSelectedBtn").disabled = state.busy;
+        $("extractCloneBtn").disabled = state.busy || state.pendingCloneClips.length === 0;
+        renderQueue();
+        renderClips();
+        return;
+      }
+      if (st.loading_error) {
+        badge.className = "badge err";
+        badge.textContent = `加载失败: ${st.loading_error}`;
+        return;
+      }
+      badge.className = "badge warn";
+      badge.textContent = "正在加载 Stage 7 声学知识库...";
+      setTimeout(pollStatus, 450);
+    } catch (err) {
+      setTimeout(pollStatus, 800);
+    }
+  }
+
+  function wireEvents() {
+    let splitTimer = null;
+    $("inputText").addEventListener("input", () => {
+      $("charCount").textContent = `${$("inputText").value.length} 字`;
+      if ($("autoSplitChk").checked) {
+        clearTimeout(splitTimer);
+        splitTimer = setTimeout(doSplit, 220);
+      }
+    });
+
+    $("emoSampleBtn").onclick = () => {
+      $("inputText").value = EMO_SAMPLE_TEXT;
+      doSplit();
+    };
+    $("sampleBtn").onclick = () => {
+      $("inputText").value = SAMPLE_TEXT;
+      doSplit();
+    };
+    $("knob_emotion_intensity").oninput = (e) => {
+      const v = parseFloat(e.target.value || "0.75");
+      state.params.emotion_intensity = v;
+      $("val_emotion_intensity").textContent = v.toFixed(2);
+    };
+    $("knob_stability").oninput = (e) => {
+      const v = parseFloat(e.target.value || "0.55");
+      state.params.stability = v;
+      $("val_stability").textContent = v.toFixed(2);
+    };
+    $("autoBreathChk").onchange = (e) => {
+      state.params.auto_breath = Boolean(e.target.checked);
+    };
+    $("resetSynthBtn").onclick = () => applyTimbrePatch("neutral");
+    $("clearTextBtn").onclick = () => {
+      $("inputText").value = "";
+      doSplit();
+    };
+    $("doSplitBtn").onclick = doSplit;
+    $("maxCharsInput").onchange = () => { if ($("autoSplitChk").checked) doSplit(); };
+
+    document.querySelectorAll("#splitModeTabs .seg-tab").forEach((btn) => {
+      btn.onclick = () => {
+        document.querySelectorAll("#splitModeTabs .seg-tab").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.splitMode = btn.dataset.mode;
+        doSplit();
+      };
+    });
+
+    $("addRowBtn").onclick = () => {
+      state.segments.push({ index: state.segments.length + 1, text: "", lang_tag: "zh" });
+      renderQueue();
+    };
+
+    $("synthAllBtn").onclick = () => synthesizeAll({ regenerateExisting: false });
+    $("regenAllBtn").onclick = () => synthesizeAll({ regenerateExisting: true });
+    $("resetPresetBtn").onclick = () => {
+      if (state.params.clone_profile_id) {
+        state.params = {
+          ...state.params,
+          pitch_shift_st: 0.0,
+          vtln_scale: 1.0,
+          speed: 1.0,
+          pitch_range: 1.0,
+          rd_offset: 0.0,
+          breathiness: 0.0,
+          tilt_db_per_oct: 0.0,
+          hoarseness: 0.0,
+          pause_scale: 1.0,
+          imitation_strength: 0.85,
+          clone_f0: true,
+          clone_rate: false,
+        };
+        syncKnobsFromState();
+        renderCloneBar();
+        toast("已重置模仿微调旋钮", "ok");
+      } else {
+        applyPreset(state.params.preset_id);
+      }
+    };
+
+    $("pickCloneFileBtn").onclick = () => $("cloneFileInput").click();
+    $("cloneFileInput").onchange = (e) => {
+      addCloneFiles(e.target.files);
+      e.target.value = "";
+    };
+    const dropZone = $("cloneDropZone");
+    dropZone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZone.classList.add("dragover");
+    });
+    dropZone.addEventListener("dragleave", () => {
+      dropZone.classList.remove("dragover");
+    });
+    dropZone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      dropZone.classList.remove("dragover");
+      if (e.dataTransfer && e.dataTransfer.files) {
+        addCloneFiles(e.dataTransfer.files);
+      }
+    });
+    $("micRecBtn").onclick = toggleMicRecording;
+    $("extractCloneBtn").onclick = extractCloneProfile;
+    $("exitCloneBtn").onclick = deactivateCloneProfile;
+    $("cloneStrengthSlider").oninput = (e) => {
+      const pct = parseInt(e.target.value || "85", 10);
+      state.params.imitation_strength = Math.max(0.0, Math.min(1.0, pct / 100.0));
+      $("cloneStrengthVal").textContent = `${pct}%`;
+    };
+    $("cloneF0Chk").onchange = (e) => { state.params.clone_f0 = Boolean(e.target.checked); };
+    $("cloneRateChk").onchange = (e) => { state.params.clone_rate = Boolean(e.target.checked); };
+
+    $("glottalModeSelect").onchange = (e) => { state.params.glottal_mode = e.target.value; };
+    $("crosslingModeSelect").onchange = (e) => { state.params.crossling_mode = e.target.value; };
+    $("seedInput").onchange = (e) => { state.params.seed = Math.max(0, parseInt(e.target.value || "123", 10) || 0); };
+    $("randSeedBtn").onclick = () => {
+      state.params.seed = Math.floor(Math.random() * 900000) + 100;
+      $("seedInput").value = state.params.seed;
+    };
+
+    $("pickFolderBtn").onclick = async () => {
+      try {
+        const res = await api("/api/pick_folder", "POST", { initial_dir: $("saveDirInput").value.trim() });
+        if (!res.cancelled && res.path) {
+          $("saveDirInput").value = res.path;
+          toast(`已选择目录: ${res.path}`, "ok");
+        }
+      } catch (err) {
+        toast(`打开目录选择框失败: ${err.message}`, "err");
+      }
+    };
+
+    $("openFolderBtn").onclick = async () => {
+      try {
+        await api("/api/open_folder", "POST", { save_dir: $("saveDirInput").value.trim() });
+      } catch (err) {
+        toast(`打开目录失败: ${err.message}`, "err");
+      }
+    };
+
+    $("selectAllBtn").onclick = () => {
+      state.clips.forEach((c) => { c.selected = true; });
+      renderClips();
+    };
+    $("invertSelBtn").onclick = () => {
+      state.clips.forEach((c) => { c.selected = !c.selected; });
+      renderClips();
+    };
+    $("saveSelectedBtn").onclick = () => {
+      const ids = state.clips.filter((c) => c.selected).map((c) => c.clip.clip_id);
+      saveClipIds(ids, false);
+    };
+    $("mergeSaveBtn").onclick = () => {
+      const ids = state.clips.filter((c) => c.selected).map((c) => c.clip.clip_id);
+      saveClipIds(ids, true);
+    };
+    $("regenSelectedBtn").onclick = () => {
+      const items = state.clips.filter((c) => c.selected);
+      regenerateClipItems(items);
+    };
+    $("clearClipsBtn").onclick = async () => {
+      await api("/api/delete_clip", "POST", { clear_all: true }).catch(() => {});
+      state.clips = [];
+      renderClips();
+    };
+  }
+
+  wireEvents();
+  renderCloneBar();
+  $("inputText").value = SAMPLE_TEXT;
+  doSplit();
+  pollStatus();
+})();
+</script>
+</body>
+</html>

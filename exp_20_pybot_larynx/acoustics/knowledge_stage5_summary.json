@@ -1,0 +1,32 @@
+{
+  "n_train_utts": 9666,
+  "n_dev_60": 60,
+  "n_heldout_20": 20,
+  "n_onset_bins": 5,
+  "n_final_bins": 9,
+  "cluster_time_s": 19.99,
+  "build_time_s": 21.87,
+  "npz_size_kb": 54267.4,
+  "speaker_f0_med_hz": 247.72,
+  "ref_log_amp": -4.2703,
+  "n_onset_tokens": 131488,
+  "n_final_tokens": 156988,
+  "table_sizes": {
+    "on_of": 370,
+    "on_grp": 61,
+    "on_only": 21,
+    "fin_oft": 1533,
+    "fin_pft": 714,
+    "fin_ft": 189,
+    "fin_f": 39
+  },
+  "medoid_counts": {
+    "on_of": 2101,
+    "on_grp": 366,
+    "on_only": 126,
+    "fin_oft": 7539,
+    "fin_pft": 3607,
+    "fin_ft": 1063,
+    "fin_f": 152
+  }
+}

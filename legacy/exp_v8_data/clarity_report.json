@@ -1,0 +1,80 @@
+{
+  "heldout_26_clarity_medians": {
+    "real": {
+      "voiced_spectral_contrast_db": 25.2758,
+      "unvoiced_frac": 0.1161,
+      "unvoiced_2_8k_vs_lo_db": 8.747,
+      "transient_2_8k_span_db": 13.4506,
+      "transient_2_8k_burst_p95_db": 7.0982,
+      "mel_temporal_std_db": 8.8177,
+      "mel_temporal_p10_90_db": 22.5092
+    },
+    "v6_crossling_dsp": {
+      "voiced_spectral_contrast_db": 26.1332,
+      "unvoiced_frac": 0.2017,
+      "unvoiced_2_8k_vs_lo_db": 15.8415,
+      "transient_2_8k_span_db": 16.0909,
+      "transient_2_8k_burst_p95_db": 6.8834,
+      "mel_temporal_std_db": 9.4323,
+      "mel_temporal_p10_90_db": 25.7681
+    },
+    "v7_pybot_tts": {
+      "voiced_spectral_contrast_db": 22.2499,
+      "unvoiced_frac": 0.1017,
+      "unvoiced_2_8k_vs_lo_db": -7.0719,
+      "transient_2_8k_span_db": 10.7355,
+      "transient_2_8k_burst_p95_db": 5.0686,
+      "mel_temporal_std_db": 7.1002,
+      "mel_temporal_p10_90_db": 18.114
+    }
+  },
+  "v6_vocoder_pair_clarity": {
+    "SSB05020005_real": {
+      "voiced_spectral_contrast_db": 26.4087,
+      "unvoiced_frac": 0.0962,
+      "unvoiced_2_8k_vs_lo_db": -1.5109,
+      "transient_2_8k_span_db": 14.4775,
+      "transient_2_8k_burst_p95_db": 6.6523,
+      "mel_temporal_std_db": 8.4519,
+      "mel_temporal_p10_90_db": 21.3344,
+      "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v6_vocoder\\samples\\SSB05020005_real.wav"
+    },
+    "SSB05020005_gate1_resyn": {
+      "voiced_spectral_contrast_db": 24.499,
+      "unvoiced_frac": 0.1144,
+      "unvoiced_2_8k_vs_lo_db": -7.1491,
+      "transient_2_8k_span_db": 15.0084,
+      "transient_2_8k_burst_p95_db": 6.4169,
+      "mel_temporal_std_db": 8.2401,
+      "mel_temporal_p10_90_db": 20.5469,
+      "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v6_vocoder\\samples\\SSB05020005_gate1_resyn.wav"
+    },
+    "SSB15930031_real": {
+      "voiced_spectral_contrast_db": 23.6842,
+      "unvoiced_frac": 0.1168,
+      "unvoiced_2_8k_vs_lo_db": 6.3388,
+      "transient_2_8k_span_db": 13.7698,
+      "transient_2_8k_burst_p95_db": 4.4115,
+      "mel_temporal_std_db": 9.1681,
+      "mel_temporal_p10_90_db": 23.9047,
+      "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v6_vocoder\\samples\\SSB15930031_real.wav"
+    },
+    "SSB15930031_gate1_resyn": {
+      "voiced_spectral_contrast_db": 21.9224,
+      "unvoiced_frac": 0.0952,
+      "unvoiced_2_8k_vs_lo_db": 15.8381,
+      "transient_2_8k_span_db": 13.9366,
+      "transient_2_8k_burst_p95_db": 5.7544,
+      "mel_temporal_std_db": 8.995,
+      "mel_temporal_p10_90_db": 23.1362,
+      "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v6_vocoder\\samples\\SSB15930031_gate1_resyn.wav"
+    }
+  },
+  "controlled_blur_ablation_SSB05020122": {
+    "full_513_contrast_db": 13.3548,
+    "cep128_contrast_db": 13.3548,
+    "cep128_k14_contrast_db": 12.669,
+    "full_513_temporal_std_db": 12.6668,
+    "cep128_k14_temporal_std_db": 12.1051
+  }
+}

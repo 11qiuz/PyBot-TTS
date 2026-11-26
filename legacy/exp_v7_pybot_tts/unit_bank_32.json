@@ -1,0 +1,1635 @@
+{
+  "schema": 3,
+  "cep_keep": 128,
+  "sr": 24000,
+  "hop_samples": 120,
+  "n_fft": 1024,
+  "included_ids": [
+    "SSB05020005",
+    "SSB05020077",
+    "SSB05020082",
+    "SSB05020122",
+    "SSB05020137",
+    "SSB05020159",
+    "SSB05020222",
+    "SSB05020234",
+    "SSB05020248",
+    "SSB05020269",
+    "SSB05020279",
+    "SSB05020298",
+    "SSB05020352",
+    "SSB05020355",
+    "SSB05020387",
+    "SSB05020394",
+    "SSB15930031",
+    "SSB15930079",
+    "SSB15930105",
+    "SSB15930193",
+    "SSB15930204",
+    "SSB15930211",
+    "SSB15930252",
+    "SSB15930257",
+    "SSB15930266",
+    "SSB15930306",
+    "SSB15930310",
+    "SSB15930314",
+    "SSB15930326",
+    "SSB15930361",
+    "SSB15930378",
+    "SSB15930451"
+  ],
+  "excluded_ids": [],
+  "groups": {
+    "syllables": [
+      {
+        "key": "|an",
+        "tag": "syllables_0",
+        "dur_ms": 170.0,
+        "count": 1
+      },
+      {
+        "key": "|er",
+        "tag": "syllables_1",
+        "dur_ms": 220.0,
+        "count": 3
+      },
+      {
+        "key": "|i",
+        "tag": "syllables_2",
+        "dur_ms": 190.0,
+        "count": 9
+      },
+      {
+        "key": "|ian",
+        "tag": "syllables_3",
+        "dur_ms": 272.5,
+        "count": 4
+      },
+      {
+        "key": "|iang",
+        "tag": "syllables_4",
+        "dur_ms": 275.0,
+        "count": 1
+      },
+      {
+        "key": "|iao",
+        "tag": "syllables_5",
+        "dur_ms": 230.0,
+        "count": 2
+      },
+      {
+        "key": "|ie",
+        "tag": "syllables_6",
+        "dur_ms": 195.0,
+        "count": 3
+      },
+      {
+        "key": "|in",
+        "tag": "syllables_7",
+        "dur_ms": 270.0,
+        "count": 1
+      },
+      {
+        "key": "|ing",
+        "tag": "syllables_8",
+        "dur_ms": 160.0,
+        "count": 1
+      },
+      {
+        "key": "|iong",
+        "tag": "syllables_9",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "|iou",
+        "tag": "syllables_10",
+        "dur_ms": 190.0,
+        "count": 7
+      },
+      {
+        "key": "|u",
+        "tag": "syllables_11",
+        "dur_ms": 180.0,
+        "count": 3
+      },
+      {
+        "key": "|uai",
+        "tag": "syllables_12",
+        "dur_ms": 305.0,
+        "count": 1
+      },
+      {
+        "key": "|uan",
+        "tag": "syllables_13",
+        "dur_ms": 270.0,
+        "count": 1
+      },
+      {
+        "key": "|uang",
+        "tag": "syllables_14",
+        "dur_ms": 270.0,
+        "count": 1
+      },
+      {
+        "key": "|uei",
+        "tag": "syllables_15",
+        "dur_ms": 257.5,
+        "count": 4
+      },
+      {
+        "key": "|uo",
+        "tag": "syllables_16",
+        "dur_ms": 255.0,
+        "count": 3
+      },
+      {
+        "key": "|v",
+        "tag": "syllables_17",
+        "dur_ms": 280.0,
+        "count": 4
+      },
+      {
+        "key": "|van",
+        "tag": "syllables_18",
+        "dur_ms": 257.5,
+        "count": 2
+      },
+      {
+        "key": "|ve",
+        "tag": "syllables_19",
+        "dur_ms": 305.0,
+        "count": 1
+      },
+      {
+        "key": "|vn",
+        "tag": "syllables_20",
+        "dur_ms": 345.0,
+        "count": 1
+      },
+      {
+        "key": "b|ao",
+        "tag": "syllables_21",
+        "dur_ms": 262.5,
+        "count": 4
+      },
+      {
+        "key": "b|ei",
+        "tag": "syllables_22",
+        "dur_ms": 285.0,
+        "count": 1
+      },
+      {
+        "key": "b|i",
+        "tag": "syllables_23",
+        "dur_ms": 240.0,
+        "count": 7
+      },
+      {
+        "key": "b|iao",
+        "tag": "syllables_24",
+        "dur_ms": 280.0,
+        "count": 1
+      },
+      {
+        "key": "b|u",
+        "tag": "syllables_25",
+        "dur_ms": 227.5,
+        "count": 6
+      },
+      {
+        "key": "c|ai",
+        "tag": "syllables_26",
+        "dur_ms": 220.0,
+        "count": 2
+      },
+      {
+        "key": "c|e",
+        "tag": "syllables_27",
+        "dur_ms": 460.0,
+        "count": 1
+      },
+      {
+        "key": "c|uen",
+        "tag": "syllables_28",
+        "dur_ms": 190.0,
+        "count": 1
+      },
+      {
+        "key": "ch|ang",
+        "tag": "syllables_29",
+        "dur_ms": 235.0,
+        "count": 1
+      },
+      {
+        "key": "ch|e",
+        "tag": "syllables_30",
+        "dur_ms": 215.0,
+        "count": 1
+      },
+      {
+        "key": "ch|en",
+        "tag": "syllables_31",
+        "dur_ms": 222.5,
+        "count": 2
+      },
+      {
+        "key": "ch|eng",
+        "tag": "syllables_32",
+        "dur_ms": 255.0,
+        "count": 1
+      },
+      {
+        "key": "ch|ir",
+        "tag": "syllables_33",
+        "dur_ms": 165.0,
+        "count": 1
+      },
+      {
+        "key": "ch|u",
+        "tag": "syllables_34",
+        "dur_ms": 200.0,
+        "count": 6
+      },
+      {
+        "key": "ch|uan",
+        "tag": "syllables_35",
+        "dur_ms": 175.0,
+        "count": 1
+      },
+      {
+        "key": "d|a",
+        "tag": "syllables_36",
+        "dur_ms": 242.5,
+        "count": 4
+      },
+      {
+        "key": "d|an",
+        "tag": "syllables_37",
+        "dur_ms": 287.5,
+        "count": 2
+      },
+      {
+        "key": "d|ang",
+        "tag": "syllables_38",
+        "dur_ms": 290.0,
+        "count": 1
+      },
+      {
+        "key": "d|ao",
+        "tag": "syllables_39",
+        "dur_ms": 255.0,
+        "count": 3
+      },
+      {
+        "key": "d|e",
+        "tag": "syllables_40",
+        "dur_ms": 215.0,
+        "count": 9
+      },
+      {
+        "key": "d|i",
+        "tag": "syllables_41",
+        "dur_ms": 217.5,
+        "count": 2
+      },
+      {
+        "key": "d|ong",
+        "tag": "syllables_42",
+        "dur_ms": 275.0,
+        "count": 1
+      },
+      {
+        "key": "d|ou",
+        "tag": "syllables_43",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "d|u",
+        "tag": "syllables_44",
+        "dur_ms": 242.5,
+        "count": 2
+      },
+      {
+        "key": "d|uei",
+        "tag": "syllables_45",
+        "dur_ms": 165.0,
+        "count": 1
+      },
+      {
+        "key": "f|a",
+        "tag": "syllables_46",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "f|an",
+        "tag": "syllables_47",
+        "dur_ms": 152.5,
+        "count": 2
+      },
+      {
+        "key": "f|ang",
+        "tag": "syllables_48",
+        "dur_ms": 200.0,
+        "count": 1
+      },
+      {
+        "key": "f|u",
+        "tag": "syllables_49",
+        "dur_ms": 280.0,
+        "count": 2
+      },
+      {
+        "key": "g|an",
+        "tag": "syllables_50",
+        "dur_ms": 225.0,
+        "count": 2
+      },
+      {
+        "key": "g|ao",
+        "tag": "syllables_51",
+        "dur_ms": 315.0,
+        "count": 1
+      },
+      {
+        "key": "g|e",
+        "tag": "syllables_52",
+        "dur_ms": 175.0,
+        "count": 3
+      },
+      {
+        "key": "g|ou",
+        "tag": "syllables_53",
+        "dur_ms": 240.0,
+        "count": 3
+      },
+      {
+        "key": "g|uan",
+        "tag": "syllables_54",
+        "dur_ms": 325.0,
+        "count": 1
+      },
+      {
+        "key": "g|uo",
+        "tag": "syllables_55",
+        "dur_ms": 212.5,
+        "count": 4
+      },
+      {
+        "key": "h|ai",
+        "tag": "syllables_56",
+        "dur_ms": 200.0,
+        "count": 1
+      },
+      {
+        "key": "h|an",
+        "tag": "syllables_57",
+        "dur_ms": 180.0,
+        "count": 1
+      },
+      {
+        "key": "h|ao",
+        "tag": "syllables_58",
+        "dur_ms": 210.0,
+        "count": 3
+      },
+      {
+        "key": "h|e",
+        "tag": "syllables_59",
+        "dur_ms": 175.0,
+        "count": 1
+      },
+      {
+        "key": "h|en",
+        "tag": "syllables_60",
+        "dur_ms": 240.0,
+        "count": 1
+      },
+      {
+        "key": "h|ou",
+        "tag": "syllables_61",
+        "dur_ms": 195.0,
+        "count": 3
+      },
+      {
+        "key": "h|u",
+        "tag": "syllables_62",
+        "dur_ms": 150.0,
+        "count": 3
+      },
+      {
+        "key": "h|ua",
+        "tag": "syllables_63",
+        "dur_ms": 265.0,
+        "count": 5
+      },
+      {
+        "key": "h|uang",
+        "tag": "syllables_64",
+        "dur_ms": 200.0,
+        "count": 1
+      },
+      {
+        "key": "h|uei",
+        "tag": "syllables_65",
+        "dur_ms": 267.5,
+        "count": 4
+      },
+      {
+        "key": "h|uo",
+        "tag": "syllables_66",
+        "dur_ms": 172.5,
+        "count": 2
+      },
+      {
+        "key": "j|i",
+        "tag": "syllables_67",
+        "dur_ms": 215.0,
+        "count": 12
+      },
+      {
+        "key": "j|ia",
+        "tag": "syllables_68",
+        "dur_ms": 287.5,
+        "count": 2
+      },
+      {
+        "key": "j|ian",
+        "tag": "syllables_69",
+        "dur_ms": 280.0,
+        "count": 1
+      },
+      {
+        "key": "j|iang",
+        "tag": "syllables_70",
+        "dur_ms": 310.0,
+        "count": 1
+      },
+      {
+        "key": "j|iao",
+        "tag": "syllables_71",
+        "dur_ms": 257.5,
+        "count": 2
+      },
+      {
+        "key": "j|ie",
+        "tag": "syllables_72",
+        "dur_ms": 190.0,
+        "count": 2
+      },
+      {
+        "key": "j|in",
+        "tag": "syllables_73",
+        "dur_ms": 230.0,
+        "count": 3
+      },
+      {
+        "key": "j|ing",
+        "tag": "syllables_74",
+        "dur_ms": 255.0,
+        "count": 1
+      },
+      {
+        "key": "j|iou",
+        "tag": "syllables_75",
+        "dur_ms": 130.0,
+        "count": 3
+      },
+      {
+        "key": "j|v",
+        "tag": "syllables_76",
+        "dur_ms": 180.0,
+        "count": 1
+      },
+      {
+        "key": "j|ve",
+        "tag": "syllables_77",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "k|ai",
+        "tag": "syllables_78",
+        "dur_ms": 190.0,
+        "count": 1
+      },
+      {
+        "key": "k|ao",
+        "tag": "syllables_79",
+        "dur_ms": 210.0,
+        "count": 1
+      },
+      {
+        "key": "k|e",
+        "tag": "syllables_80",
+        "dur_ms": 240.0,
+        "count": 3
+      },
+      {
+        "key": "k|ou",
+        "tag": "syllables_81",
+        "dur_ms": 275.0,
+        "count": 1
+      },
+      {
+        "key": "k|uai",
+        "tag": "syllables_82",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "l|ai",
+        "tag": "syllables_83",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "l|e",
+        "tag": "syllables_84",
+        "dur_ms": 215.0,
+        "count": 3
+      },
+      {
+        "key": "l|i",
+        "tag": "syllables_85",
+        "dur_ms": 215.0,
+        "count": 5
+      },
+      {
+        "key": "l|ian",
+        "tag": "syllables_86",
+        "dur_ms": 295.0,
+        "count": 1
+      },
+      {
+        "key": "l|ing",
+        "tag": "syllables_87",
+        "dur_ms": 240.0,
+        "count": 1
+      },
+      {
+        "key": "l|u",
+        "tag": "syllables_88",
+        "dur_ms": 220.0,
+        "count": 2
+      },
+      {
+        "key": "m|a",
+        "tag": "syllables_89",
+        "dur_ms": 240.0,
+        "count": 2
+      },
+      {
+        "key": "m|e",
+        "tag": "syllables_90",
+        "dur_ms": 230.0,
+        "count": 3
+      },
+      {
+        "key": "m|en",
+        "tag": "syllables_91",
+        "dur_ms": 267.5,
+        "count": 2
+      },
+      {
+        "key": "m|in",
+        "tag": "syllables_92",
+        "dur_ms": 355.0,
+        "count": 1
+      },
+      {
+        "key": "m|ing",
+        "tag": "syllables_93",
+        "dur_ms": 267.5,
+        "count": 2
+      },
+      {
+        "key": "m|o",
+        "tag": "syllables_94",
+        "dur_ms": 345.0,
+        "count": 1
+      },
+      {
+        "key": "m|ou",
+        "tag": "syllables_95",
+        "dur_ms": 225.0,
+        "count": 1
+      },
+      {
+        "key": "n|a",
+        "tag": "syllables_96",
+        "dur_ms": 255.0,
+        "count": 1
+      },
+      {
+        "key": "n|an",
+        "tag": "syllables_97",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "n|eng",
+        "tag": "syllables_98",
+        "dur_ms": 210.0,
+        "count": 1
+      },
+      {
+        "key": "n|i",
+        "tag": "syllables_99",
+        "dur_ms": 205.0,
+        "count": 3
+      },
+      {
+        "key": "n|ian",
+        "tag": "syllables_100",
+        "dur_ms": 315.0,
+        "count": 1
+      },
+      {
+        "key": "n|u",
+        "tag": "syllables_101",
+        "dur_ms": 215.0,
+        "count": 1
+      },
+      {
+        "key": "p|ian",
+        "tag": "syllables_102",
+        "dur_ms": 135.0,
+        "count": 1
+      },
+      {
+        "key": "p|ing",
+        "tag": "syllables_103",
+        "dur_ms": 327.5,
+        "count": 2
+      },
+      {
+        "key": "p|o",
+        "tag": "syllables_104",
+        "dur_ms": 230.0,
+        "count": 1
+      },
+      {
+        "key": "p|u",
+        "tag": "syllables_105",
+        "dur_ms": 235.0,
+        "count": 1
+      },
+      {
+        "key": "q|i",
+        "tag": "syllables_106",
+        "dur_ms": 167.5,
+        "count": 4
+      },
+      {
+        "key": "q|iang",
+        "tag": "syllables_107",
+        "dur_ms": 265.0,
+        "count": 3
+      },
+      {
+        "key": "q|iao",
+        "tag": "syllables_108",
+        "dur_ms": 290.0,
+        "count": 1
+      },
+      {
+        "key": "q|in",
+        "tag": "syllables_109",
+        "dur_ms": 195.0,
+        "count": 1
+      },
+      {
+        "key": "q|ing",
+        "tag": "syllables_110",
+        "dur_ms": 235.0,
+        "count": 1
+      },
+      {
+        "key": "q|iou",
+        "tag": "syllables_111",
+        "dur_ms": 215.0,
+        "count": 1
+      },
+      {
+        "key": "q|v",
+        "tag": "syllables_112",
+        "dur_ms": 295.0,
+        "count": 1
+      },
+      {
+        "key": "q|van",
+        "tag": "syllables_113",
+        "dur_ms": 315.0,
+        "count": 1
+      },
+      {
+        "key": "q|ve",
+        "tag": "syllables_114",
+        "dur_ms": 195.0,
+        "count": 1
+      },
+      {
+        "key": "r|an",
+        "tag": "syllables_115",
+        "dur_ms": 160.0,
+        "count": 1
+      },
+      {
+        "key": "r|en",
+        "tag": "syllables_116",
+        "dur_ms": 282.5,
+        "count": 2
+      },
+      {
+        "key": "r|ir",
+        "tag": "syllables_117",
+        "dur_ms": 260.0,
+        "count": 1
+      },
+      {
+        "key": "r|u",
+        "tag": "syllables_118",
+        "dur_ms": 312.5,
+        "count": 2
+      },
+      {
+        "key": "s|ai",
+        "tag": "syllables_119",
+        "dur_ms": 202.5,
+        "count": 2
+      },
+      {
+        "key": "s|iz",
+        "tag": "syllables_120",
+        "dur_ms": 202.5,
+        "count": 2
+      },
+      {
+        "key": "s|ou",
+        "tag": "syllables_121",
+        "dur_ms": 215.0,
+        "count": 1
+      },
+      {
+        "key": "s|u",
+        "tag": "syllables_122",
+        "dur_ms": 210.0,
+        "count": 2
+      },
+      {
+        "key": "s|uo",
+        "tag": "syllables_123",
+        "dur_ms": 222.5,
+        "count": 2
+      },
+      {
+        "key": "sh|ang",
+        "tag": "syllables_124",
+        "dur_ms": 262.5,
+        "count": 2
+      },
+      {
+        "key": "sh|e",
+        "tag": "syllables_125",
+        "dur_ms": 275.0,
+        "count": 1
+      },
+      {
+        "key": "sh|en",
+        "tag": "syllables_126",
+        "dur_ms": 250.0,
+        "count": 3
+      },
+      {
+        "key": "sh|eng",
+        "tag": "syllables_127",
+        "dur_ms": 290.0,
+        "count": 1
+      },
+      {
+        "key": "sh|ir",
+        "tag": "syllables_128",
+        "dur_ms": 210.0,
+        "count": 11
+      },
+      {
+        "key": "sh|ou",
+        "tag": "syllables_129",
+        "dur_ms": 270.0,
+        "count": 2
+      },
+      {
+        "key": "sh|u",
+        "tag": "syllables_130",
+        "dur_ms": 207.5,
+        "count": 2
+      },
+      {
+        "key": "sh|uo",
+        "tag": "syllables_131",
+        "dur_ms": 130.0,
+        "count": 1
+      },
+      {
+        "key": "t|a",
+        "tag": "syllables_132",
+        "dur_ms": 230.0,
+        "count": 1
+      },
+      {
+        "key": "t|ai",
+        "tag": "syllables_133",
+        "dur_ms": 385.0,
+        "count": 1
+      },
+      {
+        "key": "t|ao",
+        "tag": "syllables_134",
+        "dur_ms": 212.5,
+        "count": 2
+      },
+      {
+        "key": "t|ie",
+        "tag": "syllables_135",
+        "dur_ms": 225.0,
+        "count": 2
+      },
+      {
+        "key": "t|ing",
+        "tag": "syllables_136",
+        "dur_ms": 240.0,
+        "count": 1
+      },
+      {
+        "key": "t|ong",
+        "tag": "syllables_137",
+        "dur_ms": 330.0,
+        "count": 1
+      },
+      {
+        "key": "t|u",
+        "tag": "syllables_138",
+        "dur_ms": 165.0,
+        "count": 1
+      },
+      {
+        "key": "x|i",
+        "tag": "syllables_139",
+        "dur_ms": 230.0,
+        "count": 3
+      },
+      {
+        "key": "x|ian",
+        "tag": "syllables_140",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "x|iang",
+        "tag": "syllables_141",
+        "dur_ms": 270.0,
+        "count": 2
+      },
+      {
+        "key": "x|iao",
+        "tag": "syllables_142",
+        "dur_ms": 267.5,
+        "count": 2
+      },
+      {
+        "key": "x|ie",
+        "tag": "syllables_143",
+        "dur_ms": 190.0,
+        "count": 1
+      },
+      {
+        "key": "x|in",
+        "tag": "syllables_144",
+        "dur_ms": 195.0,
+        "count": 1
+      },
+      {
+        "key": "x|ing",
+        "tag": "syllables_145",
+        "dur_ms": 235.0,
+        "count": 1
+      },
+      {
+        "key": "x|v",
+        "tag": "syllables_146",
+        "dur_ms": 230.0,
+        "count": 4
+      },
+      {
+        "key": "x|van",
+        "tag": "syllables_147",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "x|ve",
+        "tag": "syllables_148",
+        "dur_ms": 205.0,
+        "count": 2
+      },
+      {
+        "key": "x|vn",
+        "tag": "syllables_149",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "z|ai",
+        "tag": "syllables_150",
+        "dur_ms": 230.0,
+        "count": 5
+      },
+      {
+        "key": "z|en",
+        "tag": "syllables_151",
+        "dur_ms": 165.0,
+        "count": 1
+      },
+      {
+        "key": "z|iz",
+        "tag": "syllables_152",
+        "dur_ms": 230.0,
+        "count": 3
+      },
+      {
+        "key": "z|uei",
+        "tag": "syllables_153",
+        "dur_ms": 240.0,
+        "count": 1
+      },
+      {
+        "key": "zh|a",
+        "tag": "syllables_154",
+        "dur_ms": 230.0,
+        "count": 1
+      },
+      {
+        "key": "zh|ai",
+        "tag": "syllables_155",
+        "dur_ms": 160.0,
+        "count": 1
+      },
+      {
+        "key": "zh|an",
+        "tag": "syllables_156",
+        "dur_ms": 190.0,
+        "count": 1
+      },
+      {
+        "key": "zh|ang",
+        "tag": "syllables_157",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "zh|e",
+        "tag": "syllables_158",
+        "dur_ms": 247.5,
+        "count": 4
+      },
+      {
+        "key": "zh|en",
+        "tag": "syllables_159",
+        "dur_ms": 250.0,
+        "count": 1
+      },
+      {
+        "key": "zh|eng",
+        "tag": "syllables_160",
+        "dur_ms": 225.0,
+        "count": 1
+      },
+      {
+        "key": "zh|ir",
+        "tag": "syllables_161",
+        "dur_ms": 215.0,
+        "count": 7
+      },
+      {
+        "key": "zh|ong",
+        "tag": "syllables_162",
+        "dur_ms": 260.0,
+        "count": 1
+      },
+      {
+        "key": "zh|u",
+        "tag": "syllables_163",
+        "dur_ms": 237.5,
+        "count": 2
+      },
+      {
+        "key": "zh|ua",
+        "tag": "syllables_164",
+        "dur_ms": 280.0,
+        "count": 1
+      }
+    ],
+    "onsets": [
+      {
+        "key": "b",
+        "tag": "onsets_0",
+        "dur_ms": 12.0,
+        "count": 19
+      },
+      {
+        "key": "c",
+        "tag": "onsets_1",
+        "dur_ms": 30.0,
+        "count": 4
+      },
+      {
+        "key": "ch",
+        "tag": "onsets_2",
+        "dur_ms": 20.0,
+        "count": 13
+      },
+      {
+        "key": "d",
+        "tag": "onsets_3",
+        "dur_ms": 12.0,
+        "count": 26
+      },
+      {
+        "key": "f",
+        "tag": "onsets_4",
+        "dur_ms": 18.5,
+        "count": 6
+      },
+      {
+        "key": "g",
+        "tag": "onsets_5",
+        "dur_ms": 12.0,
+        "count": 14
+      },
+      {
+        "key": "h",
+        "tag": "onsets_6",
+        "dur_ms": 12.0,
+        "count": 25
+      },
+      {
+        "key": "j",
+        "tag": "onsets_7",
+        "dur_ms": 12.0,
+        "count": 29
+      },
+      {
+        "key": "k",
+        "tag": "onsets_8",
+        "dur_ms": 25.0,
+        "count": 7
+      },
+      {
+        "key": "l",
+        "tag": "onsets_9",
+        "dur_ms": 40.0,
+        "count": 13
+      },
+      {
+        "key": "m",
+        "tag": "onsets_10",
+        "dur_ms": 40.0,
+        "count": 12
+      },
+      {
+        "key": "n",
+        "tag": "onsets_11",
+        "dur_ms": 40.0,
+        "count": 8
+      },
+      {
+        "key": "p",
+        "tag": "onsets_12",
+        "dur_ms": 12.0,
+        "count": 5
+      },
+      {
+        "key": "q",
+        "tag": "onsets_13",
+        "dur_ms": 16.0,
+        "count": 14
+      },
+      {
+        "key": "r",
+        "tag": "onsets_14",
+        "dur_ms": 60.0,
+        "count": 6
+      },
+      {
+        "key": "s",
+        "tag": "onsets_15",
+        "dur_ms": 30.0,
+        "count": 9
+      },
+      {
+        "key": "sh",
+        "tag": "onsets_16",
+        "dur_ms": 30.0,
+        "count": 23
+      },
+      {
+        "key": "t",
+        "tag": "onsets_17",
+        "dur_ms": 15.0,
+        "count": 9
+      },
+      {
+        "key": "x",
+        "tag": "onsets_18",
+        "dur_ms": 12.0,
+        "count": 19
+      },
+      {
+        "key": "z",
+        "tag": "onsets_19",
+        "dur_ms": 12.0,
+        "count": 10
+      },
+      {
+        "key": "zh",
+        "tag": "onsets_20",
+        "dur_ms": 12.0,
+        "count": 21
+      }
+    ],
+    "finals": [
+      {
+        "key": "a",
+        "tag": "finals_0",
+        "dur_ms": 220.0,
+        "count": 10
+      },
+      {
+        "key": "ai",
+        "tag": "finals_1",
+        "dur_ms": 207.5,
+        "count": 14
+      },
+      {
+        "key": "an",
+        "tag": "finals_2",
+        "dur_ms": 180.0,
+        "count": 11
+      },
+      {
+        "key": "ang",
+        "tag": "finals_3",
+        "dur_ms": 237.5,
+        "count": 6
+      },
+      {
+        "key": "ao",
+        "tag": "finals_4",
+        "dur_ms": 227.5,
+        "count": 14
+      },
+      {
+        "key": "e",
+        "tag": "finals_5",
+        "dur_ms": 200.0,
+        "count": 29
+      },
+      {
+        "key": "ei",
+        "tag": "finals_6",
+        "dur_ms": 275.0,
+        "count": 1
+      },
+      {
+        "key": "en",
+        "tag": "finals_7",
+        "dur_ms": 220.0,
+        "count": 12
+      },
+      {
+        "key": "eng",
+        "tag": "finals_8",
+        "dur_ms": 235.0,
+        "count": 4
+      },
+      {
+        "key": "er",
+        "tag": "finals_9",
+        "dur_ms": 220.0,
+        "count": 3
+      },
+      {
+        "key": "i",
+        "tag": "finals_10",
+        "dur_ms": 190.0,
+        "count": 45
+      },
+      {
+        "key": "ia",
+        "tag": "finals_11",
+        "dur_ms": 267.5,
+        "count": 2
+      },
+      {
+        "key": "ian",
+        "tag": "finals_12",
+        "dur_ms": 270.0,
+        "count": 9
+      },
+      {
+        "key": "iang",
+        "tag": "finals_13",
+        "dur_ms": 220.0,
+        "count": 7
+      },
+      {
+        "key": "iao",
+        "tag": "finals_14",
+        "dur_ms": 245.0,
+        "count": 8
+      },
+      {
+        "key": "ie",
+        "tag": "finals_15",
+        "dur_ms": 187.5,
+        "count": 8
+      },
+      {
+        "key": "in",
+        "tag": "finals_16",
+        "dur_ms": 190.0,
+        "count": 7
+      },
+      {
+        "key": "ing",
+        "tag": "finals_17",
+        "dur_ms": 227.5,
+        "count": 10
+      },
+      {
+        "key": "iong",
+        "tag": "finals_18",
+        "dur_ms": 245.0,
+        "count": 1
+      },
+      {
+        "key": "iou",
+        "tag": "finals_19",
+        "dur_ms": 190.0,
+        "count": 11
+      },
+      {
+        "key": "ir",
+        "tag": "finals_20",
+        "dur_ms": 152.5,
+        "count": 20
+      },
+      {
+        "key": "iz",
+        "tag": "finals_21",
+        "dur_ms": 195.0,
+        "count": 5
+      },
+      {
+        "key": "o",
+        "tag": "finals_22",
+        "dur_ms": 265.0,
+        "count": 2
+      },
+      {
+        "key": "ong",
+        "tag": "finals_23",
+        "dur_ms": 270.0,
+        "count": 3
+      },
+      {
+        "key": "ou",
+        "tag": "finals_24",
+        "dur_ms": 205.0,
+        "count": 12
+      },
+      {
+        "key": "u",
+        "tag": "finals_25",
+        "dur_ms": 190.0,
+        "count": 35
+      },
+      {
+        "key": "ua",
+        "tag": "finals_26",
+        "dur_ms": 265.0,
+        "count": 6
+      },
+      {
+        "key": "uai",
+        "tag": "finals_27",
+        "dur_ms": 270.0,
+        "count": 2
+      },
+      {
+        "key": "uan",
+        "tag": "finals_28",
+        "dur_ms": 270.0,
+        "count": 3
+      },
+      {
+        "key": "uang",
+        "tag": "finals_29",
+        "dur_ms": 222.5,
+        "count": 2
+      },
+      {
+        "key": "uei",
+        "tag": "finals_30",
+        "dur_ms": 245.0,
+        "count": 10
+      },
+      {
+        "key": "uen",
+        "tag": "finals_31",
+        "dur_ms": 160.0,
+        "count": 1
+      },
+      {
+        "key": "uo",
+        "tag": "finals_32",
+        "dur_ms": 160.0,
+        "count": 12
+      },
+      {
+        "key": "v",
+        "tag": "finals_33",
+        "dur_ms": 250.0,
+        "count": 10
+      },
+      {
+        "key": "van",
+        "tag": "finals_34",
+        "dur_ms": 227.5,
+        "count": 4
+      },
+      {
+        "key": "ve",
+        "tag": "finals_35",
+        "dur_ms": 195.0,
+        "count": 5
+      },
+      {
+        "key": "vn",
+        "tag": "finals_36",
+        "dur_ms": 290.0,
+        "count": 2
+      }
+    ],
+    "ipa_phones": [
+      {
+        "key": "a",
+        "tag": "ipa_phones_0",
+        "dur_ms": 145.0,
+        "count": 48
+      },
+      {
+        "key": "e",
+        "tag": "ipa_phones_1",
+        "dur_ms": 125.0,
+        "count": 11
+      },
+      {
+        "key": "f",
+        "tag": "ipa_phones_2",
+        "dur_ms": 18.5,
+        "count": 6
+      },
+      {
+        "key": "i",
+        "tag": "ipa_phones_3",
+        "dur_ms": 150.0,
+        "count": 89
+      },
+      {
+        "key": "j",
+        "tag": "ipa_phones_4",
+        "dur_ms": 55.0,
+        "count": 46
+      },
+      {
+        "key": "k",
+        "tag": "ipa_phones_5",
+        "dur_ms": 12.0,
+        "count": 14
+      },
+      {
+        "key": "kʰ",
+        "tag": "ipa_phones_6",
+        "dur_ms": 25.0,
+        "count": 7
+      },
+      {
+        "key": "l",
+        "tag": "ipa_phones_7",
+        "dur_ms": 40.0,
+        "count": 13
+      },
+      {
+        "key": "m",
+        "tag": "ipa_phones_8",
+        "dur_ms": 40.0,
+        "count": 12
+      },
+      {
+        "key": "n",
+        "tag": "ipa_phones_9",
+        "dur_ms": 65.0,
+        "count": 57
+      },
+      {
+        "key": "o",
+        "tag": "ipa_phones_10",
+        "dur_ms": 105.0,
+        "count": 37
+      },
+      {
+        "key": "p",
+        "tag": "ipa_phones_11",
+        "dur_ms": 12.0,
+        "count": 19
+      },
+      {
+        "key": "pʰ",
+        "tag": "ipa_phones_12",
+        "dur_ms": 12.0,
+        "count": 5
+      },
+      {
+        "key": "s",
+        "tag": "ipa_phones_13",
+        "dur_ms": 30.0,
+        "count": 9
+      },
+      {
+        "key": "t",
+        "tag": "ipa_phones_14",
+        "dur_ms": 12.0,
+        "count": 26
+      },
+      {
+        "key": "ts",
+        "tag": "ipa_phones_15",
+        "dur_ms": 12.0,
+        "count": 10
+      },
+      {
+        "key": "tsʰ",
+        "tag": "ipa_phones_16",
+        "dur_ms": 30.0,
+        "count": 4
+      },
+      {
+        "key": "tɕ",
+        "tag": "ipa_phones_17",
+        "dur_ms": 12.0,
+        "count": 29
+      },
+      {
+        "key": "tɕʰ",
+        "tag": "ipa_phones_18",
+        "dur_ms": 16.0,
+        "count": 14
+      },
+      {
+        "key": "tʰ",
+        "tag": "ipa_phones_19",
+        "dur_ms": 15.0,
+        "count": 9
+      },
+      {
+        "key": "u",
+        "tag": "ipa_phones_20",
+        "dur_ms": 120.0,
+        "count": 80
+      },
+      {
+        "key": "w",
+        "tag": "ipa_phones_21",
+        "dur_ms": 57.5,
+        "count": 36
+      },
+      {
+        "key": "x",
+        "tag": "ipa_phones_22",
+        "dur_ms": 12.0,
+        "count": 25
+      },
+      {
+        "key": "y",
+        "tag": "ipa_phones_23",
+        "dur_ms": 235.0,
+        "count": 12
+      },
+      {
+        "key": "ŋ",
+        "tag": "ipa_phones_24",
+        "dur_ms": 75.0,
+        "count": 33
+      },
+      {
+        "key": "ɑ",
+        "tag": "ipa_phones_25",
+        "dur_ms": 120.0,
+        "count": 37
+      },
+      {
+        "key": "ɕ",
+        "tag": "ipa_phones_26",
+        "dur_ms": 12.0,
+        "count": 19
+      },
+      {
+        "key": "ə",
+        "tag": "ipa_phones_27",
+        "dur_ms": 150.0,
+        "count": 17
+      },
+      {
+        "key": "ɚ",
+        "tag": "ipa_phones_28",
+        "dur_ms": 220.0,
+        "count": 3
+      },
+      {
+        "key": "ɛ",
+        "tag": "ipa_phones_29",
+        "dur_ms": 130.0,
+        "count": 26
+      },
+      {
+        "key": "ɤ",
+        "tag": "ipa_phones_30",
+        "dur_ms": 200.0,
+        "count": 29
+      },
+      {
+        "key": "ɥ",
+        "tag": "ipa_phones_31",
+        "dur_ms": 55.0,
+        "count": 9
+      },
+      {
+        "key": "ɹ̩",
+        "tag": "ipa_phones_32",
+        "dur_ms": 195.0,
+        "count": 5
+      },
+      {
+        "key": "ɻ",
+        "tag": "ipa_phones_33",
+        "dur_ms": 60.0,
+        "count": 6
+      },
+      {
+        "key": "ɻ̩",
+        "tag": "ipa_phones_34",
+        "dur_ms": 152.5,
+        "count": 20
+      },
+      {
+        "key": "ʂ",
+        "tag": "ipa_phones_35",
+        "dur_ms": 30.0,
+        "count": 23
+      },
+      {
+        "key": "ʈʂ",
+        "tag": "ipa_phones_36",
+        "dur_ms": 12.0,
+        "count": 21
+      },
+      {
+        "key": "ʈʂʰ",
+        "tag": "ipa_phones_37",
+        "dur_ms": 20.0,
+        "count": 13
+      },
+      {
+        "key": "ʊ",
+        "tag": "ipa_phones_38",
+        "dur_ms": 180.0,
+        "count": 4
+      }
+    ]
+  },
+  "canonical_profile": {
+    "name": "canonical",
+    "n_utterances": 32,
+    "total_voiced_s": 62.645,
+    "f0_median_hz": 214.55,
+    "f0_log_std": 0.17401,
+    "f0_iqr_st": 3.0229,
+    "tilt_db_per_oct": -3.5939,
+    "hnr_median_db": 13.1247,
+    "vtln_anchor_f2_hz": 1152.66
+  }
+}

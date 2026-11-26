@@ -1,0 +1,42 @@
+{
+  "schema": "sf_native_multilingual_stage13",
+  "ml_weights_mb": 0.0,
+  "allow_pickle": false,
+  "n_train_utts": 2700,
+  "n_train_tokens": 129805,
+  "n_zh_tokens": 88284,
+  "n_en_tokens": 41521,
+  "n_en_studio_warped_tokens": 19935,
+  "n_strict_tokens": 37041,
+  "npz_size_mb": 22.13,
+  "speaker_f0_med_hz": 223.73,
+  "ref_log_amp": -4.1984,
+  "medoid_counts": {
+    "ctx_pns": 3288,
+    "ctx_pn": 933,
+    "ctx_ps": 173,
+    "ctx_p": 87,
+    "ctx_base": 80,
+    "ipa_shared": 62
+  },
+  "ridge_counts": {
+    "w_shared": 62,
+    "w_base": 80,
+    "w_phone": 86,
+    "w_ps": 166,
+    "w_pns": 841,
+    "d_pns": 2447,
+    "w_bap_ps": 212
+  },
+  "switch_stats": {
+    "zero_gap": {
+      "n_zh_to_en": 2667,
+      "n_en_to_zh": 3081,
+      "zh_to_en_med_level_diff_db": 17.315,
+      "en_to_zh_med_level_diff_db": 28.638,
+      "zh_to_en_med_f0_diff_st": 4.806,
+      "en_to_zh_med_f0_diff_st": 4.45
+    }
+  },
+  "build_time_s": 12.06
+}

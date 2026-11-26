@@ -1,0 +1,30 @@
+{
+  "schema": "knowledge_en_sf_stage12",
+  "allow_pickle": false,
+  "n_train_utts": 2700,
+  "n_sf_tokens": 21586,
+  "n_backstop_tokens": 263,
+  "sparse_backstop_bases": [
+    "ð",
+    "ʒ"
+  ],
+  "n_total_tokens": 21849,
+  "npz_size_mb": 7.719,
+  "speaker_f0_med_hz": 264.67,
+  "ref_log_amp": -4.1984,
+  "medoid_counts": {
+    "ctx_pns": 1657,
+    "ctx_pn": 394,
+    "ctx_ps": 61,
+    "ctx_p": 48,
+    "ctx_base": 41
+  },
+  "ridge_counts": {
+    "w_base": 41,
+    "w_phone": 47,
+    "w_ps": 55,
+    "w_pns": 307,
+    "d_pns": 1350
+  },
+  "build_time_s": 5.29
+}

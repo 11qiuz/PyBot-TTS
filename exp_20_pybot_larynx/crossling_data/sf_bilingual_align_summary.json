@@ -1,0 +1,26 @@
+{
+  "corpus": "SF_bilingual_zh_en",
+  "speaker": "sf_female",
+  "train_utterances": 2700,
+  "heldout_utterances": 40,
+  "zero_leakage_verified": true,
+  "n_train_en_tokens": 21586,
+  "n_train_en_strict_ok": 17106,
+  "en_strict_accept_rate": 0.7925,
+  "zh_strict_accept_rate": 0.8099,
+  "heldout_en_accept_rate": 0.815,
+  "n_switch_events": 5748,
+  "en_quarantine_reasons": {
+    "ok": 17106,
+    "too_short": 1351,
+    "voiced_contradiction": 619,
+    "low_hf_fricative": 744,
+    "near_silent": 1702,
+    "unvoiced_stop_too_voiced": 31,
+    "unvoiced_fric_too_voiced": 33
+  },
+  "speaker_f0_med_hz": 223.73,
+  "zh_f0_med_hz": 216.65,
+  "en_f0_med_hz": 264.67,
+  "elapsed_s": 1219.92
+}

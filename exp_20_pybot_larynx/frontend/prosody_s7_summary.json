@@ -1,0 +1,52 @@
+{
+  "matched_train_utts": 9305,
+  "matched_train_syls": 150743,
+  "d1": 355,
+  "d2": 34,
+  "n_tritones": 125,
+  "n_dur_ctx": 811,
+  "n_onset_uv_ofg": 61,
+  "npz_kb": 20.5,
+  "npz_mb": 0.02,
+  "weights": {
+    "w_f0_p1": 0.9,
+    "w_f0_p2": 0.45,
+    "w_dur": 0.95,
+    "w_dur_ctx": 0.25,
+    "w_ondur": 0.7,
+    "w_gain": 0.15,
+    "w_uv": 1.0
+  },
+  "lams": {
+    "f0_p1": 100.0,
+    "f0_p2": 100.0,
+    "dur": 300.0,
+    "ondur": 300.0,
+    "gain": 300.0
+  },
+  "dev60_aligned_utts": 60,
+  "dev60_stage5": {
+    "f0_3pt_mae": 1.9724,
+    "dur_mae_ms": 27.746,
+    "ondur_mae_ms": 12.22,
+    "gain_mae_db": 3.6814,
+    "gain_std_med": 1.7584
+  },
+  "dev60_stage7": {
+    "f0_3pt_mae": 1.9165,
+    "dur_mae_ms": 26.839,
+    "ondur_mae_ms": 11.781,
+    "gain_mae_db": 2.9354,
+    "gain_std_med": 1.8646
+  },
+  "elapsed_s": 41.99,
+  "dev60_audio_tuned": {
+    "sanity_ok": 60,
+    "mel": 5.8493,
+    "mcd": 17.4475,
+    "dtw_f0": 1.9536,
+    "f0_3pt": 1.9165,
+    "dur_mae": 26.839,
+    "gain_std": 1.8646
+  }
+}

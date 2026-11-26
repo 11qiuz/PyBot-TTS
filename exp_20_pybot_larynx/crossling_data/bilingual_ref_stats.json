@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "source": "hf:CAiRE/ASCEND (main/test)",
+  "cleanest_bilingual_speaker_id": 17,
+  "speaker_gender_hint": "female",
+  "en_zh_f0_diff_st": -1.18,
+  "en_zh_ltas_rmse_db": 2.338,
+  "en_zh_rms_diff_db": 0.29,
+  "en_zh_rate_ratio": 0.9707,
+  "switch_pause_median_ms": 60.0,
+  "switch_pause_p25_ms": 0.0,
+  "switch_pause_p75_ms": 110.0,
+  "switch_zero_pause_frac": 0.3483,
+  "n_switches_measured": 89,
+  "n_mixed_utts_measured": 45,
+  "zh_stats": {
+    "n_clips": 80,
+    "f0_median_hz": 200.14,
+    "f0_iqr_st_median": 3.16,
+    "hnr_median_db": 11.54,
+    "rms_median_dbfs": -23.33,
+    "syllable_rate_hz": 6.547
+  },
+  "en_stats": {
+    "n_clips": 80,
+    "f0_median_hz": 186.95,
+    "f0_iqr_st_median": 2.38,
+    "hnr_median_db": 11.79,
+    "rms_median_dbfs": -23.04,
+    "syllable_rate_hz": 6.355
+  },
+  "bilingual_ref_dir": "exp_20_pybot_larynx/crossling_data/bilingual_ref",
+  "bilingual_ref_clips": [
+    {
+      "ref_idx": 0,
+      "ascend_id": "00863",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "校服上面没有学校的logo吗",
+      "duration_s": 1.71,
+      "hnr_db": 16.57,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00863.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 1,
+      "ascend_id": "00150",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "想过但是因为最近project有点多",
+      "duration_s": 2.76,
+      "hnr_db": 15.04,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00150.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 2,
+      "ascend_id": "01180",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "是不是像ocr那种语音识别",
+      "duration_s": 2.44,
+      "hnr_db": 13.96,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_01180.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 3,
+      "ascend_id": "00066",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "哦这么technical",
+      "duration_s": 1.59,
+      "hnr_db": 13.58,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00066.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 4,
+      "ascend_id": "01157",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "哦那个是那个是wind好像是做",
+      "duration_s": 2.94,
+      "hnr_db": 13.41,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_01157.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 5,
+      "ascend_id": "00885",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "初中从小学我不知道你们是初中跟小学有没有uniforms",
+      "duration_s": 4.4,
+      "hnr_db": 13.06,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00885.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 6,
+      "ascend_id": "00960",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "哦那是诶你们刚开学不会拍那个portrait吗",
+      "duration_s": 3.76,
+      "hnr_db": 13.06,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00960.wav",
+      "sr": 24000
+    },
+    {
+      "ref_idx": 7,
+      "ascend_id": "00489",
+      "speaker_id": 17,
+      "language": "mixed",
+      "text": "我记得学校那个gym那边",
+      "duration_s": 2.64,
+      "hnr_db": 12.96,
+      "wav_path": "exp_20_pybot_larynx/crossling_data/bilingual_ref/ascend_spk17_00489.wav",
+      "sr": 24000
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "matrix": {
+    "real_extended_32": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": null,
+      "mel_lsd_db": 0.0,
+      "mcd_db": 0.0,
+      "df2_dt_hz_s": 4910.0,
+      "flux_p95_med": 1.7936,
+      "vuv_flux_db": 4.2148,
+      "cross_lingual": "ZH only"
+    },
+    "v4_baseline": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": 0.43728,
+      "mel_lsd_db": 9.822,
+      "mcd_db": 35.891,
+      "df2_dt_hz_s": 869.0,
+      "flux_p95_med": 4.3,
+      "vuv_flux_db": 9.38,
+      "cross_lingual": "ZH only (closed lexicon)"
+    },
+    "v5_full": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": 0.14814,
+      "mel_lsd_db": 9.365,
+      "mcd_db": 36.282,
+      "df2_dt_hz_s": 2879.0,
+      "flux_p95_med": 3.3,
+      "vuv_flux_db": 8.52,
+      "cross_lingual": "ZH only"
+    },
+    "v6_vocoder_gate1_resyn": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": 0.0167,
+      "mel_lsd_db": 2.688,
+      "mcd_db": 8.484,
+      "df2_dt_hz_s": 5155.0,
+      "flux_p95_med": 1.57,
+      "vuv_flux_db": 4.0,
+      "cross_lingual": "Donor conversion only (no TTS)"
+    },
+    "v6_crossling_dsp": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": 0.10724,
+      "mel_lsd_db": 9.491,
+      "mcd_db": 38.151,
+      "df2_dt_hz_s": 2080.3817,
+      "flux_p95_med": 5.0499,
+      "vuv_flux_db": 11.0251,
+      "cross_lingual": "ZH + EN + CS (rule-only)"
+    },
+    "v7_pybot_tts_loo": {
+      "neural_weights_mb": 0.0,
+      "cpu_rtf": 0.0812,
+      "mel_lsd_db": 7.8375,
+      "mcd_db": 28.4086,
+      "df2_dt_hz_s": 5002.4095,
+      "flux_p95_med": 1.8361,
+      "vuv_flux_db": 4.4223,
+      "cross_lingual": "ZH + EN + CS (hybrid unit-bank + vocoder)"
+    }
+  },
+  "v7_overhead_independent": {
+    "cold_start": {
+      "import_ms": 1167.869,
+      "init_ms": 67.499,
+      "total_ms": 1235.368,
+      "rss_mb": 97.387,
+      "peak_rss_mb": 97.387
+    },
+    "e2e_by_lang": {
+      "zh": {
+        "repeats": 3,
+        "n_samples": 68880,
+        "audio_dur_s": 2.87,
+        "first_wall_ms": 205.013,
+        "median_wall_ms": 205.013,
+        "cpu_rtf_first": 0.07143,
+        "cpu_rtf_median": 0.07143,
+        "rss_before_mb": 101.22,
+        "rss_after_mb": 102.39,
+        "rss_delta_mb": 1.168,
+        "peak_traced_kb": 44228.59
+      },
+      "en": {
+        "repeats": 3,
+        "n_samples": 66480,
+        "audio_dur_s": 2.77,
+        "first_wall_ms": 258.911,
+        "median_wall_ms": 271.391,
+        "cpu_rtf_first": 0.09347,
+        "cpu_rtf_median": 0.09798,
+        "rss_before_mb": 102.39,
+        "rss_after_mb": 102.7,
+        "rss_delta_mb": 0.316,
+        "peak_traced_kb": 43264.57
+      },
+      "zh_en": {
+        "repeats": 3,
+        "n_samples": 85680,
+        "audio_dur_s": 3.57,
+        "first_wall_ms": 286.824,
+        "median_wall_ms": 285.097,
+        "cpu_rtf_first": 0.08034,
+        "cpu_rtf_median": 0.07986,
+        "rss_before_mb": 102.19,
+        "rss_after_mb": 103.41,
+        "rss_delta_mb": 1.223,
+        "peak_traced_kb": 55232.79
+      }
+    },
+    "bank_disk_bytes": {
+      "npz": 1717409,
+      "json": 32631,
+      "total": 1750040
+    },
+    "profile_bytes": {
+      "json_bytes": 10323,
+      "gzip_bytes": 5174,
+      "in_memory_bytes": 9815
+    }
+  },
+  "v7_eval_independent": {
+    "benchmark_78": {
+      "n": 78,
+      "sanity_ok": 78,
+      "df1_dt_med": 1631.2834,
+      "df2_dt_med": 5440.2585,
+      "flux_med": 2.5492,
+      "flux_p95_med": 1.9922,
+      "vuv_flux_med": 4.3041,
+      "f0_glitch_rate_mean": 0.0402
+    },
+    "heldout_same_26": {
+      "n": 26,
+      "sanity_ok": 26,
+      "mel_lsd_med": 7.8375,
+      "mcd_med": 28.4086,
+      "mcd_cmn_med": 27.0865,
+      "df1_dt_med": 1959.0967,
+      "df2_dt_med": 5002.4095,
+      "flux_med": 2.7363,
+      "flux_p95_med": 1.8361,
+      "vuv_flux_med": 4.4223,
+      "f0_glitch_rate_mean": 0.0676
+    }
+  },
+  "listening_ab_manifest": [
+    {
+      "file": "01_zh_evolution_SSB05020122.wav",
+      "description": "Mandarin held-out SSB05020122: Real -> v6_crossling_dsp -> v7_pybot_tts (LOO)",
+      "duration_s": 9.239,
+      "sanity_ok": true,
+      "rms_dbfs": -20.34,
+      "peak": 0.80079,
+      "segments": [
+        {
+          "label": "real",
+          "source": "pybot_tts_v2_recorded/extended/SSB05020122.wav",
+          "start_s": 0.0,
+          "stop_s": 3.364
+        },
+        {
+          "label": "v6_crossling_dsp",
+          "source": "exp_v6_crossling_dsp/samples/matched_heldout/SSB05020122_v6_same.wav",
+          "start_s": 3.714,
+          "stop_s": 6.309
+        },
+        {
+          "label": "v7_pybot_loo",
+          "source": "exp_v7_pybot_tts/samples/heldout/SSB05020122_v7_same.wav",
+          "start_s": 6.659,
+          "stop_s": 9.239
+        }
+      ]
+    },
+    {
+      "file": "02_zh_evolution_SSB15930193.wav",
+      "description": "Mandarin held-out SSB15930193: Real -> v6_crossling_dsp -> v7_pybot_tts (LOO)",
+      "duration_s": 9.87,
+      "sanity_ok": true,
+      "rms_dbfs": -21.35,
+      "peak": 0.89,
+      "segments": [
+        {
+          "label": "real",
+          "source": "pybot_tts_v2_recorded/extended/SSB15930193.wav",
+          "start_s": 0.0,
+          "stop_s": 3.48
+        },
+        {
+          "label": "v6_crossling_dsp",
+          "source": "exp_v6_crossling_dsp/samples/matched_heldout/SSB15930193_v6_same.wav",
+          "start_s": 3.83,
+          "stop_s": 6.685
+        },
+        {
+          "label": "v7_pybot_loo",
+          "source": "exp_v7_pybot_tts/samples/heldout/SSB15930193_v7_same.wav",
+          "start_s": 7.035,
+          "stop_s": 9.87
+        }
+      ]
+    },
+    {
+      "file": "03_zh_speaker_swap_SSB05020122.wav",
+      "description": "Zero-shot cloning on SSB05020122: Real_0502 -> v7_same_0502 -> v7_as_1593 -> v7_as_MALE115 -> Real_1593_ref",
+      "duration_s": 15.7041,
+      "sanity_ok": true,
+      "rms_dbfs": -20.67,
+      "peak": 0.89,
+      "segments": [
+        {
+          "label": "real_SSB0502",
+          "source": "pybot_tts_v2_recorded/extended/SSB05020122.wav",
+          "start_s": 0.0,
+          "stop_s": 3.364
+        },
+        {
+          "label": "v7_SSB0502",
+          "source": "exp_v7_pybot_tts/samples/heldout/SSB05020122_v7_same.wav",
+          "start_s": 3.714,
+          "stop_s": 6.294
+        },
+        {
+          "label": "v7_as_SSB1593_3shot",
+          "source": "exp_v7_pybot_tts/samples/heldout/SSB05020122_v7_as_SSB1593_3shot.wav",
+          "start_s": 6.644,
+          "stop_s": 9.224
+        },
+        {
+          "label": "v7_as_MALE115",
+          "source": "exp_v7_pybot_tts/samples/heldout/SSB05020122_v7_as_MALE_115.wav",
+          "start_s": 9.574,
+          "stop_s": 12.154
+        },
+        {
+          "label": "real_SSB1593_ref",
+          "source": "pybot_tts_v2_recorded/extended/SSB15930031.wav",
+          "start_s": 12.504,
+          "stop_s": 15.704
+        }
+      ]
+    },
+    {
+      "file": "04_en_dsp_vs_v7_EN01.wav",
+      "description": "English EN_01: v6_dsp_0502 -> v7_0502 -> v6_dsp_MALE115 -> v7_MALE115",
+      "duration_s": 12.29,
+      "sanity_ok": true,
+      "rms_dbfs": -20.68,
+      "peak": 0.89,
+      "segments": [
+        {
+          "label": "v6_dsp_SSB0502",
+          "source": "exp_v6_crossling_dsp/samples/benchmark/EN_01_SSB0502_3shot.wav",
+          "start_s": 0.0,
+          "stop_s": 2.85
+        },
+        {
+          "label": "v7_SSB0502",
+          "source": "exp_v7_pybot_tts/samples/benchmark/EN_01_SSB0502_3shot.wav",
+          "start_s": 3.2,
+          "stop_s": 5.97
+        },
+        {
+          "label": "v6_dsp_MALE115",
+          "source": "exp_v6_crossling_dsp/samples/benchmark/EN_01_MALE_115.wav",
+          "start_s": 6.32,
+          "stop_s": 9.17
+        },
+        {
+          "label": "v7_MALE115",
+          "source": "exp_v7_pybot_tts/samples/benchmark/EN_01_MALE_115.wav",
+          "start_s": 9.52,
+          "stop_s": 12.29
+        }
+      ]
+    },
+    {
+      "file": "05_cs_dsp_vs_v7_CS01.wav",
+      "description": "Code-switched ZH+EN CS_01: v6_dsp_0502 -> v7_0502 -> v6_dsp_1593 -> v7_1593",
+      "duration_s": 15.59,
+      "sanity_ok": true,
+      "rms_dbfs": -20.3,
+      "peak": 0.64634,
+      "segments": [
+        {
+          "label": "v6_dsp_SSB0502",
+          "source": "exp_v6_crossling_dsp/samples/benchmark/CS_01_SSB0502_3shot.wav",
+          "start_s": 0.0,
+          "stop_s": 3.7
+        },
+        {
+          "label": "v7_SSB0502",
+          "source": "exp_v7_pybot_tts/samples/benchmark/CS_01_SSB0502_3shot.wav",
+          "start_s": 4.05,
+          "stop_s": 7.62
+        },
+        {
+          "label": "v6_dsp_SSB1593",
+          "source": "exp_v6_crossling_dsp/samples/benchmark/CS_01_SSB1593_3shot.wav",
+          "start_s": 7.97,
+          "stop_s": 11.67
+        },
+        {
+          "label": "v7_SSB1593",
+          "source": "exp_v7_pybot_tts/samples/benchmark/CS_01_SSB1593_3shot.wav",
+          "start_s": 12.02,
+          "stop_s": 15.59
+        }
+      ]
+    },
+    {
+      "file": "06_vocoder_vs_v5_SSB05020005.wav",
+      "description": "SSB05020005 trajectory vs vocoder: Real -> v4_base -> v5_full -> v6_vocoder_resyn -> v6_vocoder_to1593",
+      "duration_s": 18.5347,
+      "sanity_ok": true,
+      "rms_dbfs": -20.99,
+      "peak": 0.89,
+      "segments": [
+        {
+          "label": "real",
+          "source": "exp_v5_timbre/samples/SSB05020005_real.wav",
+          "start_s": 0.0,
+          "stop_s": 3.375
+        },
+        {
+          "label": "v4_baseline",
+          "source": "exp_v5_timbre/samples/SSB05020005_v4_baseline.wav",
+          "start_s": 3.725,
+          "stop_s": 7.23
+        },
+        {
+          "label": "v5_full",
+          "source": "exp_v5_timbre/samples/SSB05020005_v5_full.wav",
+          "start_s": 7.58,
+          "stop_s": 11.085
+        },
+        {
+          "label": "v6_vocoder_resyn",
+          "source": "exp_v6_vocoder/samples/SSB05020005_gate1_resyn.wav",
+          "start_s": 11.435,
+          "stop_s": 14.81
+        },
+        {
+          "label": "v6_vocoder_to1593",
+          "source": "exp_v6_vocoder/samples/SSB05020005_to_SSB1593_3shot.wav",
+          "start_s": 15.16,
+          "stop_s": 18.535
+        }
+      ]
+    },
+    {
+      "file": "07_vocoder_vs_v5_SSB15930031.wav",
+      "description": "SSB15930031 trajectory vs vocoder: Real -> v4_base -> v5_full -> v6_vocoder_resyn -> v6_vocoder_to0502",
+      "duration_s": 13.8698,
+      "sanity_ok": true,
+      "rms_dbfs": -20.46,
+      "peak": 0.69373,
+      "segments": [
+        {
+          "label": "real",
+          "source": "exp_v5_timbre/samples/SSB15930031_real.wav",
+          "start_s": 0.0,
+          "stop_s": 2.44
+        },
+        {
+          "label": "v4_baseline",
+          "source": "exp_v5_timbre/samples/SSB15930031_v4_baseline.wav",
+          "start_s": 2.79,
+          "stop_s": 5.365
+        },
+        {
+          "label": "v5_full",
+          "source": "exp_v5_timbre/samples/SSB15930031_v5_full.wav",
+          "start_s": 5.715,
+          "stop_s": 8.29
+        },
+        {
+          "label": "v6_vocoder_resyn",
+          "source": "exp_v6_vocoder/samples/SSB15930031_gate1_resyn.wav",
+          "start_s": 8.64,
+          "stop_s": 11.08
+        },
+        {
+          "label": "v6_vocoder_to0502",
+          "source": "exp_v6_vocoder/samples/SSB15930031_to_SSB0502_3shot.wav",
+          "start_s": 11.43,
+          "stop_s": 13.87
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "n_train_utts": 9666,
+  "n_dev_60": 60,
+  "n_heldout_20": 20,
+  "build_time_s": 1924.53,
+  "npz_size_kb": 3322.2,
+  "ctx_npz_size_kb": 16.2,
+  "speaker_f0_med_hz": 247.72,
+  "ref_log_amp": -4.2703,
+  "n_onset_tokens": 131488,
+  "n_final_tokens": 156988,
+  "table_sizes": {
+    "on_grp": 61,
+    "on_only": 21,
+    "fin_oft": 1533,
+    "fin_pft": 714,
+    "fin_ft": 189,
+    "fin_f": 39,
+    "st_on": 21,
+    "st_ft": 189
+  },
+  "ctx_table_sizes": {
+    "on_oft": 288,
+    "on_ofg": 61,
+    "on_ot": 105,
+    "on_o": 21,
+    "fin_dur_ft": 189,
+    "tone_pos_rel_db": 20
+  }
+}

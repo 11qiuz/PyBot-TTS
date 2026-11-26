@@ -1,0 +1,5879 @@
+{
+  "schema": 2,
+  "sr": 24000,
+  "confidence_contract": {
+    "unit": "final (韵母); fused finals are their own unit",
+    "high": "n_formant_samples >= 5",
+    "medium": "3 <= n_formant_samples < 5",
+    "low": "n_formant_samples < 3 -> evidence only, excluded from speaker estimates",
+    "demotion": "majority of low-confidence boundaries demotes one tier",
+    "speaker_scale": "requires >= 3 usable finals"
+  },
+  "phonemes": {
+    "final:a": {
+      "role": "final",
+      "phone": "a",
+      "n_samples": 10,
+      "n_formant_samples": 4,
+      "n_measured_before_filter": 6,
+      "n_dropped_as_miscut": 2,
+      "confidence": "medium",
+      "confidence_rule": "n=4 in [3,5) -> medium",
+      "duration_ms": {
+        "mean": 117.0,
+        "std": 48.0,
+        "n": 10
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        946.2,
+        1611.1,
+        2753.9
+      ],
+      "bandwidths": [
+        115.6,
+        247.4,
+        287.6
+      ],
+      "f0_hz": 212.4,
+      "spread_hz": {
+        "f1": 59.7,
+        "f2": 137.9,
+        "f3": 94.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 3,
+          "formants": [
+            958.0,
+            1603.2,
+            2780.1
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            881.8,
+            1755.2,
+            2727.7
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "da2",
+          "tone": 2,
+          "start": 51216,
+          "end": 53040,
+          "formants": [
+            958.0,
+            1618.9,
+            2892.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "ma3",
+          "tone": 3,
+          "start": 57384,
+          "end": 59160,
+          "formants": [
+            1025.7,
+            1419.5,
+            2670.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "fa1",
+          "tone": 1,
+          "start": 69816,
+          "end": 73800,
+          "formants": [
+            934.4,
+            1603.2,
+            2780.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "zha4",
+          "tone": 4,
+          "start": 34104,
+          "end": 38040,
+          "formants": [
+            881.8,
+            1755.2,
+            2727.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ai": {
+      "role": "final",
+      "phone": "ai",
+      "n_samples": 15,
+      "n_formant_samples": 9,
+      "n_measured_before_filter": 10,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=9 >= 5 -> high",
+      "duration_ms": {
+        "mean": 115.3,
+        "std": 50.6,
+        "n": 15
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        863.2,
+        1969.8,
+        3135.9
+      ],
+      "bandwidths": [
+        172.7,
+        240.0,
+        323.6
+      ],
+      "f0_hz": 215.4,
+      "spread_hz": {
+        "f1": 114.4,
+        "f2": 122.4,
+        "f3": 226.3
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 5,
+          "formants": [
+            892.3,
+            2002.8,
+            3106.5
+          ]
+        },
+        "SSB1593": {
+          "n": 4,
+          "formants": [
+            852.1,
+            1917.5,
+            3248.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020005",
+          "speaker": "SSB0502",
+          "pinyin": "tai2",
+          "tone": 2,
+          "start": 88368,
+          "end": 94560,
+          "formants": [
+            970.0,
+            1969.8,
+            2782.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "hai2",
+          "tone": 2,
+          "start": 15720,
+          "end": 17880,
+          "formants": [
+            567.6,
+            2211.9,
+            3135.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "sai4",
+          "tone": 4,
+          "start": 54768,
+          "end": 57120,
+          "formants": [
+            892.3,
+            2016.4,
+            3106.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "zai4",
+          "tone": 4,
+          "start": 41736,
+          "end": 43320,
+          "formants": [
+            806.7,
+            1891.8,
+            3177.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "cai3",
+          "tone": 3,
+          "start": 66408,
+          "end": 69960,
+          "formants": [
+            917.6,
+            2002.8,
+            2906.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930079",
+          "speaker": "SSB1593",
+          "pinyin": "zhai4",
+          "tone": 4,
+          "start": 15648,
+          "end": 17760,
+          "formants": [
+            841.0,
+            1847.3,
+            2646.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "kai1",
+          "tone": 1,
+          "start": 54192,
+          "end": 57600,
+          "formants": [
+            879.8,
+            2151.4,
+            3269.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "lai2",
+          "tone": 2,
+          "start": 14736,
+          "end": 18480,
+          "formants": [
+            863.2,
+            1880.5,
+            3270.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "zai3",
+          "tone": 3,
+          "start": 39192,
+          "end": 43080,
+          "formants": [
+            799.7,
+            1954.6,
+            3226.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:an": {
+      "role": "final",
+      "phone": "an",
+      "n_samples": 11,
+      "n_formant_samples": 5,
+      "n_measured_before_filter": 8,
+      "n_dropped_as_miscut": 3,
+      "confidence": "high",
+      "confidence_rule": "n=5 >= 5 -> high",
+      "duration_ms": {
+        "mean": 110.4,
+        "std": 33.6,
+        "n": 11
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        904.6,
+        1684.5,
+        3206.2
+      ],
+      "bandwidths": [
+        369.2,
+        174.2,
+        291.9
+      ],
+      "f0_hz": 209.9,
+      "spread_hz": {
+        "f1": 69.0,
+        "f2": 186.2,
+        "f3": 168.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            882.4,
+            1793.8,
+            3186.5
+          ]
+        },
+        "SSB1593": {
+          "n": 3,
+          "formants": [
+            904.6,
+            1491.7,
+            3239.0
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "an4",
+          "tone": 4,
+          "start": 23040,
+          "end": 27120,
+          "formants": [
+            939.2,
+            1684.5,
+            3206.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "zhan3",
+          "tone": 3,
+          "start": 74952,
+          "end": 78360,
+          "formants": [
+            825.6,
+            1903.1,
+            3166.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "fan4",
+          "tone": 4,
+          "start": 57840,
+          "end": 60000,
+          "formants": [
+            904.6,
+            1491.7,
+            3239.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "han4",
+          "tone": 4,
+          "start": 56064,
+          "end": 59280,
+          "formants": [
+            977.1,
+            1769.8,
+            3196.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "fan1",
+          "tone": 1,
+          "start": 61224,
+          "end": 64440,
+          "formants": [
+            821.2,
+            1463.6,
+            3574.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ang": {
+      "role": "final",
+      "phone": "ang",
+      "n_samples": 6,
+      "n_formant_samples": 3,
+      "n_measured_before_filter": 5,
+      "n_dropped_as_miscut": 2,
+      "confidence": "medium",
+      "confidence_rule": "n=3 in [3,5) -> medium",
+      "duration_ms": {
+        "mean": 130.0,
+        "std": 50.2,
+        "n": 6
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        301.9,
+        1371.3,
+        3604.1
+      ],
+      "bandwidths": [
+        135.7,
+        445.2,
+        304.3
+      ],
+      "f0_hz": 219.5,
+      "spread_hz": {
+        "f1": 39.0,
+        "f2": 183.5,
+        "f3": 353.5
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            269.9,
+            1323.1,
+            3540.6
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            308.4,
+            1371.3,
+            3604.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020122",
+          "speaker": "SSB0502",
+          "pinyin": "fang1",
+          "tone": 1,
+          "start": 45240,
+          "end": 46680,
+          "formants": [
+            301.9,
+            1141.7,
+            3892.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020248",
+          "speaker": "SSB0502",
+          "pinyin": "chang3",
+          "tone": 3,
+          "start": 48648,
+          "end": 51960,
+          "formants": [
+            237.8,
+            1504.4,
+            3189.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930079",
+          "speaker": "SSB1593",
+          "pinyin": "dang4",
+          "tone": 4,
+          "start": 11712,
+          "end": 13920,
+          "formants": [
+            308.4,
+            1371.3,
+            3604.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ao": {
+      "role": "final",
+      "phone": "ao",
+      "n_samples": 15,
+      "n_formant_samples": 7,
+      "n_measured_before_filter": 9,
+      "n_dropped_as_miscut": 2,
+      "confidence": "high",
+      "confidence_rule": "n=7 >= 5 -> high",
+      "duration_ms": {
+        "mean": 116.7,
+        "std": 61.9,
+        "n": 15
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        462.3,
+        1254.2,
+        3407.4
+      ],
+      "bandwidths": [
+        221.2,
+        210.1,
+        285.7
+      ],
+      "f0_hz": 210.8,
+      "spread_hz": {
+        "f1": 163.1,
+        "f2": 544.5,
+        "f3": 212.5
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 3,
+          "formants": [
+            452.3,
+            1194.6,
+            3118.5
+          ]
+        },
+        "SSB1593": {
+          "n": 4,
+          "formants": [
+            522.6,
+            1305.0,
+            3482.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020005",
+          "speaker": "SSB0502",
+          "pinyin": "hao3",
+          "tone": 3,
+          "start": 58008,
+          "end": 65160,
+          "formants": [
+            452.3,
+            2589.2,
+            3118.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "kao4",
+          "tone": 4,
+          "start": 13488,
+          "end": 17280,
+          "formants": [
+            826.1,
+            1194.6,
+            3309.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "hao2",
+          "tone": 2,
+          "start": 18528,
+          "end": 20160,
+          "formants": [
+            336.1,
+            905.8,
+            2973.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "gao4",
+          "tone": 4,
+          "start": 35592,
+          "end": 38040,
+          "formants": [
+            400.9,
+            1166.0,
+            3407.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "bao4",
+          "tone": 4,
+          "start": 37944,
+          "end": 39960,
+          "formants": [
+            582.9,
+            1355.8,
+            3540.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "dao4",
+          "tone": 4,
+          "start": 44424,
+          "end": 46440,
+          "formants": [
+            598.3,
+            1254.2,
+            3512.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "dao4",
+          "tone": 4,
+          "start": 45408,
+          "end": 49200,
+          "formants": [
+            462.3,
+            1448.1,
+            3452.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:e": {
+      "role": "final",
+      "phone": "e",
+      "n_samples": 30,
+      "n_formant_samples": 20,
+      "n_measured_before_filter": 21,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=20 >= 5 -> high",
+      "duration_ms": {
+        "mean": 125.2,
+        "std": 58.3,
+        "n": 30
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        559.1,
+        1649.0,
+        3299.8
+      ],
+      "bandwidths": [
+        211.8,
+        206.6,
+        258.4
+      ],
+      "f0_hz": 202.8,
+      "spread_hz": {
+        "f1": 145.5,
+        "f2": 363.5,
+        "f3": 244.8
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 7,
+          "formants": [
+            599.3,
+            1547.7,
+            3008.4
+          ]
+        },
+        "SSB1593": {
+          "n": 13,
+          "formants": [
+            521.0,
+            1729.4,
+            3383.2
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020005",
+          "speaker": "SSB0502",
+          "pinyin": "ce4",
+          "tone": 4,
+          "start": 77568,
+          "end": 81600,
+          "formants": [
+            652.3,
+            1467.3,
+            2940.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "le5",
+          "tone": 5,
+          "start": 52320,
+          "end": 58800,
+          "formants": [
+            774.0,
+            997.0,
+            2926.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "ge4",
+          "tone": 4,
+          "start": 29280,
+          "end": 30720,
+          "formants": [
+            438.7,
+            1627.6,
+            2890.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "de2",
+          "tone": 2,
+          "start": 37512,
+          "end": 40200,
+          "formants": [
+            448.7,
+            1678.9,
+            3645.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020122",
+          "speaker": "SSB0502",
+          "pinyin": "he2",
+          "tone": 2,
+          "start": 35520,
+          "end": 36960,
+          "formants": [
+            599.3,
+            1715.8,
+            3134.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "de2",
+          "tone": 2,
+          "start": 12648,
+          "end": 15960,
+          "formants": [
+            689.9,
+            1547.7,
+            3008.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "ke3",
+          "tone": 3,
+          "start": 43392,
+          "end": 47760,
+          "formants": [
+            585.0,
+            972.8,
+            3103.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "me5",
+          "tone": 5,
+          "start": 23088,
+          "end": 25920,
+          "formants": [
+            408.8,
+            1868.5,
+            3506.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "zhe5",
+          "tone": 5,
+          "start": 42888,
+          "end": 48120,
+          "formants": [
+            640.1,
+            1412.5,
+            3128.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "le5",
+          "tone": 5,
+          "start": 20472,
+          "end": 23640,
+          "formants": [
+            686.3,
+            1810.6,
+            3321.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "zhe4",
+          "tone": 4,
+          "start": 27672,
+          "end": 31800,
+          "formants": [
+            755.2,
+            1670.5,
+            3383.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "me5",
+          "tone": 5,
+          "start": 33624,
+          "end": 37320,
+          "formants": [
+            401.2,
+            1501.8,
+            3226.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "de5",
+          "tone": 5,
+          "start": 39960,
+          "end": 42840,
+          "formants": [
+            358.6,
+            2341.6,
+            3278.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "me5",
+          "tone": 5,
+          "start": 66888,
+          "end": 70440,
+          "formants": [
+            830.8,
+            1496.2,
+            3404.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "de2",
+          "tone": 2,
+          "start": 54936,
+          "end": 57960,
+          "formants": [
+            437.2,
+            1729.4,
+            3181.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "she4",
+          "tone": 4,
+          "start": 22920,
+          "end": 26520,
+          "formants": [
+            521.0,
+            1805.5,
+            3727.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "de5",
+          "tone": 5,
+          "start": 44208,
+          "end": 48720,
+          "formants": [
+            372.0,
+            1776.5,
+            3608.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "ke2",
+          "tone": 2,
+          "start": 35784,
+          "end": 40200,
+          "formants": [
+            403.5,
+            2525.8,
+            3489.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "ge1",
+          "tone": 1,
+          "start": 56808,
+          "end": 58920,
+          "formants": [
+            608.4,
+            1415.4,
+            3381.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930263",
+          "speaker": "SSB1593",
+          "pinyin": "me5",
+          "tone": 5,
+          "start": 8155,
+          "end": 13848,
+          "formants": [
+            533.3,
+            1415.5,
+            3383.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ei": {
+      "role": "final",
+      "phone": "ei",
+      "n_samples": 1,
+      "n_formant_samples": 0,
+      "n_measured_before_filter": 0,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 88.0,
+        "std": 0.0,
+        "n": 1
+      },
+      "fused": false,
+      "speakers": [],
+      "formants": null,
+      "bandwidths": null,
+      "f0_hz": null,
+      "reject": [
+        "unvoiced_or_implausible"
+      ],
+      "usable_for_speaker": false
+    },
+    "final:en": {
+      "role": "final",
+      "phone": "en",
+      "n_samples": 13,
+      "n_formant_samples": 8,
+      "n_measured_before_filter": 10,
+      "n_dropped_as_miscut": 2,
+      "confidence": "high",
+      "confidence_rule": "n=8 >= 5 -> high",
+      "duration_ms": {
+        "mean": 146.7,
+        "std": 64.3,
+        "n": 13
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        294.9,
+        1740.7,
+        3390.9
+      ],
+      "bandwidths": [
+        167.6,
+        332.7,
+        426.6
+      ],
+      "f0_hz": 187.8,
+      "spread_hz": {
+        "f1": 108.3,
+        "f2": 346.1,
+        "f3": 216.5
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            230.6,
+            1943.7,
+            3446.3
+          ]
+        },
+        "SSB1593": {
+          "n": 6,
+          "formants": [
+            353.6,
+            1582.5,
+            3390.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "zhen4",
+          "tone": 4,
+          "start": 64320,
+          "end": 66240,
+          "formants": [
+            233.6,
+            2155.5,
+            3505.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "ren2",
+          "tone": 2,
+          "start": 38952,
+          "end": 44280,
+          "formants": [
+            227.6,
+            1731.9,
+            3387.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "zen3",
+          "tone": 3,
+          "start": 34992,
+          "end": 37680,
+          "formants": [
+            423.5,
+            2064.8,
+            3387.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "shen2",
+          "tone": 2,
+          "start": 19296,
+          "end": 22080,
+          "formants": [
+            291.5,
+            1382.5,
+            3683.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "chen2",
+          "tone": 2,
+          "start": 53352,
+          "end": 58440,
+          "formants": [
+            268.6,
+            1749.5,
+            3280.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "chen2",
+          "tone": 2,
+          "start": 58104,
+          "end": 60840,
+          "formants": [
+            298.2,
+            1822.9,
+            3393.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "men5",
+          "tone": 5,
+          "start": 17592,
+          "end": 19320,
+          "formants": [
+            409.1,
+            1152.7,
+            3942.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930263",
+          "speaker": "SSB1593",
+          "pinyin": "zen3",
+          "tone": 3,
+          "start": 8155,
+          "end": 13848,
+          "formants": [
+            533.3,
+            1415.5,
+            3383.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:eng": {
+      "role": "final",
+      "phone": "eng",
+      "n_samples": 4,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 116.0,
+        "std": 41.5,
+        "n": 4
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502"
+      ],
+      "formants": [
+        553.9,
+        1575.0,
+        3610.6
+      ],
+      "bandwidths": [
+        195.9,
+        484.8,
+        265.1
+      ],
+      "f0_hz": 219.3,
+      "spread_hz": {
+        "f1": 465.6,
+        "f2": 75.7,
+        "f3": 338.2
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            553.9,
+            1575.0,
+            3610.6
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "neng2",
+          "tone": 2,
+          "start": 43608,
+          "end": 47160,
+          "formants": [
+            883.1,
+            1628.6,
+            3849.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "cheng2",
+          "tone": 2,
+          "start": 50544,
+          "end": 54240,
+          "formants": [
+            224.7,
+            1521.5,
+            3371.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:er": {
+      "role": "final",
+      "phone": "er",
+      "n_samples": 3,
+      "n_formant_samples": 3,
+      "n_measured_before_filter": 3,
+      "n_dropped_as_miscut": 0,
+      "confidence": "medium",
+      "confidence_rule": "n=3 in [3,5) -> medium",
+      "duration_ms": {
+        "mean": 223.3,
+        "std": 35.1,
+        "n": 3
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        880.7,
+        1506.7,
+        2279.6
+      ],
+      "bandwidths": [
+        150.0,
+        218.3,
+        175.8
+      ],
+      "f0_hz": 204.6,
+      "spread_hz": {
+        "f1": 95.6,
+        "f2": 100.5,
+        "f3": 994.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            918.5,
+            1481.2,
+            2144.8
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            766.4,
+            1649.6,
+            3851.2
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "er3",
+          "tone": 3,
+          "start": 57120,
+          "end": 62400,
+          "formants": [
+            956.2,
+            1506.7,
+            2279.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "er4",
+          "tone": 4,
+          "start": 49560,
+          "end": 54120,
+          "formants": [
+            880.7,
+            1455.8,
+            2010.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "er2",
+          "tone": 2,
+          "start": 7440,
+          "end": 13680,
+          "formants": [
+            766.4,
+            1649.6,
+            3851.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:i": {
+      "role": "final",
+      "phone": "i",
+      "n_samples": 48,
+      "n_formant_samples": 35,
+      "n_measured_before_filter": 36,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=35 >= 5 -> high",
+      "duration_ms": {
+        "mean": 151.1,
+        "std": 88.1,
+        "n": 48
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        343.6,
+        2487.6,
+        3304.1
+      ],
+      "bandwidths": [
+        119.3,
+        278.2,
+        308.8
+      ],
+      "f0_hz": 211.9,
+      "spread_hz": {
+        "f1": 82.3,
+        "f2": 500.1,
+        "f3": 347.8
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 17,
+          "formants": [
+            292.1,
+            2487.6,
+            3201.0
+          ]
+        },
+        "SSB1593": {
+          "n": 18,
+          "formants": [
+            354.7,
+            2454.3,
+            3417.3
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "yi4",
+          "tone": 4,
+          "start": 9480,
+          "end": 15720,
+          "formants": [
+            300.1,
+            2880.2,
+            3809.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "qi3",
+          "tone": 3,
+          "start": 35616,
+          "end": 40320,
+          "formants": [
+            628.1,
+            2191.8,
+            3118.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "yi2",
+          "tone": 2,
+          "start": 22440,
+          "end": 25920,
+          "formants": [
+            269.4,
+            2066.6,
+            2902.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "yi4",
+          "tone": 4,
+          "start": 46320,
+          "end": 50880,
+          "formants": [
+            279.1,
+            2544.8,
+            3258.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020122",
+          "speaker": "SSB0502",
+          "pinyin": "di4",
+          "tone": 4,
+          "start": 40344,
+          "end": 41880,
+          "formants": [
+            242.4,
+            1962.0,
+            2860.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "bi3",
+          "tone": 3,
+          "start": 18456,
+          "end": 20040,
+          "formants": [
+            224.5,
+            2401.1,
+            3233.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "li3",
+          "tone": 3,
+          "start": 36936,
+          "end": 39000,
+          "formants": [
+            292.1,
+            2810.6,
+            3302.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "ji4",
+          "tone": 4,
+          "start": 20664,
+          "end": 24840,
+          "formants": [
+            299.0,
+            2627.1,
+            3333.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "ji2",
+          "tone": 2,
+          "start": 63384,
+          "end": 69000,
+          "formants": [
+            266.6,
+            2601.1,
+            3322.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020248",
+          "speaker": "SSB0502",
+          "pinyin": "bi3",
+          "tone": 3,
+          "start": 12456,
+          "end": 18840,
+          "formants": [
+            401.1,
+            1162.5,
+            2700.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020248",
+          "speaker": "SSB0502",
+          "pinyin": "ji4",
+          "tone": 4,
+          "start": 81648,
+          "end": 85920,
+          "formants": [
+            283.0,
+            2694.8,
+            3531.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "ji1",
+          "tone": 1,
+          "start": 45624,
+          "end": 48600,
+          "formants": [
+            329.9,
+            2492.7,
+            3201.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "bi4",
+          "tone": 4,
+          "start": 11592,
+          "end": 12840,
+          "formants": [
+            367.5,
+            2487.6,
+            2960.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "yi3",
+          "tone": 3,
+          "start": 36000,
+          "end": 40440,
+          "formants": [
+            242.8,
+            2871.8,
+            3935.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "qi2",
+          "tone": 2,
+          "start": 50064,
+          "end": 52080,
+          "formants": [
+            403.9,
+            2393.0,
+            3111.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "ji1",
+          "tone": 1,
+          "start": 62016,
+          "end": 63600,
+          "formants": [
+            253.1,
+            1598.6,
+            2825.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930079",
+          "speaker": "SSB1593",
+          "pinyin": "ji1",
+          "tone": 1,
+          "start": 60216,
+          "end": 65160,
+          "formants": [
+            389.9,
+            2487.8,
+            3491.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "ni3",
+          "tone": 3,
+          "start": 10584,
+          "end": 12600,
+          "formants": [
+            402.3,
+            1675.7,
+            3100.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "yi1",
+          "tone": 1,
+          "start": 18600,
+          "end": 26640,
+          "formants": [
+            391.3,
+            2822.3,
+            3386.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "xi1",
+          "tone": 1,
+          "start": 17424,
+          "end": 21600,
+          "formants": [
+            408.6,
+            2529.2,
+            3483.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "ji4",
+          "tone": 4,
+          "start": 41496,
+          "end": 46440,
+          "formants": [
+            381.9,
+            2559.1,
+            3470.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "ji4",
+          "tone": 4,
+          "start": 29208,
+          "end": 33480,
+          "formants": [
+            343.6,
+            2261.8,
+            3506.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "bi4",
+          "tone": 4,
+          "start": 71472,
+          "end": 73200,
+          "formants": [
+            336.9,
+            2981.7,
+            3826.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "ni3",
+          "tone": 3,
+          "start": 9096,
+          "end": 12600,
+          "formants": [
+            362.2,
+            3139.5,
+            3627.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "yi4",
+          "tone": 4,
+          "start": 40440,
+          "end": 48720,
+          "formants": [
+            350.9,
+            2420.8,
+            3304.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "ji3",
+          "tone": 3,
+          "start": 34440,
+          "end": 38040,
+          "formants": [
+            347.2,
+            2511.7,
+            3268.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "yi2",
+          "tone": 2,
+          "start": 42840,
+          "end": 46080,
+          "formants": [
+            349.2,
+            1819.9,
+            3010.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "ji2",
+          "tone": 2,
+          "start": 60024,
+          "end": 62760,
+          "formants": [
+            333.4,
+            2546.1,
+            3448.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "xi2",
+          "tone": 2,
+          "start": 45744,
+          "end": 47760,
+          "formants": [
+            324.2,
+            1167.1,
+            3073.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "ji4",
+          "tone": 4,
+          "start": 32784,
+          "end": 36000,
+          "formants": [
+            358.5,
+            2283.9,
+            3622.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "li4",
+          "tone": 4,
+          "start": 58872,
+          "end": 60840,
+          "formants": [
+            360.2,
+            2632.4,
+            3274.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "ni3",
+          "tone": 3,
+          "start": 21864,
+          "end": 23400,
+          "formants": [
+            276.8,
+            1846.9,
+            3351.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "yi2",
+          "tone": 2,
+          "start": 49200,
+          "end": 54960,
+          "formants": [
+            333.0,
+            1931.2,
+            3520.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930263",
+          "speaker": "SSB1593",
+          "pinyin": "ni2",
+          "tone": 2,
+          "start": 8155,
+          "end": 13848,
+          "formants": [
+            533.3,
+            1415.5,
+            3383.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020026",
+          "speaker": "SSB0502",
+          "pinyin": "qi2",
+          "tone": 2,
+          "start": 12571,
+          "end": 21768,
+          "formants": [
+            477.2,
+            1799.0,
+            2124.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ia": {
+      "role": "final",
+      "phone": "ia",
+      "n_samples": 2,
+      "n_formant_samples": 1,
+      "n_measured_before_filter": 1,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=1 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 190.0,
+        "std": 39.6,
+        "n": 2
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502"
+      ],
+      "formants": [
+        893.7,
+        1989.6,
+        2856.6
+      ],
+      "bandwidths": [
+        112.3,
+        228.6,
+        404.7
+      ],
+      "f0_hz": 235.2,
+      "spread_hz": {
+        "f1": 0.0,
+        "f2": 0.0,
+        "f3": 0.0
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            893.7,
+            1989.6,
+            2856.6
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "jia1",
+          "tone": 1,
+          "start": 32112,
+          "end": 36000,
+          "formants": [
+            893.7,
+            1989.6,
+            2856.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:ian": {
+      "role": "final",
+      "phone": "ian",
+      "n_samples": 11,
+      "n_formant_samples": 7,
+      "n_measured_before_filter": 8,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=7 >= 5 -> high",
+      "duration_ms": {
+        "mean": 184.2,
+        "std": 85.2,
+        "n": 11
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        375.7,
+        2115.6,
+        3423.8
+      ],
+      "bandwidths": [
+        109.0,
+        304.2,
+        234.2
+      ],
+      "f0_hz": 198.7,
+      "spread_hz": {
+        "f1": 74.7,
+        "f2": 294.1,
+        "f3": 288.6
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            349.4,
+            1638.5,
+            2989.8
+          ]
+        },
+        "SSB1593": {
+          "n": 5,
+          "formants": [
+            375.7,
+            2154.5,
+            3518.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020159",
+          "speaker": "SSB0502",
+          "pinyin": "yan3",
+          "tone": 3,
+          "start": 62280,
+          "end": 68640,
+          "formants": [
+            453.8,
+            1751.4,
+            3129.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "yan2",
+          "tone": 2,
+          "start": 40440,
+          "end": 46920,
+          "formants": [
+            245.0,
+            1525.6,
+            2850.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "jian1",
+          "tone": 1,
+          "start": 62544,
+          "end": 66240,
+          "formants": [
+            263.2,
+            2292.7,
+            3586.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "yan2",
+          "tone": 2,
+          "start": 38760,
+          "end": 45360,
+          "formants": [
+            375.7,
+            2115.6,
+            3410.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "lian2",
+          "tone": 2,
+          "start": 32496,
+          "end": 37920,
+          "formants": [
+            365.2,
+            2154.5,
+            3423.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "nian4",
+          "tone": 4,
+          "start": 40632,
+          "end": 43560,
+          "formants": [
+            398.6,
+            1946.3,
+            3683.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "xian2",
+          "tone": 2,
+          "start": 28440,
+          "end": 32520,
+          "formants": [
+            382.6,
+            2328.8,
+            3518.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:iang": {
+      "role": "final",
+      "phone": "iang",
+      "n_samples": 8,
+      "n_formant_samples": 5,
+      "n_measured_before_filter": 7,
+      "n_dropped_as_miscut": 2,
+      "confidence": "high",
+      "confidence_rule": "n=5 >= 5 -> high",
+      "duration_ms": {
+        "mean": 165.0,
+        "std": 85.8,
+        "n": 8
+      },
+      "fused": true,
+      "speakers": [
+        "SSB1593"
+      ],
+      "formants": [
+        328.9,
+        1556.7,
+        3536.6
+      ],
+      "bandwidths": [
+        317.3,
+        339.5,
+        330.7
+      ],
+      "f0_hz": 217.0,
+      "spread_hz": {
+        "f1": 81.4,
+        "f2": 318.5,
+        "f3": 142.6
+      },
+      "per_speaker": {
+        "SSB1593": {
+          "n": 5,
+          "formants": [
+            328.9,
+            1556.7,
+            3536.6
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "yang4",
+          "tone": 4,
+          "start": 37680,
+          "end": 44280,
+          "formants": [
+            388.4,
+            2146.2,
+            3486.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "xiang3",
+          "tone": 3,
+          "start": 20904,
+          "end": 26280,
+          "formants": [
+            304.9,
+            1284.9,
+            3720.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "jiang1",
+          "tone": 1,
+          "start": 22128,
+          "end": 27840,
+          "formants": [
+            486.4,
+            1520.6,
+            3507.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "xiang1",
+          "tone": 1,
+          "start": 18168,
+          "end": 20760,
+          "formants": [
+            328.9,
+            1556.7,
+            3805.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930040",
+          "speaker": "SSB1593",
+          "pinyin": "xiang3",
+          "tone": 3,
+          "start": 8419,
+          "end": 9408,
+          "formants": [
+            284.4,
+            1687.5,
+            3536.6
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:iao": {
+      "role": "final",
+      "phone": "iao",
+      "n_samples": 9,
+      "n_formant_samples": 7,
+      "n_measured_before_filter": 8,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=7 >= 5 -> high",
+      "duration_ms": {
+        "mean": 194.8,
+        "std": 50.3,
+        "n": 9
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        673.6,
+        1372.7,
+        3291.0
+      ],
+      "bandwidths": [
+        206.1,
+        228.9,
+        291.2
+      ],
+      "f0_hz": 225.1,
+      "spread_hz": {
+        "f1": 117.4,
+        "f2": 147.7,
+        "f3": 458.6
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            807.6,
+            1351.7,
+            2764.7
+          ]
+        },
+        "SSB1593": {
+          "n": 5,
+          "formants": [
+            613.8,
+            1379.0,
+            3307.3
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "jiao4",
+          "tone": 4,
+          "start": 21792,
+          "end": 26640,
+          "formants": [
+            717.5,
+            1372.7,
+            3056.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "yao4",
+          "tone": 4,
+          "start": 25920,
+          "end": 31800,
+          "formants": [
+            600.2,
+            1379.0,
+            3291.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "yao4",
+          "tone": 4,
+          "start": 54360,
+          "end": 59520,
+          "formants": [
+            528.2,
+            1281.7,
+            3209.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "jiao1",
+          "tone": 1,
+          "start": 38880,
+          "end": 42960,
+          "formants": [
+            693.7,
+            1413.8,
+            3734.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "xiao1",
+          "tone": 1,
+          "start": 9984,
+          "end": 15120,
+          "formants": [
+            613.8,
+            1595.7,
+            3307.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "qiao2",
+          "tone": 2,
+          "start": 15552,
+          "end": 20640,
+          "formants": [
+            673.6,
+            1104.6,
+            3869.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020434",
+          "speaker": "SSB0502",
+          "pinyin": "yao4",
+          "tone": 4,
+          "start": 10032,
+          "end": 15960,
+          "formants": [
+            897.8,
+            1330.7,
+            2473.0
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ie": {
+      "role": "final",
+      "phone": "ie",
+      "n_samples": 8,
+      "n_formant_samples": 5,
+      "n_measured_before_filter": 5,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=5 >= 5 -> high",
+      "duration_ms": {
+        "mean": 137.6,
+        "std": 77.0,
+        "n": 8
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        526.0,
+        2311.6,
+        3277.3
+      ],
+      "bandwidths": [
+        170.1,
+        197.7,
+        222.0
+      ],
+      "f0_hz": 222.4,
+      "spread_hz": {
+        "f1": 76.4,
+        "f2": 344.9,
+        "f3": 325.8
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 3,
+          "formants": [
+            526.0,
+            2467.7,
+            3277.3
+          ]
+        },
+        "SSB1593": {
+          "n": 2,
+          "formants": [
+            454.2,
+            2051.7,
+            3355.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020005",
+          "speaker": "SSB0502",
+          "pinyin": "ye2",
+          "tone": 2,
+          "start": 37440,
+          "end": 44280,
+          "formants": [
+            471.8,
+            2467.7,
+            3277.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "xie1",
+          "tone": 1,
+          "start": 17352,
+          "end": 20280,
+          "formants": [
+            560.8,
+            2602.5,
+            3407.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "ye4",
+          "tone": 4,
+          "start": 40320,
+          "end": 44280,
+          "formants": [
+            526.0,
+            1943.8,
+            2893.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930079",
+          "speaker": "SSB1593",
+          "pinyin": "jie2",
+          "tone": 2,
+          "start": 27960,
+          "end": 29400,
+          "formants": [
+            538.5,
+            1791.7,
+            3002.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "ye3",
+          "tone": 3,
+          "start": 42960,
+          "end": 47640,
+          "formants": [
+            369.9,
+            2311.6,
+            3709.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:in": {
+      "role": "final",
+      "phone": "in",
+      "n_samples": 7,
+      "n_formant_samples": 6,
+      "n_measured_before_filter": 6,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=6 >= 5 -> high",
+      "duration_ms": {
+        "mean": 153.4,
+        "std": 63.3,
+        "n": 7
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        319.2,
+        2440.6,
+        3344.1
+      ],
+      "bandwidths": [
+        118.6,
+        325.1,
+        355.8
+      ],
+      "f0_hz": 243.3,
+      "spread_hz": {
+        "f1": 84.6,
+        "f2": 367.3,
+        "f3": 122.0
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 3,
+          "formants": [
+            422.8,
+            2401.2,
+            3358.7
+          ]
+        },
+        "SSB1593": {
+          "n": 3,
+          "formants": [
+            289.1,
+            2479.9,
+            3329.5
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020077",
+          "speaker": "SSB0502",
+          "pinyin": "min2",
+          "tone": 2,
+          "start": 24864,
+          "end": 28800,
+          "formants": [
+            422.8,
+            2401.2,
+            3456.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020122",
+          "speaker": "SSB0502",
+          "pinyin": "yin1",
+          "tone": 1,
+          "start": 57600,
+          "end": 64080,
+          "formants": [
+            275.7,
+            2183.1,
+            3358.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "jin3",
+          "tone": 3,
+          "start": 20664,
+          "end": 24840,
+          "formants": [
+            482.4,
+            2573.4,
+            3245.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "jin1",
+          "tone": 1,
+          "start": 8496,
+          "end": 12480,
+          "formants": [
+            289.1,
+            1609.5,
+            3523.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "qin5",
+          "tone": 5,
+          "start": 29736,
+          "end": 32760,
+          "formants": [
+            349.3,
+            2558.3,
+            3203.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "xin1",
+          "tone": 1,
+          "start": 17496,
+          "end": 19800,
+          "formants": [
+            288.6,
+            2479.9,
+            3329.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ing": {
+      "role": "final",
+      "phone": "ing",
+      "n_samples": 10,
+      "n_formant_samples": 5,
+      "n_measured_before_filter": 7,
+      "n_dropped_as_miscut": 2,
+      "confidence": "high",
+      "confidence_rule": "n=5 >= 5 -> high",
+      "duration_ms": {
+        "mean": 144.6,
+        "std": 47.1,
+        "n": 10
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        431.0,
+        2479.0,
+        3290.4
+      ],
+      "bandwidths": [
+        149.6,
+        258.3,
+        240.0
+      ],
+      "f0_hz": 229.3,
+      "spread_hz": {
+        "f1": 81.0,
+        "f2": 752.5,
+        "f3": 347.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 4,
+          "formants": [
+            452.4,
+            1964.5,
+            3347.8
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            301.9,
+            2564.5,
+            3290.4
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "jing1",
+          "tone": 1,
+          "start": 17544,
+          "end": 19320,
+          "formants": [
+            363.1,
+            1449.9,
+            3095.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "ming2",
+          "tone": 2,
+          "start": 32352,
+          "end": 35760,
+          "formants": [
+            431.0,
+            2558.3,
+            3118.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "ming2",
+          "tone": 2,
+          "start": 38376,
+          "end": 44040,
+          "formants": [
+            473.9,
+            2479.0,
+            3577.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "ping2",
+          "tone": 2,
+          "start": 27312,
+          "end": 30480,
+          "formants": [
+            498.8,
+            949.9,
+            3917.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "qing2",
+          "tone": 2,
+          "start": 50808,
+          "end": 55080,
+          "formants": [
+            301.9,
+            2564.5,
+            3290.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:iong": {
+      "role": "final",
+      "phone": "iong",
+      "n_samples": 1,
+      "n_formant_samples": 0,
+      "n_measured_before_filter": 0,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 245.0,
+        "std": 0.0,
+        "n": 1
+      },
+      "fused": true,
+      "speakers": [],
+      "formants": null,
+      "bandwidths": null,
+      "f0_hz": null,
+      "reject": [
+        "unvoiced_or_implausible"
+      ],
+      "usable_for_speaker": false
+    },
+    "final:iou": {
+      "role": "final",
+      "phone": "iou",
+      "n_samples": 11,
+      "n_formant_samples": 7,
+      "n_measured_before_filter": 7,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=7 >= 5 -> high",
+      "duration_ms": {
+        "mean": 157.5,
+        "std": 85.7,
+        "n": 11
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        463.5,
+        1407.9,
+        3052.8
+      ],
+      "bandwidths": [
+        209.1,
+        182.6,
+        200.0
+      ],
+      "f0_hz": 213.5,
+      "spread_hz": {
+        "f1": 66.6,
+        "f2": 366.3,
+        "f3": 152.1
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 5,
+          "formants": [
+            464.2,
+            1413.6,
+            3010.6
+          ]
+        },
+        "SSB1593": {
+          "n": 2,
+          "formants": [
+            398.9,
+            1366.5,
+            3235.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020005",
+          "speaker": "SSB0502",
+          "pinyin": "you3",
+          "tone": 3,
+          "start": 44280,
+          "end": 52080,
+          "formants": [
+            486.7,
+            1056.9,
+            2998.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "you3",
+          "tone": 3,
+          "start": 17880,
+          "end": 22440,
+          "formants": [
+            464.2,
+            1813.9,
+            3010.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "qiu2",
+          "tone": 2,
+          "start": 35112,
+          "end": 37560,
+          "formants": [
+            463.5,
+            979.9,
+            3052.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "you3",
+          "tone": 3,
+          "start": 28560,
+          "end": 32640,
+          "formants": [
+            576.9,
+            1413.6,
+            3188.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "you2",
+          "tone": 2,
+          "start": 27120,
+          "end": 31080,
+          "formants": [
+            415.3,
+            1981.7,
+            2827.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "you2",
+          "tone": 2,
+          "start": 31800,
+          "end": 36840,
+          "formants": [
+            361.6,
+            1407.9,
+            3273.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "you3",
+          "tone": 3,
+          "start": 52320,
+          "end": 58080,
+          "formants": [
+            436.2,
+            1325.0,
+            3196.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ir": {
+      "role": "final",
+      "phone": "ir",
+      "n_samples": 23,
+      "n_formant_samples": 15,
+      "n_measured_before_filter": 15,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=15 >= 5 -> high",
+      "duration_ms": {
+        "mean": 127.9,
+        "std": 68.2,
+        "n": 23
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        405.7,
+        1928.9,
+        3105.4
+      ],
+      "bandwidths": [
+        136.4,
+        222.1,
+        352.1
+      ],
+      "f0_hz": 224.6,
+      "spread_hz": {
+        "f1": 54.9,
+        "f2": 278.6,
+        "f3": 584.6
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 7,
+          "formants": [
+            405.7,
+            1878.5,
+            2174.4
+          ]
+        },
+        "SSB1593": {
+          "n": 8,
+          "formants": [
+            394.9,
+            1957.1,
+            3412.8
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "zhi2",
+          "tone": 2,
+          "start": 32304,
+          "end": 35040,
+          "formants": [
+            366.1,
+            1945.7,
+            3139.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "shi2",
+          "tone": 2,
+          "start": 25944,
+          "end": 28200,
+          "formants": [
+            405.7,
+            1980.7,
+            3105.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "zhi4",
+          "tone": 4,
+          "start": 76920,
+          "end": 80520,
+          "formants": [
+            469.8,
+            1819.0,
+            2174.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "zhi4",
+          "tone": 4,
+          "start": 17016,
+          "end": 20280,
+          "formants": [
+            442.7,
+            1936.8,
+            3276.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "shi4",
+          "tone": 4,
+          "start": 12960,
+          "end": 16080,
+          "formants": [
+            362.1,
+            1878.5,
+            2173.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "ri4",
+          "tone": 4,
+          "start": 59928,
+          "end": 63480,
+          "formants": [
+            393.8,
+            1617.8,
+            2124.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "shi4",
+          "tone": 4,
+          "start": 17400,
+          "end": 18600,
+          "formants": [
+            360.5,
+            2415.7,
+            3503.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "shi4",
+          "tone": 4,
+          "start": 30168,
+          "end": 33240,
+          "formants": [
+            304.4,
+            2027.1,
+            3544.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "zhi4",
+          "tone": 4,
+          "start": 52440,
+          "end": 57000,
+          "formants": [
+            415.5,
+            1928.9,
+            3402.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "zhi2",
+          "tone": 2,
+          "start": 49992,
+          "end": 53880,
+          "formants": [
+            517.2,
+            1195.8,
+            3422.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "shi2",
+          "tone": 2,
+          "start": 71808,
+          "end": 75600,
+          "formants": [
+            408.2,
+            1985.3,
+            2627.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "zhi1",
+          "tone": 1,
+          "start": 59256,
+          "end": 63240,
+          "formants": [
+            381.7,
+            2042.9,
+            2987.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "shi5",
+          "tone": 5,
+          "start": 65712,
+          "end": 68400,
+          "formants": [
+            358.6,
+            1906.6,
+            2306.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "shi2",
+          "tone": 2,
+          "start": 26664,
+          "end": 29400,
+          "formants": [
+            425.2,
+            1459.0,
+            3639.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020026",
+          "speaker": "SSB0502",
+          "pinyin": "shi2",
+          "tone": 2,
+          "start": 12571,
+          "end": 21768,
+          "formants": [
+            477.2,
+            1799.0,
+            2124.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:iz": {
+      "role": "final",
+      "phone": "iz",
+      "n_samples": 5,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 154.8,
+        "std": 57.8,
+        "n": 5
+      },
+      "fused": false,
+      "speakers": [
+        "SSB1593"
+      ],
+      "formants": [
+        382.5,
+        1749.1,
+        3541.6
+      ],
+      "bandwidths": [
+        144.5,
+        172.2,
+        465.8
+      ],
+      "f0_hz": 228.4,
+      "spread_hz": {
+        "f1": 3.3,
+        "f2": 74.7,
+        "f3": 154.1
+      },
+      "per_speaker": {
+        "SSB1593": {
+          "n": 2,
+          "formants": [
+            382.5,
+            1749.1,
+            3541.6
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "zi4",
+          "tone": 4,
+          "start": 29640,
+          "end": 33240,
+          "formants": [
+            380.2,
+            1696.2,
+            3432.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "si1",
+          "tone": 1,
+          "start": 27888,
+          "end": 31680,
+          "formants": [
+            384.9,
+            1801.9,
+            3650.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:o": {
+      "role": "final",
+      "phone": "o",
+      "n_samples": 2,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 180.0,
+        "std": 8.5,
+        "n": 2
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        452.4,
+        1055.5,
+        3653.4
+      ],
+      "bandwidths": [
+        254.8,
+        160.1,
+        185.4
+      ],
+      "f0_hz": 267.2,
+      "spread_hz": {
+        "f1": 71.9,
+        "f2": 207.8,
+        "f3": 376.1
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            401.5,
+            908.5,
+            3919.4
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            503.2,
+            1202.4,
+            3387.5
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020248",
+          "speaker": "SSB0502",
+          "pinyin": "mo1",
+          "tone": 1,
+          "start": 33696,
+          "end": 38160,
+          "formants": [
+            401.5,
+            908.5,
+            3919.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "po4",
+          "tone": 4,
+          "start": 24264,
+          "end": 28440,
+          "formants": [
+            503.2,
+            1202.4,
+            3387.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:ong": {
+      "role": "final",
+      "phone": "ong",
+      "n_samples": 3,
+      "n_formant_samples": 1,
+      "n_measured_before_filter": 1,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=1 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 124.0,
+        "std": 56.7,
+        "n": 3
+      },
+      "fused": false,
+      "speakers": [
+        "SSB1593"
+      ],
+      "formants": [
+        298.1,
+        1036.0,
+        3733.1
+      ],
+      "bandwidths": [
+        44.8,
+        573.5,
+        255.2
+      ],
+      "f0_hz": 281.9,
+      "spread_hz": {
+        "f1": 0.0,
+        "f2": 0.0,
+        "f3": 0.0
+      },
+      "per_speaker": {
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            298.1,
+            1036.0,
+            3733.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "zhong1",
+          "tone": 1,
+          "start": 10608,
+          "end": 15120,
+          "formants": [
+            298.1,
+            1036.0,
+            3733.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:ou": {
+      "role": "final",
+      "phone": "ou",
+      "n_samples": 12,
+      "n_formant_samples": 8,
+      "n_measured_before_filter": 8,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=8 >= 5 -> high",
+      "duration_ms": {
+        "mean": 107.7,
+        "std": 43.4,
+        "n": 12
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        406.0,
+        1161.3,
+        3462.1
+      ],
+      "bandwidths": [
+        164.6,
+        167.1,
+        155.4
+      ],
+      "f0_hz": 209.4,
+      "spread_hz": {
+        "f1": 95.6,
+        "f2": 236.9,
+        "f3": 358.7
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 4,
+          "formants": [
+            378.0,
+            1059.2,
+            3498.5
+          ]
+        },
+        "SSB1593": {
+          "n": 4,
+          "formants": [
+            473.2,
+            1291.5,
+            3462.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "shou3",
+          "tone": 3,
+          "start": 36744,
+          "end": 39240,
+          "formants": [
+            311.0,
+            1231.3,
+            3812.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "gou3",
+          "tone": 3,
+          "start": 12816,
+          "end": 15600,
+          "formants": [
+            458.5,
+            1108.5,
+            2866.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "gou4",
+          "tone": 4,
+          "start": 64632,
+          "end": 66360,
+          "formants": [
+            400.7,
+            886.0,
+            3738.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "sou1",
+          "tone": 1,
+          "start": 16872,
+          "end": 18600,
+          "formants": [
+            355.3,
+            1010.0,
+            3258.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930257",
+          "speaker": "SSB1593",
+          "pinyin": "dou1",
+          "tone": 1,
+          "start": 55296,
+          "end": 59760,
+          "formants": [
+            334.0,
+            1604.1,
+            3543.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "hou4",
+          "tone": 4,
+          "start": 53688,
+          "end": 58440,
+          "formants": [
+            411.3,
+            1368.9,
+            3381.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "mou3",
+          "tone": 3,
+          "start": 66960,
+          "end": 69840,
+          "formants": [
+            535.2,
+            948.5,
+            3876.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930451",
+          "speaker": "SSB1593",
+          "pinyin": "hou5",
+          "tone": 5,
+          "start": 32496,
+          "end": 34080,
+          "formants": [
+            579.2,
+            1214.1,
+            3113.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:u": {
+      "role": "final",
+      "phone": "u",
+      "n_samples": 35,
+      "n_formant_samples": 20,
+      "n_measured_before_filter": 20,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=20 >= 5 -> high",
+      "duration_ms": {
+        "mean": 110.8,
+        "std": 46.0,
+        "n": 35
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        398.4,
+        1029.9,
+        3449.2
+      ],
+      "bandwidths": [
+        101.5,
+        263.2,
+        359.6
+      ],
+      "f0_hz": 227.9,
+      "spread_hz": {
+        "f1": 69.0,
+        "f2": 662.2,
+        "f3": 412.8
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 11,
+          "formants": [
+            443.7,
+            1025.6,
+            3046.2
+          ]
+        },
+        "SSB1593": {
+          "n": 9,
+          "formants": [
+            369.1,
+            1034.2,
+            3608.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "zhu4",
+          "tone": 4,
+          "start": 42624,
+          "end": 46320,
+          "formants": [
+            338.3,
+            1695.9,
+            3445.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020122",
+          "speaker": "SSB0502",
+          "pinyin": "chu2",
+          "tone": 2,
+          "start": 19824,
+          "end": 21840,
+          "formants": [
+            244.1,
+            963.8,
+            3963.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "du1",
+          "tone": 1,
+          "start": 42648,
+          "end": 44280,
+          "formants": [
+            364.0,
+            920.9,
+            3453.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020137",
+          "speaker": "SSB0502",
+          "pinyin": "bu4",
+          "tone": 4,
+          "start": 45264,
+          "end": 48000,
+          "formants": [
+            509.8,
+            938.2,
+            2953.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "ru4",
+          "tone": 4,
+          "start": 64176,
+          "end": 67920,
+          "formants": [
+            473.6,
+            1025.6,
+            2894.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "wu3",
+          "tone": 3,
+          "start": 44040,
+          "end": 48120,
+          "formants": [
+            399.0,
+            2809.5,
+            3877.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "zhu2",
+          "tone": 2,
+          "start": 13776,
+          "end": 16080,
+          "formants": [
+            455.7,
+            2109.9,
+            2970.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "fu4",
+          "tone": 4,
+          "start": 44712,
+          "end": 48120,
+          "formants": [
+            490.3,
+            1280.5,
+            2930.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "wu4",
+          "tone": 4,
+          "start": 66360,
+          "end": 70680,
+          "formants": [
+            397.8,
+            889.7,
+            3701.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "bu4",
+          "tone": 4,
+          "start": 23472,
+          "end": 27120,
+          "formants": [
+            443.7,
+            1328.2,
+            2852.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "hu2",
+          "tone": 2,
+          "start": 19560,
+          "end": 22200,
+          "formants": [
+            478.2,
+            951.4,
+            3046.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "bu4",
+          "tone": 4,
+          "start": 49344,
+          "end": 53040,
+          "formants": [
+            389.1,
+            859.0,
+            3278.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930193",
+          "speaker": "SSB1593",
+          "pinyin": "su4",
+          "tone": 4,
+          "start": 40080,
+          "end": 43440,
+          "formants": [
+            332.8,
+            1840.6,
+            3608.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "du1",
+          "tone": 1,
+          "start": 25320,
+          "end": 28200,
+          "formants": [
+            403.6,
+            1513.2,
+            3928.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930204",
+          "speaker": "SSB1593",
+          "pinyin": "lu4",
+          "tone": 4,
+          "start": 67296,
+          "end": 68880,
+          "formants": [
+            369.1,
+            826.3,
+            3908.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930266",
+          "speaker": "SSB1593",
+          "pinyin": "tu1",
+          "tone": 1,
+          "start": 21432,
+          "end": 22920,
+          "formants": [
+            361.3,
+            801.8,
+            3541.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930310",
+          "speaker": "SSB1593",
+          "pinyin": "shu1",
+          "tone": 1,
+          "start": 22944,
+          "end": 25680,
+          "formants": [
+            289.3,
+            1034.2,
+            2927.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "nu3",
+          "tone": 3,
+          "start": 28272,
+          "end": 30000,
+          "formants": [
+            327.2,
+            3081.2,
+            3890.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "chu4",
+          "tone": 4,
+          "start": 69216,
+          "end": 72720,
+          "formants": [
+            402.6,
+            887.9,
+            3834.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "fu4",
+          "tone": 4,
+          "start": 25056,
+          "end": 28080,
+          "formants": [
+            418.0,
+            1720.2,
+            3188.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:ua": {
+      "role": "final",
+      "phone": "ua",
+      "n_samples": 6,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 111.7,
+        "std": 44.1,
+        "n": 6
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502"
+      ],
+      "formants": [
+        960.0,
+        1303.7,
+        2599.0
+      ],
+      "bandwidths": [
+        82.4,
+        225.4,
+        219.9
+      ],
+      "f0_hz": 207.8,
+      "spread_hz": {
+        "f1": 22.2,
+        "f2": 83.4,
+        "f3": 49.1
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            960.0,
+            1303.7,
+            2599.0
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020248",
+          "speaker": "SSB0502",
+          "pinyin": "hua2",
+          "tone": 2,
+          "start": 70248,
+          "end": 73560,
+          "formants": [
+            944.3,
+            1244.7,
+            2633.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "hua2",
+          "tone": 2,
+          "start": 31680,
+          "end": 36240,
+          "formants": [
+            975.7,
+            1362.7,
+            2564.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:uai": {
+      "role": "final",
+      "phone": "uai",
+      "n_samples": 2,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 192.5,
+        "std": 159.1,
+        "n": 2
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        668.8,
+        2120.1,
+        3123.6
+      ],
+      "bandwidths": [
+        354.1,
+        255.1,
+        342.9
+      ],
+      "f0_hz": 186.3,
+      "spread_hz": {
+        "f1": 121.6,
+        "f2": 263.8,
+        "f3": 197.6
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            582.8,
+            2306.6,
+            3263.3
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            754.8,
+            1933.5,
+            2983.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "kuai4",
+          "tone": 4,
+          "start": 28920,
+          "end": 30840,
+          "formants": [
+            582.8,
+            2306.6,
+            3263.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "wai4",
+          "tone": 4,
+          "start": 47640,
+          "end": 54960,
+          "formants": [
+            754.8,
+            1933.5,
+            2983.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:uan": {
+      "role": "final",
+      "phone": "uan",
+      "n_samples": 3,
+      "n_formant_samples": 3,
+      "n_measured_before_filter": 3,
+      "n_dropped_as_miscut": 0,
+      "confidence": "medium",
+      "confidence_rule": "n=3 in [3,5) -> medium",
+      "duration_ms": {
+        "mean": 143.3,
+        "std": 111.5,
+        "n": 3
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        414.5,
+        1620.6,
+        3217.3
+      ],
+      "bandwidths": [
+        344.5,
+        202.8,
+        499.1
+      ],
+      "f0_hz": 224.9,
+      "spread_hz": {
+        "f1": 200.8,
+        "f2": 341.0,
+        "f3": 446.8
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            276.0,
+            1620.6,
+            2724.6
+          ]
+        },
+        "SSB1593": {
+          "n": 2,
+          "formants": [
+            543.1,
+            1491.0,
+            3416.9
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "guan1",
+          "tone": 1,
+          "start": 53520,
+          "end": 55920,
+          "formants": [
+            276.0,
+            1620.6,
+            2724.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "wan2",
+          "tone": 2,
+          "start": 12480,
+          "end": 18960,
+          "formants": [
+            414.5,
+            1158.3,
+            3616.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "chuan2",
+          "tone": 2,
+          "start": 24480,
+          "end": 25920,
+          "formants": [
+            671.8,
+            1823.7,
+            3217.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:uang": {
+      "role": "final",
+      "phone": "uang",
+      "n_samples": 2,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 165.0,
+        "std": 148.5,
+        "n": 2
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        597.1,
+        1136.9,
+        3692.2
+      ],
+      "bandwidths": [
+        238.7,
+        262.4,
+        232.0
+      ],
+      "f0_hz": 228.1,
+      "spread_hz": {
+        "f1": 309.0,
+        "f2": 59.8,
+        "f3": 295.6
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            815.6,
+            1094.6,
+            3901.3
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            378.6,
+            1179.2,
+            3483.2
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020279",
+          "speaker": "SSB0502",
+          "pinyin": "wang3",
+          "tone": 3,
+          "start": 54120,
+          "end": 60600,
+          "formants": [
+            815.6,
+            1094.6,
+            3901.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930211",
+          "speaker": "SSB1593",
+          "pinyin": "huang1",
+          "tone": 1,
+          "start": 35520,
+          "end": 36960,
+          "formants": [
+            378.6,
+            1179.2,
+            3483.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:uei": {
+      "role": "final",
+      "phone": "uei",
+      "n_samples": 10,
+      "n_formant_samples": 8,
+      "n_measured_before_filter": 9,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=8 >= 5 -> high",
+      "duration_ms": {
+        "mean": 173.2,
+        "std": 75.9,
+        "n": 10
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        441.3,
+        2066.4,
+        3193.6
+      ],
+      "bandwidths": [
+        118.5,
+        229.3,
+        260.9
+      ],
+      "f0_hz": 227.5,
+      "spread_hz": {
+        "f1": 35.8,
+        "f2": 246.3,
+        "f3": 136.1
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            443.6,
+            2234.1,
+            3099.3
+          ]
+        },
+        "SSB1593": {
+          "n": 6,
+          "formants": [
+            441.3,
+            2066.4,
+            3201.4
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020355",
+          "speaker": "SSB0502",
+          "pinyin": "wei3",
+          "tone": 3,
+          "start": 63600,
+          "end": 69840,
+          "formants": [
+            438.2,
+            2535.7,
+            3212.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "hui4",
+          "tone": 4,
+          "start": 61368,
+          "end": 64920,
+          "formants": [
+            449.1,
+            1932.4,
+            2986.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "hui4",
+          "tone": 4,
+          "start": 29832,
+          "end": 33720,
+          "formants": [
+            472.3,
+            2155.2,
+            3414.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "wei4",
+          "tone": 4,
+          "start": 58680,
+          "end": 65280,
+          "formants": [
+            423.5,
+            1871.3,
+            3228.3
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "wei4",
+          "tone": 4,
+          "start": 12600,
+          "end": 17400,
+          "formants": [
+            365.9,
+            1977.6,
+            3174.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930306",
+          "speaker": "SSB1593",
+          "pinyin": "zui4",
+          "tone": 4,
+          "start": 47832,
+          "end": 52200,
+          "formants": [
+            440.6,
+            1820.8,
+            3128.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "hui4",
+          "tone": 4,
+          "start": 22344,
+          "end": 24840,
+          "formants": [
+            442.0,
+            2172.4,
+            3377.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "dui4",
+          "tone": 4,
+          "start": 10872,
+          "end": 12120,
+          "formants": [
+            485.5,
+            2330.4,
+            3174.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:uen": {
+      "role": "final",
+      "phone": "uen",
+      "n_samples": 1,
+      "n_formant_samples": 1,
+      "n_measured_before_filter": 1,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=1 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 72.0,
+        "std": 0.0,
+        "n": 1
+      },
+      "fused": true,
+      "speakers": [
+        "SSB1593"
+      ],
+      "formants": [
+        290.0,
+        2087.2,
+        3547.8
+      ],
+      "bandwidths": [
+        72.7,
+        433.1,
+        235.4
+      ],
+      "f0_hz": 162.7,
+      "spread_hz": {
+        "f1": 0.0,
+        "f2": 0.0,
+        "f3": 0.0
+      },
+      "per_speaker": {
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            290.0,
+            2087.2,
+            3547.8
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "cun2",
+          "tone": 2,
+          "start": 53232,
+          "end": 54960,
+          "formants": [
+            290.0,
+            2087.2,
+            3547.8
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:uo": {
+      "role": "final",
+      "phone": "uo",
+      "n_samples": 13,
+      "n_formant_samples": 9,
+      "n_measured_before_filter": 9,
+      "n_dropped_as_miscut": 0,
+      "confidence": "high",
+      "confidence_rule": "n=9 >= 5 -> high",
+      "duration_ms": {
+        "mean": 132.8,
+        "std": 77.2,
+        "n": 13
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        548.0,
+        1334.5,
+        3325.5
+      ],
+      "bandwidths": [
+        191.1,
+        154.1,
+        382.4
+      ],
+      "f0_hz": 211.8,
+      "spread_hz": {
+        "f1": 139.9,
+        "f2": 271.0,
+        "f3": 341.2
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            721.5,
+            1599.4,
+            2778.6
+          ]
+        },
+        "SSB1593": {
+          "n": 7,
+          "formants": [
+            453.5,
+            1180.7,
+            3327.2
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "suo2",
+          "tone": 2,
+          "start": 24720,
+          "end": 28560,
+          "formants": [
+            645.9,
+            1539.4,
+            2871.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020387",
+          "speaker": "SSB0502",
+          "pinyin": "guo3",
+          "tone": 3,
+          "start": 32904,
+          "end": 35400,
+          "formants": [
+            797.1,
+            1659.4,
+            2686.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930031",
+          "speaker": "SSB1593",
+          "pinyin": "wo3",
+          "tone": 3,
+          "start": 6720,
+          "end": 12480,
+          "formants": [
+            548.0,
+            1180.7,
+            3166.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "guo2",
+          "tone": 2,
+          "start": 18816,
+          "end": 20400,
+          "formants": [
+            610.2,
+            1678.6,
+            3345.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930314",
+          "speaker": "SSB1593",
+          "pinyin": "wo3",
+          "tone": 3,
+          "start": 8040,
+          "end": 14160,
+          "formants": [
+            404.4,
+            1066.2,
+            3325.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930326",
+          "speaker": "SSB1593",
+          "pinyin": "suo3",
+          "tone": 3,
+          "start": 51696,
+          "end": 55680,
+          "formants": [
+            413.8,
+            1169.7,
+            3856.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "wo2",
+          "tone": 2,
+          "start": 32760,
+          "end": 39120,
+          "formants": [
+            453.5,
+            1079.8,
+            3327.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930378",
+          "speaker": "SSB1593",
+          "pinyin": "huo4",
+          "tone": 4,
+          "start": 17232,
+          "end": 19920,
+          "formants": [
+            582.9,
+            1334.5,
+            3243.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "low"
+        },
+        {
+          "utterance": "SSB15930040",
+          "speaker": "SSB1593",
+          "pinyin": "wo2",
+          "tone": 2,
+          "start": 7272,
+          "end": 9408,
+          "formants": [
+            364.5,
+            1726.8,
+            3524.2
+          ],
+          "bound_confidence": "low",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:v": {
+      "role": "final",
+      "phone": "v",
+      "n_samples": 10,
+      "n_formant_samples": 7,
+      "n_measured_before_filter": 8,
+      "n_dropped_as_miscut": 1,
+      "confidence": "high",
+      "confidence_rule": "n=7 >= 5 -> high",
+      "duration_ms": {
+        "mean": 185.5,
+        "std": 83.5,
+        "n": 10
+      },
+      "fused": false,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        370.8,
+        2297.6,
+        3019.2
+      ],
+      "bandwidths": [
+        157.7,
+        214.1,
+        188.1
+      ],
+      "f0_hz": 230.4,
+      "spread_hz": {
+        "f1": 21.3,
+        "f2": 220.3,
+        "f3": 535.3
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 4,
+          "formants": [
+            363.1,
+            2257.6,
+            2898.1
+          ]
+        },
+        "SSB1593": {
+          "n": 3,
+          "formants": [
+            374.5,
+            2373.8,
+            3893.5
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020082",
+          "speaker": "SSB0502",
+          "pinyin": "ju4",
+          "tone": 4,
+          "start": 61224,
+          "end": 63960,
+          "formants": [
+            388.7,
+            2217.7,
+            2872.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020298",
+          "speaker": "SSB0502",
+          "pinyin": "qu1",
+          "tone": 1,
+          "start": 18456,
+          "end": 23160,
+          "formants": [
+            370.8,
+            2297.6,
+            2923.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020352",
+          "speaker": "SSB0502",
+          "pinyin": "xu1",
+          "tone": 1,
+          "start": 15336,
+          "end": 19320,
+          "formants": [
+            351.7,
+            2386.8,
+            3019.2
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "yu2",
+          "tone": 2,
+          "start": 22200,
+          "end": 29640,
+          "formants": [
+            355.5,
+            1864.1,
+            2835.7
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930105",
+          "speaker": "SSB1593",
+          "pinyin": "yu4",
+          "tone": 4,
+          "start": 36840,
+          "end": 41280,
+          "formants": [
+            394.5,
+            2221.1,
+            3873.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930252",
+          "speaker": "SSB1593",
+          "pinyin": "xu4",
+          "tone": 4,
+          "start": 34776,
+          "end": 38760,
+          "formants": [
+            374.5,
+            2373.8,
+            3893.5
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930361",
+          "speaker": "SSB1593",
+          "pinyin": "yu2",
+          "tone": 2,
+          "start": 12120,
+          "end": 18480,
+          "formants": [
+            334.5,
+            2580.7,
+            3955.6
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": true
+    },
+    "final:van": {
+      "role": "final",
+      "phone": "van",
+      "n_samples": 4,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 4,
+      "n_dropped_as_miscut": 2,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 211.8,
+        "std": 73.5,
+        "n": 4
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502"
+      ],
+      "formants": [
+        826.4,
+        1901.2,
+        2968.4
+      ],
+      "bandwidths": [
+        249.4,
+        172.6,
+        212.2
+      ],
+      "f0_hz": 221.7,
+      "spread_hz": {
+        "f1": 97.9,
+        "f2": 156.6,
+        "f3": 47.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 2,
+          "formants": [
+            826.4,
+            1901.2,
+            2968.4
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020222",
+          "speaker": "SSB0502",
+          "pinyin": "quan2",
+          "tone": 2,
+          "start": 27312,
+          "end": 32400,
+          "formants": [
+            757.2,
+            2011.9,
+            2934.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB05020269",
+          "speaker": "SSB0502",
+          "pinyin": "yuan2",
+          "tone": 2,
+          "start": 23040,
+          "end": 30240,
+          "formants": [
+            895.6,
+            1790.4,
+            3002.0
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:ve": {
+      "role": "final",
+      "phone": "ve",
+      "n_samples": 5,
+      "n_formant_samples": 2,
+      "n_measured_before_filter": 2,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=2 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 119.8,
+        "std": 103.7,
+        "n": 5
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "formants": [
+        489.1,
+        2148.8,
+        3095.2
+      ],
+      "bandwidths": [
+        146.1,
+        140.1,
+        220.4
+      ],
+      "f0_hz": 213.3,
+      "spread_hz": {
+        "f1": 97.8,
+        "f2": 297.1,
+        "f3": 287.4
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            419.9,
+            2358.9,
+            2891.9
+          ]
+        },
+        "SSB1593": {
+          "n": 1,
+          "formants": [
+            558.2,
+            1938.8,
+            3298.4
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020394",
+          "speaker": "SSB0502",
+          "pinyin": "yue4",
+          "tone": 4,
+          "start": 42240,
+          "end": 49560,
+          "formants": [
+            419.9,
+            2358.9,
+            2891.9
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        },
+        {
+          "utterance": "SSB15930079",
+          "speaker": "SSB1593",
+          "pinyin": "que4",
+          "tone": 4,
+          "start": 40296,
+          "end": 41880,
+          "formants": [
+            558.2,
+            1938.8,
+            3298.4
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "final:vn": {
+      "role": "final",
+      "phone": "vn",
+      "n_samples": 2,
+      "n_formant_samples": 1,
+      "n_measured_before_filter": 1,
+      "n_dropped_as_miscut": 0,
+      "confidence": "low",
+      "confidence_rule": "n=1 < 3 -> low (evidence only)",
+      "duration_ms": {
+        "mean": 210.5,
+        "std": 190.2,
+        "n": 2
+      },
+      "fused": true,
+      "speakers": [
+        "SSB0502"
+      ],
+      "formants": [
+        332.4,
+        1900.2,
+        2794.1
+      ],
+      "bandwidths": [
+        332.2,
+        177.8,
+        210.7
+      ],
+      "f0_hz": 222.3,
+      "spread_hz": {
+        "f1": 0.0,
+        "f2": 0.0,
+        "f3": 0.0
+      },
+      "per_speaker": {
+        "SSB0502": {
+          "n": 1,
+          "formants": [
+            332.4,
+            1900.2,
+            2794.1
+          ]
+        }
+      },
+      "provenance": [
+        {
+          "utterance": "SSB05020234",
+          "speaker": "SSB0502",
+          "pinyin": "yun2",
+          "tone": 2,
+          "start": 15600,
+          "end": 23880,
+          "formants": [
+            332.4,
+            1900.2,
+            2794.1
+          ],
+          "bound_confidence": "medium",
+          "split_confidence": "high"
+        }
+      ],
+      "usable_for_speaker": false
+    },
+    "onset:b": {
+      "role": "onset",
+      "phone": "b",
+      "n_samples": 19,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 143.5,
+        "std": 56.2,
+        "n": 19
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1253.7,
+      "usable_for_speaker": false
+    },
+    "onset:c": {
+      "role": "onset",
+      "phone": "c",
+      "n_samples": 4,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 149.5,
+        "std": 99.2,
+        "n": 4
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1623.6,
+      "usable_for_speaker": false
+    },
+    "onset:ch": {
+      "role": "onset",
+      "phone": "ch",
+      "n_samples": 13,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 95.4,
+        "std": 42.6,
+        "n": 13
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1477.7,
+      "usable_for_speaker": false
+    },
+    "onset:d": {
+      "role": "onset",
+      "phone": "d",
+      "n_samples": 27,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 128.9,
+        "std": 50.3,
+        "n": 27
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1202.9,
+      "usable_for_speaker": false
+    },
+    "onset:f": {
+      "role": "onset",
+      "phone": "f",
+      "n_samples": 6,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 98.7,
+        "std": 71.1,
+        "n": 6
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1883.5,
+      "usable_for_speaker": false
+    },
+    "onset:g": {
+      "role": "onset",
+      "phone": "g",
+      "n_samples": 14,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 145.4,
+        "std": 53.7,
+        "n": 14
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 978.2,
+      "usable_for_speaker": false
+    },
+    "onset:h": {
+      "role": "onset",
+      "phone": "h",
+      "n_samples": 25,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 111.2,
+        "std": 53.0,
+        "n": 25
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1178.0,
+      "usable_for_speaker": false
+    },
+    "onset:j": {
+      "role": "onset",
+      "phone": "j",
+      "n_samples": 29,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 92.4,
+        "std": 44.5,
+        "n": 29
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1912.4,
+      "usable_for_speaker": false
+    },
+    "onset:k": {
+      "role": "onset",
+      "phone": "k",
+      "n_samples": 7,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 93.6,
+        "std": 58.2,
+        "n": 7
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1482.4,
+      "usable_for_speaker": false
+    },
+    "onset:l": {
+      "role": "onset",
+      "phone": "l",
+      "n_samples": 13,
+      "n_formant_samples": 11,
+      "confidence": "high",
+      "confidence_rule": "n=11 >= 5 -> high",
+      "kind": "voiced",
+      "duration_ms": {
+        "mean": 108.0,
+        "std": 46.2,
+        "n": 13
+      },
+      "formants": [
+        376.6,
+        1868.8,
+        3527.6
+      ],
+      "f0_hz": 202.3,
+      "usable_for_speaker": false
+    },
+    "onset:m": {
+      "role": "onset",
+      "phone": "m",
+      "n_samples": 13,
+      "n_formant_samples": 10,
+      "confidence": "high",
+      "confidence_rule": "n=10 >= 5 -> high",
+      "kind": "voiced",
+      "duration_ms": {
+        "mean": 112.8,
+        "std": 49.5,
+        "n": 13
+      },
+      "formants": [
+        471.1,
+        1626.7,
+        3410.1
+      ],
+      "f0_hz": 211.5,
+      "usable_for_speaker": false
+    },
+    "onset:n": {
+      "role": "onset",
+      "phone": "n",
+      "n_samples": 10,
+      "n_formant_samples": 9,
+      "confidence": "high",
+      "confidence_rule": "n=9 >= 5 -> high",
+      "kind": "voiced",
+      "duration_ms": {
+        "mean": 132.5,
+        "std": 66.4,
+        "n": 10
+      },
+      "formants": [
+        400.0,
+        1771.7,
+        3380.2
+      ],
+      "f0_hz": 201.8,
+      "usable_for_speaker": false
+    },
+    "onset:p": {
+      "role": "onset",
+      "phone": "p",
+      "n_samples": 5,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 134.2,
+        "std": 75.6,
+        "n": 5
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 926.2,
+      "usable_for_speaker": false
+    },
+    "onset:q": {
+      "role": "onset",
+      "phone": "q",
+      "n_samples": 15,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 96.7,
+        "std": 28.5,
+        "n": 15
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 2684.6,
+      "usable_for_speaker": false
+    },
+    "onset:r": {
+      "role": "onset",
+      "phone": "r",
+      "n_samples": 6,
+      "n_formant_samples": 6,
+      "confidence": "high",
+      "confidence_rule": "n=6 >= 5 -> high",
+      "kind": "voiced",
+      "duration_ms": {
+        "mean": 133.7,
+        "std": 50.5,
+        "n": 6
+      },
+      "formants": [
+        425.4,
+        1519.8,
+        3039.6
+      ],
+      "f0_hz": 223.8,
+      "usable_for_speaker": false
+    },
+    "onset:s": {
+      "role": "onset",
+      "phone": "s",
+      "n_samples": 9,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 97.6,
+        "std": 50.5,
+        "n": 9
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1947.5,
+      "usable_for_speaker": false
+    },
+    "onset:sh": {
+      "role": "onset",
+      "phone": "sh",
+      "n_samples": 24,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 120.9,
+        "std": 58.6,
+        "n": 24
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 2290.2,
+      "usable_for_speaker": false
+    },
+    "onset:t": {
+      "role": "onset",
+      "phone": "t",
+      "n_samples": 9,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 130.6,
+        "std": 51.4,
+        "n": 9
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1159.0,
+      "usable_for_speaker": false
+    },
+    "onset:x": {
+      "role": "onset",
+      "phone": "x",
+      "n_samples": 21,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 109.1,
+        "std": 40.8,
+        "n": 21
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 2014.6,
+      "usable_for_speaker": false
+    },
+    "onset:z": {
+      "role": "onset",
+      "phone": "z",
+      "n_samples": 12,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 101.9,
+        "std": 56.3,
+        "n": 12
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1444.2,
+      "usable_for_speaker": false
+    },
+    "onset:zh": {
+      "role": "onset",
+      "phone": "zh",
+      "n_samples": 23,
+      "n_formant_samples": 0,
+      "confidence": "low",
+      "confidence_rule": "n=0 < 3 -> low (evidence only)",
+      "kind": "unvoiced",
+      "duration_ms": {
+        "mean": 100.9,
+        "std": 51.9,
+        "n": 23
+      },
+      "formants": null,
+      "f0_hz": null,
+      "noise_centroid_hz": 1572.7,
+      "usable_for_speaker": false
+    }
+  },
+  "speakers": {
+    "SSB0502": {
+      "utterances": 19,
+      "n_syllables": 325,
+      "n_voiced_samples": 138,
+      "n_usable_finals": 23,
+      "usable_finals": [
+        "final:a",
+        "final:ai",
+        "final:an",
+        "final:ang",
+        "final:ao",
+        "final:e",
+        "final:en",
+        "final:er",
+        "final:i",
+        "final:ian",
+        "final:iang",
+        "final:iao",
+        "final:ie",
+        "final:in",
+        "final:ing",
+        "final:iou",
+        "final:ir",
+        "final:ou",
+        "final:u",
+        "final:uan",
+        "final:uei",
+        "final:uo",
+        "final:v"
+      ],
+      "f0_hz": 223.8,
+      "formant_scale": 1.0314,
+      "formant_scale_n": 330,
+      "confidence": "high",
+      "spectral_tilt": null
+    },
+    "SSB1593": {
+      "utterances": 20,
+      "n_syllables": 327,
+      "n_voiced_samples": 148,
+      "n_usable_finals": 23,
+      "usable_finals": [
+        "final:a",
+        "final:ai",
+        "final:an",
+        "final:ang",
+        "final:ao",
+        "final:e",
+        "final:en",
+        "final:er",
+        "final:i",
+        "final:ian",
+        "final:iang",
+        "final:iao",
+        "final:ie",
+        "final:in",
+        "final:ing",
+        "final:iou",
+        "final:ir",
+        "final:ou",
+        "final:u",
+        "final:uan",
+        "final:uei",
+        "final:uo",
+        "final:v"
+      ],
+      "f0_hz": 207.3,
+      "formant_scale": 1.027,
+      "formant_scale_n": 354,
+      "confidence": "high",
+      "spectral_tilt": null
+    }
+  },
+  "provenance": {
+    "sources": [
+      "extended",
+      "shipped"
+    ],
+    "by_source": {
+      "extended": 346,
+      "shipped_bank": 15
+    },
+    "n_syllables": 361,
+    "n_utterances": 39,
+    "n_spans": 665,
+    "n_voiced_with_formants": 286,
+    "bound_confidence": {
+      "medium": 638,
+      "low": 27
+    },
+    "finals_by_confidence": {
+      "medium": 4,
+      "high": 19,
+      "low": 14
+    },
+    "analysis": {
+      "order": 22,
+      "preemphasis": 0.97,
+      "window_samples": 720,
+      "hop_samples": 240,
+      "method": "autocorrelation LPC + Durand-Kerner root finding",
+      "f1_range_hz": [
+        200.0,
+        1100.0
+      ],
+      "f2_range_hz": [
+        700.0,
+        3200.0
+      ],
+      "f3_range_hz": [
+        1500.0,
+        4000.0
+      ]
+    },
+    "warnings": [
+      "665 phoneme spans from 39 utterances; 286 produced a formant estimate.",
+      "14 finals are 'low' (<3 samples) and must not feed a speaker estimate: ei, eng, ia, iong, iz, o, ong, ua, uai, uang, uen, van, ve, vn.",
+      "19 finals reach 'high' (>= 5 samples): ai, an, ao, e, en, i, ian, iang, iao, ie, in, ing, iou, ir, ou, u, uei, uo, v.",
+      "27/665 spans sit on a low-confidence bound.",
+      "The extended corpus is whole sentences: per-sample values are kept in each final's provenance so sentence-position drift stays visible rather than being averaged away."
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "runtime_s": 56.01,
+  "zero_ml_weights": true,
+  "base_profile_bytes": 1892,
+  "mandarin_5way_summary": {
+    "unconverted": {
+      "n": 20,
+      "sanity_ok": 20,
+      "acc_timbre4d": 0.2,
+      "acc_ltas": 0.2,
+      "acc_all": 0.2,
+      "f0_err_st_med": 3.819,
+      "tilt_err_db_oct_med": 1.952,
+      "fm_tilt_err_med": 3.978,
+      "hnr_err_db_med": 2.462,
+      "clicks_gt8_med": 0.000638,
+      "rtf_med": 0.0386
+    },
+    "clone_1shot": {
+      "n": 20,
+      "sanity_ok": 20,
+      "acc_timbre4d": 0.6,
+      "acc_ltas": 0.95,
+      "acc_all": 1.0,
+      "f0_err_st_med": 0.424,
+      "tilt_err_db_oct_med": 0.455,
+      "fm_tilt_err_med": 0.71,
+      "hnr_err_db_med": 1.554,
+      "clicks_gt8_med": 0.00065,
+      "rtf_med": 0.0409
+    },
+    "clone_3shot": {
+      "n": 20,
+      "sanity_ok": 20,
+      "acc_timbre4d": 0.6,
+      "acc_ltas": 0.9,
+      "acc_all": 0.95,
+      "f0_err_st_med": 0.099,
+      "tilt_err_db_oct_med": 0.421,
+      "fm_tilt_err_med": 0.78,
+      "hnr_err_db_med": 1.242,
+      "clicks_gt8_med": 0.00058,
+      "rtf_med": 0.0414
+    }
+  },
+  "target_speakers": {
+    "SSB0005": {
+      "gender": "female",
+      "f0_hz": 247.32682042283406,
+      "tilt_db_oct": -2.371207453127661,
+      "hnr_db": 15.725251802438184
+    },
+    "SSB0073": {
+      "gender": "male",
+      "f0_hz": 135.18920382961588,
+      "tilt_db_oct": -6.181470027272917,
+      "hnr_db": 10.658119239470443
+    },
+    "SSB0139": {
+      "gender": "male",
+      "f0_hz": 134.7158567921447,
+      "tilt_db_oct": -5.756240294393084,
+      "hnr_db": 11.266181381571915
+    },
+    "SSB0502": {
+      "gender": "female",
+      "f0_hz": 223.68567350044202,
+      "tilt_db_oct": -3.2154297299013668,
+      "hnr_db": 15.675581057347872
+    },
+    "SSB1593": {
+      "gender": "female",
+      "f0_hz": 202.0910772512955,
+      "tilt_db_oct": -4.020200861539002,
+      "hnr_db": 10.942207613793455
+    }
+  },
+  "crossling_checks": [
+    {
+      "target": "bdl_en_m",
+      "lang": "zh",
+      "sanity_ok": true,
+      "tgt_f0_hz": 127.1,
+      "out_f0_hz": 127.6,
+      "f0_err_st": 0.07,
+      "rtf": 0.04
+    },
+    {
+      "target": "bdl_en_m",
+      "lang": "en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 127.1,
+      "out_f0_hz": 130.6,
+      "f0_err_st": 0.464,
+      "rtf": 0.0387
+    },
+    {
+      "target": "bdl_en_m",
+      "lang": "zh+en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 127.1,
+      "out_f0_hz": 130.5,
+      "f0_err_st": 0.457,
+      "rtf": 0.0377
+    },
+    {
+      "target": "slt_en_f",
+      "lang": "zh",
+      "sanity_ok": true,
+      "tgt_f0_hz": 185.2,
+      "out_f0_hz": 186.2,
+      "f0_err_st": 0.097,
+      "rtf": 0.042
+    },
+    {
+      "target": "slt_en_f",
+      "lang": "en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 185.2,
+      "out_f0_hz": 188.9,
+      "f0_err_st": 0.341,
+      "rtf": 0.0422
+    },
+    {
+      "target": "slt_en_f",
+      "lang": "zh+en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 185.2,
+      "out_f0_hz": 190.1,
+      "f0_err_st": 0.453,
+      "rtf": 0.0413
+    },
+    {
+      "target": "ssb0073_zh_m",
+      "lang": "zh",
+      "sanity_ok": true,
+      "tgt_f0_hz": 134.5,
+      "out_f0_hz": 134.2,
+      "f0_err_st": 0.033,
+      "rtf": 0.0408
+    },
+    {
+      "target": "ssb0073_zh_m",
+      "lang": "en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 134.5,
+      "out_f0_hz": 137.1,
+      "f0_err_st": 0.334,
+      "rtf": 0.0398
+    },
+    {
+      "target": "ssb0073_zh_m",
+      "lang": "zh+en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 134.5,
+      "out_f0_hz": 137.5,
+      "f0_err_st": 0.39,
+      "rtf": 0.0382
+    },
+    {
+      "target": "base_self",
+      "lang": "zh",
+      "sanity_ok": true,
+      "tgt_f0_hz": 251.6,
+      "out_f0_hz": 251.8,
+      "f0_err_st": 0.011,
+      "rtf": 0.0544
+    },
+    {
+      "target": "base_self",
+      "lang": "en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 251.6,
+      "out_f0_hz": 258.1,
+      "f0_err_st": 0.444,
+      "rtf": 0.0423
+    },
+    {
+      "target": "base_self",
+      "lang": "zh+en",
+      "sanity_ok": true,
+      "tgt_f0_hz": 251.6,
+      "out_f0_hz": 258.6,
+      "f0_err_st": 0.478,
+      "rtf": 0.0465
+    }
+  ],
+  "gates": {
+    "all_sanity_ok": true,
+    "acc_all_ge_75": true,
+    "f0_err_le_1_2": true,
+    "tilt_err_le_1_2": true,
+    "fm_tilt_err_le_1_2": true,
+    "rtf_le_0_06": true
+  }
+}

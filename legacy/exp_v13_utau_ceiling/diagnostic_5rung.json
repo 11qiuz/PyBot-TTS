@@ -1,0 +1,2291 @@
+{
+  "runtime_s": 105.6,
+  "spotlight_ids": [
+    "SSB05020005",
+    "SSB05020082",
+    "SSB05020122",
+    "SSB05020137",
+    "SSB05020159",
+    "SSB05020222"
+  ],
+  "bank_v12bug_stats": {
+    "zh_syl_keys": 327,
+    "zh_syl_tokens": 1148,
+    "zh_syl_dropped": 13,
+    "zh_onsets": 16,
+    "zh_onset_tokens": 76,
+    "zh_finals": 37,
+    "zh_final_tokens": 1138,
+    "glottal_banks": [
+      "SSB0502",
+      "SSB1593"
+    ],
+    "fix_f_split": false
+  },
+  "bank_v13_stats": {
+    "zh_syl_keys": 327,
+    "zh_syl_tokens": 1147,
+    "zh_syl_dropped": 14,
+    "zh_onsets": 19,
+    "zh_onset_tokens": 815,
+    "zh_finals": 37,
+    "zh_final_tokens": 1141,
+    "glottal_banks": [
+      "SSB0502",
+      "SSB1593"
+    ],
+    "fix_f_split": true
+  },
+  "summary_5rung": {
+    "rung1_copy_synth_self": {
+      "mel_lsd_db_median": 2.5284,
+      "mcd_db_median": 7.9989,
+      "mcd_cmn_db_median": 7.5741,
+      "nodtw_shape_mel_lsd_db_median": 2.5846,
+      "nodtw_raw_mel_lsd_db_median": 2.7169,
+      "f0_frame_mae_st_median": 0.7781,
+      "f0_med_err_st_median": 0.0985,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 3.1892,
+      "region_nucleus_mel_lsd_db": 2.3671,
+      "region_seam_20ms_mel_lsd_db": 2.8872,
+      "bucket_summary": {
+        "copy_synth": {
+          "n_frames": 3037,
+          "mean_mel_lsd_db": 2.6159
+        }
+      }
+    },
+    "rung1b_copy_synth_excl_gb": {
+      "mel_lsd_db_median": 2.5289,
+      "mcd_db_median": 7.9816,
+      "mcd_cmn_db_median": 7.574,
+      "nodtw_shape_mel_lsd_db_median": 2.5812,
+      "nodtw_raw_mel_lsd_db_median": 2.7127,
+      "f0_frame_mae_st_median": 0.8326,
+      "f0_med_err_st_median": 0.0993,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 3.1849,
+      "region_nucleus_mel_lsd_db": 2.3734,
+      "region_seam_20ms_mel_lsd_db": 2.8911,
+      "bucket_summary": {
+        "copy_synth": {
+          "n_frames": 3037,
+          "mean_mel_lsd_db": 2.6215
+        }
+      }
+    },
+    "rung2_same_utt_v12_pipeline_bugfsplit": {
+      "mel_lsd_db_median": 2.7651,
+      "mcd_db_median": 8.9065,
+      "mcd_cmn_db_median": 8.6768,
+      "nodtw_shape_mel_lsd_db_median": 2.6446,
+      "nodtw_raw_mel_lsd_db_median": 3.7102,
+      "f0_frame_mae_st_median": 0.8186,
+      "f0_med_err_st_median": 0.0268,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 3.2989,
+      "region_nucleus_mel_lsd_db": 2.3958,
+      "region_seam_20ms_mel_lsd_db": 2.9516,
+      "bucket_summary": {
+        "same_utt": {
+          "n_frames": 3037,
+          "mean_mel_lsd_db": 2.6695
+        }
+      }
+    },
+    "rung2b_same_utt_v12_pipeline_fixfsplit": {
+      "mel_lsd_db_median": 2.7433,
+      "mcd_db_median": 8.9331,
+      "mcd_cmn_db_median": 8.6884,
+      "nodtw_shape_mel_lsd_db_median": 2.6697,
+      "nodtw_raw_mel_lsd_db_median": 3.7068,
+      "f0_frame_mae_st_median": 0.7345,
+      "f0_med_err_st_median": 0.0519,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 3.2786,
+      "region_nucleus_mel_lsd_db": 2.4082,
+      "region_seam_20ms_mel_lsd_db": 2.9382,
+      "bucket_summary": {
+        "same_utt": {
+          "n_frames": 3037,
+          "mean_mel_lsd_db": 2.6704
+        }
+      }
+    },
+    "rung2c_same_utt_no_gain_no_seam": {
+      "mel_lsd_db_median": 2.5934,
+      "mcd_db_median": 8.1471,
+      "mcd_cmn_db_median": 7.7306,
+      "nodtw_shape_mel_lsd_db_median": 2.6187,
+      "nodtw_raw_mel_lsd_db_median": 2.7464,
+      "f0_frame_mae_st_median": 0.6867,
+      "f0_med_err_st_median": 0.0794,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 3.1986,
+      "region_nucleus_mel_lsd_db": 2.3844,
+      "region_seam_20ms_mel_lsd_db": 2.8806,
+      "bucket_summary": {
+        "same_utt": {
+          "n_frames": 3037,
+          "mean_mel_lsd_db": 2.631
+        }
+      }
+    },
+    "rung3_oracle_other_utt_v12pipe": {
+      "mel_lsd_db_median": 6.1679,
+      "mcd_db_median": 22.3828,
+      "mcd_cmn_db_median": 21.5782,
+      "nodtw_shape_mel_lsd_db_median": 6.9596,
+      "nodtw_raw_mel_lsd_db_median": 8.5937,
+      "f0_frame_mae_st_median": 0.932,
+      "f0_med_err_st_median": 0.0753,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 7.177,
+      "region_nucleus_mel_lsd_db": 6.6077,
+      "region_seam_20ms_mel_lsd_db": 7.1874,
+      "bucket_summary": {
+        "donor_spk": {
+          "n_frames": 503,
+          "mean_mel_lsd_db": 7.9784
+        },
+        "same_spk_diff_tone": {
+          "n_frames": 1439,
+          "mean_mel_lsd_db": 6.6987
+        },
+        "same_spk_same_tone": {
+          "n_frames": 1055,
+          "mean_mel_lsd_db": 6.3592
+        },
+        "zh_concat_of": {
+          "n_frames": 40,
+          "mean_mel_lsd_db": 11.2202
+        }
+      }
+    },
+    "rung3b_oracle_other_utt_nogain_noseam": {
+      "mel_lsd_db_median": 6.2302,
+      "mcd_db_median": 22.3113,
+      "mcd_cmn_db_median": 21.5842,
+      "nodtw_shape_mel_lsd_db_median": 6.996,
+      "nodtw_raw_mel_lsd_db_median": 8.6514,
+      "f0_frame_mae_st_median": 0.8671,
+      "f0_med_err_st_median": 0.1297,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 7.2605,
+      "region_nucleus_mel_lsd_db": 6.613,
+      "region_seam_20ms_mel_lsd_db": 7.2741,
+      "bucket_summary": {
+        "donor_spk": {
+          "n_frames": 503,
+          "mean_mel_lsd_db": 7.9943
+        },
+        "same_spk_diff_tone": {
+          "n_frames": 1439,
+          "mean_mel_lsd_db": 6.7225
+        },
+        "same_spk_same_tone": {
+          "n_frames": 1055,
+          "mean_mel_lsd_db": 6.3957
+        },
+        "zh_concat_of": {
+          "n_frames": 40,
+          "mean_mel_lsd_db": 11.2246
+        }
+      }
+    },
+    "rung4_v12_guided_bugfsplit": {
+      "mel_lsd_db_median": 6.6441,
+      "mcd_db_median": 24.0034,
+      "mcd_cmn_db_median": 23.2297,
+      "nodtw_shape_mel_lsd_db_median": 7.4667,
+      "nodtw_raw_mel_lsd_db_median": 9.2473,
+      "f0_frame_mae_st_median": 1.3276,
+      "f0_med_err_st_median": 0.2281,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 7.6613,
+      "region_nucleus_mel_lsd_db": 7.36,
+      "region_seam_20ms_mel_lsd_db": 7.9536,
+      "bucket_summary": {
+        "donor_spk": {
+          "n_frames": 304,
+          "mean_mel_lsd_db": 8.5065
+        },
+        "same_spk_diff_tone": {
+          "n_frames": 659,
+          "mean_mel_lsd_db": 7.3248
+        },
+        "same_spk_same_tone": {
+          "n_frames": 2034,
+          "mean_mel_lsd_db": 7.3833
+        },
+        "zh_concat_of": {
+          "n_frames": 40,
+          "mean_mel_lsd_db": 12.572
+        }
+      }
+    },
+    "rung4b_v12_guided_fixfsplit": {
+      "mel_lsd_db_median": 6.6379,
+      "mcd_db_median": 24.4959,
+      "mcd_cmn_db_median": 24.014,
+      "nodtw_shape_mel_lsd_db_median": 7.4926,
+      "nodtw_raw_mel_lsd_db_median": 9.2857,
+      "f0_frame_mae_st_median": 1.3396,
+      "f0_med_err_st_median": 0.249,
+      "dur_mae_ms_median": 0.0,
+      "region_onset_mel_lsd_db": 7.691,
+      "region_nucleus_mel_lsd_db": 7.3418,
+      "region_seam_20ms_mel_lsd_db": 8.0224,
+      "bucket_summary": {
+        "donor_spk": {
+          "n_frames": 304,
+          "mean_mel_lsd_db": 8.5668
+        },
+        "same_spk_diff_tone": {
+          "n_frames": 742,
+          "mean_mel_lsd_db": 7.6801
+        },
+        "same_spk_same_tone": {
+          "n_frames": 1951,
+          "mean_mel_lsd_db": 7.2462
+        },
+        "zh_concat_of": {
+          "n_frames": 40,
+          "mean_mel_lsd_db": 11.1442
+        }
+      }
+    },
+    "rung5_v12_auto": {
+      "mel_lsd_db_median": 6.839,
+      "mcd_db_median": 24.3864,
+      "mcd_cmn_db_median": 23.7302,
+      "nodtw_shape_mel_lsd_db_median": 11.3631,
+      "nodtw_raw_mel_lsd_db_median": 14.3733,
+      "f0_frame_mae_st_median": 2.943,
+      "f0_med_err_st_median": 0.3384,
+      "dur_mae_ms_median": 59.55,
+      "region_onset_mel_lsd_db": null,
+      "region_nucleus_mel_lsd_db": null,
+      "region_seam_20ms_mel_lsd_db": null,
+      "bucket_summary": {}
+    }
+  },
+  "per_utterance": {
+    "rung1_copy_synth_self": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 2.5947,
+        "mcd_db": 8.2704,
+        "mcd_cmn_db": 7.8464,
+        "nodtw_shape_mel_lsd_db": 2.7494,
+        "nodtw_raw_mel_lsd_db": 2.8754,
+        "f0_frame_mae_st": 0.8987,
+        "f0_med_err_st": 0.0242,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2265,
+          "nucleus_mel_lsd_db": 2.641,
+          "seam_20ms_mel_lsd_db": 3.0666,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 675,
+              "mean_mel_lsd_db": 2.7494
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 2.4943,
+        "mcd_db": 7.6082,
+        "mcd_cmn_db": 7.1043,
+        "nodtw_shape_mel_lsd_db": 2.4645,
+        "nodtw_raw_mel_lsd_db": 2.5667,
+        "f0_frame_mae_st": 0.6264,
+        "f0_med_err_st": 0.04,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 2.8855,
+          "nucleus_mel_lsd_db": 2.27,
+          "seam_20ms_mel_lsd_db": 2.6934,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 424,
+              "mean_mel_lsd_db": 2.4645
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 2.5625,
+        "mcd_db": 7.9834,
+        "mcd_cmn_db": 7.5752,
+        "nodtw_shape_mel_lsd_db": 2.6471,
+        "nodtw_raw_mel_lsd_db": 2.7953,
+        "f0_frame_mae_st": 0.9066,
+        "f0_med_err_st": 0.1277,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.3377,
+          "nucleus_mel_lsd_db": 2.4008,
+          "seam_20ms_mel_lsd_db": 2.9905,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 487,
+              "mean_mel_lsd_db": 2.6471
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 2.4424,
+        "mcd_db": 7.4321,
+        "mcd_cmn_db": 7.1305,
+        "nodtw_shape_mel_lsd_db": 2.514,
+        "nodtw_raw_mel_lsd_db": 2.633,
+        "f0_frame_mae_st": 0.9187,
+        "f0_med_err_st": 0.0693,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.1795,
+          "nucleus_mel_lsd_db": 2.2542,
+          "seam_20ms_mel_lsd_db": 2.7311,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 438,
+              "mean_mel_lsd_db": 2.514
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 2.4475,
+        "mcd_db": 8.1001,
+        "mcd_cmn_db": 7.7008,
+        "nodtw_shape_mel_lsd_db": 2.522,
+        "nodtw_raw_mel_lsd_db": 2.6386,
+        "f0_frame_mae_st": 0.5434,
+        "f0_med_err_st": 0.139,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.072,
+          "nucleus_mel_lsd_db": 2.3228,
+          "seam_20ms_mel_lsd_db": 2.7239,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 470,
+              "mean_mel_lsd_db": 2.522
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 2.6324,
+        "mcd_db": 8.0144,
+        "mcd_cmn_db": 7.5731,
+        "nodtw_shape_mel_lsd_db": 2.7037,
+        "nodtw_raw_mel_lsd_db": 2.7978,
+        "f0_frame_mae_st": 0.6574,
+        "f0_med_err_st": 0.3234,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.4342,
+          "nucleus_mel_lsd_db": 2.3137,
+          "seam_20ms_mel_lsd_db": 3.1179,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 543,
+              "mean_mel_lsd_db": 2.7037
+            }
+          }
+        }
+      }
+    ],
+    "rung1b_copy_synth_excl_gb": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 2.6103,
+        "mcd_db": 8.3634,
+        "mcd_cmn_db": 7.8603,
+        "nodtw_shape_mel_lsd_db": 2.7813,
+        "nodtw_raw_mel_lsd_db": 2.9104,
+        "f0_frame_mae_st": 0.9147,
+        "f0_med_err_st": 0.0193,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2248,
+          "nucleus_mel_lsd_db": 2.6805,
+          "seam_20ms_mel_lsd_db": 3.0806,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 675,
+              "mean_mel_lsd_db": 2.7813
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 2.505,
+        "mcd_db": 7.661,
+        "mcd_cmn_db": 7.1604,
+        "nodtw_shape_mel_lsd_db": 2.4687,
+        "nodtw_raw_mel_lsd_db": 2.5731,
+        "f0_frame_mae_st": 0.626,
+        "f0_med_err_st": 0.0427,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 2.8827,
+          "nucleus_mel_lsd_db": 2.2774,
+          "seam_20ms_mel_lsd_db": 2.7179,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 424,
+              "mean_mel_lsd_db": 2.4687
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 2.5527,
+        "mcd_db": 7.9542,
+        "mcd_cmn_db": 7.5458,
+        "nodtw_shape_mel_lsd_db": 2.6483,
+        "nodtw_raw_mel_lsd_db": 2.7945,
+        "f0_frame_mae_st": 0.8929,
+        "f0_med_err_st": 0.1277,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.3414,
+          "nucleus_mel_lsd_db": 2.4012,
+          "seam_20ms_mel_lsd_db": 2.9962,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 487,
+              "mean_mel_lsd_db": 2.6483
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 2.4284,
+        "mcd_db": 7.4302,
+        "mcd_cmn_db": 7.1302,
+        "nodtw_shape_mel_lsd_db": 2.5123,
+        "nodtw_raw_mel_lsd_db": 2.6322,
+        "f0_frame_mae_st": 0.919,
+        "f0_med_err_st": 0.071,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.1729,
+          "nucleus_mel_lsd_db": 2.2544,
+          "seam_20ms_mel_lsd_db": 2.7208,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 438,
+              "mean_mel_lsd_db": 2.5123
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 2.441,
+        "mcd_db": 8.0207,
+        "mcd_cmn_db": 7.6246,
+        "nodtw_shape_mel_lsd_db": 2.514,
+        "nodtw_raw_mel_lsd_db": 2.6257,
+        "f0_frame_mae_st": 0.534,
+        "f0_med_err_st": 0.1377,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.0617,
+          "nucleus_mel_lsd_db": 2.3155,
+          "seam_20ms_mel_lsd_db": 2.7212,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 470,
+              "mean_mel_lsd_db": 2.514
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 2.6438,
+        "mcd_db": 8.009,
+        "mcd_cmn_db": 7.6022,
+        "nodtw_shape_mel_lsd_db": 2.6993,
+        "nodtw_raw_mel_lsd_db": 2.7931,
+        "f0_frame_mae_st": 0.7723,
+        "f0_med_err_st": 0.3045,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.4258,
+          "nucleus_mel_lsd_db": 2.3114,
+          "seam_20ms_mel_lsd_db": 3.11,
+          "buckets": {
+            "copy_synth": {
+              "n_frames": 543,
+              "mean_mel_lsd_db": 2.6993
+            }
+          }
+        }
+      }
+    ],
+    "rung2_same_utt_v12_pipeline_bugfsplit": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 2.8527,
+        "mcd_db": 9.4919,
+        "mcd_cmn_db": 9.2826,
+        "nodtw_shape_mel_lsd_db": 2.8074,
+        "nodtw_raw_mel_lsd_db": 4.4546,
+        "f0_frame_mae_st": 1.0024,
+        "f0_med_err_st": 0.0078,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2966,
+          "nucleus_mel_lsd_db": 2.6962,
+          "seam_20ms_mel_lsd_db": 3.1847,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 675,
+              "mean_mel_lsd_db": 2.8074
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 2.6774,
+        "mcd_db": 8.5159,
+        "mcd_cmn_db": 8.3351,
+        "nodtw_shape_mel_lsd_db": 2.5187,
+        "nodtw_raw_mel_lsd_db": 3.309,
+        "f0_frame_mae_st": 0.8233,
+        "f0_med_err_st": 0.0029,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.0065,
+          "nucleus_mel_lsd_db": 2.2933,
+          "seam_20ms_mel_lsd_db": 2.7853,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 424,
+              "mean_mel_lsd_db": 2.5187
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 2.8727,
+        "mcd_db": 9.4126,
+        "mcd_cmn_db": 9.8178,
+        "nodtw_shape_mel_lsd_db": 2.7108,
+        "nodtw_raw_mel_lsd_db": 3.6482,
+        "f0_frame_mae_st": 0.9782,
+        "f0_med_err_st": 0.0013,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.4692,
+          "nucleus_mel_lsd_db": 2.4404,
+          "seam_20ms_mel_lsd_db": 3.0784,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 487,
+              "mean_mel_lsd_db": 2.7108
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 2.6601,
+        "mcd_db": 8.2482,
+        "mcd_cmn_db": 7.9749,
+        "nodtw_shape_mel_lsd_db": 2.5785,
+        "nodtw_raw_mel_lsd_db": 4.2818,
+        "f0_frame_mae_st": 0.7087,
+        "f0_med_err_st": 0.0458,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.3216,
+          "nucleus_mel_lsd_db": 2.2883,
+          "seam_20ms_mel_lsd_db": 2.8182,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 438,
+              "mean_mel_lsd_db": 2.5785
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 2.6305,
+        "mcd_db": 8.7968,
+        "mcd_cmn_db": 8.5644,
+        "nodtw_shape_mel_lsd_db": 2.5378,
+        "nodtw_raw_mel_lsd_db": 3.7721,
+        "f0_frame_mae_st": 0.814,
+        "f0_med_err_st": 0.0925,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.1042,
+          "nucleus_mel_lsd_db": 2.3325,
+          "seam_20ms_mel_lsd_db": 2.7029,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 470,
+              "mean_mel_lsd_db": 2.5378
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 2.8529,
+        "mcd_db": 9.0162,
+        "mcd_cmn_db": 8.7893,
+        "nodtw_shape_mel_lsd_db": 2.7663,
+        "nodtw_raw_mel_lsd_db": 3.5667,
+        "f0_frame_mae_st": 0.3966,
+        "f0_med_err_st": 0.167,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.5953,
+          "nucleus_mel_lsd_db": 2.3238,
+          "seam_20ms_mel_lsd_db": 3.1402,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 543,
+              "mean_mel_lsd_db": 2.7663
+            }
+          }
+        }
+      }
+    ],
+    "rung2b_same_utt_v12_pipeline_fixfsplit": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 2.8265,
+        "mcd_db": 9.3432,
+        "mcd_cmn_db": 9.1619,
+        "nodtw_shape_mel_lsd_db": 2.7675,
+        "nodtw_raw_mel_lsd_db": 4.3972,
+        "f0_frame_mae_st": 1.1905,
+        "f0_med_err_st": 0.0043,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2574,
+          "nucleus_mel_lsd_db": 2.6561,
+          "seam_20ms_mel_lsd_db": 3.1136,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 675,
+              "mean_mel_lsd_db": 2.7675
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 2.6154,
+        "mcd_db": 8.0668,
+        "mcd_cmn_db": 7.8042,
+        "nodtw_shape_mel_lsd_db": 2.503,
+        "nodtw_raw_mel_lsd_db": 3.2625,
+        "f0_frame_mae_st": 0.6272,
+        "f0_med_err_st": 0.058,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 2.9923,
+          "nucleus_mel_lsd_db": 2.2769,
+          "seam_20ms_mel_lsd_db": 2.6957,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 424,
+              "mean_mel_lsd_db": 2.503
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 2.9339,
+        "mcd_db": 9.444,
+        "mcd_cmn_db": 9.7951,
+        "nodtw_shape_mel_lsd_db": 2.7609,
+        "nodtw_raw_mel_lsd_db": 3.6415,
+        "f0_frame_mae_st": 0.7602,
+        "f0_med_err_st": 0.0005,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.4337,
+          "nucleus_mel_lsd_db": 2.5211,
+          "seam_20ms_mel_lsd_db": 3.0517,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 487,
+              "mean_mel_lsd_db": 2.7609
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 2.6601,
+        "mcd_db": 8.2482,
+        "mcd_cmn_db": 7.9749,
+        "nodtw_shape_mel_lsd_db": 2.5785,
+        "nodtw_raw_mel_lsd_db": 4.2818,
+        "f0_frame_mae_st": 0.7087,
+        "f0_med_err_st": 0.0458,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.3216,
+          "nucleus_mel_lsd_db": 2.2883,
+          "seam_20ms_mel_lsd_db": 2.8182,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 438,
+              "mean_mel_lsd_db": 2.5785
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 2.6305,
+        "mcd_db": 8.7968,
+        "mcd_cmn_db": 8.5644,
+        "nodtw_shape_mel_lsd_db": 2.5378,
+        "nodtw_raw_mel_lsd_db": 3.7721,
+        "f0_frame_mae_st": 0.814,
+        "f0_med_err_st": 0.0925,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.1042,
+          "nucleus_mel_lsd_db": 2.3325,
+          "seam_20ms_mel_lsd_db": 2.7029,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 470,
+              "mean_mel_lsd_db": 2.5378
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 2.8428,
+        "mcd_db": 9.0695,
+        "mcd_cmn_db": 8.8125,
+        "nodtw_shape_mel_lsd_db": 2.788,
+        "nodtw_raw_mel_lsd_db": 3.5684,
+        "f0_frame_mae_st": 0.5271,
+        "f0_med_err_st": 0.1868,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.5623,
+          "nucleus_mel_lsd_db": 2.3745,
+          "seam_20ms_mel_lsd_db": 3.2472,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 543,
+              "mean_mel_lsd_db": 2.788
+            }
+          }
+        }
+      }
+    ],
+    "rung2c_same_utt_no_gain_no_seam": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 2.6699,
+        "mcd_db": 8.596,
+        "mcd_cmn_db": 8.2225,
+        "nodtw_shape_mel_lsd_db": 2.7389,
+        "nodtw_raw_mel_lsd_db": 2.8673,
+        "f0_frame_mae_st": 0.9501,
+        "f0_med_err_st": 0.0631,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2002,
+          "nucleus_mel_lsd_db": 2.6341,
+          "seam_20ms_mel_lsd_db": 2.9775,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 675,
+              "mean_mel_lsd_db": 2.7389
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 2.5409,
+        "mcd_db": 7.7798,
+        "mcd_cmn_db": 7.2952,
+        "nodtw_shape_mel_lsd_db": 2.4621,
+        "nodtw_raw_mel_lsd_db": 2.5537,
+        "f0_frame_mae_st": 0.6196,
+        "f0_med_err_st": 0.0591,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 2.9308,
+          "nucleus_mel_lsd_db": 2.2455,
+          "seam_20ms_mel_lsd_db": 2.6656,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 424,
+              "mean_mel_lsd_db": 2.4621
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 2.6459,
+        "mcd_db": 8.2344,
+        "mcd_cmn_db": 7.8433,
+        "nodtw_shape_mel_lsd_db": 2.6836,
+        "nodtw_raw_mel_lsd_db": 2.831,
+        "f0_frame_mae_st": 0.5422,
+        "f0_med_err_st": 0.1028,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2741,
+          "nucleus_mel_lsd_db": 2.4731,
+          "seam_20ms_mel_lsd_db": 3.0062,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 487,
+              "mean_mel_lsd_db": 2.6836
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 2.5125,
+        "mcd_db": 7.6325,
+        "mcd_cmn_db": 7.324,
+        "nodtw_shape_mel_lsd_db": 2.5538,
+        "nodtw_raw_mel_lsd_db": 2.6617,
+        "f0_frame_mae_st": 0.782,
+        "f0_med_err_st": 0.0162,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.2493,
+          "nucleus_mel_lsd_db": 2.2822,
+          "seam_20ms_mel_lsd_db": 2.7935,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 438,
+              "mean_mel_lsd_db": 2.5538
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 2.4427,
+        "mcd_db": 8.0598,
+        "mcd_cmn_db": 7.6179,
+        "nodtw_shape_mel_lsd_db": 2.5157,
+        "nodtw_raw_mel_lsd_db": 2.6223,
+        "f0_frame_mae_st": 0.7538,
+        "f0_med_err_st": 0.0957,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.063,
+          "nucleus_mel_lsd_db": 2.3174,
+          "seam_20ms_mel_lsd_db": 2.6753,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 470,
+              "mean_mel_lsd_db": 2.5157
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 2.733,
+        "mcd_db": 8.6376,
+        "mcd_cmn_db": 8.2296,
+        "nodtw_shape_mel_lsd_db": 2.7439,
+        "nodtw_raw_mel_lsd_db": 2.8555,
+        "f0_frame_mae_st": 0.5171,
+        "f0_med_err_st": 0.2691,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 3.4739,
+          "nucleus_mel_lsd_db": 2.3541,
+          "seam_20ms_mel_lsd_db": 3.1658,
+          "buckets": {
+            "same_utt": {
+              "n_frames": 543,
+              "mean_mel_lsd_db": 2.7439
+            }
+          }
+        }
+      }
+    ],
+    "rung3_oracle_other_utt_v12pipe": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 6.1033,
+        "mcd_db": 22.2401,
+        "mcd_cmn_db": 20.869,
+        "nodtw_shape_mel_lsd_db": 7.3109,
+        "nodtw_raw_mel_lsd_db": 12.5183,
+        "f0_frame_mae_st": 1.029,
+        "f0_med_err_st": 0.0336,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.3636,
+          "nucleus_mel_lsd_db": 7.2989,
+          "seam_20ms_mel_lsd_db": 7.2527,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 49,
+              "mean_mel_lsd_db": 7.2183
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 427,
+              "mean_mel_lsd_db": 7.6895
+            },
+            "same_spk_same_tone": {
+              "n_frames": 199,
+              "mean_mel_lsd_db": 6.5214
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 5.5988,
+        "mcd_db": 19.9387,
+        "mcd_cmn_db": 19.6297,
+        "nodtw_shape_mel_lsd_db": 6.0912,
+        "nodtw_raw_mel_lsd_db": 7.0579,
+        "f0_frame_mae_st": 0.7518,
+        "f0_med_err_st": 0.1041,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.7572,
+          "nucleus_mel_lsd_db": 5.7835,
+          "seam_20ms_mel_lsd_db": 6.5921,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 41,
+              "mean_mel_lsd_db": 7.1864
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 171,
+              "mean_mel_lsd_db": 6.042
+            },
+            "same_spk_same_tone": {
+              "n_frames": 212,
+              "mean_mel_lsd_db": 5.9191
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 6.123,
+        "mcd_db": 22.5255,
+        "mcd_cmn_db": 21.4789,
+        "nodtw_shape_mel_lsd_db": 6.6849,
+        "nodtw_raw_mel_lsd_db": 8.29,
+        "f0_frame_mae_st": 0.8351,
+        "f0_med_err_st": 0.0355,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.0328,
+          "nucleus_mel_lsd_db": 6.5609,
+          "seam_20ms_mel_lsd_db": 6.9429,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 154,
+              "mean_mel_lsd_db": 8.0803
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 135,
+              "mean_mel_lsd_db": 5.9329
+            },
+            "same_spk_same_tone": {
+              "n_frames": 198,
+              "mean_mel_lsd_db": 6.1124
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 6.2128,
+        "mcd_db": 23.1153,
+        "mcd_cmn_db": 21.9517,
+        "nodtw_shape_mel_lsd_db": 6.1398,
+        "nodtw_raw_mel_lsd_db": 8.0737,
+        "f0_frame_mae_st": 1.3654,
+        "f0_med_err_st": 0.0465,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.3186,
+          "nucleus_mel_lsd_db": 6.07,
+          "seam_20ms_mel_lsd_db": 7.2002,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 101,
+              "mean_mel_lsd_db": 7.5161
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 201,
+              "mean_mel_lsd_db": 5.902
+            },
+            "same_spk_same_tone": {
+              "n_frames": 136,
+              "mean_mel_lsd_db": 5.4691
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 6.4443,
+        "mcd_db": 23.7832,
+        "mcd_cmn_db": 23.3198,
+        "nodtw_shape_mel_lsd_db": 7.276,
+        "nodtw_raw_mel_lsd_db": 9.7272,
+        "f0_frame_mae_st": 1.6931,
+        "f0_med_err_st": 0.1177,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.2695,
+          "nucleus_mel_lsd_db": 7.2783,
+          "seam_20ms_mel_lsd_db": 7.5134,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 33,
+              "mean_mel_lsd_db": 8.1865
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 198,
+              "mean_mel_lsd_db": 6.406
+            },
+            "same_spk_same_tone": {
+              "n_frames": 199,
+              "mean_mel_lsd_db": 7.1978
+            },
+            "zh_concat_of": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 11.2202
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 6.2807,
+        "mcd_db": 21.993,
+        "mcd_cmn_db": 21.6774,
+        "nodtw_shape_mel_lsd_db": 7.2344,
+        "nodtw_raw_mel_lsd_db": 8.8974,
+        "f0_frame_mae_st": 0.6416,
+        "f0_med_err_st": 0.3307,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.3203,
+          "nucleus_mel_lsd_db": 6.6547,
+          "seam_20ms_mel_lsd_db": 7.6231,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 125,
+              "mean_mel_lsd_db": 8.7291
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 307,
+              "mean_mel_lsd_db": 6.7336
+            },
+            "same_spk_same_tone": {
+              "n_frames": 111,
+              "mean_mel_lsd_db": 6.9364
+            }
+          }
+        }
+      }
+    ],
+    "rung3b_oracle_other_utt_nogain_noseam": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 6.0221,
+        "mcd_db": 21.843,
+        "mcd_cmn_db": 20.4918,
+        "nodtw_shape_mel_lsd_db": 7.3141,
+        "nodtw_raw_mel_lsd_db": 11.992,
+        "f0_frame_mae_st": 0.9546,
+        "f0_med_err_st": 0.0284,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.39,
+          "nucleus_mel_lsd_db": 7.2968,
+          "seam_20ms_mel_lsd_db": 7.2702,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 49,
+              "mean_mel_lsd_db": 7.2231
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 427,
+              "mean_mel_lsd_db": 7.6812
+            },
+            "same_spk_same_tone": {
+              "n_frames": 199,
+              "mean_mel_lsd_db": 6.5488
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 5.643,
+        "mcd_db": 20.3308,
+        "mcd_cmn_db": 20.0713,
+        "nodtw_shape_mel_lsd_db": 6.1409,
+        "nodtw_raw_mel_lsd_db": 7.2052,
+        "f0_frame_mae_st": 0.7438,
+        "f0_med_err_st": 0.1251,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.8624,
+          "nucleus_mel_lsd_db": 5.8075,
+          "seam_20ms_mel_lsd_db": 6.6819,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 41,
+              "mean_mel_lsd_db": 7.183
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 171,
+              "mean_mel_lsd_db": 6.1515
+            },
+            "same_spk_same_tone": {
+              "n_frames": 212,
+              "mean_mel_lsd_db": 5.9308
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 6.5712,
+        "mcd_db": 25.1028,
+        "mcd_cmn_db": 23.3989,
+        "nodtw_shape_mel_lsd_db": 6.7226,
+        "nodtw_raw_mel_lsd_db": 8.1668,
+        "f0_frame_mae_st": 0.7797,
+        "f0_med_err_st": 0.2627,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.1718,
+          "nucleus_mel_lsd_db": 6.5624,
+          "seam_20ms_mel_lsd_db": 7.0835,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 154,
+              "mean_mel_lsd_db": 8.1146
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 135,
+              "mean_mel_lsd_db": 5.976
+            },
+            "same_spk_same_tone": {
+              "n_frames": 198,
+              "mean_mel_lsd_db": 6.149
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 6.2958,
+        "mcd_db": 23.1263,
+        "mcd_cmn_db": 21.5007,
+        "nodtw_shape_mel_lsd_db": 6.1633,
+        "nodtw_raw_mel_lsd_db": 7.692,
+        "f0_frame_mae_st": 1.5386,
+        "f0_med_err_st": 0.0072,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.366,
+          "nucleus_mel_lsd_db": 6.0842,
+          "seam_20ms_mel_lsd_db": 7.3553,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 101,
+              "mean_mel_lsd_db": 7.5513
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 201,
+              "mean_mel_lsd_db": 5.903
+            },
+            "same_spk_same_tone": {
+              "n_frames": 136,
+              "mean_mel_lsd_db": 5.5173
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 6.1813,
+        "mcd_db": 22.6532,
+        "mcd_cmn_db": 22.3369,
+        "nodtw_shape_mel_lsd_db": 7.2975,
+        "nodtw_raw_mel_lsd_db": 9.4158,
+        "f0_frame_mae_st": 1.5481,
+        "f0_med_err_st": 0.1343,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.3221,
+          "nucleus_mel_lsd_db": 7.2886,
+          "seam_20ms_mel_lsd_db": 7.5905,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 33,
+              "mean_mel_lsd_db": 8.2399
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 198,
+              "mean_mel_lsd_db": 6.4101
+            },
+            "same_spk_same_tone": {
+              "n_frames": 199,
+              "mean_mel_lsd_db": 7.2347
+            },
+            "zh_concat_of": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 11.2246
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 6.2792,
+        "mcd_db": 21.9694,
+        "mcd_cmn_db": 21.6676,
+        "nodtw_shape_mel_lsd_db": 7.2694,
+        "nodtw_raw_mel_lsd_db": 9.1359,
+        "f0_frame_mae_st": 0.5814,
+        "f0_med_err_st": 0.2741,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.451,
+          "nucleus_mel_lsd_db": 6.6386,
+          "seam_20ms_mel_lsd_db": 7.6631,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 125,
+              "mean_mel_lsd_db": 8.7075
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 307,
+              "mean_mel_lsd_db": 6.7735
+            },
+            "same_spk_same_tone": {
+              "n_frames": 111,
+              "mean_mel_lsd_db": 7.0217
+            }
+          }
+        }
+      }
+    ],
+    "rung4_v12_guided_bugfsplit": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 6.55,
+        "mcd_db": 23.7129,
+        "mcd_cmn_db": 22.3931,
+        "nodtw_shape_mel_lsd_db": 8.2239,
+        "nodtw_raw_mel_lsd_db": 13.1138,
+        "f0_frame_mae_st": 1.9207,
+        "f0_med_err_st": 0.3134,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.1827,
+          "nucleus_mel_lsd_db": 8.4606,
+          "seam_20ms_mel_lsd_db": 8.1526,
+          "buckets": {
+            "same_spk_diff_tone": {
+              "n_frames": 148,
+              "mean_mel_lsd_db": 6.6437
+            },
+            "same_spk_same_tone": {
+              "n_frames": 527,
+              "mean_mel_lsd_db": 8.6677
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 6.2732,
+        "mcd_db": 22.8771,
+        "mcd_cmn_db": 22.0188,
+        "nodtw_shape_mel_lsd_db": 6.8756,
+        "nodtw_raw_mel_lsd_db": 7.901,
+        "f0_frame_mae_st": 1.3067,
+        "f0_med_err_st": 0.316,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.8063,
+          "nucleus_mel_lsd_db": 6.4455,
+          "seam_20ms_mel_lsd_db": 7.6772,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 10.1066
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 133,
+              "mean_mel_lsd_db": 6.7837
+            },
+            "same_spk_same_tone": {
+              "n_frames": 251,
+              "mean_mel_lsd_db": 6.4093
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 6.3321,
+        "mcd_db": 22.5221,
+        "mcd_cmn_db": 21.8606,
+        "nodtw_shape_mel_lsd_db": 7.0598,
+        "nodtw_raw_mel_lsd_db": 8.7726,
+        "f0_frame_mae_st": 1.3486,
+        "f0_med_err_st": 0.0376,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.78,
+          "nucleus_mel_lsd_db": 7.1595,
+          "seam_20ms_mel_lsd_db": 7.3429,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 154,
+              "mean_mel_lsd_db": 8.2183
+            },
+            "same_spk_same_tone": {
+              "n_frames": 333,
+              "mean_mel_lsd_db": 6.524
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 6.8786,
+        "mcd_db": 25.9802,
+        "mcd_cmn_db": 24.5151,
+        "nodtw_shape_mel_lsd_db": 7.1697,
+        "nodtw_raw_mel_lsd_db": 9.1791,
+        "f0_frame_mae_st": 0.7174,
+        "f0_med_err_st": 0.2006,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.5627,
+          "nucleus_mel_lsd_db": 7.0162,
+          "seam_20ms_mel_lsd_db": 8.024,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 39,
+              "mean_mel_lsd_db": 8.7673
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 76,
+              "mean_mel_lsd_db": 9.2984
+            },
+            "same_spk_same_tone": {
+              "n_frames": 323,
+              "mean_mel_lsd_db": 6.4759
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 6.7383,
+        "mcd_db": 24.8748,
+        "mcd_cmn_db": 24.6902,
+        "nodtw_shape_mel_lsd_db": 7.7638,
+        "nodtw_raw_mel_lsd_db": 10.2187,
+        "f0_frame_mae_st": 1.4843,
+        "f0_med_err_st": 0.1901,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.1991,
+          "nucleus_mel_lsd_db": 7.6061,
+          "seam_20ms_mel_lsd_db": 7.6818,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 33,
+              "mean_mel_lsd_db": 7.9556
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 127,
+              "mean_mel_lsd_db": 7.0686
+            },
+            "same_spk_same_tone": {
+              "n_frames": 270,
+              "mean_mel_lsd_db": 7.3551
+            },
+            "zh_concat_of": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 12.572
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 6.75,
+        "mcd_db": 24.2939,
+        "mcd_cmn_db": 24.0663,
+        "nodtw_shape_mel_lsd_db": 7.808,
+        "nodtw_raw_mel_lsd_db": 9.3154,
+        "f0_frame_mae_st": 1.2309,
+        "f0_med_err_st": 0.2555,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.437,
+          "nucleus_mel_lsd_db": 7.4722,
+          "seam_20ms_mel_lsd_db": 8.8429,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 38,
+              "mean_mel_lsd_db": 8.2008
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 175,
+              "mean_mel_lsd_db": 7.6408
+            },
+            "same_spk_same_tone": {
+              "n_frames": 330,
+              "mean_mel_lsd_db": 7.8515
+            }
+          }
+        }
+      }
+    ],
+    "rung4b_v12_guided_fixfsplit": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 6.9772,
+        "mcd_db": 25.0648,
+        "mcd_cmn_db": 23.9495,
+        "nodtw_shape_mel_lsd_db": 8.1642,
+        "nodtw_raw_mel_lsd_db": 13.0704,
+        "f0_frame_mae_st": 1.9782,
+        "f0_med_err_st": 0.3192,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 6.9451,
+          "nucleus_mel_lsd_db": 8.4412,
+          "seam_20ms_mel_lsd_db": 8.1646,
+          "buckets": {
+            "same_spk_diff_tone": {
+              "n_frames": 190,
+              "mean_mel_lsd_db": 7.2622
+            },
+            "same_spk_same_tone": {
+              "n_frames": 485,
+              "mean_mel_lsd_db": 8.5175
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 6.2671,
+        "mcd_db": 22.8909,
+        "mcd_cmn_db": 22.1947,
+        "nodtw_shape_mel_lsd_db": 7.0246,
+        "nodtw_raw_mel_lsd_db": 8.0184,
+        "f0_frame_mae_st": 1.3002,
+        "f0_med_err_st": 0.3458,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.0086,
+          "nucleus_mel_lsd_db": 6.5699,
+          "seam_20ms_mel_lsd_db": 7.7274,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 10.1932
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 133,
+              "mean_mel_lsd_db": 7.3305
+            },
+            "same_spk_same_tone": {
+              "n_frames": 251,
+              "mean_mel_lsd_db": 6.3575
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 6.3618,
+        "mcd_db": 23.1171,
+        "mcd_cmn_db": 22.2519,
+        "nodtw_shape_mel_lsd_db": 6.9324,
+        "nodtw_raw_mel_lsd_db": 8.6559,
+        "f0_frame_mae_st": 1.0805,
+        "f0_med_err_st": 0.2816,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.0214,
+          "nucleus_mel_lsd_db": 6.9006,
+          "seam_20ms_mel_lsd_db": 7.2655,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 154,
+              "mean_mel_lsd_db": 8.1506
+            },
+            "same_spk_same_tone": {
+              "n_frames": 333,
+              "mean_mel_lsd_db": 6.369
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 7.116,
+        "mcd_db": 26.5224,
+        "mcd_cmn_db": 25.3792,
+        "nodtw_shape_mel_lsd_db": 7.2398,
+        "nodtw_raw_mel_lsd_db": 9.3066,
+        "f0_frame_mae_st": 0.9857,
+        "f0_med_err_st": 0.1568,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 7.6048,
+          "nucleus_mel_lsd_db": 7.0972,
+          "seam_20ms_mel_lsd_db": 8.238,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 39,
+              "mean_mel_lsd_db": 7.6519
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 76,
+              "mean_mel_lsd_db": 9.4915
+            },
+            "same_spk_same_tone": {
+              "n_frames": 323,
+              "mean_mel_lsd_db": 6.6602
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 6.5991,
+        "mcd_db": 24.4234,
+        "mcd_cmn_db": 24.4004,
+        "nodtw_shape_mel_lsd_db": 7.7532,
+        "nodtw_raw_mel_lsd_db": 10.4241,
+        "f0_frame_mae_st": 1.652,
+        "f0_med_err_st": 0.0698,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.4138,
+          "nucleus_mel_lsd_db": 7.5138,
+          "seam_20ms_mel_lsd_db": 7.8889,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 33,
+              "mean_mel_lsd_db": 8.2842
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 168,
+              "mean_mel_lsd_db": 7.8688
+            },
+            "same_spk_same_tone": {
+              "n_frames": 229,
+              "mean_mel_lsd_db": 6.9995
+            },
+            "zh_concat_of": {
+              "n_frames": 40,
+              "mean_mel_lsd_db": 11.1442
+            }
+          }
+        }
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 6.6766,
+        "mcd_db": 24.5684,
+        "mcd_cmn_db": 24.0784,
+        "nodtw_shape_mel_lsd_db": 7.7454,
+        "nodtw_raw_mel_lsd_db": 9.2648,
+        "f0_frame_mae_st": 1.3789,
+        "f0_med_err_st": 0.2163,
+        "dur_mae_ms": 0.0,
+        "breakdown": {
+          "onset_mel_lsd_db": 8.1523,
+          "nucleus_mel_lsd_db": 7.5282,
+          "seam_20ms_mel_lsd_db": 8.8502,
+          "buckets": {
+            "donor_spk": {
+              "n_frames": 38,
+              "mean_mel_lsd_db": 9.7257
+            },
+            "same_spk_diff_tone": {
+              "n_frames": 175,
+              "mean_mel_lsd_db": 7.4317
+            },
+            "same_spk_same_tone": {
+              "n_frames": 330,
+              "mean_mel_lsd_db": 7.6838
+            }
+          }
+        }
+      }
+    ],
+    "rung5_v12_auto": [
+      {
+        "uid": "SSB05020005",
+        "mel_lsd_db": 6.4701,
+        "mcd_db": 22.8889,
+        "mcd_cmn_db": 21.1375,
+        "nodtw_shape_mel_lsd_db": 11.6297,
+        "nodtw_raw_mel_lsd_db": 17.0607,
+        "f0_frame_mae_st": 3.822,
+        "f0_med_err_st": 0.2876,
+        "dur_mae_ms": 120.0
+      },
+      {
+        "uid": "SSB05020082",
+        "mel_lsd_db": 6.6598,
+        "mcd_db": 22.6228,
+        "mcd_cmn_db": 22.0768,
+        "nodtw_shape_mel_lsd_db": 10.4097,
+        "nodtw_raw_mel_lsd_db": 13.1509,
+        "f0_frame_mae_st": 1.9384,
+        "f0_med_err_st": 0.3958,
+        "dur_mae_ms": 66.82
+      },
+      {
+        "uid": "SSB05020122",
+        "mel_lsd_db": 6.5796,
+        "mcd_db": 23.8953,
+        "mcd_cmn_db": 23.2385,
+        "nodtw_shape_mel_lsd_db": 11.0965,
+        "nodtw_raw_mel_lsd_db": 14.104,
+        "f0_frame_mae_st": 2.9031,
+        "f0_med_err_st": 0.3891,
+        "dur_mae_ms": 58.64
+      },
+      {
+        "uid": "SSB05020137",
+        "mel_lsd_db": 7.0887,
+        "mcd_db": 26.0626,
+        "mcd_cmn_db": 24.7134,
+        "nodtw_shape_mel_lsd_db": 9.5023,
+        "nodtw_raw_mel_lsd_db": 12.7496,
+        "f0_frame_mae_st": 1.3012,
+        "f0_med_err_st": 0.0998,
+        "dur_mae_ms": 46.82
+      },
+      {
+        "uid": "SSB05020159",
+        "mel_lsd_db": 7.1352,
+        "mcd_db": 24.9681,
+        "mcd_cmn_db": 25.1165,
+        "nodtw_shape_mel_lsd_db": 11.786,
+        "nodtw_raw_mel_lsd_db": 14.6426,
+        "f0_frame_mae_st": 2.9846,
+        "f0_med_err_st": 0.5683,
+        "dur_mae_ms": 59.55
+      },
+      {
+        "uid": "SSB05020222",
+        "mel_lsd_db": 7.0182,
+        "mcd_db": 24.8774,
+        "mcd_cmn_db": 24.2218,
+        "nodtw_shape_mel_lsd_db": 12.4799,
+        "nodtw_raw_mel_lsd_db": 14.6985,
+        "f0_frame_mae_st": 2.983,
+        "f0_med_err_st": 0.0997,
+        "dur_mae_ms": 59.55
+      }
+    ]
+  },
+  "t3_sandhi_audit": {
+    "total_utterances": 112,
+    "total_syllables": 1227,
+    "total_tone_mismatches": 51,
+    "category_counts": {
+      "t3_sandhi_missed_other": 17,
+      "polyphone_or_tone_mismatch": 30,
+      "t3_sandhi_applied_manifest_lexical": 2,
+      "yi_bu_sandhi_vs_manifest": 2
+    },
+    "spotlight_6_mismatches": [
+      {
+        "uid": "SSB05020005",
+        "idx": 3,
+        "hanzi": "也",
+        "text": "但同时也有利好政策出台",
+        "pred_pinyin": "ye3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "ye2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020082",
+        "idx": 5,
+        "hanzi": "得",
+        "text": "还有一个值得注意的数据",
+        "pred_pinyin": "de5",
+        "pred_tone": 5,
+        "pred_lexical_tone": 5,
+        "manifest_pinyin": "de2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 4,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020159",
+        "idx": 8,
+        "hanzi": "马",
+        "text": "靠另案处理就能打马虎眼",
+        "pred_pinyin": "ma2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "ma3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 1,
+        "category": "t3_sandhi_applied_manifest_lexical"
+      },
+      {
+        "uid": "SSB05020159",
+        "idx": 9,
+        "hanzi": "虎",
+        "text": "靠另案处理就能打马虎眼",
+        "pred_pinyin": "hu2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "hu1",
+        "manifest_tone": 1,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 3,
+        "next_manifest_tone": 3,
+        "category": "polyphone_or_tone_mismatch"
+      }
+    ],
+    "t3_consecutive_pairs_n": 6,
+    "t3_consecutive_rising_f0_count": 1,
+    "t3_consecutive_samples": [
+      {
+        "uid": "SSB15930310",
+        "idx": 5,
+        "hanzi": "载",
+        "pred_tone": 2,
+        "manifest_tone": 3,
+        "word": "载",
+        "next_hanzi": "小",
+        "next_word": "小",
+        "acoustic_slope_st": 1.91
+      },
+      {
+        "uid": "SSB05020386",
+        "idx": 5,
+        "hanzi": "伞",
+        "pred_tone": 3,
+        "manifest_tone": 3,
+        "word": "伞",
+        "next_hanzi": "扑",
+        "next_word": "扑",
+        "acoustic_slope_st": 0.29
+      },
+      {
+        "uid": "SSB15930270",
+        "idx": 7,
+        "hanzi": "恼",
+        "pred_tone": 3,
+        "manifest_tone": 3,
+        "word": "恼",
+        "next_hanzi": "组",
+        "next_word": "组",
+        "acoustic_slope_st": -5.16
+      },
+      {
+        "uid": "SSB15930121",
+        "idx": 10,
+        "hanzi": "指",
+        "pred_tone": 3,
+        "manifest_tone": 3,
+        "word": "指",
+        "next_hanzi": "指",
+        "next_word": "指",
+        "acoustic_slope_st": -2.51
+      },
+      {
+        "uid": "SSB15930243",
+        "idx": 8,
+        "hanzi": "长",
+        "pred_tone": 3,
+        "manifest_tone": 3,
+        "word": "长",
+        "next_hanzi": "百",
+        "next_word": "百",
+        "acoustic_slope_st": 0.37
+      },
+      {
+        "uid": "SSB15930447",
+        "idx": 4,
+        "hanzi": "谱",
+        "pred_tone": 3,
+        "manifest_tone": 3,
+        "word": "谱",
+        "next_hanzi": "有",
+        "next_word": "有",
+        "acoustic_slope_st": 0.27
+      }
+    ],
+    "mismatches_sample": [
+      {
+        "uid": "SSB05020005",
+        "idx": 3,
+        "hanzi": "也",
+        "text": "但同时也有利好政策出台",
+        "pred_pinyin": "ye3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "ye2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020082",
+        "idx": 5,
+        "hanzi": "得",
+        "text": "还有一个值得注意的数据",
+        "pred_pinyin": "de5",
+        "pred_tone": 5,
+        "pred_lexical_tone": 5,
+        "manifest_pinyin": "de2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 4,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020159",
+        "idx": 8,
+        "hanzi": "马",
+        "text": "靠另案处理就能打马虎眼",
+        "pred_pinyin": "ma2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "ma3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 1,
+        "category": "t3_sandhi_applied_manifest_lexical"
+      },
+      {
+        "uid": "SSB05020159",
+        "idx": 9,
+        "hanzi": "虎",
+        "text": "靠另案处理就能打马虎眼",
+        "pred_pinyin": "hu2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "hu1",
+        "manifest_tone": 1,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 3,
+        "next_manifest_tone": 3,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020234",
+        "idx": 7,
+        "hanzi": "比",
+        "text": "苟芸慧明明五官比极标致",
+        "pred_pinyin": "bi3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "bi5",
+        "manifest_tone": 5,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 1,
+        "next_manifest_tone": 2,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020355",
+        "idx": 7,
+        "hanzi": "起",
+        "text": "他毫不犹豫地拿起手机喂",
+        "pred_pinyin": "qi3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "qi2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020355",
+        "idx": 10,
+        "hanzi": "喂",
+        "text": "他毫不犹豫地拿起手机喂",
+        "pred_pinyin": "wei4",
+        "pred_tone": 4,
+        "pred_lexical_tone": 4,
+        "manifest_pinyin": "wei3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 1,
+        "next_manifest_tone": null,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB15930079",
+        "idx": 0,
+        "hanzi": "当",
+        "text": "当债务结构却大有玄机",
+        "pred_pinyin": "dang1",
+        "pred_tone": 1,
+        "pred_lexical_tone": 1,
+        "manifest_pinyin": "dang4",
+        "manifest_tone": 4,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": null,
+        "next_manifest_tone": 4,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB15930211",
+        "idx": 1,
+        "hanzi": "晚",
+        "text": "今晚想在荒郊野外打地铺",
+        "pred_pinyin": "wan3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "wan2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 1,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB15930306",
+        "idx": 8,
+        "hanzi": "几",
+        "text": "在划船比赛到最后几码时",
+        "pred_pinyin": "ji3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "ji2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB15930310",
+        "idx": 5,
+        "hanzi": "载",
+        "text": "潇湘书院连载小说有什么",
+        "pred_pinyin": "zai2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "zai3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_applied_manifest_lexical"
+      },
+      {
+        "uid": "SSB15930314",
+        "idx": 10,
+        "hanzi": "识",
+        "text": "我们会努力学习获得知识",
+        "pred_pinyin": "shi2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 2,
+        "manifest_pinyin": "shi5",
+        "manifest_tone": 5,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 1,
+        "next_manifest_tone": null,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB15930361",
+        "idx": 4,
+        "hanzi": "亲",
+        "text": "对于你父亲我感到遗憾",
+        "pred_pinyin": "qin1",
+        "pred_tone": 1,
+        "pred_lexical_tone": 1,
+        "manifest_pinyin": "qin5",
+        "manifest_tone": 5,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 2,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB15930361",
+        "idx": 5,
+        "hanzi": "我",
+        "text": "对于你父亲我感到遗憾",
+        "pred_pinyin": "wo3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "wo2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 5,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB15930378",
+        "idx": 8,
+        "hanzi": "子",
+        "text": "抓获涉嫌诈骗的男子方某",
+        "pred_pinyin": "zi3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "zi5",
+        "manifest_tone": 5,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 1,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020052",
+        "idx": 6,
+        "hanzi": "仍",
+        "text": "这些问题至今仍不断被消费者追问",
+        "pred_pinyin": "reng2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 2,
+        "manifest_pinyin": "reng1",
+        "manifest_tone": 1,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 1,
+        "next_manifest_tone": 2,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020124",
+        "idx": 1,
+        "hanzi": "且",
+        "text": "而且很难找到这样大规模的厂家合作",
+        "pred_pinyin": "qie3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "qie2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020319",
+        "idx": 11,
+        "hanzi": "启",
+        "text": "自去年七月房企再融资重启以来",
+        "pred_pinyin": "qi3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "qi2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020431",
+        "idx": 3,
+        "hanzi": "个",
+        "text": "虽然这个名单遭到业内否认",
+        "pred_pinyin": "ge5",
+        "pred_tone": 5,
+        "pred_lexical_tone": 5,
+        "manifest_pinyin": "ge4",
+        "manifest_tone": 4,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 2,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020428",
+        "idx": 3,
+        "hanzi": "稳",
+        "text": "吊装不稳导致桥梁脱落发生断裂",
+        "pred_pinyin": "wen3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "wen2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020428",
+        "idx": 10,
+        "hanzi": "发",
+        "text": "吊装不稳导致桥梁脱落发生断裂",
+        "pred_pinyin": "fa1",
+        "pred_tone": 1,
+        "pred_lexical_tone": 1,
+        "manifest_pinyin": "fa4",
+        "manifest_tone": 4,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 1,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020184",
+        "idx": 8,
+        "hanzi": "给",
+        "text": "话语权是政府政策给你的",
+        "pred_pinyin": "gei3",
+        "pred_tone": 3,
+        "pred_lexical_tone": 3,
+        "manifest_pinyin": "gei2",
+        "manifest_tone": 2,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 3,
+        "category": "t3_sandhi_missed_other"
+      },
+      {
+        "uid": "SSB05020168",
+        "idx": 5,
+        "hanzi": "得",
+        "text": "如果您是上得晚下得早的土豪",
+        "pred_pinyin": "de2",
+        "pred_tone": 2,
+        "pred_lexical_tone": 2,
+        "manifest_pinyin": "de5",
+        "manifest_tone": 5,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 4,
+        "next_manifest_tone": 3,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020335",
+        "idx": 8,
+        "hanzi": "撇",
+        "text": "郭富城和张震急忙撇清关系",
+        "pred_pinyin": "pie1",
+        "pred_tone": 1,
+        "pred_lexical_tone": 1,
+        "manifest_pinyin": "pie3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 2,
+        "next_manifest_tone": 1,
+        "category": "polyphone_or_tone_mismatch"
+      },
+      {
+        "uid": "SSB05020386",
+        "idx": 6,
+        "hanzi": "扑",
+        "text": "胜华内衣洋伞扑克麻将经销处",
+        "pred_pinyin": "pu1",
+        "pred_tone": 1,
+        "pred_lexical_tone": 1,
+        "manifest_pinyin": "pu3",
+        "manifest_tone": 3,
+        "word": null,
+        "next_word": null,
+        "prev_manifest_tone": 3,
+        "next_manifest_tone": 4,
+        "category": "polyphone_or_tone_mismatch"
+      }
+    ]
+  }
+}

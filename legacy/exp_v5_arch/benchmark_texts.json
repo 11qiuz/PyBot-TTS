@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "description": "Frozen 26-sentence cross-lingual G2P & TTS evaluation text suite (10 ZH, 10 EN, 6 ZH+EN code-switched).",
+  "sentences": [
+    {
+      "id": "ZH_01",
+      "lang": "zh",
+      "text": "你好，我想买一张票。",
+      "features": ["tone3_sandhi", "yi_sandhi", "continuation_pause"]
+    },
+    {
+      "id": "ZH_02",
+      "lang": "zh",
+      "text": "你真的要去银行啊？",
+      "features": ["polyphone_hang2", "neutral_tone_a5", "neutral_question"]
+    },
+    {
+      "id": "ZH_03",
+      "lang": "zh",
+      "text": "你不是说不要去银行吗？",
+      "features": ["bu_sandhi", "polar_question_ma"]
+    },
+    {
+      "id": "ZH_04",
+      "lang": "zh",
+      "text": "行长说重庆的音乐很好听。",
+      "features": ["polyphone_hang2_zhang3", "polyphone_chong2", "polyphone_yue4", "tone3_sandhi"]
+    },
+    {
+      "id": "ZH_05",
+      "lang": "zh",
+      "text": "第一遍不对，我们重新试一试！",
+      "features": ["di_yi_no_sandhi", "bu_sandhi", "yi_neutral", "exclamation"]
+    },
+    {
+      "id": "ZH_06",
+      "lang": "zh",
+      "text": "小老虎和狮子四处看。",
+      "features": ["retroflex_ir", "dental_iz", "tone3_sandhi_chain"]
+    },
+    {
+      "id": "ZH_07",
+      "lang": "zh",
+      "text": "二月二十四日去西安吃早饭。",
+      "features": ["er_vowel", "zero_onset_v", "apical_ir_iz"]
+    },
+    {
+      "id": "ZH_08",
+      "lang": "zh",
+      "text": "其实只要回家，大家都开心。",
+      "features": ["existing_bank_words", "statement"]
+    },
+    {
+      "id": "ZH_09",
+      "lang": "zh",
+      "text": "为什么她居然没听见？",
+      "features": ["wh_question", "surprise_cue", "negated_action"]
+    },
+    {
+      "id": "ZH_10",
+      "lang": "zh",
+      "text": "今天不是晴天，而是下雨天。",
+      "features": ["contrast_focus", "bu_sandhi"]
+    },
+    {
+      "id": "EN_01",
+      "lang": "en",
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "features": ["broad_phonemes", "voiced_fricatives", "clusters"]
+    },
+    {
+      "id": "EN_02",
+      "lang": "en",
+      "text": "Think through these three themes carefully.",
+      "features": ["dental_fricatives_th_dh", "thr_cluster"]
+    },
+    {
+      "id": "EN_03",
+      "lang": "en",
+      "text": "She sells seashells by the seashore.",
+      "features": ["sibilants_s_sh"]
+    },
+    {
+      "id": "EN_04",
+      "lang": "en",
+      "text": "Measure the treasure near the azure garage.",
+      "features": ["voiced_postalveolar_zh", "r_colored_schwa"]
+    },
+    {
+      "id": "EN_05",
+      "lang": "en",
+      "text": "Strong strengths stretch across the street.",
+      "features": ["complex_ccc_clusters", "coda_ngths"]
+    },
+    {
+      "id": "EN_06",
+      "lang": "en",
+      "text": "They will reCORD a world REcord today.",
+      "features": ["lexical_stress_minimal_pair"]
+    },
+    {
+      "id": "EN_07",
+      "lang": "en",
+      "text": "Could you check whether the weather is clear?",
+      "features": ["polar_question", "homophones_whether_weather"]
+    },
+    {
+      "id": "EN_08",
+      "lang": "en",
+      "text": "Do not forget to bring your charger and headphones.",
+      "features": ["affricates_ch_jh", "velar_nasal_ng"]
+    },
+    {
+      "id": "EN_09",
+      "lang": "en",
+      "text": "What a surprisingly natural synthetic voice!",
+      "features": ["exclamation", "diphthongs", "dental_th"]
+    },
+    {
+      "id": "EN_10",
+      "lang": "en",
+      "text": "Zero-shot voice cloning requires clean studio reference audio.",
+      "features": ["hyphenated_compound", "domain_terms"]
+    },
+    {
+      "id": "CS_01",
+      "lang": "zh_en",
+      "text": "我今天用 Python 跑了一个 baseline。",
+      "features": ["zh_en_switch", "technical_terms"]
+    },
+    {
+      "id": "CS_02",
+      "lang": "zh_en",
+      "text": "PyBotTTS 的目标是实现 cross-lingual voice cloning。",
+      "features": ["camelcase_acronym", "hyphenated_en_in_zh"]
+    },
+    {
+      "id": "CS_03",
+      "lang": "zh_en",
+      "text": "请把这段 audio 放到 GPU 上做 inference。",
+      "features": ["all_caps_acronym_gpu", "mixed_clauses"]
+    },
+    {
+      "id": "CS_04",
+      "lang": "zh_en",
+      "text": "AI 语音合成需要准确的 G2P 和 prosody 控制。",
+      "features": ["alphanumeric_acronym_g2p", "leading_en_acronym"]
+    },
+    {
+      "id": "CS_05",
+      "lang": "zh_en",
+      "text": "Please check the 银行卡 balance before Tuesday.",
+      "features": ["en_frame_with_zh_noun"]
+    },
+    {
+      "id": "CS_06",
+      "lang": "zh_en",
+      "text": "我们用 CUDA 在 RTX 4080 上测试了 TTS 和 VC 模型。",
+      "features": ["acronyms_cuda_rtx_tts_vc", "numeric_token_4080"]
+    }
+  ]
+}

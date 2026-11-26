@@ -1,0 +1,184 @@
+{
+  "demo1_lyrical_ballad": {
+    "title": "Demo 1 · 抒情长音吟唱（明夜在湖上，长歌和星华）",
+    "description": "长音延展 420–860 ms、±6 半音音域、连音滑音 (40 ms portamento) 与延迟颤音 (5.4 Hz, 0.24 st)",
+    "coverage": [
+      {
+        "hanzi": "明",
+        "key": "m/ing",
+        "n_spk_tokens": 4
+      },
+      {
+        "hanzi": "夜",
+        "key": "/ie",
+        "n_spk_tokens": 8
+      },
+      {
+        "hanzi": "在",
+        "key": "z/ai",
+        "n_spk_tokens": 5
+      },
+      {
+        "hanzi": "湖",
+        "key": "h/u",
+        "n_spk_tokens": 5
+      },
+      {
+        "hanzi": "上",
+        "key": "sh/ang",
+        "n_spk_tokens": 6
+      },
+      {
+        "hanzi": "长",
+        "key": "ch/ang",
+        "n_spk_tokens": 4
+      },
+      {
+        "hanzi": "歌",
+        "key": "g/e",
+        "n_spk_tokens": 5
+      },
+      {
+        "hanzi": "和",
+        "key": "h/e",
+        "n_spk_tokens": 6
+      },
+      {
+        "hanzi": "星",
+        "key": "x/ing",
+        "n_spk_tokens": 6
+      },
+      {
+        "hanzi": "华",
+        "key": "h/ua",
+        "n_spk_tokens": 11
+      }
+    ],
+    "v12_linear": {
+      "file": "samples/demo1_lyrical_ballad_v12_linear.wav",
+      "metrics": {
+        "sanity_ok": true,
+        "duration_s": 5.61,
+        "dur_mae_ms": 0.0,
+        "f0_all_mae_st": 0.1081,
+        "f0_steady_mae_st": 0.0653,
+        "f0_steady_p95_st": 0.1682,
+        "clicks_gt8": 2e-05,
+        "voiced_contrast_db": 28.6167,
+        "pingpong_count": 0,
+        "source_counts": {
+          "zh_target_syl": 10
+        }
+      }
+    },
+    "v13_utau": {
+      "file": "samples/demo1_lyrical_ballad_v13_utau.wav",
+      "metrics": {
+        "sanity_ok": true,
+        "duration_s": 5.61,
+        "dur_mae_ms": 0.0,
+        "f0_all_mae_st": 0.0437,
+        "f0_steady_mae_st": 0.0413,
+        "f0_steady_p95_st": 0.1192,
+        "clicks_gt8": 2e-05,
+        "voiced_contrast_db": 28.9996,
+        "pingpong_count": 9,
+        "source_counts": {
+          "zh_target_syl": 10
+        }
+      }
+    },
+    "ab_file": "samples/demo1_lyrical_ballad_AB_v12_vs_v13.wav"
+  },
+  "demo2_rhythm_octave": {
+    "title": "Demo 2 · 快慢交错 + 八度大跳压力测试（出发到地方，不止在今生）",
+    "description": "150 ms 短促音节与 660 ms 延音交替，跨越一个八度 (F3=53 -> F4=65)，检验清辅音清晰度与循环稳定性",
+    "coverage": [
+      {
+        "hanzi": "出",
+        "key": "ch/u",
+        "n_spk_tokens": 7
+      },
+      {
+        "hanzi": "发",
+        "key": "f/a",
+        "n_spk_tokens": 4
+      },
+      {
+        "hanzi": "到",
+        "key": "d/ao",
+        "n_spk_tokens": 9
+      },
+      {
+        "hanzi": "地",
+        "key": "d/i",
+        "n_spk_tokens": 5
+      },
+      {
+        "hanzi": "方",
+        "key": "f/ang",
+        "n_spk_tokens": 4
+      },
+      {
+        "hanzi": "不",
+        "key": "b/u",
+        "n_spk_tokens": 11
+      },
+      {
+        "hanzi": "止",
+        "key": "zh/ir",
+        "n_spk_tokens": 10
+      },
+      {
+        "hanzi": "在",
+        "key": "z/ai",
+        "n_spk_tokens": 5
+      },
+      {
+        "hanzi": "今",
+        "key": "j/in",
+        "n_spk_tokens": 4
+      },
+      {
+        "hanzi": "生",
+        "key": "sh/eng",
+        "n_spk_tokens": 7
+      }
+    ],
+    "v12_linear": {
+      "file": "samples/demo2_rhythm_octave_v12_linear.wav",
+      "metrics": {
+        "sanity_ok": true,
+        "duration_s": 3.34,
+        "dur_mae_ms": 0.0,
+        "f0_all_mae_st": 0.0715,
+        "f0_steady_mae_st": 0.0427,
+        "f0_steady_p95_st": 0.1306,
+        "clicks_gt8": 1e-05,
+        "voiced_contrast_db": 28.2362,
+        "pingpong_count": 0,
+        "source_counts": {
+          "zh_target_syl": 10
+        }
+      }
+    },
+    "v13_utau": {
+      "file": "samples/demo2_rhythm_octave_v13_utau.wav",
+      "metrics": {
+        "sanity_ok": true,
+        "duration_s": 3.34,
+        "dur_mae_ms": 0.0,
+        "f0_all_mae_st": 0.0747,
+        "f0_steady_mae_st": 0.0512,
+        "f0_steady_p95_st": 0.153,
+        "clicks_gt8": 0.0,
+        "voiced_contrast_db": 29.0647,
+        "pingpong_count": 3,
+        "source_counts": {
+          "zh_target_syl": 10
+        }
+      }
+    },
+    "ab_file": "samples/demo2_rhythm_octave_AB_v12_vs_v13.wav"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "n_train_utts": 2647,
+  "n_train_tokens": 126788,
+  "n_strict_tokens": 103506,
+  "c_dim": 24,
+  "k_max": 6,
+  "npz_size_mb": 17.019,
+  "build_time_s": 10.1,
+  "speaker_f0_med_hz": 202.26,
+  "ref_log_amp": -4.9631,
+  "medoid_counts": {
+    "ctx_pns": 2537,
+    "ctx_pn": 520,
+    "ctx_ps": 75,
+    "ctx_p": 48,
+    "ctx_base": 41
+  },
+  "ridge_counts": {
+    "w_base": 41,
+    "w_phone": 48,
+    "w_ps": 73,
+    "w_pns": 937,
+    "d_pns": 1600,
+    "w_bap_ps": 75
+  }
+}

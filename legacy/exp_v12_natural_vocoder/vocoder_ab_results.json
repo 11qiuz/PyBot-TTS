@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "elapsed_s": 22.6,
+  "natural_f0": {
+    "real": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": 6.099,
+        "contrast_db": 24.464,
+        "transient_2_8k_span_db": 11.707,
+        "clicks_gt8": 0.05,
+        "p99_db": 12.322,
+        "max_db": 13.822,
+        "rtf": 0.0,
+        "mel_lsd_db": 0.0,
+        "mcd_db": 0.0
+      }
+    },
+    "hnm_v11": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -10.878,
+        "contrast_db": 23.482,
+        "transient_2_8k_span_db": 11.749,
+        "clicks_gt8": 0.036,
+        "p99_db": 12.058,
+        "max_db": 12.631,
+        "rtf": 0.025,
+        "mel_lsd_db": 2.722,
+        "mcd_db": 9.232
+      }
+    },
+    "hnm_v11_crisp_uv": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -1.706,
+        "contrast_db": 23.314,
+        "transient_2_8k_span_db": 11.484,
+        "clicks_gt8": 0.037,
+        "p99_db": 12.518,
+        "max_db": 12.88,
+        "rtf": 0.027,
+        "mel_lsd_db": 2.724,
+        "mcd_db": 9.354
+      }
+    },
+    "lp_psola": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -20.015,
+        "contrast_db": 21.065,
+        "transient_2_8k_span_db": 12.43,
+        "clicks_gt8": 0.039,
+        "p99_db": 11.494,
+        "max_db": 12.613,
+        "rtf": 0.027,
+        "mel_lsd_db": 3.595,
+        "mcd_db": 11.541
+      }
+    },
+    "hybrid_lp_hnm": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -8.837,
+        "contrast_db": 23.375,
+        "transient_2_8k_span_db": 11.664,
+        "clicks_gt8": 0.038,
+        "p99_db": 12.645,
+        "max_db": 13.434,
+        "rtf": 0.026,
+        "mel_lsd_db": 2.726,
+        "mcd_db": 9.406
+      }
+    }
+  },
+  "pitch_shift_pm4st": {
+    "hnm_v11": {
+      "n": 8,
+      "sanity_ok": 8,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": 0.953,
+        "contrast_db": 23.554,
+        "transient_2_8k_span_db": 11.23,
+        "clicks_gt8": 0.037,
+        "p99_db": 10.459,
+        "max_db": 11.64,
+        "rtf": 0.024
+      }
+    },
+    "lp_psola": {
+      "n": 8,
+      "sanity_ok": 8,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -18.54,
+        "contrast_db": 21.235,
+        "transient_2_8k_span_db": 12.13,
+        "clicks_gt8": 0.037,
+        "p99_db": 11.114,
+        "max_db": 13.146,
+        "rtf": 0.025
+      }
+    },
+    "hybrid_lp_hnm": {
+      "n": 8,
+      "sanity_ok": 8,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -3.749,
+        "contrast_db": 23.55,
+        "transient_2_8k_span_db": 11.663,
+        "clicks_gt8": 0.037,
+        "p99_db": 11.328,
+        "max_db": 12.565,
+        "rtf": 0.026
+      }
+    },
+    "hybrid_lp_bank": {
+      "n": 8,
+      "sanity_ok": 8,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -4.086,
+        "contrast_db": 23.48,
+        "transient_2_8k_span_db": 11.655,
+        "clicks_gt8": 0.037,
+        "p99_db": 11.301,
+        "max_db": 12.706,
+        "rtf": 0.025
+      }
+    }
+  },
+  "cross_speaker_vtln": {
+    "hnm_v11": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -8.125,
+        "contrast_db": 24.746,
+        "transient_2_8k_span_db": 9.327,
+        "clicks_gt8": 0.045,
+        "p99_db": 10.899,
+        "max_db": 12.198,
+        "rtf": 0.026
+      }
+    },
+    "lp_psola": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -17.13,
+        "contrast_db": 20.02,
+        "transient_2_8k_span_db": 9.966,
+        "clicks_gt8": 0.044,
+        "p99_db": 11.45,
+        "max_db": 12.362,
+        "rtf": 0.024
+      }
+    },
+    "hybrid_lp_hnm": {
+      "n": 4,
+      "sanity_ok": 4,
+      "medians": {
+        "hnr_db": 0.0,
+        "uv_2_8k_vs_lo_db": -11.048,
+        "contrast_db": 24.714,
+        "transient_2_8k_span_db": 9.397,
+        "clicks_gt8": 0.047,
+        "p99_db": 10.082,
+        "max_db": 11.68,
+        "rtf": 0.027
+      }
+    }
+  },
+  "exported_samples": {
+    "AB_VOC_nat_slt_0030_real_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 188640,
+      "sr": 24000,
+      "duration_s": 7.86,
+      "peak": 0.36669,
+      "rms": 0.067212,
+      "rms_dbfs": -23.45,
+      "clipped_fraction": 0.0
+    },
+    "AB_VOC_nat_SSB05020122_real_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 262560,
+      "sr": 24000,
+      "duration_s": 10.94,
+      "peak": 0.50398,
+      "rms": 0.070312,
+      "rms_dbfs": -23.06,
+      "clipped_fraction": 0.0
+    },
+    "AB_VOC_conv_slt_to_rms_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 139080,
+      "sr": 24000,
+      "duration_s": 5.795,
+      "peak": 0.48345,
+      "rms": 0.066023,
+      "rms_dbfs": -23.61,
+      "clipped_fraction": 0.0
+    },
+    "AB_VOC_conv_bdl_to_SSB0502_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 142320,
+      "sr": 24000,
+      "duration_s": 5.93,
+      "peak": 0.48477,
+      "rms": 0.065259,
+      "rms_dbfs": -23.71,
+      "clipped_fraction": 0.0
+    },
+    "AB_VOC_conv_SSB1593_to_SSB0502_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 212880,
+      "sr": 24000,
+      "duration_s": 8.87,
+      "peak": 0.5328,
+      "rms": 0.071725,
+      "rms_dbfs": -22.89,
+      "clipped_fraction": 0.0
+    },
+    "AB_VOC_conv_SSB0502_to_slt_v11_lp_hybrid.wav": {
+      "ok": true,
+      "issues": [],
+      "n_samples": 194520,
+      "sr": 24000,
+      "duration_s": 8.105,
+      "peak": 0.56504,
+      "rms": 0.070183,
+      "rms_dbfs": -23.08,
+      "clipped_fraction": 0.0
+    }
+  }
+}

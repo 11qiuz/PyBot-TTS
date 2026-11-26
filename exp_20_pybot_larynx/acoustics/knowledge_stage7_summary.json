@@ -1,0 +1,33 @@
+{
+  "n_train_utts": 9666,
+  "n_dev_60": 60,
+  "n_heldout_20": 20,
+  "is_trueenv": false,
+  "c_dim": 28,
+  "build_time_s": 25.27,
+  "fit_time_s": 23.21,
+  "npz_size_kb": 75719.0,
+  "npz_size_mb": 73.94,
+  "speaker_f0_med_hz": 247.72,
+  "ref_log_amp": -4.2703,
+  "ridge_counts": {
+    "w_ft": 189,
+    "w_pft": 540,
+    "w_oft": 649,
+    "d_oft": 884,
+    "w_on_o": 21,
+    "w_on_og": 61,
+    "w_on_of": 327,
+    "d_on_of": 43,
+    "w_bap_ft": 189
+  },
+  "medoid_tables": {
+    "on_of": 370,
+    "on_grp": 61,
+    "on_only": 21,
+    "fin_oft": 1533,
+    "fin_pft": 714,
+    "fin_ft": 189,
+    "fin_f": 39
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "prosody_en_sf_stage12",
+  "allow_pickle": false,
+  "artifact_size_kb": 32.39,
+  "n_runs": 3414,
+  "n_tokens": 21586,
+  "cv_train_dur_mae_ms": 39.99,
+  "cv_train_f0_rmse_st": 3.601,
+  "cv_train_gain_mae_db": 6.12,
+  "heldout_dur_mae_ms": 74.2,
+  "heldout_f0_rmse_st": 4.237,
+  "heldout_f0_iqr_st": 2.189,
+  "elapsed_s": 15.72
+}

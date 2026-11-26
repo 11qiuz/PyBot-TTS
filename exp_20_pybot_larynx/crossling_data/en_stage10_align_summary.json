@@ -1,0 +1,49 @@
+{
+  "corpus": "ljspeech_1_1",
+  "speaker": "ljspeech",
+  "manifest_path": "exp_20_pybot_larynx\\crossling_data\\ljspeech_s11\\manifest.json",
+  "train_utterances": 2647,
+  "heldout_utterances": 30,
+  "zero_leakage_verified": true,
+  "train_tokens": 126788,
+  "train_strict_ok": 103506,
+  "train_accept_rate": 0.8164,
+  "heldout_tokens": 1412,
+  "heldout_strict_ok": 1160,
+  "heldout_accept_rate": 0.8215,
+  "quarantine_reasons": {
+    "ok": 103506,
+    "too_short": 13068,
+    "voiced_contradiction": 2387,
+    "near_silent": 5496,
+    "low_hf_fricative": 1470,
+    "unvoiced_fric_too_voiced": 558,
+    "unvoiced_stop_too_voiced": 303
+  },
+  "speaker_f0_med_hz": 202.26,
+  "source_profile": {
+    "profile_id": "en_ljspeech_stage11_source",
+    "name": "LJSPEECH_1_1_TRAIN",
+    "created_at": "2026-11-25 16:59:45",
+    "n_clips": 36,
+    "total_voiced_s": 104.08,
+    "f0_median_hz": 204.8,
+    "hnr_median_db": 12.83,
+    "tilt_db_per_oct": -2.01,
+    "syllable_rate_hz": 7.0,
+    "effective_bw_hz": 11000.0,
+    "size_bytes": 1912,
+    "voice_hint": "清亮女声 (205 Hz)"
+  },
+  "paths": {
+    "train_tokens": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_20_pybot_larynx\\crossling_data\\en_stage10_train_tokens.pkl",
+    "heldout": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_20_pybot_larynx\\crossling_data\\en_stage10_heldout.pkl",
+    "source_profile": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_20_pybot_larynx\\crossling_data\\en_source_profile.json"
+  },
+  "sizes_mb": {
+    "train_tokens_mb": 176.93,
+    "heldout_mb": 38.0,
+    "source_profile_kb": 3.8
+  },
+  "total_time_s": 1142.23
+}

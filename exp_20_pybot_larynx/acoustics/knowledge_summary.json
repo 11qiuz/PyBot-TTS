@@ -1,0 +1,19 @@
+{
+  "n_train_utts": 1200,
+  "n_dev_60": 60,
+  "n_heldout_20": 20,
+  "build_time_s": 193.58,
+  "npz_size_kb": 2970.1,
+  "speaker_f0_med_hz": 247.86,
+  "ref_log_amp": -4.2682,
+  "table_sizes": {
+    "on_grp": 61,
+    "on_only": 21,
+    "fin_oft": 1329,
+    "fin_pft": 655,
+    "fin_ft": 182,
+    "fin_f": 39,
+    "st_on": 21,
+    "st_ft": 182
+  }
+}

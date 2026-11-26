@@ -1,0 +1,31 @@
+{
+  "schema": "prosody_en_stage10",
+  "artifact_path": "exp_20_pybot_larynx\\crossling\\prosody_en_stage10.npz",
+  "artifact_size_kb": 58.71,
+  "allow_pickle": false,
+  "train_utts": 2647,
+  "train_tokens": 126788,
+  "dur_dim": 4006,
+  "pros_dim": 329,
+  "cv_train_dur_mae_ms": 23.24,
+  "cv_train_f0_rmse_st": 3.953,
+  "cv_train_gain_mae_db": 4.59,
+  "best_lam_dur": 3.0,
+  "best_lam_f0": 10.0,
+  "best_lam_gain": 10.0,
+  "heldout": {
+    "n_heldout_utts": 30,
+    "n_heldout_phones": 1412,
+    "heldout_dur_mae_ms": 19.12,
+    "heldout_dur_median_ae_ms": 15.0,
+    "heldout_f0_rmse_st": 3.778,
+    "heldout_f0_iqr_st": 3.954,
+    "heldout_df0_p95_st": 0.6383
+  },
+  "forensic_contour": {
+    "median_f0_iqr_st": 4.33,
+    "median_df0_p95_st": 0.737,
+    "median_gain_p90_10_db": 6.7
+  },
+  "elapsed_s": 135.36
+}

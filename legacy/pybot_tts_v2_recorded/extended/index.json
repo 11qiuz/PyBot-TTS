@@ -1,0 +1,3730 @@
+{
+ "schema": 1,
+ "sr": 24000,
+ "notice": "AISHELL-3, Apache-2.0, see source/NOTICE.md",
+ "utterances": [
+  {
+   "id": "SSB05020005",
+   "speaker": "SSB0502",
+   "text": "但同时也有利好政策出台",
+   "pinyin": [
+    "dan4",
+    "tong2",
+    "shi2",
+    "ye2",
+    "you3",
+    "li4",
+    "hao3",
+    "zheng4",
+    "ce4",
+    "chu1",
+    "tai2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020005.wav",
+   "mp3_sha256": "b5ae43e474b45e39840047715588333e2a81d9304ea85e8f120d107c29790916",
+   "wav_sha256": "b8de6f54dbf8a582ce061ec32b5db74460dba94ec338bea04c0ce0a6e30a2fa0",
+   "active_start": 13560,
+   "active_stop": 94560,
+   "samples": 108288,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "但",
+     "pinyin": "dan4",
+     "start_sample": 13560,
+     "stop_sample": 20400,
+     "ms": 285.0
+    },
+    {
+     "index": 1,
+     "hanzi": "同",
+     "pinyin": "tong2",
+     "start_sample": 20400,
+     "stop_sample": 28320,
+     "ms": 330.0
+    },
+    {
+     "index": 2,
+     "hanzi": "时",
+     "pinyin": "shi2",
+     "start_sample": 28320,
+     "stop_sample": 37440,
+     "ms": 380.0
+    },
+    {
+     "index": 3,
+     "hanzi": "也",
+     "pinyin": "ye2",
+     "start_sample": 37440,
+     "stop_sample": 44280,
+     "ms": 285.0
+    },
+    {
+     "index": 4,
+     "hanzi": "有",
+     "pinyin": "you3",
+     "start_sample": 44280,
+     "stop_sample": 52080,
+     "ms": 325.0
+    },
+    {
+     "index": 5,
+     "hanzi": "利",
+     "pinyin": "li4",
+     "start_sample": 52080,
+     "stop_sample": 55920,
+     "ms": 160.0
+    },
+    {
+     "index": 6,
+     "hanzi": "好",
+     "pinyin": "hao3",
+     "start_sample": 55920,
+     "stop_sample": 65160,
+     "ms": 385.0
+    },
+    {
+     "index": 7,
+     "hanzi": "政",
+     "pinyin": "zheng4",
+     "start_sample": 65160,
+     "stop_sample": 70560,
+     "ms": 225.0
+    },
+    {
+     "index": 8,
+     "hanzi": "策",
+     "pinyin": "ce4",
+     "start_sample": 70560,
+     "stop_sample": 81600,
+     "ms": 460.0
+    },
+    {
+     "index": 9,
+     "hanzi": "出",
+     "pinyin": "chu1",
+     "start_sample": 81600,
+     "stop_sample": 85320,
+     "ms": 155.0
+    },
+    {
+     "index": 10,
+     "hanzi": "台",
+     "pinyin": "tai2",
+     "start_sample": 85320,
+     "stop_sample": 94560,
+     "ms": 385.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020077",
+   "speaker": "SSB0502",
+   "text": "一些民营企业为了套补贴",
+   "pinyin": [
+    "yi4",
+    "xie1",
+    "min2",
+    "ying2",
+    "qi3",
+    "ye4",
+    "wei4",
+    "le5",
+    "tao4",
+    "bu3",
+    "tie1"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020077.wav",
+   "mp3_sha256": "89353ee35652b68c2574770de642b401f618495fb02e57ed671a9b37cda78019",
+   "wav_sha256": "c97fd7c843e25aa88c01cfe5a613db7511b865505fcb3426c313d054a4894ed7",
+   "active_start": 9480,
+   "active_stop": 75840,
+   "samples": 79559,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "一",
+     "pinyin": "yi4",
+     "start_sample": 9480,
+     "stop_sample": 15720,
+     "ms": 260.0
+    },
+    {
+     "index": 1,
+     "hanzi": "些",
+     "pinyin": "xie1",
+     "start_sample": 15720,
+     "stop_sample": 20280,
+     "ms": 190.0
+    },
+    {
+     "index": 2,
+     "hanzi": "民",
+     "pinyin": "min2",
+     "start_sample": 20280,
+     "stop_sample": 28800,
+     "ms": 355.0
+    },
+    {
+     "index": 3,
+     "hanzi": "营",
+     "pinyin": "ying2",
+     "start_sample": 28800,
+     "stop_sample": 32640,
+     "ms": 160.0
+    },
+    {
+     "index": 4,
+     "hanzi": "企",
+     "pinyin": "qi3",
+     "start_sample": 32640,
+     "stop_sample": 40320,
+     "ms": 320.0
+    },
+    {
+     "index": 5,
+     "hanzi": "业",
+     "pinyin": "ye4",
+     "start_sample": 40320,
+     "stop_sample": 44280,
+     "ms": 165.0
+    },
+    {
+     "index": 6,
+     "hanzi": "为",
+     "pinyin": "wei4",
+     "start_sample": 44280,
+     "stop_sample": 50400,
+     "ms": 255.0
+    },
+    {
+     "index": 7,
+     "hanzi": "了",
+     "pinyin": "le5",
+     "start_sample": 50400,
+     "stop_sample": 58800,
+     "ms": 350.0
+    },
+    {
+     "index": 8,
+     "hanzi": "套",
+     "pinyin": "tao4",
+     "start_sample": 58800,
+     "stop_sample": 63480,
+     "ms": 195.0
+    },
+    {
+     "index": 9,
+     "hanzi": "补",
+     "pinyin": "bu3",
+     "start_sample": 63480,
+     "stop_sample": 71160,
+     "ms": 320.0
+    },
+    {
+     "index": 10,
+     "hanzi": "贴",
+     "pinyin": "tie1",
+     "start_sample": 71160,
+     "stop_sample": 75840,
+     "ms": 195.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020082",
+   "speaker": "SSB0502",
+   "text": "还有一个值得注意的数据",
+   "pinyin": [
+    "hai2",
+    "you3",
+    "yi2",
+    "ge4",
+    "zhi2",
+    "de2",
+    "zhu4",
+    "yi4",
+    "de5",
+    "shu4",
+    "ju4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020082.wav",
+   "mp3_sha256": "53f0a4d496861b07542b914d5419a9b9e2a9ea08eb35b182c12bec4eff708c2e",
+   "wav_sha256": "d10801e45be61464ac990c0da1192dc7af93340e1696859eb3026d13487dc7af",
+   "active_start": 13080,
+   "active_stop": 63960,
+   "samples": 76608,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "还",
+     "pinyin": "hai2",
+     "start_sample": 13080,
+     "stop_sample": 17880,
+     "ms": 200.0
+    },
+    {
+     "index": 1,
+     "hanzi": "有",
+     "pinyin": "you3",
+     "start_sample": 17880,
+     "stop_sample": 22440,
+     "ms": 190.0
+    },
+    {
+     "index": 2,
+     "hanzi": "一",
+     "pinyin": "yi2",
+     "start_sample": 22440,
+     "stop_sample": 25920,
+     "ms": 145.0
+    },
+    {
+     "index": 3,
+     "hanzi": "个",
+     "pinyin": "ge4",
+     "start_sample": 25920,
+     "stop_sample": 30720,
+     "ms": 200.0
+    },
+    {
+     "index": 4,
+     "hanzi": "值",
+     "pinyin": "zhi2",
+     "start_sample": 30720,
+     "stop_sample": 35040,
+     "ms": 180.0
+    },
+    {
+     "index": 5,
+     "hanzi": "得",
+     "pinyin": "de2",
+     "start_sample": 35040,
+     "stop_sample": 40200,
+     "ms": 215.0
+    },
+    {
+     "index": 6,
+     "hanzi": "注",
+     "pinyin": "zhu4",
+     "start_sample": 40200,
+     "stop_sample": 46320,
+     "ms": 255.0
+    },
+    {
+     "index": 7,
+     "hanzi": "意",
+     "pinyin": "yi4",
+     "start_sample": 46320,
+     "stop_sample": 50880,
+     "ms": 190.0
+    },
+    {
+     "index": 8,
+     "hanzi": "的",
+     "pinyin": "de5",
+     "start_sample": 50880,
+     "stop_sample": 54600,
+     "ms": 155.0
+    },
+    {
+     "index": 9,
+     "hanzi": "数",
+     "pinyin": "shu4",
+     "start_sample": 54600,
+     "stop_sample": 59640,
+     "ms": 210.0
+    },
+    {
+     "index": 10,
+     "hanzi": "据",
+     "pinyin": "ju4",
+     "start_sample": 59640,
+     "stop_sample": 63960,
+     "ms": 180.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020122",
+   "speaker": "SSB0502",
+   "text": "扣除补贴和地方保护因素",
+   "pinyin": [
+    "kou4",
+    "chu2",
+    "bu3",
+    "tie1",
+    "he2",
+    "di4",
+    "fang1",
+    "bao3",
+    "hu4",
+    "yin1",
+    "su4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020122.wav",
+   "mp3_sha256": "c40eb5bb0551121278221b80948226c60f36b91b2c49efa80493830a01bb79c8",
+   "wav_sha256": "3071548ba994ed64853b0665606ecb58f1c3bf2e4b690ed211b26e0bafa888bd",
+   "active_start": 10320,
+   "active_stop": 68760,
+   "samples": 80736,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "扣",
+     "pinyin": "kou4",
+     "start_sample": 10320,
+     "stop_sample": 16920,
+     "ms": 275.0
+    },
+    {
+     "index": 1,
+     "hanzi": "除",
+     "pinyin": "chu2",
+     "start_sample": 16920,
+     "stop_sample": 21840,
+     "ms": 205.0
+    },
+    {
+     "index": 2,
+     "hanzi": "补",
+     "pinyin": "bu3",
+     "start_sample": 21840,
+     "stop_sample": 26640,
+     "ms": 200.0
+    },
+    {
+     "index": 3,
+     "hanzi": "贴",
+     "pinyin": "tie1",
+     "start_sample": 26640,
+     "stop_sample": 32760,
+     "ms": 255.0
+    },
+    {
+     "index": 4,
+     "hanzi": "和",
+     "pinyin": "he2",
+     "start_sample": 32760,
+     "stop_sample": 36960,
+     "ms": 175.0
+    },
+    {
+     "index": 5,
+     "hanzi": "地",
+     "pinyin": "di4",
+     "start_sample": 36960,
+     "stop_sample": 41880,
+     "ms": 205.0
+    },
+    {
+     "index": 6,
+     "hanzi": "方",
+     "pinyin": "fang1",
+     "start_sample": 41880,
+     "stop_sample": 46680,
+     "ms": 200.0
+    },
+    {
+     "index": 7,
+     "hanzi": "保",
+     "pinyin": "bao3",
+     "start_sample": 46680,
+     "stop_sample": 53160,
+     "ms": 270.0
+    },
+    {
+     "index": 8,
+     "hanzi": "护",
+     "pinyin": "hu4",
+     "start_sample": 53160,
+     "stop_sample": 57600,
+     "ms": 185.0
+    },
+    {
+     "index": 9,
+     "hanzi": "因",
+     "pinyin": "yin1",
+     "start_sample": 57600,
+     "stop_sample": 64080,
+     "ms": 270.0
+    },
+    {
+     "index": 10,
+     "hanzi": "素",
+     "pinyin": "su4",
+     "start_sample": 64080,
+     "stop_sample": 68760,
+     "ms": 195.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020137",
+   "speaker": "SSB0502",
+   "text": "在比利时的首都布鲁塞尔",
+   "pinyin": [
+    "zai4",
+    "bi3",
+    "li4",
+    "shi2",
+    "de5",
+    "shou3",
+    "du1",
+    "bu4",
+    "lu3",
+    "sai4",
+    "er3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020137.wav",
+   "mp3_sha256": "4877bb2fd751359a3810fe5dc0cc65384189ceb1f088e471002cefa159632a52",
+   "wav_sha256": "73658c91c0848be1438bb22397859a6aab541e02996c82ee732f69910c6c0202",
+   "active_start": 9840,
+   "active_stop": 62400,
+   "samples": 75194,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "在",
+     "pinyin": "zai4",
+     "start_sample": 9840,
+     "stop_sample": 15360,
+     "ms": 230.0
+    },
+    {
+     "index": 1,
+     "hanzi": "比",
+     "pinyin": "bi3",
+     "start_sample": 15360,
+     "stop_sample": 20040,
+     "ms": 195.0
+    },
+    {
+     "index": 2,
+     "hanzi": "利",
+     "pinyin": "li4",
+     "start_sample": 20040,
+     "stop_sample": 25080,
+     "ms": 210.0
+    },
+    {
+     "index": 3,
+     "hanzi": "时",
+     "pinyin": "shi2",
+     "start_sample": 25080,
+     "stop_sample": 28200,
+     "ms": 130.0
+    },
+    {
+     "index": 4,
+     "hanzi": "的",
+     "pinyin": "de5",
+     "start_sample": 28200,
+     "stop_sample": 34320,
+     "ms": 255.0
+    },
+    {
+     "index": 5,
+     "hanzi": "首",
+     "pinyin": "shou3",
+     "start_sample": 34320,
+     "stop_sample": 39240,
+     "ms": 205.0
+    },
+    {
+     "index": 6,
+     "hanzi": "都",
+     "pinyin": "du1",
+     "start_sample": 39240,
+     "stop_sample": 44280,
+     "ms": 210.0
+    },
+    {
+     "index": 7,
+     "hanzi": "布",
+     "pinyin": "bu4",
+     "start_sample": 44280,
+     "stop_sample": 48000,
+     "ms": 155.0
+    },
+    {
+     "index": 8,
+     "hanzi": "鲁",
+     "pinyin": "lu3",
+     "start_sample": 48000,
+     "stop_sample": 53880,
+     "ms": 245.0
+    },
+    {
+     "index": 9,
+     "hanzi": "塞",
+     "pinyin": "sai4",
+     "start_sample": 53880,
+     "stop_sample": 57120,
+     "ms": 135.0
+    },
+    {
+     "index": 10,
+     "hanzi": "尔",
+     "pinyin": "er3",
+     "start_sample": 57120,
+     "stop_sample": 62400,
+     "ms": 220.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020159",
+   "speaker": "SSB0502",
+   "text": "靠另案处理就能打马虎眼",
+   "pinyin": [
+    "kao4",
+    "ling4",
+    "an4",
+    "chu2",
+    "li3",
+    "jiu4",
+    "neng2",
+    "da2",
+    "ma3",
+    "hu1",
+    "yan3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020159.wav",
+   "mp3_sha256": "47b7206cebb85ec6e9302f4fe03b3de2a49ae88978d2c7e9f89803c498796a90",
+   "wav_sha256": "00bf286e35764c83ffa5a85c5419afd5d71a070a6e1cfc89327a1056c21b11de",
+   "active_start": 12240,
+   "active_stop": 68640,
+   "samples": 81575,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "靠",
+     "pinyin": "kao4",
+     "start_sample": 12240,
+     "stop_sample": 17280,
+     "ms": 210.0
+    },
+    {
+     "index": 1,
+     "hanzi": "另",
+     "pinyin": "ling4",
+     "start_sample": 17280,
+     "stop_sample": 23040,
+     "ms": 240.0
+    },
+    {
+     "index": 2,
+     "hanzi": "案",
+     "pinyin": "an4",
+     "start_sample": 23040,
+     "stop_sample": 27120,
+     "ms": 170.0
+    },
+    {
+     "index": 3,
+     "hanzi": "处",
+     "pinyin": "chu2",
+     "start_sample": 27120,
+     "stop_sample": 32520,
+     "ms": 225.0
+    },
+    {
+     "index": 4,
+     "hanzi": "理",
+     "pinyin": "li3",
+     "start_sample": 32520,
+     "stop_sample": 39000,
+     "ms": 270.0
+    },
+    {
+     "index": 5,
+     "hanzi": "就",
+     "pinyin": "jiu4",
+     "start_sample": 39000,
+     "stop_sample": 42120,
+     "ms": 130.0
+    },
+    {
+     "index": 6,
+     "hanzi": "能",
+     "pinyin": "neng2",
+     "start_sample": 42120,
+     "stop_sample": 47160,
+     "ms": 210.0
+    },
+    {
+     "index": 7,
+     "hanzi": "打",
+     "pinyin": "da2",
+     "start_sample": 47160,
+     "stop_sample": 53040,
+     "ms": 245.0
+    },
+    {
+     "index": 8,
+     "hanzi": "马",
+     "pinyin": "ma3",
+     "start_sample": 53040,
+     "stop_sample": 59160,
+     "ms": 255.0
+    },
+    {
+     "index": 9,
+     "hanzi": "虎",
+     "pinyin": "hu1",
+     "start_sample": 59160,
+     "stop_sample": 62280,
+     "ms": 130.0
+    },
+    {
+     "index": 10,
+     "hanzi": "眼",
+     "pinyin": "yan3",
+     "start_sample": 62280,
+     "stop_sample": 68640,
+     "ms": 265.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020222",
+   "speaker": "SSB0502",
+   "text": "经济全球化持续深入发展",
+   "pinyin": [
+    "jing1",
+    "ji4",
+    "quan2",
+    "qiu2",
+    "hua4",
+    "chi2",
+    "xu4",
+    "shen1",
+    "ru4",
+    "fa1",
+    "zhan3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020222.wav",
+   "mp3_sha256": "79803fff63097502087b28ec5d2555dcc390f419ad66426746879a74e54ea1f3",
+   "wav_sha256": "56414e8f2507ff38a6670fac51ae4137ccf8fe772939fd8acc73c7fcad8809ac",
+   "active_start": 13200,
+   "active_stop": 78360,
+   "samples": 91584,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "经",
+     "pinyin": "jing1",
+     "start_sample": 13200,
+     "stop_sample": 19320,
+     "ms": 255.0
+    },
+    {
+     "index": 1,
+     "hanzi": "济",
+     "pinyin": "ji4",
+     "start_sample": 19320,
+     "stop_sample": 24840,
+     "ms": 230.0
+    },
+    {
+     "index": 2,
+     "hanzi": "全",
+     "pinyin": "quan2",
+     "start_sample": 24840,
+     "stop_sample": 32400,
+     "ms": 315.0
+    },
+    {
+     "index": 3,
+     "hanzi": "球",
+     "pinyin": "qiu2",
+     "start_sample": 32400,
+     "stop_sample": 37560,
+     "ms": 215.0
+    },
+    {
+     "index": 4,
+     "hanzi": "化",
+     "pinyin": "hua4",
+     "start_sample": 37560,
+     "stop_sample": 43920,
+     "ms": 265.0
+    },
+    {
+     "index": 5,
+     "hanzi": "持",
+     "pinyin": "chi2",
+     "start_sample": 43920,
+     "stop_sample": 47880,
+     "ms": 165.0
+    },
+    {
+     "index": 6,
+     "hanzi": "续",
+     "pinyin": "xu4",
+     "start_sample": 47880,
+     "stop_sample": 53640,
+     "ms": 240.0
+    },
+    {
+     "index": 7,
+     "hanzi": "深",
+     "pinyin": "shen1",
+     "start_sample": 53640,
+     "stop_sample": 59640,
+     "ms": 250.0
+    },
+    {
+     "index": 8,
+     "hanzi": "入",
+     "pinyin": "ru4",
+     "start_sample": 59640,
+     "stop_sample": 67920,
+     "ms": 345.0
+    },
+    {
+     "index": 9,
+     "hanzi": "发",
+     "pinyin": "fa1",
+     "start_sample": 67920,
+     "stop_sample": 73800,
+     "ms": 245.0
+    },
+    {
+     "index": 10,
+     "hanzi": "展",
+     "pinyin": "zhan3",
+     "start_sample": 73800,
+     "stop_sample": 78360,
+     "ms": 190.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020234",
+   "speaker": "SSB0502",
+   "text": "苟芸慧明明五官比极标致",
+   "pinyin": [
+    "gou3",
+    "yun2",
+    "hui4",
+    "ming2",
+    "ming2",
+    "wu3",
+    "guan1",
+    "bi5",
+    "ji2",
+    "biao1",
+    "zhi4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020234.wav",
+   "mp3_sha256": "626ee8fdb4b06fe87ded6946d2692037f0a5b93b0c093f469fb964f2c244b52f",
+   "wav_sha256": "7118de736331d4d25fe02f3fadc6c3bb73c2afe0e75d55baa76294282fc0fa41",
+   "active_start": 10920,
+   "active_stop": 80520,
+   "samples": 95663,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "苟",
+     "pinyin": "gou3",
+     "start_sample": 10920,
+     "stop_sample": 15600,
+     "ms": 195.0
+    },
+    {
+     "index": 1,
+     "hanzi": "芸",
+     "pinyin": "yun2",
+     "start_sample": 15600,
+     "stop_sample": 23880,
+     "ms": 345.0
+    },
+    {
+     "index": 2,
+     "hanzi": "慧",
+     "pinyin": "hui4",
+     "start_sample": 23880,
+     "stop_sample": 31200,
+     "ms": 305.0
+    },
+    {
+     "index": 3,
+     "hanzi": "明",
+     "pinyin": "ming2",
+     "start_sample": 31200,
+     "stop_sample": 35760,
+     "ms": 190.0
+    },
+    {
+     "index": 4,
+     "hanzi": "明",
+     "pinyin": "ming2",
+     "start_sample": 35760,
+     "stop_sample": 44040,
+     "ms": 345.0
+    },
+    {
+     "index": 5,
+     "hanzi": "五",
+     "pinyin": "wu3",
+     "start_sample": 44040,
+     "stop_sample": 48120,
+     "ms": 170.0
+    },
+    {
+     "index": 6,
+     "hanzi": "官",
+     "pinyin": "guan1",
+     "start_sample": 48120,
+     "stop_sample": 55920,
+     "ms": 325.0
+    },
+    {
+     "index": 7,
+     "hanzi": "比",
+     "pinyin": "bi5",
+     "start_sample": 55920,
+     "stop_sample": 61680,
+     "ms": 240.0
+    },
+    {
+     "index": 8,
+     "hanzi": "极",
+     "pinyin": "ji2",
+     "start_sample": 61680,
+     "stop_sample": 69000,
+     "ms": 305.0
+    },
+    {
+     "index": 9,
+     "hanzi": "标",
+     "pinyin": "biao1",
+     "start_sample": 69000,
+     "stop_sample": 75720,
+     "ms": 280.0
+    },
+    {
+     "index": 10,
+     "hanzi": "致",
+     "pinyin": "zhi4",
+     "start_sample": 75720,
+     "stop_sample": 80520,
+     "ms": 200.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020248",
+   "speaker": "SSB0502",
+   "text": "比如触摸屏厂商胜华科技",
+   "pinyin": [
+    "bi3",
+    "ru2",
+    "chu4",
+    "mo1",
+    "ping2",
+    "chang3",
+    "shang1",
+    "sheng4",
+    "hua2",
+    "ke1",
+    "ji4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020248.wav",
+   "mp3_sha256": "5849faa8d7705bb439300a56a7c1e3c6f139c39784d886fd70814fd410fb38b7",
+   "wav_sha256": "3352c22d9995cc019ae524d3bd091fce2aef4057572b6e62591888dbcab8bc93",
+   "active_start": 10560,
+   "active_stop": 85920,
+   "samples": 97441,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "比",
+     "pinyin": "bi3",
+     "start_sample": 10560,
+     "stop_sample": 18840,
+     "ms": 345.0
+    },
+    {
+     "index": 1,
+     "hanzi": "如",
+     "pinyin": "ru2",
+     "start_sample": 18840,
+     "stop_sample": 25560,
+     "ms": 280.0
+    },
+    {
+     "index": 2,
+     "hanzi": "触",
+     "pinyin": "chu4",
+     "start_sample": 25560,
+     "stop_sample": 29880,
+     "ms": 180.0
+    },
+    {
+     "index": 3,
+     "hanzi": "摸",
+     "pinyin": "mo1",
+     "start_sample": 29880,
+     "stop_sample": 38160,
+     "ms": 345.0
+    },
+    {
+     "index": 4,
+     "hanzi": "屏",
+     "pinyin": "ping2",
+     "start_sample": 38160,
+     "stop_sample": 46320,
+     "ms": 340.0
+    },
+    {
+     "index": 5,
+     "hanzi": "厂",
+     "pinyin": "chang3",
+     "start_sample": 46320,
+     "stop_sample": 51960,
+     "ms": 235.0
+    },
+    {
+     "index": 6,
+     "hanzi": "商",
+     "pinyin": "shang1",
+     "start_sample": 51960,
+     "stop_sample": 58560,
+     "ms": 275.0
+    },
+    {
+     "index": 7,
+     "hanzi": "胜",
+     "pinyin": "sheng4",
+     "start_sample": 58560,
+     "stop_sample": 65520,
+     "ms": 290.0
+    },
+    {
+     "index": 8,
+     "hanzi": "华",
+     "pinyin": "hua2",
+     "start_sample": 65520,
+     "stop_sample": 73560,
+     "ms": 335.0
+    },
+    {
+     "index": 9,
+     "hanzi": "科",
+     "pinyin": "ke1",
+     "start_sample": 73560,
+     "stop_sample": 77280,
+     "ms": 155.0
+    },
+    {
+     "index": 10,
+     "hanzi": "技",
+     "pinyin": "ji4",
+     "start_sample": 77280,
+     "stop_sample": 85920,
+     "ms": 360.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020269",
+   "speaker": "SSB0502",
+   "text": "主演元华郭富城张震出席",
+   "pinyin": [
+    "zhu2",
+    "yan3",
+    "yuan2",
+    "hua2",
+    "guo1",
+    "fu4",
+    "cheng2",
+    "zhang1",
+    "zhen4",
+    "chu1",
+    "xi2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020269.wav",
+   "mp3_sha256": "590a7982fbfe0ae85e6290a1fa9a0d73e1959259da33aa3c48625e77bb6c2473",
+   "wav_sha256": "903404d788eedb502ebe2d56c6e8b2fe74bda9c78d134b522d55f43b6c307d50",
+   "active_start": 10800,
+   "active_stop": 76920,
+   "samples": 89139,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "主",
+     "pinyin": "zhu2",
+     "start_sample": 10800,
+     "stop_sample": 16080,
+     "ms": 220.0
+    },
+    {
+     "index": 1,
+     "hanzi": "演",
+     "pinyin": "yan3",
+     "start_sample": 16080,
+     "stop_sample": 23040,
+     "ms": 290.0
+    },
+    {
+     "index": 2,
+     "hanzi": "元",
+     "pinyin": "yuan2",
+     "start_sample": 23040,
+     "stop_sample": 30240,
+     "ms": 300.0
+    },
+    {
+     "index": 3,
+     "hanzi": "华",
+     "pinyin": "hua2",
+     "start_sample": 30240,
+     "stop_sample": 36240,
+     "ms": 250.0
+    },
+    {
+     "index": 4,
+     "hanzi": "郭",
+     "pinyin": "guo1",
+     "start_sample": 36240,
+     "stop_sample": 39360,
+     "ms": 130.0
+    },
+    {
+     "index": 5,
+     "hanzi": "富",
+     "pinyin": "fu4",
+     "start_sample": 39360,
+     "stop_sample": 48120,
+     "ms": 365.0
+    },
+    {
+     "index": 6,
+     "hanzi": "城",
+     "pinyin": "cheng2",
+     "start_sample": 48120,
+     "stop_sample": 54240,
+     "ms": 255.0
+    },
+    {
+     "index": 7,
+     "hanzi": "张",
+     "pinyin": "zhang1",
+     "start_sample": 54240,
+     "stop_sample": 60240,
+     "ms": 250.0
+    },
+    {
+     "index": 8,
+     "hanzi": "震",
+     "pinyin": "zhen4",
+     "start_sample": 60240,
+     "stop_sample": 66240,
+     "ms": 250.0
+    },
+    {
+     "index": 9,
+     "hanzi": "出",
+     "pinyin": "chu1",
+     "start_sample": 66240,
+     "stop_sample": 72240,
+     "ms": 250.0
+    },
+    {
+     "index": 10,
+     "hanzi": "席",
+     "pinyin": "xi2",
+     "start_sample": 72240,
+     "stop_sample": 76920,
+     "ms": 195.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020279",
+   "speaker": "SSB0502",
+   "text": "强制教师们在淘宝网购物",
+   "pinyin": [
+    "qiang2",
+    "zhi4",
+    "jiao4",
+    "shi1",
+    "men5",
+    "zai4",
+    "tao2",
+    "bao2",
+    "wang3",
+    "gou4",
+    "wu4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020279.wav",
+   "mp3_sha256": "453d10c9d555260285fd8506f55a5b2cfa03f2d5af03013a6a95eaf83c12080c",
+   "wav_sha256": "e2bf6faf0f641ec89cb9e371e6a8edfca43675d424f819732b2e9aa92d431e0c",
+   "active_start": 8760,
+   "active_stop": 70680,
+   "samples": 84885,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "强",
+     "pinyin": "qiang2",
+     "start_sample": 8760,
+     "stop_sample": 15600,
+     "ms": 285.0
+    },
+    {
+     "index": 1,
+     "hanzi": "制",
+     "pinyin": "zhi4",
+     "start_sample": 15600,
+     "stop_sample": 20280,
+     "ms": 195.0
+    },
+    {
+     "index": 2,
+     "hanzi": "教",
+     "pinyin": "jiao4",
+     "start_sample": 20280,
+     "stop_sample": 26640,
+     "ms": 265.0
+    },
+    {
+     "index": 3,
+     "hanzi": "师",
+     "pinyin": "shi1",
+     "start_sample": 26640,
+     "stop_sample": 30360,
+     "ms": 155.0
+    },
+    {
+     "index": 4,
+     "hanzi": "们",
+     "pinyin": "men5",
+     "start_sample": 30360,
+     "stop_sample": 38040,
+     "ms": 320.0
+    },
+    {
+     "index": 5,
+     "hanzi": "在",
+     "pinyin": "zai4",
+     "start_sample": 38040,
+     "stop_sample": 43320,
+     "ms": 220.0
+    },
+    {
+     "index": 6,
+     "hanzi": "淘",
+     "pinyin": "tao2",
+     "start_sample": 43320,
+     "stop_sample": 48840,
+     "ms": 230.0
+    },
+    {
+     "index": 7,
+     "hanzi": "宝",
+     "pinyin": "bao2",
+     "start_sample": 48840,
+     "stop_sample": 54120,
+     "ms": 220.0
+    },
+    {
+     "index": 8,
+     "hanzi": "网",
+     "pinyin": "wang3",
+     "start_sample": 54120,
+     "stop_sample": 60600,
+     "ms": 270.0
+    },
+    {
+     "index": 9,
+     "hanzi": "购",
+     "pinyin": "gou4",
+     "start_sample": 60600,
+     "stop_sample": 66360,
+     "ms": 240.0
+    },
+    {
+     "index": 10,
+     "hanzi": "物",
+     "pinyin": "wu4",
+     "start_sample": 66360,
+     "stop_sample": 70680,
+     "ms": 180.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020298",
+   "speaker": "SSB0502",
+   "text": "市区所有私人机动车禁行",
+   "pinyin": [
+    "shi4",
+    "qu1",
+    "suo2",
+    "you3",
+    "si1",
+    "ren2",
+    "ji1",
+    "dong4",
+    "che1",
+    "jin4",
+    "xing2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020298.wav",
+   "mp3_sha256": "32c811c7ca592d2ce77ba1059bbb906368e2bb48d6c6fac4e1830adac4ec6aee",
+   "wav_sha256": "779c009e2983b892b51545efbd83897bbf49fa8af380771fb508ca499ed03940",
+   "active_start": 10680,
+   "active_stop": 72240,
+   "samples": 83350,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "市",
+     "pinyin": "shi4",
+     "start_sample": 10680,
+     "stop_sample": 16080,
+     "ms": 225.0
+    },
+    {
+     "index": 1,
+     "hanzi": "区",
+     "pinyin": "qu1",
+     "start_sample": 16080,
+     "stop_sample": 23160,
+     "ms": 295.0
+    },
+    {
+     "index": 2,
+     "hanzi": "所",
+     "pinyin": "suo2",
+     "start_sample": 23160,
+     "stop_sample": 28560,
+     "ms": 225.0
+    },
+    {
+     "index": 3,
+     "hanzi": "有",
+     "pinyin": "you3",
+     "start_sample": 28560,
+     "stop_sample": 32640,
+     "ms": 170.0
+    },
+    {
+     "index": 4,
+     "hanzi": "私",
+     "pinyin": "si1",
+     "start_sample": 32640,
+     "stop_sample": 37320,
+     "ms": 195.0
+    },
+    {
+     "index": 5,
+     "hanzi": "人",
+     "pinyin": "ren2",
+     "start_sample": 37320,
+     "stop_sample": 44280,
+     "ms": 290.0
+    },
+    {
+     "index": 6,
+     "hanzi": "机",
+     "pinyin": "ji1",
+     "start_sample": 44280,
+     "stop_sample": 48600,
+     "ms": 180.0
+    },
+    {
+     "index": 7,
+     "hanzi": "动",
+     "pinyin": "dong4",
+     "start_sample": 48600,
+     "stop_sample": 55200,
+     "ms": 275.0
+    },
+    {
+     "index": 8,
+     "hanzi": "车",
+     "pinyin": "che1",
+     "start_sample": 55200,
+     "stop_sample": 60360,
+     "ms": 215.0
+    },
+    {
+     "index": 9,
+     "hanzi": "禁",
+     "pinyin": "jin4",
+     "start_sample": 60360,
+     "stop_sample": 66600,
+     "ms": 260.0
+    },
+    {
+     "index": 10,
+     "hanzi": "行",
+     "pinyin": "xing2",
+     "start_sample": 66600,
+     "stop_sample": 72240,
+     "ms": 235.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020352",
+   "speaker": "SSB0502",
+   "text": "必须尽快加以研究解决",
+   "pinyin": [
+    "bi4",
+    "xu1",
+    "jin3",
+    "kuai4",
+    "jia1",
+    "yi3",
+    "yan2",
+    "jiu1",
+    "jie3",
+    "jue2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020352.wav",
+   "mp3_sha256": "aec1fc2dd46af2a814073a8812b6ab6872a05b68234ea6a18686fc47f50bd698",
+   "wav_sha256": "86f7d96679ca8297b5fc5c9ae6ffcbf395b8d01013bb1cd11438b5934b2f4c0b",
+   "active_start": 8880,
+   "active_stop": 62400,
+   "samples": 73199,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "必",
+     "pinyin": "bi4",
+     "start_sample": 8880,
+     "stop_sample": 12840,
+     "ms": 165.0
+    },
+    {
+     "index": 1,
+     "hanzi": "须",
+     "pinyin": "xu1",
+     "start_sample": 12840,
+     "stop_sample": 19320,
+     "ms": 270.0
+    },
+    {
+     "index": 2,
+     "hanzi": "尽",
+     "pinyin": "jin3",
+     "start_sample": 19320,
+     "stop_sample": 24840,
+     "ms": 230.0
+    },
+    {
+     "index": 3,
+     "hanzi": "快",
+     "pinyin": "kuai4",
+     "start_sample": 24840,
+     "stop_sample": 30840,
+     "ms": 250.0
+    },
+    {
+     "index": 4,
+     "hanzi": "加",
+     "pinyin": "jia1",
+     "start_sample": 30840,
+     "stop_sample": 36000,
+     "ms": 215.0
+    },
+    {
+     "index": 5,
+     "hanzi": "以",
+     "pinyin": "yi3",
+     "start_sample": 36000,
+     "stop_sample": 40440,
+     "ms": 185.0
+    },
+    {
+     "index": 6,
+     "hanzi": "研",
+     "pinyin": "yan2",
+     "start_sample": 40440,
+     "stop_sample": 46920,
+     "ms": 270.0
+    },
+    {
+     "index": 7,
+     "hanzi": "究",
+     "pinyin": "jiu1",
+     "start_sample": 46920,
+     "stop_sample": 52080,
+     "ms": 215.0
+    },
+    {
+     "index": 8,
+     "hanzi": "解",
+     "pinyin": "jie3",
+     "start_sample": 52080,
+     "stop_sample": 56400,
+     "ms": 180.0
+    },
+    {
+     "index": 9,
+     "hanzi": "决",
+     "pinyin": "jue2",
+     "start_sample": 56400,
+     "stop_sample": 62400,
+     "ms": 250.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020355",
+   "speaker": "SSB0502",
+   "text": "他毫不犹豫地拿起手机喂",
+   "pinyin": [
+    "ta1",
+    "hao2",
+    "bu4",
+    "you2",
+    "yu4",
+    "de5",
+    "na2",
+    "qi2",
+    "shou3",
+    "ji1",
+    "wei3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020355.wav",
+   "mp3_sha256": "7978398bca9f4e92043aac3c56c515068074a6868ff9ddd6eba99a076d7df2b6",
+   "wav_sha256": "4f25ba49d06775318243da589164a84cbd225760d2e0c608d221be25ffd638f9",
+   "active_start": 9600,
+   "active_stop": 69840,
+   "samples": 81697,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "他",
+     "pinyin": "ta1",
+     "start_sample": 9600,
+     "stop_sample": 15120,
+     "ms": 230.0
+    },
+    {
+     "index": 1,
+     "hanzi": "毫",
+     "pinyin": "hao2",
+     "start_sample": 15120,
+     "stop_sample": 20160,
+     "ms": 210.0
+    },
+    {
+     "index": 2,
+     "hanzi": "不",
+     "pinyin": "bu4",
+     "start_sample": 20160,
+     "stop_sample": 27120,
+     "ms": 290.0
+    },
+    {
+     "index": 3,
+     "hanzi": "犹",
+     "pinyin": "you2",
+     "start_sample": 27120,
+     "stop_sample": 31080,
+     "ms": 165.0
+    },
+    {
+     "index": 4,
+     "hanzi": "豫",
+     "pinyin": "yu4",
+     "start_sample": 31080,
+     "stop_sample": 38160,
+     "ms": 295.0
+    },
+    {
+     "index": 5,
+     "hanzi": "地",
+     "pinyin": "de5",
+     "start_sample": 38160,
+     "stop_sample": 41640,
+     "ms": 145.0
+    },
+    {
+     "index": 6,
+     "hanzi": "拿",
+     "pinyin": "na2",
+     "start_sample": 41640,
+     "stop_sample": 47760,
+     "ms": 255.0
+    },
+    {
+     "index": 7,
+     "hanzi": "起",
+     "pinyin": "qi2",
+     "start_sample": 47760,
+     "stop_sample": 52080,
+     "ms": 180.0
+    },
+    {
+     "index": 8,
+     "hanzi": "手",
+     "pinyin": "shou3",
+     "start_sample": 52080,
+     "stop_sample": 60120,
+     "ms": 335.0
+    },
+    {
+     "index": 9,
+     "hanzi": "机",
+     "pinyin": "ji1",
+     "start_sample": 60120,
+     "stop_sample": 63600,
+     "ms": 145.0
+    },
+    {
+     "index": 10,
+     "hanzi": "喂",
+     "pinyin": "wei3",
+     "start_sample": 63600,
+     "stop_sample": 69840,
+     "ms": 260.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020387",
+   "speaker": "SSB0502",
+   "text": "得到苹果认可后才会采用",
+   "pinyin": [
+    "de2",
+    "dao4",
+    "ping2",
+    "guo3",
+    "ren4",
+    "ke3",
+    "hou4",
+    "cai2",
+    "hui4",
+    "cai3",
+    "yong4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020387.wav",
+   "mp3_sha256": "c5a6b537a35ac22e0679f82708e9e60312a652baf970511bb7a8591300b4f8b4",
+   "wav_sha256": "13e1f51ccd5f04fc1487dc608d425272f61734166474481b11c8d1a0ee96876c",
+   "active_start": 11520,
+   "active_stop": 75840,
+   "samples": 88704,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "得",
+     "pinyin": "de2",
+     "start_sample": 11520,
+     "stop_sample": 15960,
+     "ms": 185.0
+    },
+    {
+     "index": 1,
+     "hanzi": "到",
+     "pinyin": "dao4",
+     "start_sample": 15960,
+     "stop_sample": 22920,
+     "ms": 290.0
+    },
+    {
+     "index": 2,
+     "hanzi": "苹",
+     "pinyin": "ping2",
+     "start_sample": 22920,
+     "stop_sample": 30480,
+     "ms": 315.0
+    },
+    {
+     "index": 3,
+     "hanzi": "果",
+     "pinyin": "guo3",
+     "start_sample": 30480,
+     "stop_sample": 35400,
+     "ms": 205.0
+    },
+    {
+     "index": 4,
+     "hanzi": "认",
+     "pinyin": "ren4",
+     "start_sample": 35400,
+     "stop_sample": 42000,
+     "ms": 275.0
+    },
+    {
+     "index": 5,
+     "hanzi": "可",
+     "pinyin": "ke3",
+     "start_sample": 42000,
+     "stop_sample": 47760,
+     "ms": 240.0
+    },
+    {
+     "index": 6,
+     "hanzi": "后",
+     "pinyin": "hou4",
+     "start_sample": 47760,
+     "stop_sample": 51360,
+     "ms": 150.0
+    },
+    {
+     "index": 7,
+     "hanzi": "才",
+     "pinyin": "cai2",
+     "start_sample": 51360,
+     "stop_sample": 56880,
+     "ms": 230.0
+    },
+    {
+     "index": 8,
+     "hanzi": "会",
+     "pinyin": "hui4",
+     "start_sample": 56880,
+     "stop_sample": 64920,
+     "ms": 335.0
+    },
+    {
+     "index": 9,
+     "hanzi": "采",
+     "pinyin": "cai3",
+     "start_sample": 64920,
+     "stop_sample": 69960,
+     "ms": 210.0
+    },
+    {
+     "index": 10,
+     "hanzi": "用",
+     "pinyin": "yong4",
+     "start_sample": 69960,
+     "stop_sample": 75840,
+     "ms": 245.0
+    }
+   ]
+  },
+  {
+   "id": "SSB05020394",
+   "speaker": "SSB0502",
+   "text": "搜狐娱乐讯七月二十日",
+   "pinyin": [
+    "sou1",
+    "hu2",
+    "yu2",
+    "le4",
+    "xun4",
+    "qi1",
+    "yue4",
+    "er4",
+    "shi2",
+    "ri4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB05020394.wav",
+   "mp3_sha256": "98fc0234ad409656d8e578b5c4190125bd8a46244f3fb2ec52ae5126b8612ee9",
+   "wav_sha256": "eddab7b9dffdf0824393d1bf3eb376c604a22afc95712ef650d09239c9b4d132",
+   "active_start": 13440,
+   "active_stop": 63480,
+   "samples": 74880,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "搜",
+     "pinyin": "sou1",
+     "start_sample": 13440,
+     "stop_sample": 18600,
+     "ms": 215.0
+    },
+    {
+     "index": 1,
+     "hanzi": "狐",
+     "pinyin": "hu2",
+     "start_sample": 18600,
+     "stop_sample": 22200,
+     "ms": 150.0
+    },
+    {
+     "index": 2,
+     "hanzi": "娱",
+     "pinyin": "yu2",
+     "start_sample": 22200,
+     "stop_sample": 29640,
+     "ms": 310.0
+    },
+    {
+     "index": 3,
+     "hanzi": "乐",
+     "pinyin": "le4",
+     "start_sample": 29640,
+     "stop_sample": 32880,
+     "ms": 135.0
+    },
+    {
+     "index": 4,
+     "hanzi": "讯",
+     "pinyin": "xun4",
+     "start_sample": 32880,
+     "stop_sample": 38760,
+     "ms": 245.0
+    },
+    {
+     "index": 5,
+     "hanzi": "七",
+     "pinyin": "qi1",
+     "start_sample": 38760,
+     "stop_sample": 42240,
+     "ms": 145.0
+    },
+    {
+     "index": 6,
+     "hanzi": "月",
+     "pinyin": "yue4",
+     "start_sample": 42240,
+     "stop_sample": 49560,
+     "ms": 305.0
+    },
+    {
+     "index": 7,
+     "hanzi": "二",
+     "pinyin": "er4",
+     "start_sample": 49560,
+     "stop_sample": 54120,
+     "ms": 190.0
+    },
+    {
+     "index": 8,
+     "hanzi": "十",
+     "pinyin": "shi2",
+     "start_sample": 54120,
+     "stop_sample": 57240,
+     "ms": 130.0
+    },
+    {
+     "index": 9,
+     "hanzi": "日",
+     "pinyin": "ri4",
+     "start_sample": 57240,
+     "stop_sample": 63480,
+     "ms": 260.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930031",
+   "speaker": "SSB1593",
+   "text": "我必须学会怎样保存气味",
+   "pinyin": [
+    "wo3",
+    "bi4",
+    "xu1",
+    "xue2",
+    "hui4",
+    "zen3",
+    "yang4",
+    "bao3",
+    "cun2",
+    "qi4",
+    "wei4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930031.wav",
+   "mp3_sha256": "b86e1a574c4cd05cd9db93d3854e282ce03453ca8fbdff6c8fab5da3378924f0",
+   "wav_sha256": "4f142e2eab65611ecb1e5afde2e40f276f13ac2465e3589a396281bd59e42af0",
+   "active_start": 6720,
+   "active_stop": 65280,
+   "samples": 76802,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "我",
+     "pinyin": "wo3",
+     "start_sample": 6720,
+     "stop_sample": 12480,
+     "ms": 240.0
+    },
+    {
+     "index": 1,
+     "hanzi": "必",
+     "pinyin": "bi4",
+     "start_sample": 12480,
+     "stop_sample": 18600,
+     "ms": 255.0
+    },
+    {
+     "index": 2,
+     "hanzi": "须",
+     "pinyin": "xu1",
+     "start_sample": 18600,
+     "stop_sample": 23880,
+     "ms": 220.0
+    },
+    {
+     "index": 3,
+     "hanzi": "学",
+     "pinyin": "xue2",
+     "start_sample": 23880,
+     "stop_sample": 28560,
+     "ms": 195.0
+    },
+    {
+     "index": 4,
+     "hanzi": "会",
+     "pinyin": "hui4",
+     "start_sample": 28560,
+     "stop_sample": 33720,
+     "ms": 215.0
+    },
+    {
+     "index": 5,
+     "hanzi": "怎",
+     "pinyin": "zen3",
+     "start_sample": 33720,
+     "stop_sample": 37680,
+     "ms": 165.0
+    },
+    {
+     "index": 6,
+     "hanzi": "样",
+     "pinyin": "yang4",
+     "start_sample": 37680,
+     "stop_sample": 44280,
+     "ms": 275.0
+    },
+    {
+     "index": 7,
+     "hanzi": "保",
+     "pinyin": "bao3",
+     "start_sample": 44280,
+     "stop_sample": 50400,
+     "ms": 255.0
+    },
+    {
+     "index": 8,
+     "hanzi": "存",
+     "pinyin": "cun2",
+     "start_sample": 50400,
+     "stop_sample": 54960,
+     "ms": 190.0
+    },
+    {
+     "index": 9,
+     "hanzi": "气",
+     "pinyin": "qi4",
+     "start_sample": 54960,
+     "stop_sample": 58680,
+     "ms": 155.0
+    },
+    {
+     "index": 10,
+     "hanzi": "味",
+     "pinyin": "wei4",
+     "start_sample": 58680,
+     "stop_sample": 65280,
+     "ms": 275.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930079",
+   "speaker": "SSB1593",
+   "text": "当债务结构却大有玄机",
+   "pinyin": [
+    "dang4",
+    "zhai4",
+    "wu4",
+    "jie2",
+    "gou4",
+    "que4",
+    "da4",
+    "you3",
+    "xuan2",
+    "ji1"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930079.wav",
+   "mp3_sha256": "3c16058b0eb95e8aa4d60987b36cb5ff2600939760629defd380f4c94c52108f",
+   "wav_sha256": "42040501724e832d07edfb8986ce52ef5e98745d19bd88d1c87c542369318e01",
+   "active_start": 6960,
+   "active_stop": 65160,
+   "samples": 75361,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "当",
+     "pinyin": "dang4",
+     "start_sample": 6960,
+     "stop_sample": 13920,
+     "ms": 290.0
+    },
+    {
+     "index": 1,
+     "hanzi": "债",
+     "pinyin": "zhai4",
+     "start_sample": 13920,
+     "stop_sample": 17760,
+     "ms": 160.0
+    },
+    {
+     "index": 2,
+     "hanzi": "务",
+     "pinyin": "wu4",
+     "start_sample": 17760,
+     "stop_sample": 24600,
+     "ms": 285.0
+    },
+    {
+     "index": 3,
+     "hanzi": "结",
+     "pinyin": "jie2",
+     "start_sample": 24600,
+     "stop_sample": 29400,
+     "ms": 200.0
+    },
+    {
+     "index": 4,
+     "hanzi": "构",
+     "pinyin": "gou4",
+     "start_sample": 29400,
+     "stop_sample": 37200,
+     "ms": 325.0
+    },
+    {
+     "index": 5,
+     "hanzi": "却",
+     "pinyin": "que4",
+     "start_sample": 37200,
+     "stop_sample": 41880,
+     "ms": 195.0
+    },
+    {
+     "index": 6,
+     "hanzi": "大",
+     "pinyin": "da4",
+     "start_sample": 41880,
+     "stop_sample": 48840,
+     "ms": 290.0
+    },
+    {
+     "index": 7,
+     "hanzi": "有",
+     "pinyin": "you3",
+     "start_sample": 48840,
+     "stop_sample": 52680,
+     "ms": 160.0
+    },
+    {
+     "index": 8,
+     "hanzi": "玄",
+     "pinyin": "xuan2",
+     "start_sample": 52680,
+     "stop_sample": 58680,
+     "ms": 250.0
+    },
+    {
+     "index": 9,
+     "hanzi": "机",
+     "pinyin": "ji1",
+     "start_sample": 58680,
+     "stop_sample": 65160,
+     "ms": 270.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930105",
+   "speaker": "SSB1593",
+   "text": "你为什么要犹豫着不开枪",
+   "pinyin": [
+    "ni3",
+    "wei4",
+    "shen2",
+    "me5",
+    "yao4",
+    "you2",
+    "yu4",
+    "zhe5",
+    "bu4",
+    "kai1",
+    "qiang1"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930105.wav",
+   "mp3_sha256": "7746555791600d4921af6d5f973e5e438c5415b843da0cfc7c00efcbbe780ca0",
+   "wav_sha256": "9f2a8a4a85abdb824cb9820c0a6550c65e54bed9fb3561c25324e447c01148f3",
+   "active_start": 7080,
+   "active_stop": 61920,
+   "samples": 76084,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "你",
+     "pinyin": "ni3",
+     "start_sample": 7080,
+     "stop_sample": 12600,
+     "ms": 230.0
+    },
+    {
+     "index": 1,
+     "hanzi": "为",
+     "pinyin": "wei4",
+     "start_sample": 12600,
+     "stop_sample": 17400,
+     "ms": 200.0
+    },
+    {
+     "index": 2,
+     "hanzi": "什",
+     "pinyin": "shen2",
+     "start_sample": 17400,
+     "stop_sample": 22080,
+     "ms": 195.0
+    },
+    {
+     "index": 3,
+     "hanzi": "么",
+     "pinyin": "me5",
+     "start_sample": 22080,
+     "stop_sample": 25920,
+     "ms": 160.0
+    },
+    {
+     "index": 4,
+     "hanzi": "要",
+     "pinyin": "yao4",
+     "start_sample": 25920,
+     "stop_sample": 31800,
+     "ms": 245.0
+    },
+    {
+     "index": 5,
+     "hanzi": "犹",
+     "pinyin": "you2",
+     "start_sample": 31800,
+     "stop_sample": 36840,
+     "ms": 210.0
+    },
+    {
+     "index": 6,
+     "hanzi": "豫",
+     "pinyin": "yu4",
+     "start_sample": 36840,
+     "stop_sample": 41280,
+     "ms": 185.0
+    },
+    {
+     "index": 7,
+     "hanzi": "着",
+     "pinyin": "zhe5",
+     "start_sample": 41280,
+     "stop_sample": 48120,
+     "ms": 285.0
+    },
+    {
+     "index": 8,
+     "hanzi": "不",
+     "pinyin": "bu4",
+     "start_sample": 48120,
+     "stop_sample": 53040,
+     "ms": 205.0
+    },
+    {
+     "index": 9,
+     "hanzi": "开",
+     "pinyin": "kai1",
+     "start_sample": 53040,
+     "stop_sample": 57600,
+     "ms": 190.0
+    },
+    {
+     "index": 10,
+     "hanzi": "枪",
+     "pinyin": "qiang1",
+     "start_sample": 57600,
+     "stop_sample": 61920,
+     "ms": 180.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930193",
+   "speaker": "SSB1593",
+   "text": "但是依然告诉自己要坚强",
+   "pinyin": [
+    "dan4",
+    "shi4",
+    "yi1",
+    "ran2",
+    "gao4",
+    "su4",
+    "zi4",
+    "ji3",
+    "yao4",
+    "jian1",
+    "qiang2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930193.wav",
+   "mp3_sha256": "c0e3b75fda99b9554418635a3c82a90beb79ab1d1ada8bbd5740e101b5908466",
+   "wav_sha256": "c10bd5d9884f5361ba16b432f05ac26cfdcb7ecd3816b9d4f1a559f2fdc1afaa",
+   "active_start": 8040,
+   "active_stop": 72600,
+   "samples": 83520,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "但",
+     "pinyin": "dan4",
+     "start_sample": 8040,
+     "stop_sample": 15000,
+     "ms": 290.0
+    },
+    {
+     "index": 1,
+     "hanzi": "是",
+     "pinyin": "shi4",
+     "start_sample": 15000,
+     "stop_sample": 18600,
+     "ms": 150.0
+    },
+    {
+     "index": 2,
+     "hanzi": "依",
+     "pinyin": "yi1",
+     "start_sample": 18600,
+     "stop_sample": 26640,
+     "ms": 335.0
+    },
+    {
+     "index": 3,
+     "hanzi": "然",
+     "pinyin": "ran2",
+     "start_sample": 26640,
+     "stop_sample": 30480,
+     "ms": 160.0
+    },
+    {
+     "index": 4,
+     "hanzi": "告",
+     "pinyin": "gao4",
+     "start_sample": 30480,
+     "stop_sample": 38040,
+     "ms": 315.0
+    },
+    {
+     "index": 5,
+     "hanzi": "诉",
+     "pinyin": "su4",
+     "start_sample": 38040,
+     "stop_sample": 43440,
+     "ms": 225.0
+    },
+    {
+     "index": 6,
+     "hanzi": "自",
+     "pinyin": "zi4",
+     "start_sample": 43440,
+     "stop_sample": 50520,
+     "ms": 295.0
+    },
+    {
+     "index": 7,
+     "hanzi": "己",
+     "pinyin": "ji3",
+     "start_sample": 50520,
+     "stop_sample": 54360,
+     "ms": 160.0
+    },
+    {
+     "index": 8,
+     "hanzi": "要",
+     "pinyin": "yao4",
+     "start_sample": 54360,
+     "stop_sample": 59520,
+     "ms": 215.0
+    },
+    {
+     "index": 9,
+     "hanzi": "坚",
+     "pinyin": "jian1",
+     "start_sample": 59520,
+     "stop_sample": 66240,
+     "ms": 280.0
+    },
+    {
+     "index": 10,
+     "hanzi": "强",
+     "pinyin": "qiang2",
+     "start_sample": 66240,
+     "stop_sample": 72600,
+     "ms": 265.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930204",
+   "speaker": "SSB1593",
+   "text": "华西都市报记者陈甘露",
+   "pinyin": [
+    "hua2",
+    "xi1",
+    "du1",
+    "shi4",
+    "bao4",
+    "ji4",
+    "zhe3",
+    "chen2",
+    "gan1",
+    "lu4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930204.wav",
+   "mp3_sha256": "7491bd0b6b3f7b80e6d80b0ad92698a668b744bf687fa1c01a8e9f1f162f94a6",
+   "wav_sha256": "aebb6366fd6ab15f21498a83954db7edfc57dd942bea05fa2acbf96054f3459d",
+   "active_start": 9480,
+   "active_stop": 68880,
+   "samples": 79488,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "华",
+     "pinyin": "hua2",
+     "start_sample": 9480,
+     "stop_sample": 16080,
+     "ms": 275.0
+    },
+    {
+     "index": 1,
+     "hanzi": "西",
+     "pinyin": "xi1",
+     "start_sample": 16080,
+     "stop_sample": 21600,
+     "ms": 230.0
+    },
+    {
+     "index": 2,
+     "hanzi": "都",
+     "pinyin": "du1",
+     "start_sample": 21600,
+     "stop_sample": 28200,
+     "ms": 275.0
+    },
+    {
+     "index": 3,
+     "hanzi": "市",
+     "pinyin": "shi4",
+     "start_sample": 28200,
+     "stop_sample": 33240,
+     "ms": 210.0
+    },
+    {
+     "index": 4,
+     "hanzi": "报",
+     "pinyin": "bao4",
+     "start_sample": 33240,
+     "stop_sample": 39960,
+     "ms": 280.0
+    },
+    {
+     "index": 5,
+     "hanzi": "记",
+     "pinyin": "ji4",
+     "start_sample": 39960,
+     "stop_sample": 46440,
+     "ms": 270.0
+    },
+    {
+     "index": 6,
+     "hanzi": "者",
+     "pinyin": "zhe3",
+     "start_sample": 46440,
+     "stop_sample": 51480,
+     "ms": 210.0
+    },
+    {
+     "index": 7,
+     "hanzi": "陈",
+     "pinyin": "chen2",
+     "start_sample": 51480,
+     "stop_sample": 58440,
+     "ms": 290.0
+    },
+    {
+     "index": 8,
+     "hanzi": "甘",
+     "pinyin": "gan1",
+     "start_sample": 58440,
+     "stop_sample": 64200,
+     "ms": 240.0
+    },
+    {
+     "index": 9,
+     "hanzi": "露",
+     "pinyin": "lu4",
+     "start_sample": 64200,
+     "stop_sample": 68880,
+     "ms": 195.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930211",
+   "speaker": "SSB1593",
+   "text": "今晚想在荒郊野外打地铺",
+   "pinyin": [
+    "jin1",
+    "wan2",
+    "xiang3",
+    "zai4",
+    "huang1",
+    "jiao1",
+    "ye3",
+    "wai4",
+    "da3",
+    "di4",
+    "pu4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930211.wav",
+   "mp3_sha256": "3beac49526204f89ef884086b667d9e67a0496778bd8b2534f8acab43852e6e7",
+   "wav_sha256": "84f856be5c8c6a36142c43fbe3a972e62790562c79041709ec24723549874385",
+   "active_start": 7200,
+   "active_stop": 71880,
+   "samples": 81841,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "今",
+     "pinyin": "jin1",
+     "start_sample": 7200,
+     "stop_sample": 12480,
+     "ms": 220.0
+    },
+    {
+     "index": 1,
+     "hanzi": "晚",
+     "pinyin": "wan2",
+     "start_sample": 12480,
+     "stop_sample": 18960,
+     "ms": 270.0
+    },
+    {
+     "index": 2,
+     "hanzi": "想",
+     "pinyin": "xiang3",
+     "start_sample": 18960,
+     "stop_sample": 26280,
+     "ms": 305.0
+    },
+    {
+     "index": 3,
+     "hanzi": "在",
+     "pinyin": "zai4",
+     "start_sample": 26280,
+     "stop_sample": 32160,
+     "ms": 245.0
+    },
+    {
+     "index": 4,
+     "hanzi": "荒",
+     "pinyin": "huang1",
+     "start_sample": 32160,
+     "stop_sample": 36960,
+     "ms": 200.0
+    },
+    {
+     "index": 5,
+     "hanzi": "郊",
+     "pinyin": "jiao1",
+     "start_sample": 36960,
+     "stop_sample": 42960,
+     "ms": 250.0
+    },
+    {
+     "index": 6,
+     "hanzi": "野",
+     "pinyin": "ye3",
+     "start_sample": 42960,
+     "stop_sample": 47640,
+     "ms": 195.0
+    },
+    {
+     "index": 7,
+     "hanzi": "外",
+     "pinyin": "wai4",
+     "start_sample": 47640,
+     "stop_sample": 54960,
+     "ms": 305.0
+    },
+    {
+     "index": 8,
+     "hanzi": "打",
+     "pinyin": "da3",
+     "start_sample": 54960,
+     "stop_sample": 60720,
+     "ms": 240.0
+    },
+    {
+     "index": 9,
+     "hanzi": "地",
+     "pinyin": "di4",
+     "start_sample": 60720,
+     "stop_sample": 66240,
+     "ms": 230.0
+    },
+    {
+     "index": 10,
+     "hanzi": "铺",
+     "pinyin": "pu4",
+     "start_sample": 66240,
+     "stop_sample": 71880,
+     "ms": 235.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930252",
+   "speaker": "SSB1593",
+   "text": "中国将继续严打制贩假币",
+   "pinyin": [
+    "zhong1",
+    "guo2",
+    "jiang1",
+    "ji4",
+    "xu4",
+    "yan2",
+    "da3",
+    "zhi4",
+    "fan4",
+    "jia3",
+    "bi4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930252.wav",
+   "mp3_sha256": "b50638fd0ad01eea8f9fa950bd11addd63b74ae78f5ac51c04cfc6b18ebab5b6",
+   "wav_sha256": "f55cbd2b586d4a964ce7dd7e82af6a818bf5d61e4de7d27f047e3f7151a208b3",
+   "active_start": 8880,
+   "active_stop": 73200,
+   "samples": 83520,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "中",
+     "pinyin": "zhong1",
+     "start_sample": 8880,
+     "stop_sample": 15120,
+     "ms": 260.0
+    },
+    {
+     "index": 1,
+     "hanzi": "国",
+     "pinyin": "guo2",
+     "start_sample": 15120,
+     "stop_sample": 20400,
+     "ms": 220.0
+    },
+    {
+     "index": 2,
+     "hanzi": "将",
+     "pinyin": "jiang1",
+     "start_sample": 20400,
+     "stop_sample": 27840,
+     "ms": 310.0
+    },
+    {
+     "index": 3,
+     "hanzi": "继",
+     "pinyin": "ji4",
+     "start_sample": 27840,
+     "stop_sample": 33480,
+     "ms": 235.0
+    },
+    {
+     "index": 4,
+     "hanzi": "续",
+     "pinyin": "xu4",
+     "start_sample": 33480,
+     "stop_sample": 38760,
+     "ms": 220.0
+    },
+    {
+     "index": 5,
+     "hanzi": "严",
+     "pinyin": "yan2",
+     "start_sample": 38760,
+     "stop_sample": 45360,
+     "ms": 275.0
+    },
+    {
+     "index": 6,
+     "hanzi": "打",
+     "pinyin": "da3",
+     "start_sample": 45360,
+     "stop_sample": 51000,
+     "ms": 235.0
+    },
+    {
+     "index": 7,
+     "hanzi": "制",
+     "pinyin": "zhi4",
+     "start_sample": 51000,
+     "stop_sample": 57000,
+     "ms": 250.0
+    },
+    {
+     "index": 8,
+     "hanzi": "贩",
+     "pinyin": "fan4",
+     "start_sample": 57000,
+     "stop_sample": 60000,
+     "ms": 125.0
+    },
+    {
+     "index": 9,
+     "hanzi": "假",
+     "pinyin": "jia3",
+     "start_sample": 60000,
+     "stop_sample": 68640,
+     "ms": 360.0
+    },
+    {
+     "index": 10,
+     "hanzi": "币",
+     "pinyin": "bi4",
+     "start_sample": 68640,
+     "stop_sample": 73200,
+     "ms": 190.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930257",
+   "speaker": "SSB1593",
+   "text": "你来了这么久一直都很好",
+   "pinyin": [
+    "ni3",
+    "lai2",
+    "le5",
+    "zhe4",
+    "me5",
+    "jiu3",
+    "yi4",
+    "zhi2",
+    "dou1",
+    "hen2",
+    "hao3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930257.wav",
+   "mp3_sha256": "c1bd0860e0f79277940ef4b40629e7b934f9aad90a9fd5be26dceb7eaf099d2c",
+   "wav_sha256": "21cd13159cbbef7031c3bc6e8b07a21138b082187768181f7b9cf78269a825b0",
+   "active_start": 7920,
+   "active_stop": 70080,
+   "samples": 75456,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "你",
+     "pinyin": "ni3",
+     "start_sample": 7920,
+     "stop_sample": 12600,
+     "ms": 195.0
+    },
+    {
+     "index": 1,
+     "hanzi": "来",
+     "pinyin": "lai2",
+     "start_sample": 12600,
+     "stop_sample": 18480,
+     "ms": 245.0
+    },
+    {
+     "index": 2,
+     "hanzi": "了",
+     "pinyin": "le5",
+     "start_sample": 18480,
+     "stop_sample": 23640,
+     "ms": 215.0
+    },
+    {
+     "index": 3,
+     "hanzi": "这",
+     "pinyin": "zhe4",
+     "start_sample": 23640,
+     "stop_sample": 31800,
+     "ms": 340.0
+    },
+    {
+     "index": 4,
+     "hanzi": "么",
+     "pinyin": "me5",
+     "start_sample": 31800,
+     "stop_sample": 37320,
+     "ms": 230.0
+    },
+    {
+     "index": 5,
+     "hanzi": "久",
+     "pinyin": "jiu3",
+     "start_sample": 37320,
+     "stop_sample": 40440,
+     "ms": 130.0
+    },
+    {
+     "index": 6,
+     "hanzi": "一",
+     "pinyin": "yi4",
+     "start_sample": 40440,
+     "stop_sample": 48720,
+     "ms": 345.0
+    },
+    {
+     "index": 7,
+     "hanzi": "直",
+     "pinyin": "zhi2",
+     "start_sample": 48720,
+     "stop_sample": 53880,
+     "ms": 215.0
+    },
+    {
+     "index": 8,
+     "hanzi": "都",
+     "pinyin": "dou1",
+     "start_sample": 53880,
+     "stop_sample": 59760,
+     "ms": 245.0
+    },
+    {
+     "index": 9,
+     "hanzi": "很",
+     "pinyin": "hen2",
+     "start_sample": 59760,
+     "stop_sample": 65520,
+     "ms": 240.0
+    },
+    {
+     "index": 10,
+     "hanzi": "好",
+     "pinyin": "hao3",
+     "start_sample": 65520,
+     "stop_sample": 70080,
+     "ms": 190.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930266",
+   "speaker": "SSB1593",
+   "text": "这是突破自己的一个过程",
+   "pinyin": [
+    "zhe4",
+    "shi4",
+    "tu1",
+    "po4",
+    "zi4",
+    "ji3",
+    "de5",
+    "yi2",
+    "ge4",
+    "guo4",
+    "chen2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930266.wav",
+   "mp3_sha256": "c78e9b4a003d5a5c1b5733daa3197970f10b7a1bcaf7b118b2023ce8ffa1b140",
+   "wav_sha256": "2e5c33393bc5a30bf15a4c490169e8c2460ae9a0cffd7446bf914ecdf627ae3e",
+   "active_start": 8640,
+   "active_stop": 60840,
+   "samples": 73152,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "这",
+     "pinyin": "zhe4",
+     "start_sample": 8640,
+     "stop_sample": 13680,
+     "ms": 210.0
+    },
+    {
+     "index": 1,
+     "hanzi": "是",
+     "pinyin": "shi4",
+     "start_sample": 13680,
+     "stop_sample": 18960,
+     "ms": 220.0
+    },
+    {
+     "index": 2,
+     "hanzi": "突",
+     "pinyin": "tu1",
+     "start_sample": 18960,
+     "stop_sample": 22920,
+     "ms": 165.0
+    },
+    {
+     "index": 3,
+     "hanzi": "破",
+     "pinyin": "po4",
+     "start_sample": 22920,
+     "stop_sample": 28440,
+     "ms": 230.0
+    },
+    {
+     "index": 4,
+     "hanzi": "自",
+     "pinyin": "zi4",
+     "start_sample": 28440,
+     "stop_sample": 33240,
+     "ms": 200.0
+    },
+    {
+     "index": 5,
+     "hanzi": "己",
+     "pinyin": "ji3",
+     "start_sample": 33240,
+     "stop_sample": 38040,
+     "ms": 200.0
+    },
+    {
+     "index": 6,
+     "hanzi": "的",
+     "pinyin": "de5",
+     "start_sample": 38040,
+     "stop_sample": 42840,
+     "ms": 200.0
+    },
+    {
+     "index": 7,
+     "hanzi": "一",
+     "pinyin": "yi2",
+     "start_sample": 42840,
+     "stop_sample": 46080,
+     "ms": 135.0
+    },
+    {
+     "index": 8,
+     "hanzi": "个",
+     "pinyin": "ge4",
+     "start_sample": 46080,
+     "stop_sample": 50280,
+     "ms": 175.0
+    },
+    {
+     "index": 9,
+     "hanzi": "过",
+     "pinyin": "guo4",
+     "start_sample": 50280,
+     "stop_sample": 57120,
+     "ms": 285.0
+    },
+    {
+     "index": 10,
+     "hanzi": "程",
+     "pinyin": "chen2",
+     "start_sample": 57120,
+     "stop_sample": 60840,
+     "ms": 155.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930306",
+   "speaker": "SSB1593",
+   "text": "在划船比赛到最后几码时",
+   "pinyin": [
+    "zai4",
+    "hua2",
+    "chuan2",
+    "bi3",
+    "sai4",
+    "dao4",
+    "zui4",
+    "hou4",
+    "ji2",
+    "ma3",
+    "shi2"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930306.wav",
+   "mp3_sha256": "57e75dd27594801aaca943c27cddc378bcf24f037aadc4f973f6dc798a414259",
+   "wav_sha256": "c5dab8de09cf516f562d5d60d47472056cff32678a2e697e808659a9d0ccf577",
+   "active_start": 8520,
+   "active_stop": 75600,
+   "samples": 86338,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "在",
+     "pinyin": "zai4",
+     "start_sample": 8520,
+     "stop_sample": 15840,
+     "ms": 305.0
+    },
+    {
+     "index": 1,
+     "hanzi": "划",
+     "pinyin": "hua2",
+     "start_sample": 15840,
+     "stop_sample": 21720,
+     "ms": 245.0
+    },
+    {
+     "index": 2,
+     "hanzi": "船",
+     "pinyin": "chuan2",
+     "start_sample": 21720,
+     "stop_sample": 25920,
+     "ms": 175.0
+    },
+    {
+     "index": 3,
+     "hanzi": "比",
+     "pinyin": "bi3",
+     "start_sample": 25920,
+     "stop_sample": 33840,
+     "ms": 330.0
+    },
+    {
+     "index": 4,
+     "hanzi": "赛",
+     "pinyin": "sai4",
+     "start_sample": 33840,
+     "stop_sample": 40320,
+     "ms": 270.0
+    },
+    {
+     "index": 5,
+     "hanzi": "到",
+     "pinyin": "dao4",
+     "start_sample": 40320,
+     "stop_sample": 46440,
+     "ms": 255.0
+    },
+    {
+     "index": 6,
+     "hanzi": "最",
+     "pinyin": "zui4",
+     "start_sample": 46440,
+     "stop_sample": 52200,
+     "ms": 240.0
+    },
+    {
+     "index": 7,
+     "hanzi": "后",
+     "pinyin": "hou4",
+     "start_sample": 52200,
+     "stop_sample": 58440,
+     "ms": 260.0
+    },
+    {
+     "index": 8,
+     "hanzi": "几",
+     "pinyin": "ji2",
+     "start_sample": 58440,
+     "stop_sample": 62760,
+     "ms": 180.0
+    },
+    {
+     "index": 9,
+     "hanzi": "码",
+     "pinyin": "ma3",
+     "start_sample": 62760,
+     "stop_sample": 68160,
+     "ms": 225.0
+    },
+    {
+     "index": 10,
+     "hanzi": "时",
+     "pinyin": "shi2",
+     "start_sample": 68160,
+     "stop_sample": 75600,
+     "ms": 310.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930310",
+   "speaker": "SSB1593",
+   "text": "潇湘书院连载小说有什么",
+   "pinyin": [
+    "xiao1",
+    "xiang1",
+    "shu1",
+    "yuan4",
+    "lian2",
+    "zai3",
+    "xiao3",
+    "shuo1",
+    "you3",
+    "shen2",
+    "me5"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930310.wav",
+   "mp3_sha256": "03e65493a6ef543addaf3eedc07c34312fb7c74752810cd86a13fd58438d7cf9",
+   "wav_sha256": "ce7734902dc7e0ddd3109e14cfa22db573e3a97e7ba04af800a3643bb4b13c53",
+   "active_start": 8400,
+   "active_stop": 70440,
+   "samples": 81839,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "潇",
+     "pinyin": "xiao1",
+     "start_sample": 8400,
+     "stop_sample": 15120,
+     "ms": 280.0
+    },
+    {
+     "index": 1,
+     "hanzi": "湘",
+     "pinyin": "xiang1",
+     "start_sample": 15120,
+     "stop_sample": 20760,
+     "ms": 235.0
+    },
+    {
+     "index": 2,
+     "hanzi": "书",
+     "pinyin": "shu1",
+     "start_sample": 20760,
+     "stop_sample": 25680,
+     "ms": 205.0
+    },
+    {
+     "index": 3,
+     "hanzi": "院",
+     "pinyin": "yuan4",
+     "start_sample": 25680,
+     "stop_sample": 30840,
+     "ms": 215.0
+    },
+    {
+     "index": 4,
+     "hanzi": "连",
+     "pinyin": "lian2",
+     "start_sample": 30840,
+     "stop_sample": 37920,
+     "ms": 295.0
+    },
+    {
+     "index": 5,
+     "hanzi": "载",
+     "pinyin": "zai3",
+     "start_sample": 37920,
+     "stop_sample": 43080,
+     "ms": 215.0
+    },
+    {
+     "index": 6,
+     "hanzi": "小",
+     "pinyin": "xiao3",
+     "start_sample": 43080,
+     "stop_sample": 49200,
+     "ms": 255.0
+    },
+    {
+     "index": 7,
+     "hanzi": "说",
+     "pinyin": "shuo1",
+     "start_sample": 49200,
+     "stop_sample": 52320,
+     "ms": 130.0
+    },
+    {
+     "index": 8,
+     "hanzi": "有",
+     "pinyin": "you3",
+     "start_sample": 52320,
+     "stop_sample": 58080,
+     "ms": 240.0
+    },
+    {
+     "index": 9,
+     "hanzi": "什",
+     "pinyin": "shen2",
+     "start_sample": 58080,
+     "stop_sample": 64200,
+     "ms": 255.0
+    },
+    {
+     "index": 10,
+     "hanzi": "么",
+     "pinyin": "me5",
+     "start_sample": 64200,
+     "stop_sample": 70440,
+     "ms": 260.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930314",
+   "speaker": "SSB1593",
+   "text": "我们会努力学习获得知识",
+   "pinyin": [
+    "wo3",
+    "men5",
+    "hui4",
+    "nu3",
+    "li4",
+    "xue2",
+    "xi2",
+    "huo4",
+    "de2",
+    "zhi1",
+    "shi5"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930314.wav",
+   "mp3_sha256": "baab9049a3195de9a7743f2b84aabaf3d38da16d22ad9303e452783cdb5c5e5e",
+   "wav_sha256": "4d8e26325e03598ddd760bfdf2ee396d472a231099a29c3554d48484afef17f3",
+   "active_start": 8040,
+   "active_stop": 68400,
+   "samples": 79488,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "我",
+     "pinyin": "wo3",
+     "start_sample": 8040,
+     "stop_sample": 14160,
+     "ms": 255.0
+    },
+    {
+     "index": 1,
+     "hanzi": "们",
+     "pinyin": "men5",
+     "start_sample": 14160,
+     "stop_sample": 19320,
+     "ms": 215.0
+    },
+    {
+     "index": 2,
+     "hanzi": "会",
+     "pinyin": "hui4",
+     "start_sample": 19320,
+     "stop_sample": 24840,
+     "ms": 230.0
+    },
+    {
+     "index": 3,
+     "hanzi": "努",
+     "pinyin": "nu3",
+     "start_sample": 24840,
+     "stop_sample": 30000,
+     "ms": 215.0
+    },
+    {
+     "index": 4,
+     "hanzi": "力",
+     "pinyin": "li4",
+     "start_sample": 30000,
+     "stop_sample": 35880,
+     "ms": 245.0
+    },
+    {
+     "index": 5,
+     "hanzi": "学",
+     "pinyin": "xue2",
+     "start_sample": 35880,
+     "stop_sample": 41040,
+     "ms": 215.0
+    },
+    {
+     "index": 6,
+     "hanzi": "习",
+     "pinyin": "xi2",
+     "start_sample": 41040,
+     "stop_sample": 47760,
+     "ms": 280.0
+    },
+    {
+     "index": 7,
+     "hanzi": "获",
+     "pinyin": "huo4",
+     "start_sample": 47760,
+     "stop_sample": 52080,
+     "ms": 180.0
+    },
+    {
+     "index": 8,
+     "hanzi": "得",
+     "pinyin": "de2",
+     "start_sample": 52080,
+     "stop_sample": 57960,
+     "ms": 245.0
+    },
+    {
+     "index": 9,
+     "hanzi": "知",
+     "pinyin": "zhi1",
+     "start_sample": 57960,
+     "stop_sample": 63240,
+     "ms": 220.0
+    },
+    {
+     "index": 10,
+     "hanzi": "识",
+     "pinyin": "shi5",
+     "start_sample": 63240,
+     "stop_sample": 68400,
+     "ms": 215.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930326",
+   "speaker": "SSB1593",
+   "text": "而乔布斯纪念碑所立之处",
+   "pinyin": [
+    "er2",
+    "qiao2",
+    "bu4",
+    "si1",
+    "ji4",
+    "nian4",
+    "bei1",
+    "suo3",
+    "li4",
+    "zhi1",
+    "chu4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930326.wav",
+   "mp3_sha256": "a3d8c4a745c21d8c2d38b370ddc3cd81c3cb0d0e6cff58f064a6fbeafeb84bf2",
+   "wav_sha256": "a28827610108cca00415f4e6226bba35a47ce556abcf53d79b88eb8a06ea588b",
+   "active_start": 7440,
+   "active_stop": 72720,
+   "samples": 83520,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "而",
+     "pinyin": "er2",
+     "start_sample": 7440,
+     "stop_sample": 13680,
+     "ms": 260.0
+    },
+    {
+     "index": 1,
+     "hanzi": "乔",
+     "pinyin": "qiao2",
+     "start_sample": 13680,
+     "stop_sample": 20640,
+     "ms": 290.0
+    },
+    {
+     "index": 2,
+     "hanzi": "布",
+     "pinyin": "bu4",
+     "start_sample": 20640,
+     "stop_sample": 26640,
+     "ms": 250.0
+    },
+    {
+     "index": 3,
+     "hanzi": "斯",
+     "pinyin": "si1",
+     "start_sample": 26640,
+     "stop_sample": 31680,
+     "ms": 210.0
+    },
+    {
+     "index": 4,
+     "hanzi": "纪",
+     "pinyin": "ji4",
+     "start_sample": 31680,
+     "stop_sample": 36000,
+     "ms": 180.0
+    },
+    {
+     "index": 5,
+     "hanzi": "念",
+     "pinyin": "nian4",
+     "start_sample": 36000,
+     "stop_sample": 43560,
+     "ms": 315.0
+    },
+    {
+     "index": 6,
+     "hanzi": "碑",
+     "pinyin": "bei1",
+     "start_sample": 43560,
+     "stop_sample": 50400,
+     "ms": 285.0
+    },
+    {
+     "index": 7,
+     "hanzi": "所",
+     "pinyin": "suo3",
+     "start_sample": 50400,
+     "stop_sample": 55680,
+     "ms": 220.0
+    },
+    {
+     "index": 8,
+     "hanzi": "立",
+     "pinyin": "li4",
+     "start_sample": 55680,
+     "stop_sample": 60840,
+     "ms": 215.0
+    },
+    {
+     "index": 9,
+     "hanzi": "之",
+     "pinyin": "zhi1",
+     "start_sample": 60840,
+     "stop_sample": 68040,
+     "ms": 300.0
+    },
+    {
+     "index": 10,
+     "hanzi": "处",
+     "pinyin": "chu4",
+     "start_sample": 68040,
+     "stop_sample": 72720,
+     "ms": 195.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930361",
+   "speaker": "SSB1593",
+   "text": "对于你父亲我感到遗憾",
+   "pinyin": [
+    "dui4",
+    "yu2",
+    "ni3",
+    "fu4",
+    "qin5",
+    "wo2",
+    "gan3",
+    "dao4",
+    "yi2",
+    "han4"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930361.wav",
+   "mp3_sha256": "8120cfb90ccb086512c39e43d9c024b8f810c1e5cd7d13ae5f959c5aad68c8b6",
+   "wav_sha256": "25ea377c28860ecf2fa4cac9c573f85700d64f70e7ac0a289cf6eac7949df3fe",
+   "active_start": 8160,
+   "active_stop": 59280,
+   "samples": 70848,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "对",
+     "pinyin": "dui4",
+     "start_sample": 8160,
+     "stop_sample": 12120,
+     "ms": 165.0
+    },
+    {
+     "index": 1,
+     "hanzi": "于",
+     "pinyin": "yu2",
+     "start_sample": 12120,
+     "stop_sample": 18480,
+     "ms": 265.0
+    },
+    {
+     "index": 2,
+     "hanzi": "你",
+     "pinyin": "ni3",
+     "start_sample": 18480,
+     "stop_sample": 23400,
+     "ms": 205.0
+    },
+    {
+     "index": 3,
+     "hanzi": "父",
+     "pinyin": "fu4",
+     "start_sample": 23400,
+     "stop_sample": 28080,
+     "ms": 195.0
+    },
+    {
+     "index": 4,
+     "hanzi": "亲",
+     "pinyin": "qin5",
+     "start_sample": 28080,
+     "stop_sample": 32760,
+     "ms": 195.0
+    },
+    {
+     "index": 5,
+     "hanzi": "我",
+     "pinyin": "wo2",
+     "start_sample": 32760,
+     "stop_sample": 39120,
+     "ms": 265.0
+    },
+    {
+     "index": 6,
+     "hanzi": "感",
+     "pinyin": "gan3",
+     "start_sample": 39120,
+     "stop_sample": 44160,
+     "ms": 210.0
+    },
+    {
+     "index": 7,
+     "hanzi": "到",
+     "pinyin": "dao4",
+     "start_sample": 44160,
+     "stop_sample": 49200,
+     "ms": 210.0
+    },
+    {
+     "index": 8,
+     "hanzi": "遗",
+     "pinyin": "yi2",
+     "start_sample": 49200,
+     "stop_sample": 54960,
+     "ms": 240.0
+    },
+    {
+     "index": 9,
+     "hanzi": "憾",
+     "pinyin": "han4",
+     "start_sample": 54960,
+     "stop_sample": 59280,
+     "ms": 180.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930378",
+   "speaker": "SSB1593",
+   "text": "抓获涉嫌诈骗的男子方某",
+   "pinyin": [
+    "zhua1",
+    "huo4",
+    "she4",
+    "xian2",
+    "zha4",
+    "pian4",
+    "de5",
+    "nan2",
+    "zi5",
+    "fan1",
+    "mou3"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930378.wav",
+   "mp3_sha256": "4484c48df60a20b962631a178ab1809a64c99976a5e1153d0bf56462dda837f6",
+   "wav_sha256": "c97fd4d4cd2b457449b7dd17a117f15412120eefbae938488f433ead5a18569d",
+   "active_start": 9240,
+   "active_stop": 69840,
+   "samples": 81216,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 11
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "抓",
+     "pinyin": "zhua1",
+     "start_sample": 9240,
+     "stop_sample": 15960,
+     "ms": 280.0
+    },
+    {
+     "index": 1,
+     "hanzi": "获",
+     "pinyin": "huo4",
+     "start_sample": 15960,
+     "stop_sample": 19920,
+     "ms": 165.0
+    },
+    {
+     "index": 2,
+     "hanzi": "涉",
+     "pinyin": "she4",
+     "start_sample": 19920,
+     "stop_sample": 26520,
+     "ms": 275.0
+    },
+    {
+     "index": 3,
+     "hanzi": "嫌",
+     "pinyin": "xian2",
+     "start_sample": 26520,
+     "stop_sample": 32520,
+     "ms": 250.0
+    },
+    {
+     "index": 4,
+     "hanzi": "诈",
+     "pinyin": "zha4",
+     "start_sample": 32520,
+     "stop_sample": 38040,
+     "ms": 230.0
+    },
+    {
+     "index": 5,
+     "hanzi": "骗",
+     "pinyin": "pian4",
+     "start_sample": 38040,
+     "stop_sample": 41280,
+     "ms": 135.0
+    },
+    {
+     "index": 6,
+     "hanzi": "的",
+     "pinyin": "de5",
+     "start_sample": 41280,
+     "stop_sample": 48720,
+     "ms": 310.0
+    },
+    {
+     "index": 7,
+     "hanzi": "男",
+     "pinyin": "nan2",
+     "start_sample": 48720,
+     "stop_sample": 54600,
+     "ms": 245.0
+    },
+    {
+     "index": 8,
+     "hanzi": "子",
+     "pinyin": "zi5",
+     "start_sample": 54600,
+     "stop_sample": 60120,
+     "ms": 230.0
+    },
+    {
+     "index": 9,
+     "hanzi": "方",
+     "pinyin": "fan1",
+     "start_sample": 60120,
+     "stop_sample": 64440,
+     "ms": 180.0
+    },
+    {
+     "index": 10,
+     "hanzi": "某",
+     "pinyin": "mou3",
+     "start_sample": 64440,
+     "stop_sample": 69840,
+     "ms": 225.0
+    }
+   ]
+  },
+  {
+   "id": "SSB15930451",
+   "speaker": "SSB1593",
+   "text": "伤心的时候可以听情歌",
+   "pinyin": [
+    "shang1",
+    "xin1",
+    "de5",
+    "shi2",
+    "hou5",
+    "ke2",
+    "yi3",
+    "ting1",
+    "qing2",
+    "ge1"
+   ],
+   "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\pybot_tts_v2_recorded\\extended\\SSB15930451.wav",
+   "mp3_sha256": "39d7cb66b3bebf193c522bf499faa7f1c4a4635ede67d4987eafab8cdd9c4e05",
+   "wav_sha256": "c787b7d7b4cb30242119b1ddc284f6f3e5447dceb235fbb2f7fe08f681bf4dc5",
+   "active_start": 9120,
+   "active_stop": 58920,
+   "samples": 69120,
+   "split": {
+    "method": "quiet_dip_split",
+    "count": 10
+   },
+   "syllables": [
+    {
+     "index": 0,
+     "hanzi": "伤",
+     "pinyin": "shang1",
+     "start_sample": 9120,
+     "stop_sample": 15120,
+     "ms": 250.0
+    },
+    {
+     "index": 1,
+     "hanzi": "心",
+     "pinyin": "xin1",
+     "start_sample": 15120,
+     "stop_sample": 19800,
+     "ms": 195.0
+    },
+    {
+     "index": 2,
+     "hanzi": "的",
+     "pinyin": "de5",
+     "start_sample": 19800,
+     "stop_sample": 25080,
+     "ms": 220.0
+    },
+    {
+     "index": 3,
+     "hanzi": "时",
+     "pinyin": "shi2",
+     "start_sample": 25080,
+     "stop_sample": 29400,
+     "ms": 180.0
+    },
+    {
+     "index": 4,
+     "hanzi": "候",
+     "pinyin": "hou5",
+     "start_sample": 29400,
+     "stop_sample": 34080,
+     "ms": 195.0
+    },
+    {
+     "index": 5,
+     "hanzi": "可",
+     "pinyin": "ke2",
+     "start_sample": 34080,
+     "stop_sample": 40200,
+     "ms": 255.0
+    },
+    {
+     "index": 6,
+     "hanzi": "以",
+     "pinyin": "yi3",
+     "start_sample": 40200,
+     "stop_sample": 43680,
+     "ms": 145.0
+    },
+    {
+     "index": 7,
+     "hanzi": "听",
+     "pinyin": "ting1",
+     "start_sample": 43680,
+     "stop_sample": 49440,
+     "ms": 240.0
+    },
+    {
+     "index": 8,
+     "hanzi": "情",
+     "pinyin": "qing2",
+     "start_sample": 49440,
+     "stop_sample": 55080,
+     "ms": 235.0
+    },
+    {
+     "index": 9,
+     "hanzi": "歌",
+     "pinyin": "ge1",
+     "start_sample": 55080,
+     "stop_sample": 58920,
+     "ms": 160.0
+    }
+   ]
+  }
+ ],
+ "notes": []
+}

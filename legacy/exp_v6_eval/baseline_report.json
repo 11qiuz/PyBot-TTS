@@ -1,0 +1,948 @@
+{
+  "part1": {
+    "overhead": {
+      "v4_vocal": {
+        "cold_start": {
+          "import_ms": 67.068,
+          "init_ms": 1.299,
+          "total_ms": 68.367,
+          "rss_mb": 23.746,
+          "peak_rss_mb": 27.785
+        },
+        "synthesis_xianzai": {
+          "repeats": 3,
+          "n_samples": 37512,
+          "audio_dur_s": 1.563,
+          "first_wall_ms": 644.017,
+          "median_wall_ms": 683.471,
+          "cpu_rtf_first": 0.41204,
+          "cpu_rtf_median": 0.43728,
+          "rss_before_mb": 94.05,
+          "rss_after_mb": 94.84,
+          "rss_delta_mb": 0.789,
+          "peak_traced_kb": 2062.42
+        },
+        "speaker_table_bytes": {
+          "json_bytes": 2526,
+          "gzip_bytes": 1222,
+          "in_memory_bytes": 7387
+        }
+      },
+      "v5_timbre": {
+        "cold_start": {
+          "import_ms": 1039.407,
+          "init_ms": 1.324,
+          "total_ms": 1040.731,
+          "rss_mb": 92.082,
+          "peak_rss_mb": 93.273
+        },
+        "synthesis_utt0": {
+          "repeats": 3,
+          "n_samples": 84117,
+          "audio_dur_s": 3.5049,
+          "first_wall_ms": 542.642,
+          "median_wall_ms": 519.215,
+          "cpu_rtf_first": 0.15482,
+          "cpu_rtf_median": 0.14814,
+          "rss_before_mb": 95.06,
+          "rss_after_mb": 97.11,
+          "rss_delta_mb": 2.055,
+          "peak_traced_kb": 30572.42
+        },
+        "speaker_profile_bytes": {
+          "json_bytes": 107,
+          "gzip_bytes": 109,
+          "in_memory_bytes": 616
+        }
+      },
+      "v5_crossling_frontend": {
+        "cold_start": {
+          "import_ms": 44.564,
+          "init_ms": 0.314,
+          "total_ms": 44.878,
+          "rss_mb": 21.676,
+          "peak_rss_mb": 23.621
+        },
+        "lexicon_bytes": {
+          "json_bytes": 28,
+          "gzip_bytes": 48,
+          "in_memory_bytes": 336
+        }
+      }
+    },
+    "fluency_real_extended_32": {
+      "n_files": 32,
+      "f0_continuity": {
+        "f0_glitch_count_gt4st": {
+          "n": 32,
+          "median": 9.0,
+          "mean": 9.4375
+        },
+        "f0_glitch_rate_gt4st": {
+          "n": 32,
+          "median": 0.0513,
+          "mean": 0.0509
+        },
+        "f0_jump_max_st": {
+          "n": 32,
+          "median": 18.3698,
+          "mean": 18.9813
+        },
+        "f0_jump_median_st": {
+          "n": 32,
+          "median": 0.2054,
+          "mean": 0.2081
+        },
+        "f0_jump_p95_st": {
+          "n": 32,
+          "median": 4.1896,
+          "mean": 5.8645
+        },
+        "n_voiced_transitions": {
+          "n": 32,
+          "median": 184.5,
+          "mean": 183.4688
+        }
+      },
+      "spectral_flux": {
+        "spectral_flux_max_db": {
+          "n": 32,
+          "median": 8.5236,
+          "mean": 8.7087
+        },
+        "spectral_flux_median_db": {
+          "n": 32,
+          "median": 2.9875,
+          "mean": 2.9765
+        },
+        "spectral_flux_p95_db": {
+          "n": 32,
+          "median": 5.4776,
+          "mean": 5.5664
+        },
+        "spectral_flux_p95_to_median": {
+          "n": 32,
+          "median": 1.7936,
+          "mean": 1.8726
+        }
+      },
+      "vuv_transitions": {
+        "n_vuv_transitions": {
+          "n": 32,
+          "median": 12.0,
+          "mean": 11.375
+        },
+        "vuv_energy_step_median_db": {
+          "n": 31,
+          "median": 1.7257,
+          "mean": 1.7527
+        },
+        "vuv_energy_step_p95_db": {
+          "n": 31,
+          "median": 4.3814,
+          "mean": 4.7466
+        },
+        "vuv_flux_median_db": {
+          "n": 31,
+          "median": 4.2148,
+          "mean": 4.5098
+        },
+        "vuv_flux_p95_db": {
+          "n": 31,
+          "median": 7.4767,
+          "mean": 7.677
+        }
+      },
+      "rhythm": {
+        "active_speech_ratio": {
+          "n": 32,
+          "median": 0.9667,
+          "mean": 0.9372
+        },
+        "n_internal_pauses": {
+          "n": 32,
+          "median": 1.0,
+          "mean": 1.5
+        },
+        "pause_dur_cv": {
+          "n": 13,
+          "median": 0.36,
+          "mean": 0.3767
+        },
+        "pause_dur_median_s": {
+          "n": 32,
+          "median": 0.05,
+          "mean": 0.0653
+        },
+        "syllable_interval_cv": {
+          "n": 32,
+          "median": 0.3532,
+          "mean": 0.3584
+        },
+        "syllable_peaks": {
+          "n": 32,
+          "median": 13.0,
+          "mean": 12.6562
+        },
+        "syllable_rate_hz": {
+          "n": 32,
+          "median": 5.078,
+          "mean": 5.0589
+        },
+        "utterance_span_s": {
+          "n": 32,
+          "median": 2.52,
+          "mean": 2.5147
+        }
+      }
+    },
+    "fluency_v5_samples": {
+      "SSB05020005_real.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 204,
+          "f0_jump_median_st": 0.237,
+          "f0_jump_p95_st": 12.348,
+          "f0_jump_max_st": 25.7753,
+          "f0_glitch_count_gt4st": 15,
+          "f0_glitch_rate_gt4st": 0.07353
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 3.1742,
+          "spectral_flux_p95_db": 5.3754,
+          "spectral_flux_max_db": 10.6332,
+          "spectral_flux_p95_to_median": 1.6935
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 15,
+          "vuv_energy_step_median_db": 2.6718,
+          "vuv_energy_step_p95_db": 3.5718,
+          "vuv_flux_median_db": 3.7289,
+          "vuv_flux_p95_db": 8.8832
+        },
+        "rhythm": {
+          "utterance_span_s": 3.35,
+          "active_speech_ratio": 0.7701,
+          "n_internal_pauses": 3,
+          "pause_dur_median_s": 0.23,
+          "pause_dur_cv": 0.3045,
+          "syllable_peaks": 13,
+          "syllable_rate_hz": 3.881,
+          "syllable_interval_cv": 0.4737
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_real.wav"
+      },
+      "SSB05020005_v4_baseline.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 279,
+          "f0_jump_median_st": 0.2111,
+          "f0_jump_p95_st": 0.5148,
+          "f0_jump_max_st": 15.1182,
+          "f0_glitch_count_gt4st": 5,
+          "f0_glitch_rate_gt4st": 0.01792
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 1.1346,
+          "spectral_flux_p95_db": 4.8767,
+          "spectral_flux_max_db": 15.5377,
+          "spectral_flux_p95_to_median": 4.2982
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 10,
+          "vuv_energy_step_median_db": 5.5265,
+          "vuv_energy_step_p95_db": 7.93,
+          "vuv_flux_median_db": 9.6541,
+          "vuv_flux_p95_db": 14.0417
+        },
+        "rhythm": {
+          "utterance_span_s": 3.33,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 19,
+          "syllable_rate_hz": 5.706,
+          "syllable_interval_cv": 0.3343
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v4_baseline.wav"
+      },
+      "SSB05020005_v5_full.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 279,
+          "f0_jump_median_st": 0.1271,
+          "f0_jump_p95_st": 0.3896,
+          "f0_jump_max_st": 20.1555,
+          "f0_glitch_count_gt4st": 6,
+          "f0_glitch_rate_gt4st": 0.02151
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.5962,
+          "spectral_flux_p95_db": 8.5742,
+          "spectral_flux_max_db": 17.0719,
+          "spectral_flux_p95_to_median": 3.3026
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 11,
+          "vuv_energy_step_median_db": 5.3499,
+          "vuv_energy_step_p95_db": 7.0082,
+          "vuv_flux_median_db": 8.5185,
+          "vuv_flux_p95_db": 13.0242
+        },
+        "rhythm": {
+          "utterance_span_s": 3.33,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 15,
+          "syllable_rate_hz": 4.505,
+          "syllable_interval_cv": 0.421
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v5_full.wav"
+      },
+      "SSB05020005_v5_full_as_SSB1593.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 277,
+          "f0_jump_median_st": 0.2319,
+          "f0_jump_p95_st": 0.7653,
+          "f0_jump_max_st": 19.5468,
+          "f0_glitch_count_gt4st": 9,
+          "f0_glitch_rate_gt4st": 0.03249
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.8536,
+          "spectral_flux_p95_db": 9.2479,
+          "spectral_flux_max_db": 19.3181,
+          "spectral_flux_p95_to_median": 3.2407
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 11,
+          "vuv_energy_step_median_db": 3.6249,
+          "vuv_energy_step_p95_db": 5.5874,
+          "vuv_flux_median_db": 8.5148,
+          "vuv_flux_p95_db": 17.1812
+        },
+        "rhythm": {
+          "utterance_span_s": 3.32,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 17,
+          "syllable_rate_hz": 5.12,
+          "syllable_interval_cv": 0.3399
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v5_full_as_SSB1593.wav"
+      },
+      "SSB05020005_v5_glottal_hnr.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 281,
+          "f0_jump_median_st": 0.1264,
+          "f0_jump_p95_st": 0.403,
+          "f0_jump_max_st": 20.1852,
+          "f0_glitch_count_gt4st": 5,
+          "f0_glitch_rate_gt4st": 0.01779
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.6005,
+          "spectral_flux_p95_db": 9.5514,
+          "spectral_flux_max_db": 26.5166,
+          "spectral_flux_p95_to_median": 3.6729
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 14,
+          "vuv_energy_step_median_db": 4.296,
+          "vuv_energy_step_p95_db": 8.301,
+          "vuv_flux_median_db": 10.2561,
+          "vuv_flux_p95_db": 23.5976
+        },
+        "rhythm": {
+          "utterance_span_s": 3.33,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 19,
+          "syllable_rate_hz": 5.706,
+          "syllable_interval_cv": 0.4422
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v5_glottal_hnr.wav"
+      },
+      "SSB05020005_v5_oracle_prosody.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 262,
+          "f0_jump_median_st": 0.1615,
+          "f0_jump_p95_st": 1.0739,
+          "f0_jump_max_st": 19.7423,
+          "f0_glitch_count_gt4st": 11,
+          "f0_glitch_rate_gt4st": 0.04198
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.9609,
+          "spectral_flux_p95_db": 8.0894,
+          "spectral_flux_max_db": 15.9675,
+          "spectral_flux_p95_to_median": 2.7321
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 10,
+          "vuv_energy_step_median_db": 1.8808,
+          "vuv_energy_step_p95_db": 7.3942,
+          "vuv_flux_median_db": 7.7146,
+          "vuv_flux_p95_db": 13.1708
+        },
+        "rhythm": {
+          "utterance_span_s": 3.32,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 20,
+          "syllable_rate_hz": 6.024,
+          "syllable_interval_cv": 0.4155
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v5_oracle_prosody.wav"
+      },
+      "SSB05020005_v5_tilt_f0.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 284,
+          "f0_jump_median_st": 0.1284,
+          "f0_jump_p95_st": 0.3615,
+          "f0_jump_max_st": 20.7414,
+          "f0_glitch_count_gt4st": 6,
+          "f0_glitch_rate_gt4st": 0.02113
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 1.1575,
+          "spectral_flux_p95_db": 4.8481,
+          "spectral_flux_max_db": 10.8671,
+          "spectral_flux_p95_to_median": 4.1885
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 4,
+          "vuv_energy_step_median_db": 6.8559,
+          "vuv_energy_step_p95_db": 9.5555,
+          "vuv_flux_median_db": 7.3402,
+          "vuv_flux_p95_db": 10.3428
+        },
+        "rhythm": {
+          "utterance_span_s": 3.32,
+          "active_speech_ratio": 0.988,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 16,
+          "syllable_rate_hz": 4.819,
+          "syllable_interval_cv": 0.3392
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB05020005_v5_tilt_f0.wav"
+      },
+      "SSB15930031_real.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 166,
+          "f0_jump_median_st": 0.2306,
+          "f0_jump_p95_st": 17.4614,
+          "f0_jump_max_st": 28.6683,
+          "f0_glitch_count_gt4st": 21,
+          "f0_glitch_rate_gt4st": 0.12651
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.9291,
+          "spectral_flux_p95_db": 4.4385,
+          "spectral_flux_max_db": 6.8733,
+          "spectral_flux_p95_to_median": 1.5153
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 6,
+          "vuv_energy_step_median_db": 1.3489,
+          "vuv_energy_step_p95_db": 3.04,
+          "vuv_flux_median_db": 3.5988,
+          "vuv_flux_p95_db": 6.7595
+        },
+        "rhythm": {
+          "utterance_span_s": 2.42,
+          "active_speech_ratio": 0.9215,
+          "n_internal_pauses": 2,
+          "pause_dur_median_s": 0.08,
+          "pause_dur_cv": 0.25,
+          "syllable_peaks": 12,
+          "syllable_rate_hz": 4.959,
+          "syllable_interval_cv": 0.3059
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_real.wav"
+      },
+      "SSB15930031_v4_baseline.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 184,
+          "f0_jump_median_st": 0.2977,
+          "f0_jump_p95_st": 0.6725,
+          "f0_jump_max_st": 6.1305,
+          "f0_glitch_count_gt4st": 2,
+          "f0_glitch_rate_gt4st": 0.01087
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 1.3143,
+          "spectral_flux_p95_db": 8.5638,
+          "spectral_flux_max_db": 13.8701,
+          "spectral_flux_p95_to_median": 6.5157
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 16,
+          "vuv_energy_step_median_db": 5.1769,
+          "vuv_energy_step_p95_db": 9.4057,
+          "vuv_flux_median_db": 9.3801,
+          "vuv_flux_p95_db": 12.3062
+        },
+        "rhythm": {
+          "utterance_span_s": 2.43,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 14,
+          "syllable_rate_hz": 5.761,
+          "syllable_interval_cv": 0.3513
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v4_baseline.wav"
+      },
+      "SSB15930031_v5_full.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 192,
+          "f0_jump_median_st": 0.2917,
+          "f0_jump_p95_st": 0.7146,
+          "f0_jump_max_st": 12.2955,
+          "f0_glitch_count_gt4st": 1,
+          "f0_glitch_rate_gt4st": 0.00521
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.8466,
+          "spectral_flux_p95_db": 12.1505,
+          "spectral_flux_max_db": 18.7769,
+          "spectral_flux_p95_to_median": 4.2684
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 13,
+          "vuv_energy_step_median_db": 3.1421,
+          "vuv_energy_step_p95_db": 6.3794,
+          "vuv_flux_median_db": 9.2413,
+          "vuv_flux_p95_db": 13.7822
+        },
+        "rhythm": {
+          "utterance_span_s": 2.43,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 12,
+          "syllable_rate_hz": 4.938,
+          "syllable_interval_cv": 0.296
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v5_full.wav"
+      },
+      "SSB15930031_v5_full_as_SSB0502.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 194,
+          "f0_jump_median_st": 0.1655,
+          "f0_jump_p95_st": 0.4496,
+          "f0_jump_max_st": 12.6862,
+          "f0_glitch_count_gt4st": 2,
+          "f0_glitch_rate_gt4st": 0.01031
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.7325,
+          "spectral_flux_p95_db": 11.292,
+          "spectral_flux_max_db": 19.6547,
+          "spectral_flux_p95_to_median": 4.1324
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 12,
+          "vuv_energy_step_median_db": 2.797,
+          "vuv_energy_step_p95_db": 6.3303,
+          "vuv_flux_median_db": 8.826,
+          "vuv_flux_p95_db": 14.0293
+        },
+        "rhythm": {
+          "utterance_span_s": 2.43,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 12,
+          "syllable_rate_hz": 4.938,
+          "syllable_interval_cv": 0.2764
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v5_full_as_SSB0502.wav"
+      },
+      "SSB15930031_v5_glottal_hnr.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 189,
+          "f0_jump_median_st": 0.3334,
+          "f0_jump_p95_st": 0.8042,
+          "f0_jump_max_st": 6.5811,
+          "f0_glitch_count_gt4st": 2,
+          "f0_glitch_rate_gt4st": 0.01058
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.9785,
+          "spectral_flux_p95_db": 11.88,
+          "spectral_flux_max_db": 16.6319,
+          "spectral_flux_p95_to_median": 3.9886
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 14,
+          "vuv_energy_step_median_db": 3.1619,
+          "vuv_energy_step_p95_db": 6.2581,
+          "vuv_flux_median_db": 9.4531,
+          "vuv_flux_p95_db": 13.8752
+        },
+        "rhythm": {
+          "utterance_span_s": 2.43,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 15,
+          "syllable_rate_hz": 6.173,
+          "syllable_interval_cv": 0.2967
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v5_glottal_hnr.wav"
+      },
+      "SSB15930031_v5_oracle_prosody.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 157,
+          "f0_jump_median_st": 0.1694,
+          "f0_jump_p95_st": 0.8436,
+          "f0_jump_max_st": 12.26,
+          "f0_glitch_count_gt4st": 5,
+          "f0_glitch_rate_gt4st": 0.03185
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.79,
+          "spectral_flux_p95_db": 6.7405,
+          "spectral_flux_max_db": 14.9162,
+          "spectral_flux_p95_to_median": 2.4159
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 3,
+          "vuv_energy_step_median_db": 0.4448,
+          "vuv_energy_step_p95_db": 2.9038,
+          "vuv_flux_median_db": 8.6844,
+          "vuv_flux_p95_db": 10.811
+        },
+        "rhythm": {
+          "utterance_span_s": 2.4,
+          "active_speech_ratio": 0.9542,
+          "n_internal_pauses": 1,
+          "pause_dur_median_s": 0.06,
+          "pause_dur_cv": null,
+          "syllable_peaks": 13,
+          "syllable_rate_hz": 5.417,
+          "syllable_interval_cv": 0.4522
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v5_oracle_prosody.wav"
+      },
+      "SSB15930031_v5_tilt_f0.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 193,
+          "f0_jump_median_st": 0.3312,
+          "f0_jump_p95_st": 0.7286,
+          "f0_jump_max_st": 6.8682,
+          "f0_glitch_count_gt4st": 2,
+          "f0_glitch_rate_gt4st": 0.01036
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 1.4079,
+          "spectral_flux_p95_db": 7.3179,
+          "spectral_flux_max_db": 12.5762,
+          "spectral_flux_p95_to_median": 5.1979
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 9,
+          "vuv_energy_step_median_db": 6.5309,
+          "vuv_energy_step_p95_db": 7.958,
+          "vuv_flux_median_db": 4.6868,
+          "vuv_flux_p95_db": 11.6367
+        },
+        "rhythm": {
+          "utterance_span_s": 2.43,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 14,
+          "syllable_rate_hz": 5.761,
+          "syllable_interval_cv": 0.3366
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\SSB15930031_v5_tilt_f0.wav"
+      },
+      "xianzai_huijia_v4_SSB0502.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 93,
+          "f0_jump_median_st": 0.2441,
+          "f0_jump_p95_st": 0.3757,
+          "f0_jump_max_st": 8.8434,
+          "f0_glitch_count_gt4st": 1,
+          "f0_glitch_rate_gt4st": 0.01075
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 1.3046,
+          "spectral_flux_p95_db": 8.957,
+          "spectral_flux_max_db": 12.5761,
+          "spectral_flux_p95_to_median": 6.8656
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 7,
+          "vuv_energy_step_median_db": 4.9288,
+          "vuv_energy_step_p95_db": 6.9561,
+          "vuv_flux_median_db": 9.62,
+          "vuv_flux_p95_db": 12.2913
+        },
+        "rhythm": {
+          "utterance_span_s": 1.18,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 7,
+          "syllable_rate_hz": 5.932,
+          "syllable_interval_cv": 0.3122
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\xianzai_huijia_v4_SSB0502.wav"
+      },
+      "xianzai_huijia_v5_full_SSB0502.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 92,
+          "f0_jump_median_st": 0.131,
+          "f0_jump_p95_st": 0.285,
+          "f0_jump_max_st": 0.7189,
+          "f0_glitch_count_gt4st": 0,
+          "f0_glitch_rate_gt4st": 0.0
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.8898,
+          "spectral_flux_p95_db": 11.4382,
+          "spectral_flux_max_db": 17.5036,
+          "spectral_flux_p95_to_median": 3.9581
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 7,
+          "vuv_energy_step_median_db": 4.8607,
+          "vuv_energy_step_p95_db": 6.7473,
+          "vuv_flux_median_db": 10.128,
+          "vuv_flux_p95_db": 16.3111
+        },
+        "rhythm": {
+          "utterance_span_s": 1.18,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 7,
+          "syllable_rate_hz": 5.932,
+          "syllable_interval_cv": 0.3328
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\xianzai_huijia_v5_full_SSB0502.wav"
+      },
+      "xianzai_huijia_v5_full_SSB1593.wav": {
+        "f0_continuity": {
+          "n_voiced_transitions": 93,
+          "f0_jump_median_st": 0.2256,
+          "f0_jump_p95_st": 0.554,
+          "f0_jump_max_st": 15.1969,
+          "f0_glitch_count_gt4st": 1,
+          "f0_glitch_rate_gt4st": 0.01075
+        },
+        "spectral_flux": {
+          "spectral_flux_median_db": 2.8588,
+          "spectral_flux_p95_db": 12.3058,
+          "spectral_flux_max_db": 18.4108,
+          "spectral_flux_p95_to_median": 4.3046
+        },
+        "vuv_transitions": {
+          "n_vuv_transitions": 7,
+          "vuv_energy_step_median_db": 4.7854,
+          "vuv_energy_step_p95_db": 6.0426,
+          "vuv_flux_median_db": 9.3154,
+          "vuv_flux_p95_db": 15.2611
+        },
+        "rhythm": {
+          "utterance_span_s": 1.19,
+          "active_speech_ratio": 1.0,
+          "n_internal_pauses": 0,
+          "pause_dur_median_s": 0.0,
+          "pause_dur_cv": null,
+          "syllable_peaks": 4,
+          "syllable_rate_hz": 3.361,
+          "syllable_interval_cv": 0.0282
+        },
+        "path": "D:\\ZaWu\\PyBotTTS\\PyBot-TTS\\exp_v5_timbre\\samples\\xianzai_huijia_v5_full_SSB1593.wav"
+      }
+    },
+    "few_shot_convergence": {
+      "speakers": [
+        "SSB0502",
+        "SSB1593"
+      ],
+      "oracles": {
+        "SSB0502": {
+          "n_utterances": 16,
+          "total_active_s": 41.39,
+          "f0_median_hz": 223.17,
+          "f0_iqr_st": 2.283,
+          "tilt_db_oct": -3.002,
+          "hnr_db_median": 14.983
+        },
+        "SSB1593": {
+          "n_utterances": 16,
+          "total_active_s": 39.8,
+          "f0_median_hz": 202.76,
+          "f0_iqr_st": 4.169,
+          "tilt_db_oct": -3.996,
+          "hnr_db_median": 11.125
+        }
+      },
+      "oracle_convergence": {
+        "1": {
+          "k": 1,
+          "mean_enroll_s": 2.54,
+          "n_evals": 32,
+          "f0_mae_hz": 4.698,
+          "f0_mae_st": 0.3899,
+          "f0_iqr_mae_st": 0.6511,
+          "tilt_mae_db_oct": 0.5085,
+          "ltas_21_rmse_db": 2.3487,
+          "hnr_mae_db": 1.1889
+        },
+        "2": {
+          "k": 2,
+          "mean_enroll_s": 5.04,
+          "n_evals": 120,
+          "f0_mae_hz": 3.09,
+          "f0_mae_st": 0.2554,
+          "f0_iqr_mae_st": 0.5046,
+          "tilt_mae_db_oct": 0.3009,
+          "ltas_21_rmse_db": 1.4908,
+          "hnr_mae_db": 0.7868
+        },
+        "3": {
+          "k": 3,
+          "mean_enroll_s": 7.63,
+          "n_evals": 120,
+          "f0_mae_hz": 2.26,
+          "f0_mae_st": 0.1878,
+          "f0_iqr_mae_st": 0.3521,
+          "tilt_mae_db_oct": 0.2913,
+          "ltas_21_rmse_db": 1.2625,
+          "hnr_mae_db": 0.7017
+        },
+        "8": {
+          "k": 8,
+          "mean_enroll_s": 20.34,
+          "n_evals": 120,
+          "f0_mae_hz": 1.264,
+          "f0_mae_st": 0.1048,
+          "f0_iqr_mae_st": 0.1865,
+          "tilt_mae_db_oct": 0.1244,
+          "ltas_21_rmse_db": 0.5978,
+          "hnr_mae_db": 0.3126
+        },
+        "15": {
+          "k": 15,
+          "mean_enroll_s": 38.06,
+          "n_evals": 32,
+          "f0_mae_hz": 0.313,
+          "f0_mae_st": 0.0259,
+          "f0_iqr_mae_st": 0.0434,
+          "tilt_mae_db_oct": 0.0339,
+          "ltas_21_rmse_db": 0.1566,
+          "hnr_mae_db": 0.0793
+        }
+      },
+      "zero_leakage_loo": {
+        "1": {
+          "k": 1,
+          "n_evals": 480,
+          "heldout_f0_mae_hz": 6.879,
+          "heldout_f0_mae_st": 0.5729,
+          "heldout_f0_iqr_mae_st": 0.9985,
+          "heldout_tilt_mae_db_oct": 0.7342,
+          "heldout_ltas_21_rmse_db": 3.4172,
+          "heldout_hnr_mae_db": 1.7673,
+          "id_acc": {
+            "f0_only": 0.9062,
+            "tilt_only": 0.6521,
+            "ltas_21band": 0.9458,
+            "hnr_only": 0.8063,
+            "combined_4cue": 0.9604
+          }
+        },
+        "2": {
+          "k": 2,
+          "n_evals": 640,
+          "heldout_f0_mae_hz": 6.094,
+          "heldout_f0_mae_st": 0.5067,
+          "heldout_f0_iqr_mae_st": 0.8344,
+          "heldout_tilt_mae_db_oct": 0.6375,
+          "heldout_ltas_21_rmse_db": 2.9555,
+          "heldout_hnr_mae_db": 1.4942,
+          "id_acc": {
+            "f0_only": 0.9297,
+            "tilt_only": 0.7172,
+            "ltas_21band": 0.9781,
+            "hnr_only": 0.8625,
+            "combined_4cue": 0.975
+          }
+        },
+        "3": {
+          "k": 3,
+          "n_evals": 640,
+          "heldout_f0_mae_hz": 5.635,
+          "heldout_f0_mae_st": 0.4685,
+          "heldout_f0_iqr_mae_st": 0.7876,
+          "heldout_tilt_mae_db_oct": 0.6174,
+          "heldout_ltas_21_rmse_db": 2.8269,
+          "heldout_hnr_mae_db": 1.4203,
+          "id_acc": {
+            "f0_only": 0.9234,
+            "tilt_only": 0.7312,
+            "ltas_21band": 0.9906,
+            "hnr_only": 0.8609,
+            "combined_4cue": 0.9734
+          }
+        },
+        "8": {
+          "k": 8,
+          "n_evals": 640,
+          "heldout_f0_mae_hz": 5.161,
+          "heldout_f0_mae_st": 0.4287,
+          "heldout_f0_iqr_mae_st": 0.716,
+          "heldout_tilt_mae_db_oct": 0.5695,
+          "heldout_ltas_21_rmse_db": 2.5873,
+          "heldout_hnr_mae_db": 1.2817,
+          "id_acc": {
+            "f0_only": 0.9422,
+            "tilt_only": 0.7594,
+            "ltas_21band": 0.9984,
+            "hnr_only": 0.8812,
+            "combined_4cue": 0.9703
+          }
+        },
+        "15": {
+          "k": 15,
+          "n_evals": 32,
+          "heldout_f0_mae_hz": 5.011,
+          "heldout_f0_mae_st": 0.4158,
+          "heldout_f0_iqr_mae_st": 0.6946,
+          "heldout_tilt_mae_db_oct": 0.5424,
+          "heldout_ltas_21_rmse_db": 2.5053,
+          "heldout_hnr_mae_db": 1.2681,
+          "id_acc": {
+            "f0_only": 0.9375,
+            "tilt_only": 0.7812,
+            "ltas_21band": 1.0,
+            "hnr_only": 0.9062,
+            "combined_4cue": 1.0
+          }
+        }
+      }
+    }
+  }
+}

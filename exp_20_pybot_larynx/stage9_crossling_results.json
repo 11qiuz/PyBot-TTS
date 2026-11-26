@@ -1,0 +1,221 @@
+{
+  "verdict": "GO",
+  "median_rtf": 0.0434,
+  "zero_ml_weights": true,
+  "speaker_scales": {
+    "f1": 1.24,
+    "f2": 1.2095,
+    "f3": 1.1947
+  },
+  "alignment": {
+    "voiced_ltas_rmse_db": 2.25,
+    "high_band_4500_11500_diff_db": 1.5,
+    "unvoiced_ltas_rmse_db": 4.02,
+    "bap6_mae": 0.0429,
+    "zh_f0_med_hz": 246.2,
+    "en_f0_med_hz": 245.3,
+    "f0_diff_st": 0.06,
+    "en_f0_iqr_st": 3.1,
+    "raw_rms_diff_db": 1.85,
+    "clone_f0_diff_st": 0.01
+  },
+  "vowel_formants_hz": {
+    "beat": [
+      445.0,
+      2937.0,
+      3552.0
+    ],
+    "boot": [
+      442.0,
+      1439.0,
+      3328.0
+    ],
+    "father": [
+      858.0,
+      1730.0,
+      3378.0
+    ],
+    "bird": [
+      633.0,
+      1817.0,
+      2693.0
+    ],
+    "bad": [
+      1021.0,
+      2090.0,
+      3516.0
+    ]
+  },
+  "gates": {
+    "all_sanity_ok": true,
+    "median_rtf_le_006": true,
+    "voiced_ltas_rmse_le_4_5": true,
+    "high_band_diff_le_4_5": true,
+    "uv_ltas_rmse_le_6_5": true,
+    "bap6_mae_le_0_08": true,
+    "f0_diff_st_le_1_0": true,
+    "en_f0_iqr_ge_2_4": true,
+    "raw_rms_diff_le_2_5": true,
+    "vowel_f2_i_vs_u_ge_800": true,
+    "vowel_f1_a_vs_i_ge_250": true,
+    "vowel_f3_er_vs_i_le_m400": true,
+    "vowel_f2_ae_vs_a_ge_200": true,
+    "clone_zh_en_f0_diff_le_1_2": true
+  },
+  "records": {
+    "pure_zh": {
+      "sanity_ok": true,
+      "duration_s": 5.57,
+      "rtf": 0.0396,
+      "f0_median_hz": 246.8,
+      "f0_iqr_st": 4.64,
+      "active_rms_db": -19.07,
+      "text": "今天四十三位朋友一起测试跨语种语音合成，声音清晰自然。",
+      "n_zh": 25,
+      "n_en": 0
+    },
+    "pure_en": {
+      "sanity_ok": true,
+      "duration_s": 4.49,
+      "rtf": 0.0464,
+      "f0_median_hz": 245.3,
+      "f0_iqr_st": 3.1,
+      "active_rms_db": -18.89,
+      "text": "Sixty seven friends test our cross lingual speech synthesis clearly.",
+      "n_zh": 0,
+      "n_en": 10
+    },
+    "mix_tech": {
+      "sanity_ok": true,
+      "duration_s": 4.565,
+      "rtf": 0.0402,
+      "f0_median_hz": 249.1,
+      "f0_iqr_st": 3.41,
+      "active_rms_db": -18.85,
+      "text": "今天用 PyBot 测试 cross lingual speech，表现非常自然。",
+      "n_zh": 11,
+      "n_en": 4
+    },
+    "mix_chat": {
+      "sanity_ok": true,
+      "duration_s": 4.44,
+      "rtf": 0.0446,
+      "f0_median_hz": 271.3,
+      "f0_iqr_st": 3.75,
+      "active_rms_db": -18.99,
+      "text": "我觉得这个 benchmark result 比之前自然很多，Really smooth!",
+      "n_zh": 12,
+      "n_en": 4
+    },
+    "mix_question": {
+      "sanity_ok": true,
+      "duration_s": 4.215,
+      "rtf": 0.0432,
+      "f0_median_hz": 245.5,
+      "f0_iqr_st": 3.77,
+      "active_rms_db": -19.03,
+      "text": "你确定这个 speaker identity 已经保持完全一致了吗?",
+      "n_zh": 15,
+      "n_en": 2
+    },
+    "mix_num_year": {
+      "sanity_ok": true,
+      "duration_s": 4.885,
+      "rtf": 0.0406,
+      "f0_median_hz": 248.8,
+      "f0_iqr_st": 4.05,
+      "active_rms_db": -18.98,
+      "text": "在2026年，PyBot 已经支持中文和 English 无缝切换。",
+      "n_zh": 17,
+      "n_en": 2
+    },
+    "mix_short": {
+      "sanity_ok": true,
+      "duration_s": 2.17,
+      "rtf": 0.0411,
+      "f0_median_hz": 267.0,
+      "f0_iqr_st": 5.02,
+      "active_rms_db": -18.79,
+      "text": "Hello 大家好，我是 PyBot!",
+      "n_zh": 5,
+      "n_en": 2
+    },
+    "preset_male_young": {
+      "sanity_ok": true,
+      "duration_s": 3.47,
+      "rtf": 0.0458,
+      "f0_median_hz": 149.6,
+      "f0_iqr_st": 3.67,
+      "active_rms_db": -19.02,
+      "text": "欢迎来到 Studio，Hello world and happy coding!",
+      "n_zh": 4,
+      "n_en": 6
+    },
+    "preset_girl_bright": {
+      "sanity_ok": true,
+      "duration_s": 2.62,
+      "rtf": 0.0585,
+      "f0_median_hz": 313.6,
+      "f0_iqr_st": 4.45,
+      "active_rms_db": -19.08,
+      "text": "早安！Today is a bright and lovely morning!",
+      "n_zh": 2,
+      "n_en": 7
+    },
+    "emo_excited": {
+      "sanity_ok": true,
+      "duration_s": 2.83,
+      "rtf": 0.0449,
+      "f0_median_hz": 287.1,
+      "f0_iqr_st": 5.03,
+      "active_rms_db": -18.98,
+      "text": "[激动] *终于*成功了！Today feels amazing![笑]",
+      "n_zh": 5,
+      "n_en": 3
+    },
+    "emo_whisper": {
+      "sanity_ok": true,
+      "duration_s": 3.22,
+      "rtf": 0.0436,
+      "f0_median_hz": 229.1,
+      "f0_iqr_st": 2.63,
+      "active_rms_db": -19.13,
+      "text": "[耳语][吸气] 轻声说一句，Good night and sweet dreams.",
+      "n_zh": 5,
+      "n_en": 5
+    },
+    "clone_zh": {
+      "sanity_ok": true,
+      "duration_s": 2.92,
+      "rtf": 0.0376,
+      "f0_median_hz": 139.9,
+      "f0_iqr_st": 3.02,
+      "active_rms_db": -18.74,
+      "text": "欢迎使用跨语种样本模仿功能。",
+      "n_zh": 13,
+      "n_en": 0
+    },
+    "clone_en": {
+      "sanity_ok": true,
+      "duration_s": 2.915,
+      "rtf": 0.0508,
+      "f0_median_hz": 139.8,
+      "f0_iqr_st": 1.83,
+      "active_rms_db": -18.94,
+      "text": "Welcome to cross lingual voice cloning today.",
+      "n_zh": 0,
+      "n_en": 7
+    },
+    "clone_mix": {
+      "sanity_ok": true,
+      "duration_s": 2.71,
+      "rtf": 0.041,
+      "f0_median_hz": 141.7,
+      "f0_iqr_st": 1.76,
+      "active_rms_db": -18.62,
+      "text": "你好朋友，This is my English voice too!",
+      "n_zh": 4,
+      "n_en": 6
+    }
+  }
+}

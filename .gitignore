@@ -1,0 +1,61 @@
+# Byte-compiled / caches / logs / archives
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+pytest-cache-files-*/
+*.log
+*.tmp
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Runtime WebUI outputs & user custom clone profiles
+pybot_webui/outputs/
+pybot_webui/clone_profiles/
+
+# Raw speech corpora & large training token caches (kept locally outside Git)
+exp_20_pybot_larynx/crossling_data/ljspeech_raw/
+exp_20_pybot_larynx/crossling_data/sf_bilingual/
+exp_20_pybot_larynx/crossling_data/ljspeech_s11/
+exp_20_pybot_larynx/crossling_data/bilingual_ref/
+exp_20_pybot_larynx/crossling_data/*.pkl
+legacy/exp_v15_bznsyp_tts/raw_cache/
+legacy/exp_v15_bznsyp_tts/bznsyp_data/
+legacy/exp_v15_bznsyp_tts/bznsyp_index_v15.pkl
+legacy/exp_v15_bznsyp_tts/prosody_v15_bznsyp.pkl
+legacy/exp_v14_fluent_zh_tts/*.pkl
+legacy/exp_v13_utau_ceiling/*.pkl
+legacy/exp_v8_data/corpus/
+legacy/pybot_tts_v2_recorded/bank/
+legacy/pybot_tts_v2_recorded/source/
+
+# Generated audition WAV samples & audio artifacts
+**/samples/
+**/samples_*/
+**/*.wav
+**/*.mp3
+
+# Superseded intermediate acoustic KBs (production Stage 7 / 10 / 12 / 13 stay tracked)
+exp_20_pybot_larynx/acoustics/knowledge_stage0.npz
+exp_20_pybot_larynx/acoustics/knowledge_full.npz
+exp_20_pybot_larynx/acoustics/knowledge_stage2.npz
+exp_20_pybot_larynx/acoustics/knowledge_stage5.npz
+exp_20_pybot_larynx/acoustics/knowledge_ctx.npz
+
+# Non-runtime audition HTML pages & historical intermediate stage logs inside Git
+exp_20_pybot_larynx/listen*.html
+exp_20_pybot_larynx/stage[0-9]_results.json
+exp_20_pybot_larynx/stage9b_*_results.json
+exp_20_pybot_larynx/stage1[012]_*_results.json
+exp_20_pybot_larynx/STAGE[0-9]_REPORT.md
+exp_20_pybot_larynx/STAGE9B_ARTICULATION_REPORT.md
+exp_20_pybot_larynx/STAGE10_*.md
+exp_20_pybot_larynx/STAGE11_*.md
+exp_20_pybot_larynx/STAGE12_*.md
+legacy/**/listen*.html
+legacy/**/report.md
+legacy/**/README.md
+legacy/**/results*.json
+legacy/**/test_*.py
+legacy/exp_v12_prosody/gmm_alignments_v12.json

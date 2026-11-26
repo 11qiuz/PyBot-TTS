@@ -1,0 +1,8251 @@
+{
+  "en_tokens": {
+    "n_utterances": 140,
+    "v9_landmark_dp": {
+      "total_tokens": 5094,
+      "lt20ms_count": 524,
+      "eq5ms_count": 0,
+      "le10ms_count": 211,
+      "near_silence_norm_lt_neg45db": 349,
+      "near_silence_raw_lt_neg45db": 273,
+      "manner_contradiction_total": 770,
+      "vowel_low_voi_lt040": 60,
+      "sonorant_low_voi_lt040": 78,
+      "uv_high_voi_gt065": 114,
+      "uv_low_hflf_lt_neg5db": 632,
+      "any_defect_count": 1372,
+      "by_manner": {
+        "sonorant": {
+          "count": 524,
+          "lt20ms": 48,
+          "eq5ms": 0,
+          "le10ms": 15,
+          "near_silence_norm_lt_neg45db": 19,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 78,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 78,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2424,
+          "median_dur_ms": 25.0
+        },
+        "uv_obstruent": {
+          "count": 1302,
+          "lt20ms": 101,
+          "eq5ms": 0,
+          "le10ms": 19,
+          "near_silence_norm_lt_neg45db": 200,
+          "near_silence_raw_lt_neg45db": 152,
+          "manner_contradiction": 632,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 114,
+          "uv_low_hflf": 632,
+          "defect_rate": 0.5538,
+          "median_dur_ms": 65.0
+        },
+        "v_obstruent": {
+          "count": 1466,
+          "lt20ms": 373,
+          "eq5ms": 0,
+          "le10ms": 177,
+          "near_silence_norm_lt_neg45db": 122,
+          "near_silence_raw_lt_neg45db": 96,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.3165,
+          "median_dur_ms": 20.0
+        },
+        "vowel": {
+          "count": 1802,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 9,
+          "manner_contradiction": 60,
+          "vowel_low_voi": 60,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0333,
+          "median_dur_ms": 120.0
+        }
+      },
+      "by_speaker": {
+        "bdl": {
+          "count": 1102,
+          "lt20ms": 95,
+          "eq5ms": 0,
+          "le10ms": 36,
+          "near_silence_norm_lt_neg45db": 79,
+          "near_silence_raw_lt_neg45db": 78,
+          "manner_contradiction": 189,
+          "vowel_low_voi": 22,
+          "sonorant_low_voi": 26,
+          "uv_high_voi": 11,
+          "uv_low_hflf": 141,
+          "defect_rate": 0.2868,
+          "median_dur_ms": 60.0
+        },
+        "clb": {
+          "count": 1445,
+          "lt20ms": 136,
+          "eq5ms": 0,
+          "le10ms": 60,
+          "near_silence_norm_lt_neg45db": 131,
+          "near_silence_raw_lt_neg45db": 72,
+          "manner_contradiction": 198,
+          "vowel_low_voi": 9,
+          "sonorant_low_voi": 12,
+          "uv_high_voi": 40,
+          "uv_low_hflf": 177,
+          "defect_rate": 0.2588,
+          "median_dur_ms": 65.0
+        },
+        "rms": {
+          "count": 1445,
+          "lt20ms": 127,
+          "eq5ms": 0,
+          "le10ms": 56,
+          "near_silence_norm_lt_neg45db": 49,
+          "near_silence_raw_lt_neg45db": 61,
+          "manner_contradiction": 233,
+          "vowel_low_voi": 22,
+          "sonorant_low_voi": 33,
+          "uv_high_voi": 19,
+          "uv_low_hflf": 178,
+          "defect_rate": 0.2491,
+          "median_dur_ms": 60.0
+        },
+        "slt": {
+          "count": 1102,
+          "lt20ms": 166,
+          "eq5ms": 0,
+          "le10ms": 59,
+          "near_silence_norm_lt_neg45db": 90,
+          "near_silence_raw_lt_neg45db": 62,
+          "manner_contradiction": 150,
+          "vowel_low_voi": 7,
+          "sonorant_low_voi": 7,
+          "uv_high_voi": 44,
+          "uv_low_hflf": 136,
+          "defect_rate": 0.2922,
+          "median_dur_ms": 50.0
+        }
+      },
+      "top_15_offending_ipas": {
+        "t": {
+          "count": 324,
+          "lt20ms": 48,
+          "eq5ms": 0,
+          "le10ms": 13,
+          "near_silence_norm_lt_neg45db": 53,
+          "near_silence_raw_lt_neg45db": 44,
+          "manner_contradiction": 216,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 32,
+          "uv_low_hflf": 216,
+          "defect_rate": 0.7253,
+          "median_dur_ms": 55.0
+        },
+        "d": {
+          "count": 242,
+          "lt20ms": 132,
+          "eq5ms": 0,
+          "le10ms": 74,
+          "near_silence_norm_lt_neg45db": 32,
+          "near_silence_raw_lt_neg45db": 28,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.6157,
+          "median_dur_ms": 15.0
+        },
+        "k": {
+          "count": 168,
+          "lt20ms": 9,
+          "eq5ms": 0,
+          "le10ms": 4,
+          "near_silence_norm_lt_neg45db": 18,
+          "near_silence_raw_lt_neg45db": 15,
+          "manner_contradiction": 125,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 9,
+          "uv_low_hflf": 125,
+          "defect_rate": 0.7679,
+          "median_dur_ms": 70.0
+        },
+        "p": {
+          "count": 124,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 29,
+          "near_silence_raw_lt_neg45db": 26,
+          "manner_contradiction": 120,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 120,
+          "defect_rate": 0.9677,
+          "median_dur_ms": 85.0
+        },
+        "h": {
+          "count": 106,
+          "lt20ms": 25,
+          "eq5ms": 0,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 22,
+          "near_silence_raw_lt_neg45db": 21,
+          "manner_contradiction": 64,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 26,
+          "uv_low_hflf": 64,
+          "defect_rate": 0.6698,
+          "median_dur_ms": 25.0
+        },
+        "f": {
+          "count": 144,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 62,
+          "near_silence_raw_lt_neg45db": 38,
+          "manner_contradiction": 31,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 31,
+          "defect_rate": 0.5694,
+          "median_dur_ms": 70.0
+        },
+        "n": {
+          "count": 314,
+          "lt20ms": 33,
+          "eq5ms": 0,
+          "le10ms": 10,
+          "near_silence_norm_lt_neg45db": 10,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 46,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 46,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2484,
+          "median_dur_ms": 25.0
+        },
+        "θ": {
+          "count": 78,
+          "lt20ms": 11,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 14,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 47,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 24,
+          "uv_low_hflf": 47,
+          "defect_rate": 0.6923,
+          "median_dur_ms": 30.0
+        },
+        "b": {
+          "count": 104,
+          "lt20ms": 50,
+          "eq5ms": 0,
+          "le10ms": 29,
+          "near_silence_norm_lt_neg45db": 17,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5962,
+          "median_dur_ms": 20.0
+        },
+        "ɡ": {
+          "count": 90,
+          "lt20ms": 34,
+          "eq5ms": 0,
+          "le10ms": 22,
+          "near_silence_norm_lt_neg45db": 18,
+          "near_silence_raw_lt_neg45db": 14,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5333,
+          "median_dur_ms": 20.0
+        },
+        "ɹ": {
+          "count": 280,
+          "lt20ms": 31,
+          "eq5ms": 0,
+          "le10ms": 16,
+          "near_silence_norm_lt_neg45db": 16,
+          "near_silence_raw_lt_neg45db": 11,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1607,
+          "median_dur_ms": 25.0
+        },
+        "l": {
+          "count": 258,
+          "lt20ms": 33,
+          "eq5ms": 0,
+          "le10ms": 11,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1628,
+          "median_dur_ms": 25.0
+        },
+        "m": {
+          "count": 154,
+          "lt20ms": 13,
+          "eq5ms": 0,
+          "le10ms": 4,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 17,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 17,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2143,
+          "median_dur_ms": 25.0
+        },
+        "ð": {
+          "count": 58,
+          "lt20ms": 27,
+          "eq5ms": 0,
+          "le10ms": 7,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5862,
+          "median_dur_ms": 20.0
+        },
+        "s": {
+          "count": 274,
+          "lt20ms": 4,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 26,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 17,
+          "uv_low_hflf": 26,
+          "defect_rate": 0.0985,
+          "median_dur_ms": 85.0
+        }
+      },
+      "by_ipa": {
+        "aɪ": {
+          "count": 32,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 145.0
+        },
+        "aʊ": {
+          "count": 34,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 157.5
+        },
+        "b": {
+          "count": 104,
+          "lt20ms": 50,
+          "eq5ms": 0,
+          "le10ms": 29,
+          "near_silence_norm_lt_neg45db": 17,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5962,
+          "median_dur_ms": 20.0
+        },
+        "d": {
+          "count": 242,
+          "lt20ms": 132,
+          "eq5ms": 0,
+          "le10ms": 74,
+          "near_silence_norm_lt_neg45db": 32,
+          "near_silence_raw_lt_neg45db": 28,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.6157,
+          "median_dur_ms": 15.0
+        },
+        "dʒ": {
+          "count": 12,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 35.0
+        },
+        "eɪ": {
+          "count": 46,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 215.0
+        },
+        "f": {
+          "count": 144,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 62,
+          "near_silence_raw_lt_neg45db": 38,
+          "manner_contradiction": 31,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 31,
+          "defect_rate": 0.5694,
+          "median_dur_ms": 70.0
+        },
+        "h": {
+          "count": 106,
+          "lt20ms": 25,
+          "eq5ms": 0,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 22,
+          "near_silence_raw_lt_neg45db": 21,
+          "manner_contradiction": 64,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 26,
+          "uv_low_hflf": 64,
+          "defect_rate": 0.6698,
+          "median_dur_ms": 25.0
+        },
+        "i": {
+          "count": 46,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 140.0
+        },
+        "j": {
+          "count": 104,
+          "lt20ms": 19,
+          "eq5ms": 0,
+          "le10ms": 5,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.25,
+          "median_dur_ms": 20.0
+        },
+        "k": {
+          "count": 168,
+          "lt20ms": 9,
+          "eq5ms": 0,
+          "le10ms": 4,
+          "near_silence_norm_lt_neg45db": 18,
+          "near_silence_raw_lt_neg45db": 15,
+          "manner_contradiction": 125,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 9,
+          "uv_low_hflf": 125,
+          "defect_rate": 0.7679,
+          "median_dur_ms": 70.0
+        },
+        "l": {
+          "count": 258,
+          "lt20ms": 33,
+          "eq5ms": 0,
+          "le10ms": 11,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1628,
+          "median_dur_ms": 25.0
+        },
+        "m": {
+          "count": 154,
+          "lt20ms": 13,
+          "eq5ms": 0,
+          "le10ms": 4,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 17,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 17,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2143,
+          "median_dur_ms": 25.0
+        },
+        "n": {
+          "count": 314,
+          "lt20ms": 33,
+          "eq5ms": 0,
+          "le10ms": 10,
+          "near_silence_norm_lt_neg45db": 10,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 46,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 46,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2484,
+          "median_dur_ms": 25.0
+        },
+        "oʊ": {
+          "count": 28,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 190.0
+        },
+        "p": {
+          "count": 124,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 29,
+          "near_silence_raw_lt_neg45db": 26,
+          "manner_contradiction": 120,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 120,
+          "defect_rate": 0.9677,
+          "median_dur_ms": 85.0
+        },
+        "s": {
+          "count": 274,
+          "lt20ms": 4,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 26,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 17,
+          "uv_low_hflf": 26,
+          "defect_rate": 0.0985,
+          "median_dur_ms": 85.0
+        },
+        "t": {
+          "count": 324,
+          "lt20ms": 48,
+          "eq5ms": 0,
+          "le10ms": 13,
+          "near_silence_norm_lt_neg45db": 53,
+          "near_silence_raw_lt_neg45db": 44,
+          "manner_contradiction": 216,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 32,
+          "uv_low_hflf": 216,
+          "defect_rate": 0.7253,
+          "median_dur_ms": 55.0
+        },
+        "tʃ": {
+          "count": 34,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 1,
+          "defect_rate": 0.0294,
+          "median_dur_ms": 112.5
+        },
+        "u": {
+          "count": 82,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 1,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0122,
+          "median_dur_ms": 95.0
+        },
+        "v": {
+          "count": 48,
+          "lt20ms": 21,
+          "eq5ms": 0,
+          "le10ms": 7,
+          "near_silence_norm_lt_neg45db": 4,
+          "near_silence_raw_lt_neg45db": 3,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5,
+          "median_dur_ms": 20.0
+        },
+        "w": {
+          "count": 112,
+          "lt20ms": 22,
+          "eq5ms": 0,
+          "le10ms": 5,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 4,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2679,
+          "median_dur_ms": 20.0
+        },
+        "z": {
+          "count": 18,
+          "lt20ms": 4,
+          "eq5ms": 0,
+          "le10ms": 1,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2222,
+          "median_dur_ms": 30.0
+        },
+        "æ": {
+          "count": 310,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 7,
+          "vowel_low_voi": 7,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0226,
+          "median_dur_ms": 147.5
+        },
+        "ð": {
+          "count": 58,
+          "lt20ms": 27,
+          "eq5ms": 0,
+          "le10ms": 7,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5862,
+          "median_dur_ms": 20.0
+        },
+        "ŋ": {
+          "count": 56,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 1,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 15,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 15,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2857,
+          "median_dur_ms": 30.0
+        },
+        "ɑ": {
+          "count": 226,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 10,
+          "vowel_low_voi": 10,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0442,
+          "median_dur_ms": 150.0
+        },
+        "ɔ": {
+          "count": 94,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 6,
+          "vowel_low_voi": 6,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0638,
+          "median_dur_ms": 132.5
+        },
+        "ə": {
+          "count": 106,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 5,
+          "vowel_low_voi": 5,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0472,
+          "median_dur_ms": 75.0
+        },
+        "ɚ": {
+          "count": 88,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 3,
+          "vowel_low_voi": 3,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0341,
+          "median_dur_ms": 120.0
+        },
+        "ɛ": {
+          "count": 366,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 9,
+          "vowel_low_voi": 9,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0246,
+          "median_dur_ms": 115.0
+        },
+        "ɡ": {
+          "count": 90,
+          "lt20ms": 34,
+          "eq5ms": 0,
+          "le10ms": 22,
+          "near_silence_norm_lt_neg45db": 18,
+          "near_silence_raw_lt_neg45db": 14,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5333,
+          "median_dur_ms": 20.0
+        },
+        "ɪ": {
+          "count": 380,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 6,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 15,
+          "vowel_low_voi": 15,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0395,
+          "median_dur_ms": 105.0
+        },
+        "ɹ": {
+          "count": 280,
+          "lt20ms": 31,
+          "eq5ms": 0,
+          "le10ms": 16,
+          "near_silence_norm_lt_neg45db": 16,
+          "near_silence_raw_lt_neg45db": 11,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1607,
+          "median_dur_ms": 25.0
+        },
+        "ʃ": {
+          "count": 50,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 2,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 2,
+          "defect_rate": 0.04,
+          "median_dur_ms": 110.0
+        },
+        "ʌ": {
+          "count": 104,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 4,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0385,
+          "median_dur_ms": 115.0
+        },
+        "θ": {
+          "count": 78,
+          "lt20ms": 11,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 14,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 47,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 24,
+          "uv_low_hflf": 47,
+          "defect_rate": 0.6923,
+          "median_dur_ms": 30.0
+        }
+      }
+    },
+    "v8_prop_dp": {
+      "total_tokens": 5094,
+      "lt20ms_count": 286,
+      "eq5ms_count": 0,
+      "le10ms_count": 14,
+      "near_silence_norm_lt_neg45db": 336,
+      "near_silence_raw_lt_neg45db": 273,
+      "manner_contradiction_total": 776,
+      "vowel_low_voi_lt040": 48,
+      "sonorant_low_voi_lt040": 71,
+      "uv_high_voi_gt065": 119,
+      "uv_low_hflf_lt_neg5db": 657,
+      "any_defect_count": 1232,
+      "by_manner": {
+        "sonorant": {
+          "count": 524,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 14,
+          "near_silence_raw_lt_neg45db": 13,
+          "manner_contradiction": 71,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 71,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1469,
+          "median_dur_ms": 25.0
+        },
+        "uv_obstruent": {
+          "count": 1302,
+          "lt20ms": 6,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 193,
+          "near_silence_raw_lt_neg45db": 147,
+          "manner_contradiction": 657,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 119,
+          "uv_low_hflf": 657,
+          "defect_rate": 0.5614,
+          "median_dur_ms": 70.0
+        },
+        "v_obstruent": {
+          "count": 1466,
+          "lt20ms": 280,
+          "eq5ms": 0,
+          "le10ms": 14,
+          "near_silence_norm_lt_neg45db": 121,
+          "near_silence_raw_lt_neg45db": 105,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2565,
+          "median_dur_ms": 25.0
+        },
+        "vowel": {
+          "count": 1802,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 48,
+          "vowel_low_voi": 48,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0266,
+          "median_dur_ms": 120.0
+        }
+      },
+      "by_speaker": {
+        "bdl": {
+          "count": 1102,
+          "lt20ms": 52,
+          "eq5ms": 0,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 83,
+          "near_silence_raw_lt_neg45db": 84,
+          "manner_contradiction": 188,
+          "vowel_low_voi": 17,
+          "sonorant_low_voi": 23,
+          "uv_high_voi": 13,
+          "uv_low_hflf": 148,
+          "defect_rate": 0.265,
+          "median_dur_ms": 65.0
+        },
+        "clb": {
+          "count": 1445,
+          "lt20ms": 56,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 117,
+          "near_silence_raw_lt_neg45db": 63,
+          "manner_contradiction": 205,
+          "vowel_low_voi": 7,
+          "sonorant_low_voi": 12,
+          "uv_high_voi": 43,
+          "uv_low_hflf": 186,
+          "defect_rate": 0.2256,
+          "median_dur_ms": 65.0
+        },
+        "rms": {
+          "count": 1445,
+          "lt20ms": 88,
+          "eq5ms": 0,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 50,
+          "near_silence_raw_lt_neg45db": 66,
+          "manner_contradiction": 233,
+          "vowel_low_voi": 18,
+          "sonorant_low_voi": 30,
+          "uv_high_voi": 19,
+          "uv_low_hflf": 185,
+          "defect_rate": 0.2353,
+          "median_dur_ms": 65.0
+        },
+        "slt": {
+          "count": 1102,
+          "lt20ms": 90,
+          "eq5ms": 0,
+          "le10ms": 10,
+          "near_silence_norm_lt_neg45db": 86,
+          "near_silence_raw_lt_neg45db": 60,
+          "manner_contradiction": 150,
+          "vowel_low_voi": 6,
+          "sonorant_low_voi": 6,
+          "uv_high_voi": 44,
+          "uv_low_hflf": 138,
+          "defect_rate": 0.2486,
+          "median_dur_ms": 55.0
+        }
+      },
+      "top_15_offending_ipas": {
+        "t": {
+          "count": 324,
+          "lt20ms": 6,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 51,
+          "near_silence_raw_lt_neg45db": 44,
+          "manner_contradiction": 229,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 31,
+          "uv_low_hflf": 229,
+          "defect_rate": 0.7346,
+          "median_dur_ms": 55.0
+        },
+        "d": {
+          "count": 242,
+          "lt20ms": 177,
+          "eq5ms": 0,
+          "le10ms": 14,
+          "near_silence_norm_lt_neg45db": 32,
+          "near_silence_raw_lt_neg45db": 29,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.7851,
+          "median_dur_ms": 15.0
+        },
+        "p": {
+          "count": 124,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 30,
+          "near_silence_raw_lt_neg45db": 28,
+          "manner_contradiction": 120,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 1,
+          "uv_low_hflf": 120,
+          "defect_rate": 0.9677,
+          "median_dur_ms": 85.0
+        },
+        "k": {
+          "count": 168,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 20,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 128,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 7,
+          "uv_low_hflf": 128,
+          "defect_rate": 0.7738,
+          "median_dur_ms": 75.0
+        },
+        "f": {
+          "count": 144,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 60,
+          "near_silence_raw_lt_neg45db": 36,
+          "manner_contradiction": 33,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 3,
+          "uv_low_hflf": 33,
+          "defect_rate": 0.5556,
+          "median_dur_ms": 75.0
+        },
+        "h": {
+          "count": 106,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 19,
+          "near_silence_raw_lt_neg45db": 18,
+          "manner_contradiction": 66,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 31,
+          "uv_low_hflf": 66,
+          "defect_rate": 0.6887,
+          "median_dur_ms": 30.0
+        },
+        "b": {
+          "count": 104,
+          "lt20ms": 43,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 15,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5577,
+          "median_dur_ms": 20.0
+        },
+        "θ": {
+          "count": 78,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 11,
+          "near_silence_raw_lt_neg45db": 4,
+          "manner_contradiction": 46,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 25,
+          "uv_low_hflf": 46,
+          "defect_rate": 0.6923,
+          "median_dur_ms": 40.0
+        },
+        "ɡ": {
+          "count": 90,
+          "lt20ms": 35,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 17,
+          "near_silence_raw_lt_neg45db": 12,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5556,
+          "median_dur_ms": 20.0
+        },
+        "n": {
+          "count": 314,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 41,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 41,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1401,
+          "median_dur_ms": 25.0
+        },
+        "s": {
+          "count": 274,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 32,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 19,
+          "uv_low_hflf": 32,
+          "defect_rate": 0.1204,
+          "median_dur_ms": 85.0
+        },
+        "m": {
+          "count": 154,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 5,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 19,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 19,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1429,
+          "median_dur_ms": 25.0
+        },
+        "w": {
+          "count": 112,
+          "lt20ms": 13,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1696,
+          "median_dur_ms": 20.0
+        },
+        "ɪ": {
+          "count": 380,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 5,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 12,
+          "vowel_low_voi": 12,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0316,
+          "median_dur_ms": 107.5
+        },
+        "j": {
+          "count": 104,
+          "lt20ms": 9,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 7,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1346,
+          "median_dur_ms": 20.0
+        }
+      },
+      "by_ipa": {
+        "aɪ": {
+          "count": 32,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 160.0
+        },
+        "aʊ": {
+          "count": 34,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 142.5
+        },
+        "b": {
+          "count": 104,
+          "lt20ms": 43,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 15,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5577,
+          "median_dur_ms": 20.0
+        },
+        "d": {
+          "count": 242,
+          "lt20ms": 177,
+          "eq5ms": 0,
+          "le10ms": 14,
+          "near_silence_norm_lt_neg45db": 32,
+          "near_silence_raw_lt_neg45db": 29,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.7851,
+          "median_dur_ms": 15.0
+        },
+        "dʒ": {
+          "count": 12,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 35.0
+        },
+        "eɪ": {
+          "count": 46,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 197.5
+        },
+        "f": {
+          "count": 144,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 60,
+          "near_silence_raw_lt_neg45db": 36,
+          "manner_contradiction": 33,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 3,
+          "uv_low_hflf": 33,
+          "defect_rate": 0.5556,
+          "median_dur_ms": 75.0
+        },
+        "h": {
+          "count": 106,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 19,
+          "near_silence_raw_lt_neg45db": 18,
+          "manner_contradiction": 66,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 31,
+          "uv_low_hflf": 66,
+          "defect_rate": 0.6887,
+          "median_dur_ms": 30.0
+        },
+        "i": {
+          "count": 46,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 1,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0217,
+          "median_dur_ms": 142.5
+        },
+        "j": {
+          "count": 104,
+          "lt20ms": 9,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 7,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1346,
+          "median_dur_ms": 20.0
+        },
+        "k": {
+          "count": 168,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 20,
+          "near_silence_raw_lt_neg45db": 16,
+          "manner_contradiction": 128,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 7,
+          "uv_low_hflf": 128,
+          "defect_rate": 0.7738,
+          "median_dur_ms": 75.0
+        },
+        "l": {
+          "count": 258,
+          "lt20ms": 3,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 7,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0465,
+          "median_dur_ms": 25.0
+        },
+        "m": {
+          "count": 154,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 5,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 19,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 19,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1429,
+          "median_dur_ms": 25.0
+        },
+        "n": {
+          "count": 314,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 41,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 41,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1401,
+          "median_dur_ms": 25.0
+        },
+        "oʊ": {
+          "count": 28,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 192.5
+        },
+        "p": {
+          "count": 124,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 30,
+          "near_silence_raw_lt_neg45db": 28,
+          "manner_contradiction": 120,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 1,
+          "uv_low_hflf": 120,
+          "defect_rate": 0.9677,
+          "median_dur_ms": 85.0
+        },
+        "s": {
+          "count": 274,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 32,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 19,
+          "uv_low_hflf": 32,
+          "defect_rate": 0.1204,
+          "median_dur_ms": 85.0
+        },
+        "t": {
+          "count": 324,
+          "lt20ms": 6,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 51,
+          "near_silence_raw_lt_neg45db": 44,
+          "manner_contradiction": 229,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 31,
+          "uv_low_hflf": 229,
+          "defect_rate": 0.7346,
+          "median_dur_ms": 55.0
+        },
+        "tʃ": {
+          "count": 34,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 1,
+          "defect_rate": 0.0294,
+          "median_dur_ms": 102.5
+        },
+        "u": {
+          "count": 82,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 1,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0122,
+          "median_dur_ms": 112.5
+        },
+        "v": {
+          "count": 48,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0417,
+          "median_dur_ms": 25.0
+        },
+        "w": {
+          "count": 112,
+          "lt20ms": 13,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 8,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1696,
+          "median_dur_ms": 20.0
+        },
+        "z": {
+          "count": 18,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 35.0
+        },
+        "æ": {
+          "count": 310,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 6,
+          "vowel_low_voi": 6,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0194,
+          "median_dur_ms": 145.0
+        },
+        "ð": {
+          "count": 58,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 15,
+          "near_silence_raw_lt_neg45db": 12,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.2586,
+          "median_dur_ms": 25.0
+        },
+        "ŋ": {
+          "count": 56,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 11,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 11,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1964,
+          "median_dur_ms": 30.0
+        },
+        "ɑ": {
+          "count": 226,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 9,
+          "vowel_low_voi": 9,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0398,
+          "median_dur_ms": 150.0
+        },
+        "ɔ": {
+          "count": 94,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 4,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0426,
+          "median_dur_ms": 130.0
+        },
+        "ə": {
+          "count": 106,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 3,
+          "vowel_low_voi": 3,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0283,
+          "median_dur_ms": 75.0
+        },
+        "ɚ": {
+          "count": 88,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 1,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0114,
+          "median_dur_ms": 115.0
+        },
+        "ɛ": {
+          "count": 366,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 7,
+          "vowel_low_voi": 7,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0191,
+          "median_dur_ms": 115.0
+        },
+        "ɡ": {
+          "count": 90,
+          "lt20ms": 35,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 17,
+          "near_silence_raw_lt_neg45db": 12,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5556,
+          "median_dur_ms": 20.0
+        },
+        "ɪ": {
+          "count": 380,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 5,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 12,
+          "vowel_low_voi": 12,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0316,
+          "median_dur_ms": 107.5
+        },
+        "ɹ": {
+          "count": 280,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 16,
+          "near_silence_raw_lt_neg45db": 14,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0571,
+          "median_dur_ms": 25.0
+        },
+        "ʃ": {
+          "count": 50,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 2,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 2,
+          "defect_rate": 0.04,
+          "median_dur_ms": 107.5
+        },
+        "ʌ": {
+          "count": 104,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 4,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0385,
+          "median_dur_ms": 115.0
+        },
+        "θ": {
+          "count": 78,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 11,
+          "near_silence_raw_lt_neg45db": 4,
+          "manner_contradiction": 46,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 25,
+          "uv_low_hflf": 46,
+          "defect_rate": 0.6923,
+          "median_dur_ms": 40.0
+        }
+      }
+    }
+  },
+  "zh_tokens": {
+    "n_utterances": 32,
+    "syllables": {
+      "total": 346,
+      "lt20ms": 0,
+      "eq5ms": 0,
+      "near_silence_norm_lt_neg45db": 3,
+      "low_voicing_lt040": 31,
+      "by_speaker": {
+        "SSB0502": {
+          "count": 174,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 3,
+          "near_silence_raw_lt_neg45db": 3,
+          "manner_contradiction": 18,
+          "vowel_low_voi": 18,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1034,
+          "median_dur_ms": 225.0
+        },
+        "SSB1593": {
+          "count": 172,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 13,
+          "vowel_low_voi": 13,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0756,
+          "median_dur_ms": 220.0
+        }
+      }
+    },
+    "onsets": {
+      "total": 292,
+      "lt20ms": 147,
+      "eq5ms": 37,
+      "near_silence_norm_lt_neg45db": 10,
+      "manner_contradiction": 96,
+      "uv_high_voi_gt065": 40,
+      "uv_low_hflf_lt_neg5db": 85,
+      "sonorant_low_voi_lt040": 5,
+      "by_onset": {
+        "b": {
+          "count": 19,
+          "lt20ms": 16,
+          "eq5ms": 3,
+          "le10ms": 16,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.8947,
+          "median_dur_ms": 10.0
+        },
+        "c": {
+          "count": 4,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 4,
+          "defect_rate": 1.0,
+          "median_dur_ms": 42.5
+        },
+        "ch": {
+          "count": 13,
+          "lt20ms": 7,
+          "eq5ms": 3,
+          "le10ms": 7,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 4,
+          "manner_contradiction": 10,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 3,
+          "uv_low_hflf": 10,
+          "defect_rate": 0.9231,
+          "median_dur_ms": 10.0
+        },
+        "d": {
+          "count": 26,
+          "lt20ms": 21,
+          "eq5ms": 4,
+          "le10ms": 17,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 8,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.8077,
+          "median_dur_ms": 10.0
+        },
+        "f": {
+          "count": 6,
+          "lt20ms": 4,
+          "eq5ms": 0,
+          "le10ms": 3,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 5,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 5,
+          "defect_rate": 1.0,
+          "median_dur_ms": 12.5
+        },
+        "g": {
+          "count": 14,
+          "lt20ms": 10,
+          "eq5ms": 2,
+          "le10ms": 8,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.7143,
+          "median_dur_ms": 10.0
+        },
+        "h": {
+          "count": 25,
+          "lt20ms": 19,
+          "eq5ms": 4,
+          "le10ms": 19,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 6,
+          "manner_contradiction": 24,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 11,
+          "uv_low_hflf": 24,
+          "defect_rate": 1.0,
+          "median_dur_ms": 10.0
+        },
+        "j": {
+          "count": 29,
+          "lt20ms": 12,
+          "eq5ms": 4,
+          "le10ms": 11,
+          "near_silence_norm_lt_neg45db": 2,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.4828,
+          "median_dur_ms": 35.0
+        },
+        "k": {
+          "count": 7,
+          "lt20ms": 2,
+          "eq5ms": 0,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 7,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 1,
+          "uv_low_hflf": 7,
+          "defect_rate": 1.0,
+          "median_dur_ms": 25.0
+        },
+        "l": {
+          "count": 13,
+          "lt20ms": 1,
+          "eq5ms": 0,
+          "le10ms": 1,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 2,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 2,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1538,
+          "median_dur_ms": 40.0
+        },
+        "m": {
+          "count": 12,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 2,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 2,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.1667,
+          "median_dur_ms": 40.0
+        },
+        "n": {
+          "count": 8,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 1,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 1,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.125,
+          "median_dur_ms": 40.0
+        },
+        "p": {
+          "count": 5,
+          "lt20ms": 3,
+          "eq5ms": 1,
+          "le10ms": 2,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 5,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 2,
+          "uv_low_hflf": 4,
+          "defect_rate": 1.0,
+          "median_dur_ms": 15.0
+        },
+        "q": {
+          "count": 14,
+          "lt20ms": 6,
+          "eq5ms": 3,
+          "le10ms": 6,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 4,
+          "uv_low_hflf": 3,
+          "defect_rate": 0.4286,
+          "median_dur_ms": 37.5
+        },
+        "r": {
+          "count": 6,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0,
+          "median_dur_ms": 60.0
+        },
+        "s": {
+          "count": 9,
+          "lt20ms": 3,
+          "eq5ms": 1,
+          "le10ms": 3,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 2,
+          "manner_contradiction": 4,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 3,
+          "uv_low_hflf": 3,
+          "defect_rate": 0.4444,
+          "median_dur_ms": 30.0
+        },
+        "sh": {
+          "count": 23,
+          "lt20ms": 9,
+          "eq5ms": 6,
+          "le10ms": 9,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 10,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 5,
+          "uv_low_hflf": 8,
+          "defect_rate": 0.5217,
+          "median_dur_ms": 50.0
+        },
+        "t": {
+          "count": 9,
+          "lt20ms": 6,
+          "eq5ms": 0,
+          "le10ms": 5,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 4,
+          "manner_contradiction": 9,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 4,
+          "uv_low_hflf": 9,
+          "defect_rate": 1.0,
+          "median_dur_ms": 10.0
+        },
+        "x": {
+          "count": 19,
+          "lt20ms": 11,
+          "eq5ms": 4,
+          "le10ms": 11,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 1,
+          "manner_contradiction": 9,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 5,
+          "uv_low_hflf": 8,
+          "defect_rate": 0.5789,
+          "median_dur_ms": 10.0
+        },
+        "z": {
+          "count": 10,
+          "lt20ms": 6,
+          "eq5ms": 1,
+          "le10ms": 6,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.6,
+          "median_dur_ms": 10.0
+        },
+        "zh": {
+          "count": 21,
+          "lt20ms": 11,
+          "eq5ms": 1,
+          "le10ms": 11,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 0,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.5238,
+          "median_dur_ms": 10.0
+        }
+      },
+      "by_speaker": {
+        "SSB0502": {
+          "count": 145,
+          "lt20ms": 81,
+          "eq5ms": 24,
+          "le10ms": 76,
+          "near_silence_norm_lt_neg45db": 9,
+          "near_silence_raw_lt_neg45db": 17,
+          "manner_contradiction": 53,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 5,
+          "uv_high_voi": 24,
+          "uv_low_hflf": 43,
+          "defect_rate": 0.6897,
+          "median_dur_ms": 10.0
+        },
+        "SSB1593": {
+          "count": 147,
+          "lt20ms": 66,
+          "eq5ms": 13,
+          "le10ms": 61,
+          "near_silence_norm_lt_neg45db": 1,
+          "near_silence_raw_lt_neg45db": 24,
+          "manner_contradiction": 43,
+          "vowel_low_voi": 0,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 16,
+          "uv_low_hflf": 42,
+          "defect_rate": 0.5782,
+          "median_dur_ms": 25.0
+        }
+      }
+    },
+    "finals": {
+      "total": 346,
+      "lt20ms": 4,
+      "eq5ms": 0,
+      "near_silence_norm_lt_neg45db": 3,
+      "vowel_low_voi_lt040": 25,
+      "by_speaker": {
+        "SSB0502": {
+          "count": 174,
+          "lt20ms": 4,
+          "eq5ms": 0,
+          "le10ms": 4,
+          "near_silence_norm_lt_neg45db": 3,
+          "near_silence_raw_lt_neg45db": 5,
+          "manner_contradiction": 16,
+          "vowel_low_voi": 16,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.092,
+          "median_dur_ms": 200.0
+        },
+        "SSB1593": {
+          "count": 172,
+          "lt20ms": 0,
+          "eq5ms": 0,
+          "le10ms": 0,
+          "near_silence_norm_lt_neg45db": 0,
+          "near_silence_raw_lt_neg45db": 0,
+          "manner_contradiction": 9,
+          "vowel_low_voi": 9,
+          "sonorant_low_voi": 0,
+          "uv_high_voi": 0,
+          "uv_low_hflf": 0,
+          "defect_rate": 0.0523,
+          "median_dur_ms": 195.0
+        }
+      }
+    }
+  },
+  "frontend_g2p": {
+    "n_texts_audited": 186,
+    "n_cmu_arctic": 160,
+    "n_benchmark_texts": 26,
+    "unit_source_counts": {
+      "en_rule_oov": 1200,
+      "en_lexicon": 383,
+      "engine_words": 57,
+      "zh_ext": 55,
+      "engine_chars": 37,
+      "en_acronym": 7,
+      "en_compound": 4,
+      "num_verbalized": 1
+    },
+    "oov_rule_fallback_unique_count": 232,
+    "oov_rule_fallback_token_count": 1200,
+    "oov_rule_fallback_words": [
+      {
+        "token": "in",
+        "arpabet": [
+          "IH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "n"
+        ],
+        "count": 36,
+        "sources": [
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:bdl_0029",
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:bdl_0035",
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:clb_0029",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:clb_0035",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:rms_0029",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:rms_0035",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0006",
+          "cmu_arctic_160:slt_0007",
+          "cmu_arctic_160:slt_0009",
+          "cmu_arctic_160:slt_0010",
+          "cmu_arctic_160:slt_0026",
+          "cmu_arctic_160:slt_0029",
+          "cmu_arctic_160:slt_0034",
+          "cmu_arctic_160:slt_0035",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "at",
+        "arpabet": [
+          "AE1",
+          "T"
+        ],
+        "ipa_phones": [
+          "æ",
+          "t"
+        ],
+        "count": 20,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:bdl_0035",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:clb_0035",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:rms_0035",
+          "cmu_arctic_160:slt_0001",
+          "cmu_arctic_160:slt_0031",
+          "cmu_arctic_160:slt_0033",
+          "cmu_arctic_160:slt_0034",
+          "cmu_arctic_160:slt_0035"
+        ]
+      },
+      {
+        "token": "his",
+        "arpabet": [
+          "HH",
+          "IH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɪ",
+          "s"
+        ],
+        "count": 20,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0011",
+          "cmu_arctic_160:slt_0012",
+          "cmu_arctic_160:slt_0016",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "of",
+        "arpabet": [
+          "AA1",
+          "F"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "f"
+        ],
+        "count": 20,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0000",
+          "cmu_arctic_160:slt_0012",
+          "cmu_arctic_160:slt_0018",
+          "cmu_arctic_160:slt_0022",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "was",
+        "arpabet": [
+          "W",
+          "AE1",
+          "S"
+        ],
+        "ipa_phones": [
+          "w",
+          "æ",
+          "s"
+        ],
+        "count": 20,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:bdl_0017",
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:clb_0017",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:rms_0017",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0012",
+          "cmu_arctic_160:slt_0017",
+          "cmu_arctic_160:slt_0023",
+          "cmu_arctic_160:slt_0024",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "He",
+        "arpabet": [
+          "HH",
+          "EH1"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɛ"
+        ],
+        "count": 16,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0008",
+          "cmu_arctic_160:slt_0012",
+          "cmu_arctic_160:slt_0032",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "it",
+        "arpabet": [
+          "IH1",
+          "T"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "t"
+        ],
+        "count": 16,
+        "sources": [
+          "cmu_arctic_160:bdl_0004",
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0004",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0004",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0004",
+          "cmu_arctic_160:slt_0006",
+          "cmu_arctic_160:slt_0020",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "my",
+        "arpabet": [
+          "M",
+          "Y"
+        ],
+        "ipa_phones": [
+          "m",
+          "j"
+        ],
+        "count": 16,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0010",
+          "cmu_arctic_160:slt_0023",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "were",
+        "arpabet": [
+          "W",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɚ"
+        ],
+        "count": 16,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:bdl_0030",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:clb_0030",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:rms_0030",
+          "cmu_arctic_160:slt_0021",
+          "cmu_arctic_160:slt_0028",
+          "cmu_arctic_160:slt_0030"
+        ]
+      },
+      {
+        "token": "be",
+        "arpabet": [
+          "B",
+          "EH1"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɛ"
+        ],
+        "count": 12,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0019",
+          "cmu_arctic_160:slt_0025",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "for",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 12,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0016",
+          "cmu_arctic_160:slt_0018",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "Gregson",
+        "arpabet": [
+          "G",
+          "R",
+          "EH1",
+          "G",
+          "S",
+          "AA1",
+          "N"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "ɹ",
+          "ɛ",
+          "ɡ",
+          "s",
+          "ɑ",
+          "n"
+        ],
+        "count": 12,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0008",
+          "cmu_arctic_160:slt_0011",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "It",
+        "arpabet": [
+          "IH1",
+          "T"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "t"
+        ],
+        "count": 12,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0020",
+          "cmu_arctic_160:slt_0023",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "that",
+        "arpabet": [
+          "TH",
+          "AE1",
+          "T"
+        ],
+        "ipa_phones": [
+          "θ",
+          "æ",
+          "t"
+        ],
+        "count": 12,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0002",
+          "cmu_arctic_160:slt_0016",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "chances",
+        "arpabet": [
+          "CH",
+          "AE1",
+          "N",
+          "K",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "æ",
+          "n",
+          "k",
+          "ɛ",
+          "s"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:bdl_0037",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:clb_0037",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:rms_0037",
+          "cmu_arctic_160:slt_0018",
+          "cmu_arctic_160:slt_0037"
+        ]
+      },
+      {
+        "token": "coming",
+        "arpabet": [
+          "K",
+          "AA1",
+          "M",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "k",
+          "ɑ",
+          "m",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0013",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "ever",
+        "arpabet": [
+          "EH1",
+          "V",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "v",
+          "ɚ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0004",
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0004",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0004",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0004",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "have",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "V"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "v"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:bdl_0037",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:clb_0037",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:rms_0037",
+          "cmu_arctic_160:slt_0025",
+          "cmu_arctic_160:slt_0037"
+        ]
+      },
+      {
+        "token": "he",
+        "arpabet": [
+          "HH",
+          "EH1"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɛ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0013",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "I'm",
+        "arpabet": [
+          "IH1",
+          "M"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "m"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0003",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "into",
+        "arpabet": [
+          "IH1",
+          "N",
+          "T",
+          "AA1"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "n",
+          "t",
+          "ɑ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0020",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "letter",
+        "arpabet": [
+          "L",
+          "EH1",
+          "T",
+          "T",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɛ",
+          "t",
+          "t",
+          "ɚ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0007",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "me",
+        "arpabet": [
+          "M",
+          "EH1"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɛ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0020",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "north",
+        "arpabet": [
+          "N",
+          "AO1",
+          "R",
+          "TH"
+        ],
+        "ipa_phones": [
+          "n",
+          "ɔ",
+          "ɹ",
+          "θ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0023",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "now",
+        "arpabet": [
+          "N",
+          "OW1"
+        ],
+        "ipa_phones": [
+          "n",
+          "oʊ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:bdl_0017",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:clb_0017",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:rms_0017",
+          "cmu_arctic_160:slt_0010",
+          "cmu_arctic_160:slt_0017"
+        ]
+      },
+      {
+        "token": "one",
+        "arpabet": [
+          "AA1",
+          "N"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "n"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0010",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "only",
+        "arpabet": [
+          "AA1",
+          "N",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "n",
+          "l",
+          "j"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0019",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "our",
+        "arpabet": [
+          "AW1",
+          "R"
+        ],
+        "ipa_phones": [
+          "aʊ",
+          "ɹ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:bdl_0037",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:clb_0037",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:rms_0037",
+          "cmu_arctic_160:slt_0021",
+          "cmu_arctic_160:slt_0037"
+        ]
+      },
+      {
+        "token": "Phil",
+        "arpabet": [
+          "F",
+          "IH1",
+          "L"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɪ",
+          "l"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0003",
+          "cmu_arctic_160:slt_0013"
+        ]
+      },
+      {
+        "token": "Philip",
+        "arpabet": [
+          "F",
+          "IH1",
+          "L",
+          "IH1",
+          "P"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɪ",
+          "l",
+          "ɪ",
+          "p"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0000",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "see",
+        "arpabet": [
+          "S",
+          "IY1"
+        ],
+        "ipa_phones": [
+          "s",
+          "i"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:slt_0003",
+          "cmu_arctic_160:slt_0006"
+        ]
+      },
+      {
+        "token": "them",
+        "arpabet": [
+          "TH",
+          "EH1",
+          "M"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɛ",
+          "m"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:bdl_0029",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:clb_0029",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:rms_0029",
+          "cmu_arctic_160:slt_0005",
+          "cmu_arctic_160:slt_0029"
+        ]
+      },
+      {
+        "token": "this",
+        "arpabet": [
+          "TH",
+          "IH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɪ",
+          "s"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0001",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "time",
+        "arpabet": [
+          "T",
+          "IH1",
+          "M"
+        ],
+        "ipa_phones": [
+          "t",
+          "ɪ",
+          "m"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:slt_0002",
+          "cmu_arctic_160:slt_0007"
+        ]
+      },
+      {
+        "token": "turned",
+        "arpabet": [
+          "T",
+          "AH1",
+          "R",
+          "N",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "t",
+          "ʌ",
+          "ɹ",
+          "n",
+          "ɛ",
+          "d"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:bdl_0035",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:clb_0035",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:rms_0035",
+          "cmu_arctic_160:slt_0008",
+          "cmu_arctic_160:slt_0035"
+        ]
+      },
+      {
+        "token": "we",
+        "arpabet": [
+          "W",
+          "EH1"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɛ"
+        ],
+        "count": 8,
+        "sources": [
+          "cmu_arctic_160:bdl_0004",
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0004",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0004",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0004",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "about",
+        "arpabet": [
+          "AE1",
+          "B",
+          "AW1",
+          "T"
+        ],
+        "ipa_phones": [
+          "æ",
+          "b",
+          "aʊ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "accounting",
+        "arpabet": [
+          "AE1",
+          "K",
+          "K",
+          "AW1",
+          "N",
+          "T",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "æ",
+          "k",
+          "k",
+          "aʊ",
+          "n",
+          "t",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "actual",
+        "arpabet": [
+          "AE1",
+          "K",
+          "T",
+          "AH1",
+          "AE1",
+          "L"
+        ],
+        "ipa_phones": [
+          "æ",
+          "k",
+          "t",
+          "ʌ",
+          "æ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "again",
+        "arpabet": [
+          "AE1",
+          "G",
+          "EY1",
+          "N"
+        ],
+        "ipa_phones": [
+          "æ",
+          "ɡ",
+          "eɪ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:slt_0003"
+        ]
+      },
+      {
+        "token": "almost",
+        "arpabet": [
+          "AE1",
+          "L",
+          "M",
+          "AA1",
+          "S",
+          "T"
+        ],
+        "ipa_phones": [
+          "æ",
+          "l",
+          "m",
+          "ɑ",
+          "s",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "already",
+        "arpabet": [
+          "AE1",
+          "L",
+          "R",
+          "EH1",
+          "AE1",
+          "D",
+          "Y"
+        ],
+        "ipa_phones": [
+          "æ",
+          "l",
+          "ɹ",
+          "ɛ",
+          "æ",
+          "d",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "always",
+        "arpabet": [
+          "AE1",
+          "L",
+          "W",
+          "EY1",
+          "S"
+        ],
+        "ipa_phones": [
+          "æ",
+          "l",
+          "w",
+          "eɪ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:slt_0006"
+        ]
+      },
+      {
+        "token": "an",
+        "arpabet": [
+          "AE1",
+          "N"
+        ],
+        "ipa_phones": [
+          "æ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "apart",
+        "arpabet": [
+          "AE1",
+          "P",
+          "AA1",
+          "R",
+          "T"
+        ],
+        "ipa_phones": [
+          "æ",
+          "p",
+          "ɑ",
+          "ɹ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0030",
+          "cmu_arctic_160:clb_0030",
+          "cmu_arctic_160:rms_0030",
+          "cmu_arctic_160:slt_0030"
+        ]
+      },
+      {
+        "token": "apologized",
+        "arpabet": [
+          "AE1",
+          "P",
+          "AA1",
+          "L",
+          "AA1",
+          "G",
+          "IH1",
+          "Z",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "æ",
+          "p",
+          "ɑ",
+          "l",
+          "ɑ",
+          "ɡ",
+          "ɪ",
+          "z",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:slt_0001"
+        ]
+      },
+      {
+        "token": "asleep",
+        "arpabet": [
+          "AE1",
+          "S",
+          "L",
+          "IY1",
+          "P"
+        ],
+        "ipa_phones": [
+          "æ",
+          "s",
+          "l",
+          "i",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "aurora",
+        "arpabet": [
+          "AE1",
+          "AH1",
+          "R",
+          "AO1",
+          "R",
+          "AE1"
+        ],
+        "ipa_phones": [
+          "æ",
+          "ʌ",
+          "ɹ",
+          "ɔ",
+          "ɹ",
+          "æ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0014",
+          "cmu_arctic_160:clb_0014",
+          "cmu_arctic_160:rms_0014",
+          "cmu_arctic_160:slt_0014"
+        ]
+      },
+      {
+        "token": "Author",
+        "arpabet": [
+          "AE1",
+          "AH1",
+          "TH",
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "æ",
+          "ʌ",
+          "θ",
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:slt_0000"
+        ]
+      },
+      {
+        "token": "back",
+        "arpabet": [
+          "B",
+          "AE1",
+          "K",
+          "K"
+        ],
+        "ipa_phones": [
+          "b",
+          "æ",
+          "k",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:slt_0011"
+        ]
+      },
+      {
+        "token": "balls",
+        "arpabet": [
+          "B",
+          "AE1",
+          "L",
+          "L",
+          "S"
+        ],
+        "ipa_phones": [
+          "b",
+          "æ",
+          "l",
+          "l",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:slt_0019"
+        ]
+      },
+      {
+        "token": "been",
+        "arpabet": [
+          "B",
+          "IY1",
+          "N"
+        ],
+        "ipa_phones": [
+          "b",
+          "i",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "began",
+        "arpabet": [
+          "B",
+          "EH1",
+          "G",
+          "AE1",
+          "N"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɛ",
+          "ɡ",
+          "æ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "Belize",
+        "arpabet": [
+          "B",
+          "EH1",
+          "L",
+          "IH1",
+          "Z"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɛ",
+          "l",
+          "ɪ",
+          "z"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "beyond",
+        "arpabet": [
+          "B",
+          "EH1",
+          "Y",
+          "AA1",
+          "N",
+          "D"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɛ",
+          "j",
+          "ɑ",
+          "n",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "bless",
+        "arpabet": [
+          "B",
+          "L",
+          "EH1",
+          "S",
+          "S"
+        ],
+        "ipa_phones": [
+          "b",
+          "l",
+          "ɛ",
+          "s",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "borealis",
+        "arpabet": [
+          "B",
+          "AO1",
+          "R",
+          "EH1",
+          "AE1",
+          "L",
+          "IH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɔ",
+          "ɹ",
+          "ɛ",
+          "æ",
+          "l",
+          "ɪ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0014",
+          "cmu_arctic_160:clb_0014",
+          "cmu_arctic_160:rms_0014",
+          "cmu_arctic_160:slt_0014"
+        ]
+      },
+      {
+        "token": "bribery",
+        "arpabet": [
+          "B",
+          "R",
+          "IH1",
+          "B",
+          "ER0",
+          "Y"
+        ],
+        "ipa_phones": [
+          "b",
+          "ɹ",
+          "ɪ",
+          "b",
+          "ɚ",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0027",
+          "cmu_arctic_160:clb_0027",
+          "cmu_arctic_160:rms_0027",
+          "cmu_arctic_160:slt_0027"
+        ]
+      },
+      {
+        "token": "business",
+        "arpabet": [
+          "B",
+          "AH1",
+          "S",
+          "IH1",
+          "N",
+          "EH1",
+          "S",
+          "S"
+        ],
+        "ipa_phones": [
+          "b",
+          "ʌ",
+          "s",
+          "ɪ",
+          "n",
+          "ɛ",
+          "s",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0013"
+        ]
+      },
+      {
+        "token": "but",
+        "arpabet": [
+          "B",
+          "AH1",
+          "T"
+        ],
+        "ipa_phones": [
+          "b",
+          "ʌ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:slt_0003"
+        ]
+      },
+      {
+        "token": "buy",
+        "arpabet": [
+          "B",
+          "AH1",
+          "Y"
+        ],
+        "ipa_phones": [
+          "b",
+          "ʌ",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "came",
+        "arpabet": [
+          "K",
+          "AE1",
+          "M"
+        ],
+        "ipa_phones": [
+          "k",
+          "æ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:slt_0007"
+        ]
+      },
+      {
+        "token": "Canadian",
+        "arpabet": [
+          "K",
+          "AE1",
+          "N",
+          "AE1",
+          "D",
+          "IH1",
+          "AE1",
+          "N"
+        ],
+        "ipa_phones": [
+          "k",
+          "æ",
+          "n",
+          "æ",
+          "d",
+          "ɪ",
+          "æ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "capital",
+        "arpabet": [
+          "K",
+          "AE1",
+          "P",
+          "IH1",
+          "T",
+          "AE1",
+          "L"
+        ],
+        "ipa_phones": [
+          "k",
+          "æ",
+          "p",
+          "ɪ",
+          "t",
+          "æ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "case",
+        "arpabet": [
+          "K",
+          "AE1",
+          "S"
+        ],
+        "ipa_phones": [
+          "k",
+          "æ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:slt_0001"
+        ]
+      },
+      {
+        "token": "chair",
+        "arpabet": [
+          "CH",
+          "EY1",
+          "R"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "eɪ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:slt_0011"
+        ]
+      },
+      {
+        "token": "change",
+        "arpabet": [
+          "CH",
+          "AE1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "æ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0017",
+          "cmu_arctic_160:clb_0017",
+          "cmu_arctic_160:rms_0017",
+          "cmu_arctic_160:slt_0017"
+        ]
+      },
+      {
+        "token": "chiefly",
+        "arpabet": [
+          "CH",
+          "IH1",
+          "EH1",
+          "F",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "ɪ",
+          "ɛ",
+          "f",
+          "l",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "children",
+        "arpabet": [
+          "CH",
+          "IH1",
+          "L",
+          "D",
+          "R",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "ɪ",
+          "l",
+          "d",
+          "ɹ",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "Churchill",
+        "arpabet": [
+          "CH",
+          "AH1",
+          "R",
+          "CH",
+          "IH1",
+          "L",
+          "L"
+        ],
+        "ipa_phones": [
+          "tʃ",
+          "ʌ",
+          "ɹ",
+          "tʃ",
+          "ɪ",
+          "l",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "cities",
+        "arpabet": [
+          "K",
+          "IH1",
+          "T",
+          "IH1",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "k",
+          "ɪ",
+          "t",
+          "ɪ",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:slt_0019"
+        ]
+      },
+      {
+        "token": "clubbed",
+        "arpabet": [
+          "K",
+          "L",
+          "AH1",
+          "B",
+          "B",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "k",
+          "l",
+          "ʌ",
+          "b",
+          "b",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:slt_0020"
+        ]
+      },
+      {
+        "token": "Clubs",
+        "arpabet": [
+          "K",
+          "L",
+          "AH1",
+          "B",
+          "S"
+        ],
+        "ipa_phones": [
+          "k",
+          "l",
+          "ʌ",
+          "b",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:slt_0019"
+        ]
+      },
+      {
+        "token": "combination",
+        "arpabet": [
+          "K",
+          "AA1",
+          "M",
+          "B",
+          "IH1",
+          "N",
+          "AE1",
+          "SH",
+          "AH0",
+          "N"
+        ],
+        "ipa_phones": [
+          "k",
+          "ɑ",
+          "m",
+          "b",
+          "ɪ",
+          "n",
+          "æ",
+          "ʃ",
+          "ə",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "companion",
+        "arpabet": [
+          "K",
+          "AA1",
+          "M",
+          "P",
+          "AE1",
+          "N",
+          "IH1",
+          "AA1",
+          "N"
+        ],
+        "ipa_phones": [
+          "k",
+          "ɑ",
+          "m",
+          "p",
+          "æ",
+          "n",
+          "ɪ",
+          "ɑ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "cooler",
+        "arpabet": [
+          "K",
+          "UW1",
+          "L",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "k",
+          "u",
+          "l",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "country",
+        "arpabet": [
+          "K",
+          "AW1",
+          "N",
+          "T",
+          "R",
+          "Y"
+        ],
+        "ipa_phones": [
+          "k",
+          "aʊ",
+          "n",
+          "t",
+          "ɹ",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "danger",
+        "arpabet": [
+          "D",
+          "AE1",
+          "NG",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "d",
+          "æ",
+          "ŋ",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:slt_0000"
+        ]
+      },
+      {
+        "token": "days",
+        "arpabet": [
+          "D",
+          "EY1",
+          "S"
+        ],
+        "ipa_phones": [
+          "d",
+          "eɪ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "degree",
+        "arpabet": [
+          "D",
+          "EH1",
+          "G",
+          "R",
+          "IY1"
+        ],
+        "ipa_phones": [
+          "d",
+          "ɛ",
+          "ɡ",
+          "ɹ",
+          "i"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:slt_0006"
+        ]
+      },
+      {
+        "token": "delicate",
+        "arpabet": [
+          "D",
+          "EH1",
+          "L",
+          "IH1",
+          "K",
+          "AE1",
+          "T"
+        ],
+        "ipa_phones": [
+          "d",
+          "ɛ",
+          "l",
+          "ɪ",
+          "k",
+          "æ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "don't",
+        "arpabet": [
+          "D",
+          "AA1",
+          "N",
+          "T"
+        ],
+        "ipa_phones": [
+          "d",
+          "ɑ",
+          "n",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "down",
+        "arpabet": [
+          "D",
+          "OW1",
+          "N"
+        ],
+        "ipa_phones": [
+          "d",
+          "oʊ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0013"
+        ]
+      },
+      {
+        "token": "em",
+        "arpabet": [
+          "EH1",
+          "M"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "enthusiasm",
+        "arpabet": [
+          "EH1",
+          "N",
+          "TH",
+          "AH1",
+          "S",
+          "IH1",
+          "AE1",
+          "S",
+          "M"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "n",
+          "θ",
+          "ʌ",
+          "s",
+          "ɪ",
+          "æ",
+          "s",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "etc",
+        "arpabet": [
+          "EH1",
+          "T",
+          "K"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "t",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:slt_0000"
+        ]
+      },
+      {
+        "token": "evening",
+        "arpabet": [
+          "EH1",
+          "V",
+          "EH1",
+          "N",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "v",
+          "ɛ",
+          "n",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "every",
+        "arpabet": [
+          "EH1",
+          "V",
+          "ER0",
+          "Y"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "v",
+          "ɚ",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "exclaimed",
+        "arpabet": [
+          "EH1",
+          "K",
+          "S",
+          "K",
+          "L",
+          "EY1",
+          "M",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "k",
+          "s",
+          "k",
+          "l",
+          "eɪ",
+          "m",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0013"
+        ]
+      },
+      {
+        "token": "eyes",
+        "arpabet": [
+          "EH1",
+          "Y",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "ɛ",
+          "j",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "faced",
+        "arpabet": [
+          "F",
+          "AE1",
+          "K",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "f",
+          "æ",
+          "k",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:slt_0008"
+        ]
+      },
+      {
+        "token": "fairly",
+        "arpabet": [
+          "F",
+          "EY1",
+          "R",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "f",
+          "eɪ",
+          "ɹ",
+          "l",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:slt_0020"
+        ]
+      },
+      {
+        "token": "faith",
+        "arpabet": [
+          "F",
+          "EY1",
+          "TH"
+        ],
+        "ipa_phones": [
+          "f",
+          "eɪ",
+          "θ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0029",
+          "cmu_arctic_160:clb_0029",
+          "cmu_arctic_160:rms_0029",
+          "cmu_arctic_160:slt_0029"
+        ]
+      },
+      {
+        "token": "favor",
+        "arpabet": [
+          "F",
+          "AE1",
+          "V",
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "f",
+          "æ",
+          "v",
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "feet",
+        "arpabet": [
+          "F",
+          "IY1",
+          "T"
+        ],
+        "ipa_phones": [
+          "f",
+          "i",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:slt_0011"
+        ]
+      },
+      {
+        "token": "fighter",
+        "arpabet": [
+          "F",
+          "IH1",
+          "G",
+          "HH",
+          "T",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɪ",
+          "ɡ",
+          "h",
+          "t",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "fighting",
+        "arpabet": [
+          "F",
+          "IH1",
+          "G",
+          "HH",
+          "T",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɪ",
+          "ɡ",
+          "h",
+          "t",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "followed",
+        "arpabet": [
+          "F",
+          "AA1",
+          "L",
+          "L",
+          "OW1",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɑ",
+          "l",
+          "l",
+          "oʊ",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:slt_0018"
+        ]
+      },
+      {
+        "token": "For",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "force",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R",
+          "K"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "forces",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R",
+          "K",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ",
+          "k",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "forever",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R",
+          "EH1",
+          "V",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ",
+          "ɛ",
+          "v",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "Fort",
+        "arpabet": [
+          "F",
+          "AO1",
+          "R",
+          "T"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɔ",
+          "ɹ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "fraud",
+        "arpabet": [
+          "F",
+          "R",
+          "AE1",
+          "AH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɹ",
+          "æ",
+          "ʌ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0027",
+          "cmu_arctic_160:clb_0027",
+          "cmu_arctic_160:rms_0027",
+          "cmu_arctic_160:slt_0027"
+        ]
+      },
+      {
+        "token": "friendship",
+        "arpabet": [
+          "F",
+          "R",
+          "IH1",
+          "EH1",
+          "N",
+          "D",
+          "SH",
+          "IH1",
+          "P"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɹ",
+          "ɪ",
+          "ɛ",
+          "n",
+          "d",
+          "ʃ",
+          "ɪ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "From",
+        "arpabet": [
+          "F",
+          "R",
+          "AA1",
+          "M"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɹ",
+          "ɑ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "from",
+        "arpabet": [
+          "F",
+          "R",
+          "AA1",
+          "M"
+        ],
+        "ipa_phones": [
+          "f",
+          "ɹ",
+          "ɑ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "Gad",
+        "arpabet": [
+          "G",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:slt_0007"
+        ]
+      },
+      {
+        "token": "game",
+        "arpabet": [
+          "G",
+          "AE1",
+          "M"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "æ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "glad",
+        "arpabet": [
+          "G",
+          "L",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "l",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:slt_0003"
+        ]
+      },
+      {
+        "token": "go",
+        "arpabet": [
+          "G",
+          "AA1"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "ɑ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "God",
+        "arpabet": [
+          "G",
+          "AA1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "ɑ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "grew",
+        "arpabet": [
+          "G",
+          "R",
+          "EH1",
+          "W"
+        ],
+        "ipa_phones": [
+          "ɡ",
+          "ɹ",
+          "ɛ",
+          "w"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:slt_0019"
+        ]
+      },
+      {
+        "token": "had",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0029",
+          "cmu_arctic_160:clb_0029",
+          "cmu_arctic_160:rms_0029",
+          "cmu_arctic_160:slt_0029"
+        ]
+      },
+      {
+        "token": "hand",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "N",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "n",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "handed",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "N",
+          "D",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "n",
+          "d",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "hands",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "N",
+          "D",
+          "S"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "n",
+          "d",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "Hardly",
+        "arpabet": [
+          "HH",
+          "AA1",
+          "R",
+          "D",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɑ",
+          "ɹ",
+          "d",
+          "l",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "has",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "S"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "hatred",
+        "arpabet": [
+          "HH",
+          "AE1",
+          "T",
+          "R",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "æ",
+          "t",
+          "ɹ",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "head",
+        "arpabet": [
+          "HH",
+          "EH1",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɛ",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "here",
+        "arpabet": [
+          "HH",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "hope",
+        "arpabet": [
+          "HH",
+          "AA1",
+          "P"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɑ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "horrified",
+        "arpabet": [
+          "HH",
+          "AO1",
+          "R",
+          "R",
+          "IH1",
+          "F",
+          "IH1",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɔ",
+          "ɹ",
+          "ɹ",
+          "ɪ",
+          "f",
+          "ɪ",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "hotel",
+        "arpabet": [
+          "HH",
+          "AA1",
+          "T",
+          "EH1",
+          "L"
+        ],
+        "ipa_phones": [
+          "h",
+          "ɑ",
+          "t",
+          "ɛ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0035",
+          "cmu_arctic_160:clb_0035",
+          "cmu_arctic_160:rms_0035",
+          "cmu_arctic_160:slt_0035"
+        ]
+      },
+      {
+        "token": "hundred",
+        "arpabet": [
+          "HH",
+          "AH1",
+          "N",
+          "D",
+          "R",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "h",
+          "ʌ",
+          "n",
+          "d",
+          "ɹ",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0030",
+          "cmu_arctic_160:clb_0030",
+          "cmu_arctic_160:rms_0030",
+          "cmu_arctic_160:slt_0030"
+        ]
+      },
+      {
+        "token": "I'll",
+        "arpabet": [
+          "IH1",
+          "L",
+          "L"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "l",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "If",
+        "arpabet": [
+          "IH1",
+          "F"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "f"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "induced",
+        "arpabet": [
+          "IH1",
+          "N",
+          "D",
+          "AH1",
+          "K",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "n",
+          "d",
+          "ʌ",
+          "k",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "It's",
+        "arpabet": [
+          "IH1",
+          "T",
+          "S"
+        ],
+        "ipa_phones": [
+          "ɪ",
+          "t",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0014",
+          "cmu_arctic_160:clb_0014",
+          "cmu_arctic_160:rms_0014",
+          "cmu_arctic_160:slt_0014"
+        ]
+      },
+      {
+        "token": "jealousy",
+        "arpabet": [
+          "JH",
+          "EH1",
+          "AE1",
+          "L",
+          "AW1",
+          "S",
+          "Y"
+        ],
+        "ipa_phones": [
+          "dʒ",
+          "ɛ",
+          "æ",
+          "l",
+          "aʊ",
+          "s",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "judgment",
+        "arpabet": [
+          "JH",
+          "AH1",
+          "D",
+          "G",
+          "M",
+          "EH1",
+          "N",
+          "T"
+        ],
+        "ipa_phones": [
+          "dʒ",
+          "ʌ",
+          "d",
+          "ɡ",
+          "m",
+          "ɛ",
+          "n",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "just",
+        "arpabet": [
+          "JH",
+          "AH1",
+          "S",
+          "T"
+        ],
+        "ipa_phones": [
+          "dʒ",
+          "ʌ",
+          "s",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0007",
+          "cmu_arctic_160:clb_0007",
+          "cmu_arctic_160:rms_0007",
+          "cmu_arctic_160:slt_0007"
+        ]
+      },
+      {
+        "token": "life",
+        "arpabet": [
+          "L",
+          "IH1",
+          "F"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɪ",
+          "f"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "like",
+        "arpabet": [
+          "L",
+          "IH1",
+          "K"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɪ",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "line",
+        "arpabet": [
+          "L",
+          "IH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɪ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:slt_0018"
+        ]
+      },
+      {
+        "token": "long",
+        "arpabet": [
+          "L",
+          "AA1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɑ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "looking",
+        "arpabet": [
+          "L",
+          "UW1",
+          "K",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "l",
+          "u",
+          "k",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:slt_0018"
+        ]
+      },
+      {
+        "token": "looks",
+        "arpabet": [
+          "L",
+          "UW1",
+          "K",
+          "S"
+        ],
+        "ipa_phones": [
+          "l",
+          "u",
+          "k",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "Lord",
+        "arpabet": [
+          "L",
+          "AO1",
+          "R",
+          "D"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɔ",
+          "ɹ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0003",
+          "cmu_arctic_160:clb_0003",
+          "cmu_arctic_160:rms_0003",
+          "cmu_arctic_160:slt_0003"
+        ]
+      },
+      {
+        "token": "losing",
+        "arpabet": [
+          "L",
+          "AA1",
+          "S",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "l",
+          "ɑ",
+          "s",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "made",
+        "arpabet": [
+          "M",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "m",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "memories",
+        "arpabet": [
+          "M",
+          "EH1",
+          "M",
+          "AO1",
+          "R",
+          "IH1",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɛ",
+          "m",
+          "ɔ",
+          "ɹ",
+          "ɪ",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0019",
+          "cmu_arctic_160:clb_0019",
+          "cmu_arctic_160:rms_0019",
+          "cmu_arctic_160:slt_0019"
+        ]
+      },
+      {
+        "token": "men",
+        "arpabet": [
+          "M",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "Men",
+        "arpabet": [
+          "M",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "met",
+        "arpabet": [
+          "M",
+          "EH1",
+          "T"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɛ",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "moment",
+        "arpabet": [
+          "M",
+          "AA1",
+          "M",
+          "EH1",
+          "N",
+          "T"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɑ",
+          "m",
+          "ɛ",
+          "n",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "moving",
+        "arpabet": [
+          "M",
+          "AA1",
+          "V",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "m",
+          "ɑ",
+          "v",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "mysterious",
+        "arpabet": [
+          "M",
+          "Y",
+          "S",
+          "T",
+          "ER0",
+          "IH1",
+          "AW1",
+          "S"
+        ],
+        "ipa_phones": [
+          "m",
+          "j",
+          "s",
+          "t",
+          "ɚ",
+          "ɪ",
+          "aʊ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "need",
+        "arpabet": [
+          "N",
+          "IY1",
+          "D"
+        ],
+        "ipa_phones": [
+          "n",
+          "i",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "needed",
+        "arpabet": [
+          "N",
+          "IY1",
+          "D",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "n",
+          "i",
+          "d",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0010",
+          "cmu_arctic_160:clb_0010",
+          "cmu_arctic_160:rms_0010",
+          "cmu_arctic_160:slt_0010"
+        ]
+      },
+      {
+        "token": "nodded",
+        "arpabet": [
+          "N",
+          "AA1",
+          "D",
+          "D",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "n",
+          "ɑ",
+          "d",
+          "d",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "Now",
+        "arpabet": [
+          "N",
+          "OW1"
+        ],
+        "ipa_phones": [
+          "n",
+          "oʊ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0013"
+        ]
+      },
+      {
+        "token": "occurred",
+        "arpabet": [
+          "AA1",
+          "K",
+          "K",
+          "AH1",
+          "R",
+          "R",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "k",
+          "k",
+          "ʌ",
+          "ɹ",
+          "ɹ",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "on",
+        "arpabet": [
+          "AA1",
+          "N"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "opposition",
+        "arpabet": [
+          "AA1",
+          "P",
+          "P",
+          "AA1",
+          "S",
+          "IH1",
+          "SH",
+          "AH0",
+          "N"
+        ],
+        "ipa_phones": [
+          "ɑ",
+          "p",
+          "p",
+          "ɑ",
+          "s",
+          "ɪ",
+          "ʃ",
+          "ə",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "or",
+        "arpabet": [
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "organized",
+        "arpabet": [
+          "AO1",
+          "R",
+          "G",
+          "AE1",
+          "N",
+          "IH1",
+          "Z",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɔ",
+          "ɹ",
+          "ɡ",
+          "æ",
+          "n",
+          "ɪ",
+          "z",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "particular",
+        "arpabet": [
+          "P",
+          "AA1",
+          "R",
+          "T",
+          "IH1",
+          "K",
+          "AH1",
+          "L",
+          "AA1",
+          "R"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɑ",
+          "ɹ",
+          "t",
+          "ɪ",
+          "k",
+          "ʌ",
+          "l",
+          "ɑ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:slt_0001"
+        ]
+      },
+      {
+        "token": "people",
+        "arpabet": [
+          "P",
+          "EH1",
+          "AA1",
+          "P",
+          "L"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɛ",
+          "ɑ",
+          "p",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "petitioned",
+        "arpabet": [
+          "P",
+          "EH1",
+          "T",
+          "IH1",
+          "SH",
+          "AH0",
+          "N",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɛ",
+          "t",
+          "ɪ",
+          "ʃ",
+          "ə",
+          "n",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "physique",
+        "arpabet": [
+          "F",
+          "Y",
+          "S",
+          "IH1",
+          "K",
+          "W"
+        ],
+        "ipa_phones": [
+          "f",
+          "j",
+          "s",
+          "ɪ",
+          "k",
+          "w"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "plans",
+        "arpabet": [
+          "P",
+          "L",
+          "AE1",
+          "N",
+          "S"
+        ],
+        "ipa_phones": [
+          "p",
+          "l",
+          "æ",
+          "n",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "playing",
+        "arpabet": [
+          "P",
+          "L",
+          "EY1",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "p",
+          "l",
+          "eɪ",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "powerful",
+        "arpabet": [
+          "P",
+          "OW1",
+          "ER0",
+          "F",
+          "AH1",
+          "L"
+        ],
+        "ipa_phones": [
+          "p",
+          "oʊ",
+          "ɚ",
+          "f",
+          "ʌ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "prevailed",
+        "arpabet": [
+          "P",
+          "R",
+          "EH1",
+          "V",
+          "EY1",
+          "L",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɹ",
+          "ɛ",
+          "v",
+          "eɪ",
+          "l",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "privileges",
+        "arpabet": [
+          "P",
+          "R",
+          "IH1",
+          "V",
+          "IH1",
+          "L",
+          "EH1",
+          "G",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɹ",
+          "ɪ",
+          "v",
+          "ɪ",
+          "l",
+          "ɛ",
+          "ɡ",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "proposed",
+        "arpabet": [
+          "P",
+          "R",
+          "AA1",
+          "P",
+          "AA1",
+          "S",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "p",
+          "ɹ",
+          "ɑ",
+          "p",
+          "ɑ",
+          "s",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:slt_0018"
+        ]
+      },
+      {
+        "token": "public",
+        "arpabet": [
+          "P",
+          "AH1",
+          "B",
+          "L",
+          "IH1",
+          "K"
+        ],
+        "ipa_phones": [
+          "p",
+          "ʌ",
+          "b",
+          "l",
+          "ɪ",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0021",
+          "cmu_arctic_160:clb_0021",
+          "cmu_arctic_160:rms_0021",
+          "cmu_arctic_160:slt_0021"
+        ]
+      },
+      {
+        "token": "question",
+        "arpabet": [
+          "K",
+          "W",
+          "EH1",
+          "S",
+          "SH",
+          "AH0",
+          "N"
+        ],
+        "ipa_phones": [
+          "k",
+          "w",
+          "ɛ",
+          "s",
+          "ʃ",
+          "ə",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "quickly",
+        "arpabet": [
+          "K",
+          "W",
+          "IH1",
+          "K",
+          "K",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "k",
+          "w",
+          "ɪ",
+          "k",
+          "k",
+          "l",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "railroad",
+        "arpabet": [
+          "R",
+          "EY1",
+          "L",
+          "R",
+          "AA1",
+          "AE1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "eɪ",
+          "l",
+          "ɹ",
+          "ɑ",
+          "æ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0018",
+          "cmu_arctic_160:clb_0018",
+          "cmu_arctic_160:rms_0018",
+          "cmu_arctic_160:slt_0018"
+        ]
+      },
+      {
+        "token": "recognizing",
+        "arpabet": [
+          "R",
+          "EH1",
+          "K",
+          "AA1",
+          "G",
+          "N",
+          "IH1",
+          "Z",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɛ",
+          "k",
+          "ɑ",
+          "ɡ",
+          "n",
+          "ɪ",
+          "z",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0020",
+          "cmu_arctic_160:clb_0020",
+          "cmu_arctic_160:rms_0020",
+          "cmu_arctic_160:slt_0020"
+        ]
+      },
+      {
+        "token": "remained",
+        "arpabet": [
+          "R",
+          "EH1",
+          "M",
+          "EY1",
+          "N",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɛ",
+          "m",
+          "eɪ",
+          "n",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "reports",
+        "arpabet": [
+          "R",
+          "EH1",
+          "P",
+          "AO1",
+          "R",
+          "T",
+          "S"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɛ",
+          "p",
+          "ɔ",
+          "ɹ",
+          "t",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "ridge",
+        "arpabet": [
+          "R",
+          "IH1",
+          "D",
+          "G"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɪ",
+          "d",
+          "ɡ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "Robbery",
+        "arpabet": [
+          "R",
+          "AA1",
+          "B",
+          "B",
+          "ER0",
+          "Y"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɑ",
+          "b",
+          "b",
+          "ɚ",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0027",
+          "cmu_arctic_160:clb_0027",
+          "cmu_arctic_160:rms_0027",
+          "cmu_arctic_160:slt_0027"
+        ]
+      },
+      {
+        "token": "rose",
+        "arpabet": [
+          "R",
+          "AA1",
+          "S"
+        ],
+        "ipa_phones": [
+          "ɹ",
+          "ɑ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:slt_0011"
+        ]
+      },
+      {
+        "token": "same",
+        "arpabet": [
+          "S",
+          "AE1",
+          "M"
+        ],
+        "ipa_phones": [
+          "s",
+          "æ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0022",
+          "cmu_arctic_160:clb_0022",
+          "cmu_arctic_160:rms_0022",
+          "cmu_arctic_160:slt_0022"
+        ]
+      },
+      {
+        "token": "seeing",
+        "arpabet": [
+          "S",
+          "IY1",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "s",
+          "i",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0005",
+          "cmu_arctic_160:clb_0005",
+          "cmu_arctic_160:rms_0005",
+          "cmu_arctic_160:slt_0005"
+        ]
+      },
+      {
+        "token": "Selden's",
+        "arpabet": [
+          "S",
+          "EH1",
+          "L",
+          "D",
+          "EH1",
+          "N",
+          "S"
+        ],
+        "ipa_phones": [
+          "s",
+          "ɛ",
+          "l",
+          "d",
+          "ɛ",
+          "n",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "sharply",
+        "arpabet": [
+          "SH",
+          "AA1",
+          "R",
+          "P",
+          "L",
+          "Y"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "ɑ",
+          "ɹ",
+          "p",
+          "l",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:slt_0008"
+        ]
+      },
+      {
+        "token": "ship",
+        "arpabet": [
+          "SH",
+          "IH1",
+          "P"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "ɪ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "shook",
+        "arpabet": [
+          "SH",
+          "UW1",
+          "K"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "u",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "shorter",
+        "arpabet": [
+          "SH",
+          "AO1",
+          "R",
+          "T",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "ɔ",
+          "ɹ",
+          "t",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "should",
+        "arpabet": [
+          "SH",
+          "AW1",
+          "L",
+          "D"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "aʊ",
+          "l",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "shoved",
+        "arpabet": [
+          "SH",
+          "AA1",
+          "V",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "ɑ",
+          "v",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0011",
+          "cmu_arctic_160:clb_0011",
+          "cmu_arctic_160:rms_0011",
+          "cmu_arctic_160:slt_0011"
+        ]
+      },
+      {
+        "token": "show",
+        "arpabet": [
+          "SH",
+          "OW1"
+        ],
+        "ipa_phones": [
+          "ʃ",
+          "oʊ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "Since",
+        "arpabet": [
+          "S",
+          "IH1",
+          "N",
+          "K"
+        ],
+        "ipa_phones": [
+          "s",
+          "ɪ",
+          "n",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "single",
+        "arpabet": [
+          "S",
+          "IH1",
+          "NG",
+          "L"
+        ],
+        "ipa_phones": [
+          "s",
+          "ɪ",
+          "ŋ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0009",
+          "cmu_arctic_160:clb_0009",
+          "cmu_arctic_160:rms_0009",
+          "cmu_arctic_160:slt_0009"
+        ]
+      },
+      {
+        "token": "sitting",
+        "arpabet": [
+          "S",
+          "IH1",
+          "T",
+          "T",
+          "IH1",
+          "NG"
+        ],
+        "ipa_phones": [
+          "s",
+          "ɪ",
+          "t",
+          "t",
+          "ɪ",
+          "ŋ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "some",
+        "arpabet": [
+          "S",
+          "AA1",
+          "M"
+        ],
+        "ipa_phones": [
+          "s",
+          "ɑ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "stamp",
+        "arpabet": [
+          "S",
+          "T",
+          "AE1",
+          "M",
+          "P"
+        ],
+        "ipa_phones": [
+          "s",
+          "t",
+          "æ",
+          "m",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "Steels",
+        "arpabet": [
+          "S",
+          "T",
+          "IY1",
+          "L",
+          "S"
+        ],
+        "ipa_phones": [
+          "s",
+          "t",
+          "i",
+          "l",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:slt_0000"
+        ]
+      },
+      {
+        "token": "step",
+        "arpabet": [
+          "S",
+          "T",
+          "EH1",
+          "P"
+        ],
+        "ipa_phones": [
+          "s",
+          "t",
+          "ɛ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "stop",
+        "arpabet": [
+          "S",
+          "T",
+          "AA1",
+          "P"
+        ],
+        "ipa_phones": [
+          "s",
+          "t",
+          "ɑ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "stopped",
+        "arpabet": [
+          "S",
+          "T",
+          "AA1",
+          "P",
+          "P",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "s",
+          "t",
+          "ɑ",
+          "p",
+          "p",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0034",
+          "cmu_arctic_160:clb_0034",
+          "cmu_arctic_160:rms_0034",
+          "cmu_arctic_160:slt_0034"
+        ]
+      },
+      {
+        "token": "superlative",
+        "arpabet": [
+          "S",
+          "AH1",
+          "P",
+          "ER0",
+          "L",
+          "AE1",
+          "T",
+          "IH1",
+          "V"
+        ],
+        "ipa_phones": [
+          "s",
+          "ʌ",
+          "p",
+          "ɚ",
+          "l",
+          "æ",
+          "t",
+          "ɪ",
+          "v"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:slt_0006"
+        ]
+      },
+      {
+        "token": "suppose",
+        "arpabet": [
+          "S",
+          "AH1",
+          "P",
+          "P",
+          "AA1",
+          "S"
+        ],
+        "ipa_phones": [
+          "s",
+          "ʌ",
+          "p",
+          "p",
+          "ɑ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "surprise",
+        "arpabet": [
+          "S",
+          "AH1",
+          "R",
+          "P",
+          "R",
+          "IH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "s",
+          "ʌ",
+          "ɹ",
+          "p",
+          "ɹ",
+          "ɪ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0026",
+          "cmu_arctic_160:clb_0026",
+          "cmu_arctic_160:rms_0026",
+          "cmu_arctic_160:slt_0026"
+        ]
+      },
+      {
+        "token": "table",
+        "arpabet": [
+          "T",
+          "AE1",
+          "B",
+          "L"
+        ],
+        "ipa_phones": [
+          "t",
+          "æ",
+          "b",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0008",
+          "cmu_arctic_160:clb_0008",
+          "cmu_arctic_160:rms_0008",
+          "cmu_arctic_160:slt_0008"
+        ]
+      },
+      {
+        "token": "ten",
+        "arpabet": [
+          "T",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "t",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "than",
+        "arpabet": [
+          "TH",
+          "AE1",
+          "N"
+        ],
+        "ipa_phones": [
+          "θ",
+          "æ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0012",
+          "cmu_arctic_160:clb_0012",
+          "cmu_arctic_160:rms_0012",
+          "cmu_arctic_160:slt_0012"
+        ]
+      },
+      {
+        "token": "Their",
+        "arpabet": [
+          "TH",
+          "EH1",
+          "IH1",
+          "R"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɛ",
+          "ɪ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0028",
+          "cmu_arctic_160:clb_0028",
+          "cmu_arctic_160:rms_0028",
+          "cmu_arctic_160:slt_0028"
+        ]
+      },
+      {
+        "token": "then",
+        "arpabet": [
+          "TH",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "There",
+        "arpabet": [
+          "TH",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0017",
+          "cmu_arctic_160:clb_0017",
+          "cmu_arctic_160:rms_0017",
+          "cmu_arctic_160:slt_0017"
+        ]
+      },
+      {
+        "token": "there",
+        "arpabet": [
+          "TH",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "There's",
+        "arpabet": [
+          "TH",
+          "ER0",
+          "EH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "θ",
+          "ɚ",
+          "ɛ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0015",
+          "cmu_arctic_160:clb_0015",
+          "cmu_arctic_160:rms_0015",
+          "cmu_arctic_160:slt_0015"
+        ]
+      },
+      {
+        "token": "Tom",
+        "arpabet": [
+          "T",
+          "AA1",
+          "M"
+        ],
+        "ipa_phones": [
+          "t",
+          "ɑ",
+          "m"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:slt_0001"
+        ]
+      },
+      {
+        "token": "trail",
+        "arpabet": [
+          "T",
+          "R",
+          "EY1",
+          "L"
+        ],
+        "ipa_phones": [
+          "t",
+          "ɹ",
+          "eɪ",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0000",
+          "cmu_arctic_160:clb_0000",
+          "cmu_arctic_160:rms_0000",
+          "cmu_arctic_160:slt_0000"
+        ]
+      },
+      {
+        "token": "turns",
+        "arpabet": [
+          "T",
+          "AH1",
+          "R",
+          "N",
+          "S"
+        ],
+        "ipa_phones": [
+          "t",
+          "ʌ",
+          "ɹ",
+          "n",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0016",
+          "cmu_arctic_160:clb_0016",
+          "cmu_arctic_160:rms_0016",
+          "cmu_arctic_160:slt_0016"
+        ]
+      },
+      {
+        "token": "twentieth",
+        "arpabet": [
+          "T",
+          "W",
+          "EH1",
+          "N",
+          "T",
+          "IH1",
+          "EH1",
+          "TH"
+        ],
+        "ipa_phones": [
+          "t",
+          "w",
+          "ɛ",
+          "n",
+          "t",
+          "ɪ",
+          "ɛ",
+          "θ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "two",
+        "arpabet": [
+          "T",
+          "W",
+          "AA1"
+        ],
+        "ipa_phones": [
+          "t",
+          "w",
+          "ɑ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0002",
+          "cmu_arctic_160:clb_0002",
+          "cmu_arctic_160:rms_0002",
+          "cmu_arctic_160:slt_0002"
+        ]
+      },
+      {
+        "token": "typewritten",
+        "arpabet": [
+          "T",
+          "Y",
+          "P",
+          "EH1",
+          "W",
+          "R",
+          "IH1",
+          "T",
+          "T",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "t",
+          "j",
+          "p",
+          "ɛ",
+          "w",
+          "ɹ",
+          "ɪ",
+          "t",
+          "t",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "unfolded",
+        "arpabet": [
+          "AH1",
+          "N",
+          "F",
+          "AA1",
+          "L",
+          "D",
+          "EH1",
+          "D"
+        ],
+        "ipa_phones": [
+          "ʌ",
+          "n",
+          "f",
+          "ɑ",
+          "l",
+          "d",
+          "ɛ",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0032",
+          "cmu_arctic_160:clb_0032",
+          "cmu_arctic_160:rms_0032",
+          "cmu_arctic_160:slt_0032"
+        ]
+      },
+      {
+        "token": "up",
+        "arpabet": [
+          "AH1",
+          "P"
+        ],
+        "ipa_phones": [
+          "ʌ",
+          "p"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "us",
+        "arpabet": [
+          "AH1",
+          "S"
+        ],
+        "ipa_phones": [
+          "ʌ",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0031",
+          "cmu_arctic_160:clb_0031",
+          "cmu_arctic_160:rms_0031",
+          "cmu_arctic_160:slt_0031"
+        ]
+      },
+      {
+        "token": "want",
+        "arpabet": [
+          "W",
+          "AE1",
+          "N",
+          "T"
+        ],
+        "ipa_phones": [
+          "w",
+          "æ",
+          "n",
+          "t"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0006",
+          "cmu_arctic_160:clb_0006",
+          "cmu_arctic_160:rms_0006",
+          "cmu_arctic_160:slt_0006"
+        ]
+      },
+      {
+        "token": "watch",
+        "arpabet": [
+          "W",
+          "AE1",
+          "T",
+          "CH"
+        ],
+        "ipa_phones": [
+          "w",
+          "æ",
+          "t",
+          "tʃ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0037",
+          "cmu_arctic_160:clb_0037",
+          "cmu_arctic_160:rms_0037",
+          "cmu_arctic_160:slt_0037"
+        ]
+      },
+      {
+        "token": "We'll",
+        "arpabet": [
+          "W",
+          "EH1",
+          "L",
+          "L"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɛ",
+          "l",
+          "l"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0037",
+          "cmu_arctic_160:clb_0037",
+          "cmu_arctic_160:rms_0037",
+          "cmu_arctic_160:slt_0037"
+        ]
+      },
+      {
+        "token": "week",
+        "arpabet": [
+          "W",
+          "IY1",
+          "K"
+        ],
+        "ipa_phones": [
+          "w",
+          "i",
+          "k"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "when",
+        "arpabet": [
+          "W",
+          "HH",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "w",
+          "h",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0024",
+          "cmu_arctic_160:clb_0024",
+          "cmu_arctic_160:rms_0024",
+          "cmu_arctic_160:slt_0024"
+        ]
+      },
+      {
+        "token": "which",
+        "arpabet": [
+          "W",
+          "HH",
+          "IH1",
+          "CH"
+        ],
+        "ipa_phones": [
+          "w",
+          "h",
+          "ɪ",
+          "tʃ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0023",
+          "cmu_arctic_160:clb_0023",
+          "cmu_arctic_160:rms_0023",
+          "cmu_arctic_160:slt_0023"
+        ]
+      },
+      {
+        "token": "Whittemore",
+        "arpabet": [
+          "W",
+          "HH",
+          "IH1",
+          "T",
+          "T",
+          "EH1",
+          "M",
+          "AO1",
+          "R"
+        ],
+        "ipa_phones": [
+          "w",
+          "h",
+          "ɪ",
+          "t",
+          "t",
+          "ɛ",
+          "m",
+          "ɔ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0001",
+          "cmu_arctic_160:clb_0001",
+          "cmu_arctic_160:rms_0001",
+          "cmu_arctic_160:slt_0001"
+        ]
+      },
+      {
+        "token": "who",
+        "arpabet": [
+          "W",
+          "HH",
+          "AA1"
+        ],
+        "ipa_phones": [
+          "w",
+          "h",
+          "ɑ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0036",
+          "cmu_arctic_160:clb_0036",
+          "cmu_arctic_160:rms_0036",
+          "cmu_arctic_160:slt_0036"
+        ]
+      },
+      {
+        "token": "why",
+        "arpabet": [
+          "W",
+          "HH",
+          "Y"
+        ],
+        "ipa_phones": [
+          "w",
+          "h",
+          "j"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "within",
+        "arpabet": [
+          "W",
+          "IH1",
+          "TH",
+          "IH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɪ",
+          "θ",
+          "ɪ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0038",
+          "cmu_arctic_160:clb_0038",
+          "cmu_arctic_160:rms_0038",
+          "cmu_arctic_160:slt_0038"
+        ]
+      },
+      {
+        "token": "women",
+        "arpabet": [
+          "W",
+          "AA1",
+          "M",
+          "EH1",
+          "N"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɑ",
+          "m",
+          "ɛ",
+          "n"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0033",
+          "cmu_arctic_160:clb_0033",
+          "cmu_arctic_160:rms_0033",
+          "cmu_arctic_160:slt_0033"
+        ]
+      },
+      {
+        "token": "wonder",
+        "arpabet": [
+          "W",
+          "AA1",
+          "N",
+          "D",
+          "ER0"
+        ],
+        "ipa_phones": [
+          "w",
+          "ɑ",
+          "n",
+          "d",
+          "ɚ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0039",
+          "cmu_arctic_160:clb_0039",
+          "cmu_arctic_160:rms_0039",
+          "cmu_arctic_160:slt_0039"
+        ]
+      },
+      {
+        "token": "would",
+        "arpabet": [
+          "W",
+          "AW1",
+          "L",
+          "D"
+        ],
+        "ipa_phones": [
+          "w",
+          "aʊ",
+          "l",
+          "d"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0025",
+          "cmu_arctic_160:clb_0025",
+          "cmu_arctic_160:rms_0025",
+          "cmu_arctic_160:slt_0025"
+        ]
+      },
+      {
+        "token": "yards",
+        "arpabet": [
+          "Y",
+          "AA1",
+          "R",
+          "D",
+          "S"
+        ],
+        "ipa_phones": [
+          "j",
+          "ɑ",
+          "ɹ",
+          "d",
+          "s"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0030",
+          "cmu_arctic_160:clb_0030",
+          "cmu_arctic_160:rms_0030",
+          "cmu_arctic_160:slt_0030"
+        ]
+      },
+      {
+        "token": "you're",
+        "arpabet": [
+          "Y",
+          "AW1",
+          "R"
+        ],
+        "ipa_phones": [
+          "j",
+          "aʊ",
+          "ɹ"
+        ],
+        "count": 4,
+        "sources": [
+          "cmu_arctic_160:bdl_0013",
+          "cmu_arctic_160:clb_0013",
+          "cmu_arctic_160:rms_0013",
+          "cmu_arctic_160:slt_0013"
+        ]
+      }
+    ],
+    "spelled_acronyms": [],
+    "en_heteronym_occurrences": {
+      "record": [
+        {
+          "id": "bench_en:EN_06",
+          "token": "reCORD",
+          "arpabet": "R IH0 K AO1 R D",
+          "text": "They will reCORD a world REcord today."
+        },
+        {
+          "id": "bench_en:EN_06",
+          "token": "REcord",
+          "arpabet": "R EH1 K ER0 D",
+          "text": "They will reCORD a world REcord today."
+        }
+      ]
+    },
+    "zh_polyphone_occurrences_in_benchmark": [
+      {
+        "id": "bench_zh:ZH_01",
+        "hanzi": "好",
+        "pinyin": "hao3",
+        "source": "engine_words",
+        "text": "你好，我想买一张票。"
+      },
+      {
+        "id": "bench_zh:ZH_02",
+        "hanzi": "的",
+        "pinyin": "de5",
+        "source": "engine_words",
+        "text": "你真的要去银行啊？"
+      },
+      {
+        "id": "bench_zh:ZH_02",
+        "hanzi": "要",
+        "pinyin": "yao4",
+        "source": "engine_chars",
+        "text": "你真的要去银行啊？"
+      },
+      {
+        "id": "bench_zh:ZH_02",
+        "hanzi": "行",
+        "pinyin": "hang2",
+        "source": "engine_words",
+        "text": "你真的要去银行啊？"
+      },
+      {
+        "id": "bench_zh:ZH_03",
+        "hanzi": "要",
+        "pinyin": "yao4",
+        "source": "engine_words",
+        "text": "你不是说不要去银行吗？"
+      },
+      {
+        "id": "bench_zh:ZH_03",
+        "hanzi": "行",
+        "pinyin": "hang2",
+        "source": "engine_words",
+        "text": "你不是说不要去银行吗？"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "行",
+        "pinyin": "hang2",
+        "source": "engine_words",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "长",
+        "pinyin": "zhang3",
+        "source": "engine_words",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "重",
+        "pinyin": "chong2",
+        "source": "engine_words",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "的",
+        "pinyin": "de5",
+        "source": "engine_chars",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "乐",
+        "pinyin": "yue4",
+        "source": "engine_words",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_04",
+        "hanzi": "好",
+        "pinyin": "hao3",
+        "source": "engine_words",
+        "text": "行长说重庆的音乐很好听。"
+      },
+      {
+        "id": "bench_zh:ZH_05",
+        "hanzi": "重",
+        "pinyin": "chong2",
+        "source": "engine_words",
+        "text": "第一遍不对，我们重新试一试！"
+      },
+      {
+        "id": "bench_zh:ZH_06",
+        "hanzi": "和",
+        "pinyin": "he2",
+        "source": "engine_chars",
+        "text": "小老虎和狮子四处看。"
+      },
+      {
+        "id": "bench_zh:ZH_06",
+        "hanzi": "处",
+        "pinyin": "chu4",
+        "source": "zh_ext",
+        "text": "小老虎和狮子四处看。"
+      },
+      {
+        "id": "bench_zh:ZH_06",
+        "hanzi": "看",
+        "pinyin": "kan4",
+        "source": "engine_chars",
+        "text": "小老虎和狮子四处看。"
+      },
+      {
+        "id": "bench_zh:ZH_08",
+        "hanzi": "只",
+        "pinyin": "zhi3",
+        "source": "engine_words",
+        "text": "其实只要回家，大家都开心。"
+      },
+      {
+        "id": "bench_zh:ZH_08",
+        "hanzi": "要",
+        "pinyin": "yao4",
+        "source": "engine_words",
+        "text": "其实只要回家，大家都开心。"
+      },
+      {
+        "id": "bench_zh:ZH_08",
+        "hanzi": "都",
+        "pinyin": "dou1",
+        "source": "engine_chars",
+        "text": "其实只要回家，大家都开心。"
+      },
+      {
+        "id": "bench_zh:ZH_09",
+        "hanzi": "为",
+        "pinyin": "wei4",
+        "source": "zh_ext",
+        "text": "为什么她居然没听见？"
+      },
+      {
+        "id": "bench_zh:ZH_09",
+        "hanzi": "没",
+        "pinyin": "mei2",
+        "source": "engine_chars",
+        "text": "为什么她居然没听见？"
+      },
+      {
+        "id": "bench_zh_en:CS_01",
+        "hanzi": "了",
+        "pinyin": "le5",
+        "source": "zh_ext",
+        "text": "我今天用 Python 跑了一个 baseline。"
+      },
+      {
+        "id": "bench_zh_en:CS_02",
+        "hanzi": "的",
+        "pinyin": "de5",
+        "source": "engine_chars",
+        "text": "PyBotTTS 的目标是实现 cross-lingual voice cloning。"
+      },
+      {
+        "id": "bench_zh_en:CS_03",
+        "hanzi": "把",
+        "pinyin": "ba3",
+        "source": "engine_chars",
+        "text": "请把这段 audio 放到 GPU 上做 inference。"
+      },
+      {
+        "id": "bench_zh_en:CS_04",
+        "hanzi": "要",
+        "pinyin": "yao4",
+        "source": "zh_ext",
+        "text": "AI 语音合成需要准确的 G2P 和 prosody 控制。"
+      },
+      {
+        "id": "bench_zh_en:CS_04",
+        "hanzi": "的",
+        "pinyin": "de5",
+        "source": "engine_chars",
+        "text": "AI 语音合成需要准确的 G2P 和 prosody 控制。"
+      },
+      {
+        "id": "bench_zh_en:CS_04",
+        "hanzi": "和",
+        "pinyin": "he2",
+        "source": "engine_chars",
+        "text": "AI 语音合成需要准确的 G2P 和 prosody 控制。"
+      },
+      {
+        "id": "bench_zh_en:CS_05",
+        "hanzi": "行",
+        "pinyin": "hang2",
+        "source": "zh_ext",
+        "text": "Please check the 银行卡 balance before Tuesday."
+      },
+      {
+        "id": "bench_zh_en:CS_05",
+        "hanzi": "卡",
+        "pinyin": "ka3",
+        "source": "zh_ext",
+        "text": "Please check the 银行卡 balance before Tuesday."
+      },
+      {
+        "id": "bench_zh_en:CS_06",
+        "hanzi": "了",
+        "pinyin": "le5",
+        "source": "engine_chars",
+        "text": "我们用 CUDA 在 RTX 4080 上测试了 TTS 和 VC 模型。"
+      },
+      {
+        "id": "bench_zh_en:CS_06",
+        "hanzi": "和",
+        "pinyin": "he2",
+        "source": "engine_chars",
+        "text": "我们用 CUDA 在 RTX 4080 上测试了 TTS 和 VC 模型。"
+      },
+      {
+        "id": "bench_zh_en:CS_06",
+        "hanzi": "模",
+        "pinyin": "mo2",
+        "source": "zh_ext",
+        "text": "我们用 CUDA 在 RTX 4080 上测试了 TTS 和 VC 模型。"
+      }
+    ]
+  }
+}

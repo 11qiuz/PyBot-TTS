@@ -1,0 +1,1309 @@
+{
+  "stage": "stage13_native_multilingual_zero_mapping",
+  "ml_weights_mb": 0.0,
+  "all_sanity_ok": true,
+  "kb_summary": {
+    "schema": "sf_native_multilingual_stage13",
+    "ml_weights_mb": 0.0,
+    "allow_pickle": false,
+    "n_train_utts": 2700,
+    "n_train_tokens": 129805,
+    "n_zh_tokens": 88284,
+    "n_en_tokens": 41521,
+    "n_en_studio_warped_tokens": 19935,
+    "n_strict_tokens": 37041,
+    "npz_size_mb": 22.13,
+    "speaker_f0_med_hz": 223.73,
+    "ref_log_amp": -4.1984,
+    "medoid_counts": {
+      "ctx_pns": 3288,
+      "ctx_pn": 933,
+      "ctx_ps": 173,
+      "ctx_p": 87,
+      "ctx_base": 80,
+      "ipa_shared": 62
+    },
+    "ridge_counts": {
+      "w_shared": 62,
+      "w_base": 80,
+      "w_phone": 86,
+      "w_ps": 166,
+      "w_pns": 841,
+      "d_pns": 2447,
+      "w_bap_ps": 212
+    },
+    "switch_stats": {
+      "zero_gap": {
+        "n_zh_to_en": 2667,
+        "n_en_to_zh": 3081,
+        "zh_to_en_med_level_diff_db": 17.315,
+        "en_to_zh_med_level_diff_db": 28.638,
+        "zh_to_en_med_f0_diff_st": 4.806,
+        "en_to_zh_med_f0_diff_st": 4.45
+      }
+    },
+    "build_time_s": 12.06
+  },
+  "tier_totals": {
+    "ctx_pns": 672,
+    "ctx_pn": 45,
+    "ctx_ps": 51,
+    "ctx_p": 1,
+    "ctx_base": 0,
+    "ipa_shared": 0,
+    "fallback": 0
+  },
+  "tier_rates_pct": {
+    "ctx_base": 0.0,
+    "ctx_p": 0.13,
+    "ctx_pn": 5.85,
+    "ctx_pns": 87.39,
+    "ctx_ps": 6.63,
+    "fallback": 0.0,
+    "ipa_shared": 0.0
+  },
+  "static_telemetry": {
+    "max_voiced_bap0": 0.319,
+    "max_voiced_bap1": 0.602,
+    "en_studio_ipa_shared_fallbacks": 0
+  },
+  "heldout_summary": {
+    "n_utterances": 6,
+    "human_hnr_med_db": 14.962,
+    "s12_sf_mel_cd_med_db": 7.918,
+    "s13_native_mel_cd_med_db": 6.655,
+    "s13_native_hnr_med_db": 14.782
+  },
+  "showcase_summary": {
+    "mixed_hnr_med_db": 13.766,
+    "mixed_q8_med": 10.719,
+    "mixed_dyn_med_db": 16.353,
+    "pure_en_hnr_med_db": 13.194,
+    "pure_en_q8_med": 10.225,
+    "pure_en_f0_iqr_med_st": 4.381,
+    "pure_en_emo_hnr_med_db": 12.611,
+    "pure_en_emo_f0_iqr_med_st": 3.417,
+    "pure_zh_hnr_med_db": 14.16,
+    "rtf_med": 0.0332
+  },
+  "heldout_rows": [
+    {
+      "id": "com_SF_ce996",
+      "text": "拿到E C證書，代表已通過各特定科目的專業測試的人。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 6.505,
+        "q8_24": 15.215,
+        "dyn_p90_20_db": 18.371,
+        "df0_p95_st": 0.5602,
+        "f0_iqr_st": 6.4,
+        "hnr_db": 15.262,
+        "f0_median_hz": 216.7,
+        "active_rms_db": -18.97,
+        "crest_db": 15.937
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 5.21,
+        "q8_24": 10.778,
+        "dyn_p90_20_db": 16.014,
+        "df0_p95_st": 0.3532,
+        "f0_iqr_st": 4.669,
+        "hnr_db": 14.8,
+        "f0_median_hz": 220.6,
+        "active_rms_db": -18.88,
+        "crest_db": 17.635,
+        "mel_cd_db": 7.633,
+        "rtf": 0.0427
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 5.19,
+        "q8_24": 11.418,
+        "dyn_p90_20_db": 15.391,
+        "df0_p95_st": 0.3249,
+        "f0_iqr_st": 3.928,
+        "hnr_db": 14.41,
+        "f0_median_hz": 224.4,
+        "active_rms_db": -17.65,
+        "crest_db": 16.921,
+        "mel_cd_db": 6.645,
+        "rtf": 0.6242,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 53,
+              "ctx_pn": 1,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 49,
+              "ridge_parent": 6
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce996.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce996.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce996.wav"
+    },
+    {
+      "id": "com_SF_ce997",
+      "text": "協會將向即將被收購的PIRATE BAY追討數百萬美元的賠償金。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 6.975,
+        "q8_24": 14.003,
+        "dyn_p90_20_db": 16.54,
+        "df0_p95_st": 0.4856,
+        "f0_iqr_st": 7.759,
+        "hnr_db": 14.901,
+        "f0_median_hz": 211.6,
+        "active_rms_db": -19.01,
+        "crest_db": 15.682
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 5.31,
+        "q8_24": 10.401,
+        "dyn_p90_20_db": 14.324,
+        "df0_p95_st": 0.416,
+        "f0_iqr_st": 4.888,
+        "hnr_db": 14.472,
+        "f0_median_hz": 217.1,
+        "active_rms_db": -19.0,
+        "crest_db": 16.516,
+        "mel_cd_db": 8.06,
+        "rtf": 0.045
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 5.28,
+        "q8_24": 10.858,
+        "dyn_p90_20_db": 15.086,
+        "df0_p95_st": 0.3687,
+        "f0_iqr_st": 3.928,
+        "hnr_db": 13.572,
+        "f0_median_hz": 226.1,
+        "active_rms_db": -17.9,
+        "crest_db": 16.87,
+        "mel_cd_db": 6.666,
+        "rtf": 0.0354,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 70,
+              "ctx_pn": 0,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 61,
+              "ridge_parent": 10
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce997.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce997.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce997.wav"
+    },
+    {
+      "id": "com_SF_ce998",
+      "text": "由於AMAZON不願公布銷售數據。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 3.43,
+        "q8_24": 16.056,
+        "dyn_p90_20_db": 15.096,
+        "df0_p95_st": 0.5851,
+        "f0_iqr_st": 6.589,
+        "hnr_db": 15.023,
+        "f0_median_hz": 228.1,
+        "active_rms_db": -19.08,
+        "crest_db": 14.689
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 2.845,
+        "q8_24": 11.134,
+        "dyn_p90_20_db": 10.544,
+        "df0_p95_st": 0.3908,
+        "f0_iqr_st": 3.657,
+        "hnr_db": 17.048,
+        "f0_median_hz": 221.8,
+        "active_rms_db": -19.13,
+        "crest_db": 16.113,
+        "mel_cd_db": 7.881,
+        "rtf": 0.0437
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 2.82,
+        "q8_24": 10.985,
+        "dyn_p90_20_db": 15.027,
+        "df0_p95_st": 0.3636,
+        "f0_iqr_st": 3.057,
+        "hnr_db": 16.003,
+        "f0_median_hz": 232.3,
+        "active_rms_db": -18.23,
+        "crest_db": 14.413,
+        "mel_cd_db": 6.922,
+        "rtf": 0.0368,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 29,
+              "ctx_pn": 0,
+              "ctx_ps": 2,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 27,
+              "ridge_parent": 4
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce998.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce998.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce998.wav"
+    },
+    {
+      "id": "com_SF_ce999",
+      "text": "中華數位推出MAIL D N A辨識模組。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 4.225,
+        "q8_24": 14.455,
+        "dyn_p90_20_db": 14.232,
+        "df0_p95_st": 0.4873,
+        "f0_iqr_st": 7.173,
+        "hnr_db": 15.724,
+        "f0_median_hz": 235.6,
+        "active_rms_db": -19.02,
+        "crest_db": 15.573
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.33,
+        "q8_24": 10.037,
+        "dyn_p90_20_db": 13.004,
+        "df0_p95_st": 0.3778,
+        "f0_iqr_st": 3.142,
+        "hnr_db": 16.46,
+        "f0_median_hz": 218.4,
+        "active_rms_db": -18.96,
+        "crest_db": 16.656,
+        "mel_cd_db": 7.898,
+        "rtf": 0.0426
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.29,
+        "q8_24": 10.588,
+        "dyn_p90_20_db": 14.595,
+        "df0_p95_st": 0.3156,
+        "f0_iqr_st": 2.343,
+        "hnr_db": 15.506,
+        "f0_median_hz": 225.9,
+        "active_rms_db": -18.0,
+        "crest_db": 15.842,
+        "mel_cd_db": 6.803,
+        "rtf": 0.0354,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 34,
+              "ctx_pn": 0,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 26,
+              "ridge_parent": 9
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce999.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce999.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce999.wav"
+    },
+    {
+      "id": "com_SF_ce1000",
+      "text": "SYBASE亦即看好風險管理市場。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 3.19,
+        "q8_24": 15.497,
+        "dyn_p90_20_db": 18.391,
+        "df0_p95_st": 0.7867,
+        "f0_iqr_st": 7.212,
+        "hnr_db": 10.607,
+        "f0_median_hz": 216.4,
+        "active_rms_db": -18.98,
+        "crest_db": 15.641
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.0,
+        "q8_24": 11.05,
+        "dyn_p90_20_db": 15.839,
+        "df0_p95_st": 0.5388,
+        "f0_iqr_st": 7.585,
+        "hnr_db": 14.572,
+        "f0_median_hz": 224.5,
+        "active_rms_db": -18.76,
+        "crest_db": 17.534,
+        "mel_cd_db": 7.964,
+        "rtf": 0.043
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 2.975,
+        "q8_24": 10.782,
+        "dyn_p90_20_db": 18.849,
+        "df0_p95_st": 0.504,
+        "f0_iqr_st": 6.71,
+        "hnr_db": 14.082,
+        "f0_median_hz": 227.9,
+        "active_rms_db": -17.48,
+        "crest_db": 17.428,
+        "mel_cd_db": 6.43,
+        "rtf": 0.0339,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 31,
+              "ctx_pn": 0,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 28,
+              "ridge_parent": 4
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce1000.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce1000.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce1000.wav"
+    },
+    {
+      "id": "com_SF_ce1001",
+      "text": "研究報告公布在ENGAGEMENT D B網站上。",
+      "human": {
+        "sanity_ok": true,
+        "duration_s": 3.825,
+        "q8_24": 15.815,
+        "dyn_p90_20_db": 18.675,
+        "df0_p95_st": 0.3883,
+        "f0_iqr_st": 5.158,
+        "hnr_db": 14.464,
+        "f0_median_hz": 235.8,
+        "active_rms_db": -19.03,
+        "crest_db": 14.062
+      },
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.535,
+        "q8_24": 10.611,
+        "dyn_p90_20_db": 17.204,
+        "df0_p95_st": 0.3302,
+        "f0_iqr_st": 4.135,
+        "hnr_db": 15.737,
+        "f0_median_hz": 216.1,
+        "active_rms_db": -18.93,
+        "crest_db": 16.34,
+        "mel_cd_db": 7.939,
+        "rtf": 0.0452
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.485,
+        "q8_24": 10.649,
+        "dyn_p90_20_db": 16.394,
+        "df0_p95_st": 0.2889,
+        "f0_iqr_st": 3.487,
+        "hnr_db": 15.155,
+        "f0_median_hz": 224.7,
+        "active_rms_db": -17.77,
+        "crest_db": 16.314,
+        "mel_cd_db": 6.54,
+        "rtf": 0.0383,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 38,
+              "ctx_pn": 2,
+              "ctx_ps": 3,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 32,
+              "ridge_parent": 11
+            }
+          }
+        ]
+      },
+      "wav_human": "samples_stage13_multilingual/human_com_SF_ce1001.wav",
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_com_SF_ce1001.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_com_SF_ce1001.wav"
+    }
+  ],
+  "showcase_rows": [
+    {
+      "id": "mix_en_zh_vowel",
+      "kind": "mixed",
+      "text": "Let me know 你今天几点出发。",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 2.475,
+        "q8_24": 11.3,
+        "dyn_p90_20_db": 16.864,
+        "df0_p95_st": 0.4772,
+        "f0_iqr_st": 3.455,
+        "hnr_db": 14.736,
+        "f0_median_hz": 217.7,
+        "active_rms_db": -18.94,
+        "crest_db": 16.186,
+        "rtf": 0.0441
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 2.445,
+        "q8_24": 10.768,
+        "dyn_p90_20_db": 16.353,
+        "df0_p95_st": 0.3523,
+        "f0_iqr_st": 2.795,
+        "hnr_db": 15.653,
+        "f0_median_hz": 224.7,
+        "active_rms_db": -17.61,
+        "max_voiced_bap0": 0.19,
+        "max_voiced_bap1": 0.39,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 17.546,
+        "rtf": 0.0359,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 25,
+              "ctx_pn": 1,
+              "ctx_ps": 0,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 20,
+              "ridge_parent": 6
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 2.445,
+        "q8_24": 9.781,
+        "dyn_p90_20_db": 15.181,
+        "df0_p95_st": 0.3055,
+        "f0_iqr_st": 2.448,
+        "hnr_db": 14.864,
+        "f0_median_hz": 252.3,
+        "active_rms_db": -17.77,
+        "crest_db": 16.765,
+        "rtf": 0.0389,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_mix_en_zh_vowel.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_mix_en_zh_vowel.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_mix_en_zh_vowel.wav"
+    },
+    {
+      "id": "mix_en_zh_nasal",
+      "kind": "mixed",
+      "text": "我选了 green tea 按你的清单买的。",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 2.705,
+        "q8_24": 10.68,
+        "dyn_p90_20_db": 11.122,
+        "df0_p95_st": 0.4323,
+        "f0_iqr_st": 8.614,
+        "hnr_db": 15.995,
+        "f0_median_hz": 206.2,
+        "active_rms_db": -18.91,
+        "crest_db": 17.562,
+        "rtf": 0.0468
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 2.67,
+        "q8_24": 10.878,
+        "dyn_p90_20_db": 11.775,
+        "df0_p95_st": 0.3562,
+        "f0_iqr_st": 6.473,
+        "hnr_db": 14.712,
+        "f0_median_hz": 221.8,
+        "active_rms_db": -18.06,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 16.765,
+        "rtf": 0.0366,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 31,
+              "ctx_pn": 0,
+              "ctx_ps": 0,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 21,
+              "ridge_parent": 10
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 2.67,
+        "q8_24": 9.894,
+        "dyn_p90_20_db": 11.476,
+        "df0_p95_st": 0.2899,
+        "f0_iqr_st": 5.33,
+        "hnr_db": 13.951,
+        "f0_median_hz": 252.4,
+        "active_rms_db": -18.3,
+        "crest_db": 15.3,
+        "rtf": 0.0431,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_mix_en_zh_nasal.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_mix_en_zh_nasal.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_mix_en_zh_nasal.wav"
+    },
+    {
+      "id": "mix_tech",
+      "kind": "mixed",
+      "text": "今天用 PyBot 测试 this smooth cross lingual speech，表现非常自然。",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 5.66,
+        "q8_24": 10.908,
+        "dyn_p90_20_db": 17.548,
+        "df0_p95_st": 0.4054,
+        "f0_iqr_st": 4.608,
+        "hnr_db": 14.376,
+        "f0_median_hz": 220.8,
+        "active_rms_db": -18.66,
+        "crest_db": 19.369,
+        "rtf": 0.0429
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 5.285,
+        "q8_24": 10.719,
+        "dyn_p90_20_db": 20.355,
+        "df0_p95_st": 0.3874,
+        "f0_iqr_st": 3.714,
+        "hnr_db": 13.766,
+        "f0_median_hz": 215.4,
+        "active_rms_db": -17.36,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 16.201,
+        "rtf": 0.0323,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 52,
+              "ctx_pn": 4,
+              "ctx_ps": 4,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 35,
+              "ridge_parent": 25
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 5.285,
+        "q8_24": 9.851,
+        "dyn_p90_20_db": 20.305,
+        "df0_p95_st": 0.272,
+        "f0_iqr_st": 3.063,
+        "hnr_db": 13.335,
+        "f0_median_hz": 250.7,
+        "active_rms_db": -17.64,
+        "crest_db": 15.391,
+        "rtf": 0.037,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_mix_tech.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_mix_tech.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_mix_tech.wav"
+    },
+    {
+      "id": "mix_multi",
+      "kind": "mixed",
+      "text": "先打一个 tag，then run the nightly build，最后把 log 发给我。",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 4.715,
+        "q8_24": 10.968,
+        "dyn_p90_20_db": 16.451,
+        "df0_p95_st": 0.3481,
+        "f0_iqr_st": 5.547,
+        "hnr_db": 14.808,
+        "f0_median_hz": 212.3,
+        "active_rms_db": -18.78,
+        "crest_db": 18.138,
+        "rtf": 0.0502
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 4.425,
+        "q8_24": 10.429,
+        "dyn_p90_20_db": 15.533,
+        "df0_p95_st": 0.3283,
+        "f0_iqr_st": 3.374,
+        "hnr_db": 13.532,
+        "f0_median_hz": 220.6,
+        "active_rms_db": -17.37,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 18.094,
+        "rtf": 0.0341,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 40,
+              "ctx_pn": 3,
+              "ctx_ps": 5,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 24,
+              "ridge_parent": 24
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 4.425,
+        "q8_24": 9.681,
+        "dyn_p90_20_db": 15.269,
+        "df0_p95_st": 0.2978,
+        "f0_iqr_st": 2.813,
+        "hnr_db": 13.719,
+        "f0_median_hz": 253.2,
+        "active_rms_db": -17.76,
+        "crest_db": 15.752,
+        "rtf": 0.04,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_mix_multi.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_mix_multi.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_mix_multi.wav"
+    },
+    {
+      "id": "mix_excited",
+      "kind": "mixed_emo",
+      "text": "[激动] *终于*成功了！This feels amazing![笑]",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 2.9,
+        "q8_24": 10.314,
+        "dyn_p90_20_db": 16.756,
+        "df0_p95_st": 0.6295,
+        "f0_iqr_st": 5.45,
+        "hnr_db": 11.215,
+        "f0_median_hz": 235.0,
+        "active_rms_db": -18.65,
+        "crest_db": 18.131,
+        "rtf": 0.0432
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.02,
+        "q8_24": 10.718,
+        "dyn_p90_20_db": 18.9,
+        "df0_p95_st": 0.5625,
+        "f0_iqr_st": 4.674,
+        "hnr_db": 11.755,
+        "f0_median_hz": 237.5,
+        "active_rms_db": -17.64,
+        "max_voiced_bap0": 0.215,
+        "max_voiced_bap1": 0.442,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 15.75,
+        "rtf": 0.0377,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 12,
+              "ctx_pn": 0,
+              "ctx_ps": 0,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 10,
+              "ridge_parent": 2
+            }
+          },
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 7,
+              "ctx_pn": 4,
+              "ctx_ps": 2,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 1,
+              "ridge_parent": 12
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 3.02,
+        "q8_24": 9.898,
+        "dyn_p90_20_db": 18.277,
+        "df0_p95_st": 0.3739,
+        "f0_iqr_st": 3.69,
+        "hnr_db": 11.527,
+        "f0_median_hz": 257.4,
+        "active_rms_db": -17.61,
+        "crest_db": 16.761,
+        "rtf": 0.04,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_mix_excited.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_mix_excited.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_mix_excited.wav"
+    },
+    {
+      "id": "en_studio",
+      "kind": "pure_en",
+      "text": "This is a smooth benchmark of bilingual speech synthesis in our studio.",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 4.295,
+        "q8_24": 11.411,
+        "dyn_p90_20_db": 16.552,
+        "df0_p95_st": 0.5201,
+        "f0_iqr_st": 6.664,
+        "hnr_db": 15.25,
+        "f0_median_hz": 215.2,
+        "active_rms_db": -18.77,
+        "crest_db": 17.449,
+        "rtf": 0.0493
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 4.13,
+        "q8_24": 10.225,
+        "dyn_p90_20_db": 19.753,
+        "df0_p95_st": 0.5162,
+        "f0_iqr_st": 5.326,
+        "hnr_db": 13.651,
+        "f0_median_hz": 211.9,
+        "active_rms_db": -18.79,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 21.675,
+        "rtf": 0.0323,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 31,
+              "ctx_pn": 8,
+              "ctx_ps": 12,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 15,
+              "ridge_parent": 36
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 4.13,
+        "q8_24": 9.62,
+        "dyn_p90_20_db": 19.171,
+        "df0_p95_st": 0.3418,
+        "f0_iqr_st": 4.923,
+        "hnr_db": 13.842,
+        "f0_median_hz": 248.1,
+        "active_rms_db": -17.23,
+        "crest_db": 18.509,
+        "rtf": 0.0388,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_en_studio.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_en_studio.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_en_studio.wav"
+    },
+    {
+      "id": "en_stops",
+      "kind": "pure_en",
+      "text": "Pat took ten bright copper pots back to the deep dark cellar.",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.595,
+        "q8_24": 11.901,
+        "dyn_p90_20_db": 19.553,
+        "df0_p95_st": 0.3846,
+        "f0_iqr_st": 4.871,
+        "hnr_db": 14.82,
+        "f0_median_hz": 222.8,
+        "active_rms_db": -18.75,
+        "crest_db": 16.987,
+        "rtf": 0.048
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.44,
+        "q8_24": 9.615,
+        "dyn_p90_20_db": 23.211,
+        "df0_p95_st": 0.4597,
+        "f0_iqr_st": 4.381,
+        "hnr_db": 12.16,
+        "f0_median_hz": 226.6,
+        "active_rms_db": -16.77,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 20.308,
+        "rtf": 0.0535,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 33,
+              "ctx_pn": 2,
+              "ctx_ps": 4,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 9,
+              "ridge_parent": 30
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 3.44,
+        "q8_24": 9.329,
+        "dyn_p90_20_db": 24.346,
+        "df0_p95_st": 0.3292,
+        "f0_iqr_st": 3.466,
+        "hnr_db": 12.84,
+        "f0_median_hz": 258.6,
+        "active_rms_db": -16.19,
+        "crest_db": 19.389,
+        "rtf": 0.0406,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_en_stops.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_en_stops.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_en_stops.wav"
+    },
+    {
+      "id": "en_story",
+      "kind": "pure_en",
+      "text": "She walked carefully through the quiet autumn forest before sunrise.",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.92,
+        "q8_24": 11.112,
+        "dyn_p90_20_db": 17.172,
+        "df0_p95_st": 0.5469,
+        "f0_iqr_st": 4.74,
+        "hnr_db": 14.666,
+        "f0_median_hz": 219.1,
+        "active_rms_db": -18.63,
+        "crest_db": 17.994,
+        "rtf": 0.0502
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.74,
+        "q8_24": 10.526,
+        "dyn_p90_20_db": 17.711,
+        "df0_p95_st": 0.4292,
+        "f0_iqr_st": 3.884,
+        "hnr_db": 13.194,
+        "f0_median_hz": 223.1,
+        "active_rms_db": -16.5,
+        "max_voiced_bap0": 0.24,
+        "max_voiced_bap1": 0.48,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 17.559,
+        "rtf": 0.0322,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 33,
+              "ctx_pn": 4,
+              "ctx_ps": 7,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 11,
+              "ridge_parent": 33
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 3.74,
+        "q8_24": 9.806,
+        "dyn_p90_20_db": 19.571,
+        "df0_p95_st": 0.3658,
+        "f0_iqr_st": 3.148,
+        "hnr_db": 13.671,
+        "f0_median_hz": 256.0,
+        "active_rms_db": -16.66,
+        "crest_db": 17.978,
+        "rtf": 0.0355,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_en_story.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_en_story.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_en_story.wav"
+    },
+    {
+      "id": "en_excited",
+      "kind": "pure_en_emo",
+      "text": "[激动] *Finally* it worked! This sounds *so* much better!",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 3.11,
+        "q8_24": 12.187,
+        "dyn_p90_20_db": 16.875,
+        "df0_p95_st": 0.7629,
+        "f0_iqr_st": 9.479,
+        "hnr_db": 11.098,
+        "f0_median_hz": 235.7,
+        "active_rms_db": -18.65,
+        "crest_db": 18.216,
+        "rtf": 0.0384
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.225,
+        "q8_24": 11.015,
+        "dyn_p90_20_db": 24.471,
+        "df0_p95_st": 0.4958,
+        "f0_iqr_st": 3.291,
+        "hnr_db": 12.335,
+        "f0_median_hz": 225.9,
+        "active_rms_db": -16.01,
+        "max_voiced_bap0": 0.215,
+        "max_voiced_bap1": 0.442,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 18.192,
+        "rtf": 0.0315,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 9,
+              "ctx_pn": 2,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 3,
+              "ridge_parent": 9
+            }
+          },
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 9,
+              "ctx_pn": 7,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 4,
+              "ridge_parent": 13
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 3.225,
+        "q8_24": 10.211,
+        "dyn_p90_20_db": 24.345,
+        "df0_p95_st": 0.3606,
+        "f0_iqr_st": 2.858,
+        "hnr_db": 11.632,
+        "f0_median_hz": 254.7,
+        "active_rms_db": -16.18,
+        "crest_db": 18.67,
+        "rtf": 0.0361,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_en_excited.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_en_excited.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_en_excited.wav"
+    },
+    {
+      "id": "en_sad",
+      "kind": "pure_en_emo",
+      "text": "[悲伤] I waited until sunset... and nobody came back.",
+      "s12_sf": {
+        "sanity_ok": true,
+        "duration_s": 4.155,
+        "q8_24": 11.621,
+        "dyn_p90_20_db": 16.428,
+        "df0_p95_st": 0.2974,
+        "f0_iqr_st": 2.679,
+        "hnr_db": 15.66,
+        "f0_median_hz": 209.6,
+        "active_rms_db": -18.87,
+        "crest_db": 17.878,
+        "rtf": 0.0522
+      },
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 3.445,
+        "q8_24": 9.73,
+        "dyn_p90_20_db": 24.145,
+        "df0_p95_st": 0.4596,
+        "f0_iqr_st": 3.543,
+        "hnr_db": 12.887,
+        "f0_median_hz": 221.8,
+        "active_rms_db": -16.63,
+        "max_voiced_bap0": 0.319,
+        "max_voiced_bap1": 0.602,
+        "max_pause_db": -137.36,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 18.097,
+        "rtf": 0.0355,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 22,
+              "ctx_pn": 5,
+              "ctx_ps": 5,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 11,
+              "ridge_parent": 21
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 3.445,
+        "q8_24": 9.574,
+        "dyn_p90_20_db": 23.111,
+        "df0_p95_st": 0.3974,
+        "f0_iqr_st": 2.995,
+        "hnr_db": 13.47,
+        "f0_median_hz": 249.7,
+        "active_rms_db": -16.63,
+        "crest_db": 18.468,
+        "rtf": 0.041,
+        "projections": 1
+      },
+      "wav_s12_sf": "samples_stage12_bilingual/s12_sf_en_sad.wav",
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_en_sad.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_en_sad.wav"
+    },
+    {
+      "id": "zh_news",
+      "kind": "pure_zh",
+      "text": "今日早间消息，新一代国产开源语音引擎已经正式发布。",
+      "s12_sf": {},
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 5.155,
+        "q8_24": 10.611,
+        "dyn_p90_20_db": 13.771,
+        "df0_p95_st": 0.4324,
+        "f0_iqr_st": 4.472,
+        "hnr_db": 14.587,
+        "f0_median_hz": 226.7,
+        "active_rms_db": -17.82,
+        "max_voiced_bap0": 0.19,
+        "max_voiced_bap1": 0.445,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 19.575,
+        "rtf": 0.0318,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 57,
+              "ctx_pn": 0,
+              "ctx_ps": 1,
+              "ctx_p": 0,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 48,
+              "ridge_parent": 10
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 5.155,
+        "q8_24": 10.258,
+        "dyn_p90_20_db": 12.942,
+        "df0_p95_st": 0.4023,
+        "f0_iqr_st": 3.988,
+        "hnr_db": 14.073,
+        "f0_median_hz": 253.9,
+        "active_rms_db": -18.9,
+        "crest_db": 20.675,
+        "rtf": 0.0438,
+        "projections": 1
+      },
+      "wav_s12_sf": null,
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_zh_news.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_zh_news.wav"
+    },
+    {
+      "id": "zh_chat",
+      "kind": "pure_zh",
+      "text": "我们待会儿一起去楼下喝杯热咖啡，顺便把方案对一下。",
+      "s12_sf": {},
+      "s13_native": {
+        "sanity_ok": true,
+        "duration_s": 4.875,
+        "q8_24": 10.812,
+        "dyn_p90_20_db": 13.429,
+        "df0_p95_st": 0.3372,
+        "f0_iqr_st": 3.482,
+        "hnr_db": 13.734,
+        "f0_median_hz": 223.1,
+        "active_rms_db": -17.73,
+        "max_voiced_bap0": 0.19,
+        "max_voiced_bap1": 0.469,
+        "max_pause_db": -138.97,
+        "ipa_shared_fallbacks": 0,
+        "crest_db": 17.092,
+        "rtf": 0.032,
+        "projections": 0,
+        "dp_stats": [
+          {
+            "mode": "sf_native_multilingual",
+            "hits": {
+              "ctx_pns": 56,
+              "ctx_pn": 2,
+              "ctx_ps": 0,
+              "ctx_p": 1,
+              "ctx_base": 0,
+              "ipa_shared": 0,
+              "fallback": 0,
+              "ridge_pns": 45,
+              "ridge_parent": 14
+            }
+          }
+        ]
+      },
+      "s13_clone_bz": {
+        "sanity_ok": true,
+        "duration_s": 4.875,
+        "q8_24": 10.044,
+        "dyn_p90_20_db": 12.5,
+        "df0_p95_st": 0.2904,
+        "f0_iqr_st": 2.884,
+        "hnr_db": 13.227,
+        "f0_median_hz": 251.7,
+        "active_rms_db": -17.85,
+        "crest_db": 16.865,
+        "rtf": 0.0394,
+        "projections": 1
+      },
+      "wav_s12_sf": null,
+      "wav_s13_native": "samples_stage13_multilingual/s13_native_zh_chat.wav",
+      "wav_s13_clone_bz": "samples_stage13_multilingual/s13_clone_bz_zh_chat.wav"
+    }
+  ]
+}

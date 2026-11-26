@@ -1,0 +1,691 @@
+{
+  "runtime_s": 517.17,
+  "bank_stats_v11": {
+    "unique_diphones": 567,
+    "total_diphone_tokens": 4853,
+    "dropped_diphone_tokens": 133,
+    "unique_en_phones": 39,
+    "zh_syl_keys": 165,
+    "zh_syl_tokens": 338,
+    "zh_syl_dropped": 8,
+    "zh_onsets": 12,
+    "zh_finals": 37,
+    "used_en_gmm": true,
+    "used_zh_gmm": true
+  },
+  "suite_a_zh_loo_n26": {
+    "real": {
+      "n": 26,
+      "sanity_ok": 26,
+      "total_gt6db_jumps": 178,
+      "total_gt9db_jumps": 50,
+      "total_dropped_slots": 3,
+      "medians": {
+        "mel_lsd_db": 0.0,
+        "mcd_db": 0.0,
+        "mcd_cmn_db": 0.0,
+        "f0_err_st": 0.0,
+        "tilt_err_db_oct": 0.0,
+        "hnr_err_db": 0.0,
+        "voiced_contrast_db": 25.2758,
+        "uv_2_8k_vs_lo_db": 8.747,
+        "vuv_flux_db": 4.2027,
+        "f0_declination_corr": -0.3265,
+        "click_outlier_rate_gt8": 0.0001,
+        "loudness_p95_delta_db": 5.8985,
+        "loudness_p99_delta_db": 8.788,
+        "loudness_max_delta_db": 11.925,
+        "loudness_gt6db_per_s": 2.49,
+        "loudness_gt9db_per_s": 0.459,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 117.5,
+        "min_slot_rms_dbfs": -28.635,
+        "frame5ms_mel_jump_p95_db": 5.335,
+        "rtf": 0.0
+      }
+    },
+    "v10_full": {
+      "n": 26,
+      "sanity_ok": 26,
+      "total_gt6db_jumps": 199,
+      "total_gt9db_jumps": 22,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 7.8934,
+        "mcd_db": 29.1208,
+        "mcd_cmn_db": 27.9169,
+        "f0_err_st": 0.3503,
+        "tilt_err_db_oct": 0.5923,
+        "hnr_err_db": 1.5848,
+        "voiced_contrast_db": 23.1852,
+        "uv_2_8k_vs_lo_db": 0.5382,
+        "vuv_flux_db": 5.4391,
+        "f0_declination_corr": -0.2179,
+        "click_outlier_rate_gt8": 0.0001,
+        "loudness_p95_delta_db": 6.209,
+        "loudness_p99_delta_db": 7.816,
+        "loudness_max_delta_db": 9.067,
+        "loudness_gt6db_per_s": 3.117,
+        "loudness_gt9db_per_s": 0.343,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 130.0,
+        "min_slot_rms_dbfs": -23.37,
+        "frame5ms_mel_jump_p95_db": 7.061,
+        "zh_whole_syl_pct": 45.45,
+        "rtf": 0.0252
+      }
+    },
+    "v11": {
+      "n": 26,
+      "sanity_ok": 26,
+      "total_gt6db_jumps": 193,
+      "total_gt9db_jumps": 28,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 7.3482,
+        "mcd_db": 26.8285,
+        "mcd_cmn_db": 26.0592,
+        "f0_err_st": 0.3097,
+        "tilt_err_db_oct": 0.6441,
+        "hnr_err_db": 0.8994,
+        "voiced_contrast_db": 23.8737,
+        "uv_2_8k_vs_lo_db": -1.9968,
+        "vuv_flux_db": 4.9123,
+        "f0_declination_corr": -0.1991,
+        "click_outlier_rate_gt8": 0.0001,
+        "loudness_p95_delta_db": 6.05,
+        "loudness_p99_delta_db": 8.138,
+        "loudness_max_delta_db": 9.614,
+        "loudness_gt6db_per_s": 3.0025,
+        "loudness_gt9db_per_s": 0.4005,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 127.5,
+        "min_slot_rms_dbfs": -22.925,
+        "join_mel_jump_median_db": 5.191,
+        "feature_join_log_env_l2_db": 11.6745,
+        "frame5ms_mel_jump_p95_db": 6.117,
+        "zh_whole_syl_pct": 72.73,
+        "rtf": 0.0345
+      }
+    }
+  },
+  "ssb05020122_nondrop_spotlight": {
+    "text": "扣除补贴和地方保护因素",
+    "v10_source_counts": {
+      "zh_recorded_onset": 6,
+      "zh_concat_of": 8,
+      "zh_target_syl": 2,
+      "zh_donor_syl": 1,
+      "zh_synth_onset": 1
+    },
+    "v10_nondrop": {
+      "n_slots": 11,
+      "n_dropped_slots": 0,
+      "drop_rate": 0.0,
+      "dropped_slots": [],
+      "min_slot_active_ms": 135.0,
+      "min_slot_rms_dbfs": -22.0,
+      "n_expected_syllables": 11,
+      "n_detected_peaks": 10,
+      "syllable_peak_recall": 0.9091
+    },
+    "v11_source_counts": {
+      "zh_concat_of": 4,
+      "zh_target_syl": 5,
+      "zh_donor_syl": 2
+    },
+    "v11_nondrop": {
+      "n_slots": 11,
+      "n_dropped_slots": 0,
+      "drop_rate": 0.0,
+      "dropped_slots": [],
+      "min_slot_active_ms": 125.0,
+      "min_slot_rms_dbfs": -24.25,
+      "n_expected_syllables": 11,
+      "n_detected_peaks": 12,
+      "syllable_peak_recall": 1.0
+    },
+    "v10_metrics": {
+      "sanity_ok": true,
+      "mel_lsd_db": 8.213567671811232,
+      "mcd_db": 30.356974769022827,
+      "mcd_cmn_db": 29.85807248567537,
+      "f0_err_st": 0.2846137358902123,
+      "tilt_err_db_oct": 0.3187230553628879,
+      "hnr_err_db": 1.817288621180868,
+      "voiced_contrast_db": 25.437,
+      "uv_2_8k_vs_lo_db": -3.3203,
+      "vuv_flux_db": 6.0137,
+      "f0_declination_corr": -0.0673,
+      "click_outlier_rate_gt8": 0.0,
+      "loudness_p95_delta_db": 6.226,
+      "loudness_p99_delta_db": 9.121,
+      "loudness_max_delta_db": 17.674,
+      "loudness_gt6db_per_s": 3.333,
+      "loudness_gt9db_per_s": 0.833,
+      "n_gt6db": 8,
+      "n_gt9db": 2,
+      "n_dropped_slots": 0,
+      "syllable_peak_recall": 0.9091,
+      "min_slot_active_ms": 135.0,
+      "min_slot_rms_dbfs": -22.0,
+      "join_mel_jump_median_db": null,
+      "feature_join_log_env_l2_db": null,
+      "frame5ms_mel_jump_p95_db": 7.842,
+      "func_to_content_dur_ratio": null,
+      "content_minus_func_db": null,
+      "en_diphone_exact_pct": null,
+      "zh_whole_syl_pct": 27.27,
+      "rtf": 0.024123168724994825
+    },
+    "v11_metrics": {
+      "sanity_ok": true,
+      "mel_lsd_db": 7.291617447831849,
+      "mcd_db": 26.100223162187365,
+      "mcd_cmn_db": 25.52881573015371,
+      "f0_err_st": 0.26311564732617504,
+      "tilt_err_db_oct": 0.4122578942968671,
+      "hnr_err_db": 2.303266687583342,
+      "voiced_contrast_db": 25.9961,
+      "uv_2_8k_vs_lo_db": -2.227,
+      "vuv_flux_db": 5.4289,
+      "f0_declination_corr": -0.0964,
+      "click_outlier_rate_gt8": 0.0,
+      "loudness_p95_delta_db": 6.987,
+      "loudness_p99_delta_db": 12.275,
+      "loudness_max_delta_db": 13.55,
+      "loudness_gt6db_per_s": 5.417,
+      "loudness_gt9db_per_s": 1.25,
+      "n_gt6db": 13,
+      "n_gt9db": 3,
+      "n_dropped_slots": 0,
+      "syllable_peak_recall": 1.0,
+      "min_slot_active_ms": 125.0,
+      "min_slot_rms_dbfs": -24.25,
+      "join_mel_jump_median_db": 6.031,
+      "feature_join_log_env_l2_db": 15.068,
+      "frame5ms_mel_jump_p95_db": 6.913,
+      "func_to_content_dur_ratio": null,
+      "content_minus_func_db": null,
+      "en_diphone_exact_pct": null,
+      "zh_whole_syl_pct": 63.64,
+      "rtf": 0.034409117043432844
+    }
+  },
+  "suite_b_en_heldout_n20": {
+    "real": {
+      "n": 20,
+      "sanity_ok": 20,
+      "total_gt6db_jumps": 304,
+      "total_gt9db_jumps": 153,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 0.0,
+        "mcd_db": 0.0,
+        "mcd_cmn_db": 0.0,
+        "f0_err_st": 0.0,
+        "tilt_err_db_oct": 0.0,
+        "hnr_err_db": 0.0,
+        "voiced_contrast_db": 23.481,
+        "uv_2_8k_vs_lo_db": 20.077,
+        "vuv_flux_db": 5.7138,
+        "f0_declination_corr": -0.4536,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 9.912,
+        "loudness_p99_delta_db": 16.5385,
+        "loudness_max_delta_db": 18.323,
+        "loudness_gt6db_per_s": 6.7285,
+        "loudness_gt9db_per_s": 3.1255,
+        "syllable_peak_recall": 0.9322,
+        "min_slot_active_ms": 107.5,
+        "min_slot_rms_dbfs": -26.87,
+        "frame5ms_mel_jump_p95_db": 8.014,
+        "func_to_content_dur_ratio": 0.5677,
+        "content_minus_func_db": 1.308,
+        "rtf": 0.0
+      }
+    },
+    "v10_full": {
+      "n": 20,
+      "sanity_ok": 20,
+      "total_gt6db_jumps": 287,
+      "total_gt9db_jumps": 82,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 7.6062,
+        "mcd_db": 29.8563,
+        "mcd_cmn_db": 29.6904,
+        "f0_err_st": 0.9602,
+        "tilt_err_db_oct": 0.3607,
+        "hnr_err_db": 1.9678,
+        "voiced_contrast_db": 21.7843,
+        "uv_2_8k_vs_lo_db": 3.2578,
+        "vuv_flux_db": 5.9114,
+        "f0_declination_corr": -0.2789,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 7.3165,
+        "loudness_p99_delta_db": 11.5745,
+        "loudness_max_delta_db": 13.1755,
+        "loudness_gt6db_per_s": 5.2785,
+        "loudness_gt9db_per_s": 1.2805,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 142.5,
+        "min_slot_rms_dbfs": -23.83,
+        "frame5ms_mel_jump_p95_db": 8.625,
+        "func_to_content_dur_ratio": 0.5677,
+        "content_minus_func_db": 0.048,
+        "rtf": 0.0299
+      }
+    },
+    "v11": {
+      "n": 20,
+      "sanity_ok": 20,
+      "total_gt6db_jumps": 216,
+      "total_gt9db_jumps": 39,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 6.5372,
+        "mcd_db": 24.8073,
+        "mcd_cmn_db": 24.9172,
+        "f0_err_st": 1.0054,
+        "tilt_err_db_oct": 0.6257,
+        "hnr_err_db": 1.8494,
+        "voiced_contrast_db": 22.2234,
+        "uv_2_8k_vs_lo_db": 1.1978,
+        "vuv_flux_db": 4.9897,
+        "f0_declination_corr": -0.2062,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 6.7325,
+        "loudness_p99_delta_db": 9.423,
+        "loudness_max_delta_db": 11.1925,
+        "loudness_gt6db_per_s": 3.8745,
+        "loudness_gt9db_per_s": 0.701,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 205.0,
+        "min_slot_rms_dbfs": -23.835,
+        "join_mel_jump_median_db": 5.1415,
+        "feature_join_log_env_l2_db": 5.2375,
+        "frame5ms_mel_jump_p95_db": 7.772,
+        "func_to_content_dur_ratio": 0.6297,
+        "content_minus_func_db": -0.4445,
+        "en_diphone_exact_pct": 100.0,
+        "rtf": 0.0478
+      }
+    },
+    "v11_cross_donor": {
+      "n": 20,
+      "sanity_ok": 20,
+      "total_gt6db_jumps": 237,
+      "total_gt9db_jumps": 43,
+      "total_dropped_slots": 0,
+      "medians": {
+        "mel_lsd_db": 7.2176,
+        "mcd_db": 28.2082,
+        "mcd_cmn_db": 27.2944,
+        "f0_err_st": 0.9874,
+        "tilt_err_db_oct": 0.6078,
+        "hnr_err_db": 1.7163,
+        "voiced_contrast_db": 22.3169,
+        "uv_2_8k_vs_lo_db": 2.9489,
+        "vuv_flux_db": 5.237,
+        "f0_declination_corr": -0.1586,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 7.036,
+        "loudness_p99_delta_db": 9.2655,
+        "loudness_max_delta_db": 11.691,
+        "loudness_gt6db_per_s": 4.1065,
+        "loudness_gt9db_per_s": 0.701,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 202.5,
+        "min_slot_rms_dbfs": -24.01,
+        "join_mel_jump_median_db": 5.311,
+        "feature_join_log_env_l2_db": 4.639,
+        "frame5ms_mel_jump_p95_db": 7.622,
+        "func_to_content_dur_ratio": 0.6297,
+        "content_minus_func_db": -0.1955,
+        "en_diphone_exact_pct": 100.0,
+        "rtf": 0.0545
+      }
+    }
+  },
+  "suite_c_codeswitch_n12": {
+    "v10_full": {
+      "n": 12,
+      "sanity_ok": 12,
+      "total_gt6db_jumps": 187,
+      "total_gt9db_jumps": 42,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 22.9764,
+        "uv_2_8k_vs_lo_db": 1.2585,
+        "vuv_flux_db": 5.4549,
+        "f0_declination_corr": -0.1627,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 6.8905,
+        "loudness_p99_delta_db": 9.571,
+        "loudness_max_delta_db": 13.698,
+        "loudness_gt6db_per_s": 3.818,
+        "loudness_gt9db_per_s": 0.777,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 167.5,
+        "min_slot_rms_dbfs": -23.65,
+        "frame5ms_mel_jump_p95_db": 8.2475,
+        "func_to_content_dur_ratio": 0.4218,
+        "content_minus_func_db": 2.529,
+        "zh_whole_syl_pct": 45.835,
+        "rtf": 0.0314
+      }
+    },
+    "v11": {
+      "n": 12,
+      "sanity_ok": 12,
+      "total_gt6db_jumps": 199,
+      "total_gt9db_jumps": 35,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 23.1054,
+        "uv_2_8k_vs_lo_db": -1.5337,
+        "vuv_flux_db": 4.7875,
+        "f0_declination_corr": -0.0998,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 6.7585,
+        "loudness_p99_delta_db": 9.282,
+        "loudness_max_delta_db": 12.257,
+        "loudness_gt6db_per_s": 4.2105,
+        "loudness_gt9db_per_s": 0.662,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 170.0,
+        "min_slot_rms_dbfs": -24.5,
+        "join_mel_jump_median_db": 5.5585,
+        "feature_join_log_env_l2_db": 20.2355,
+        "frame5ms_mel_jump_p95_db": 7.419,
+        "func_to_content_dur_ratio": 0.4494,
+        "content_minus_func_db": 3.326,
+        "en_diphone_exact_pct": 79.395,
+        "zh_whole_syl_pct": 79.165,
+        "rtf": 0.0446
+      }
+    }
+  },
+  "suite_d_crossling_zh_en": {
+    "zh_to_en_v10_full": {
+      "n": 10,
+      "sanity_ok": 10,
+      "total_gt6db_jumps": 167,
+      "total_gt9db_jumps": 42,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 22.006,
+        "uv_2_8k_vs_lo_db": 5.0292,
+        "vuv_flux_db": 5.523,
+        "f0_declination_corr": -0.1916,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 7.338,
+        "loudness_p99_delta_db": 10.1875,
+        "loudness_max_delta_db": 13.131,
+        "loudness_gt6db_per_s": 5.6545,
+        "loudness_gt9db_per_s": 1.389,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 145.0,
+        "min_slot_rms_dbfs": -24.7,
+        "frame5ms_mel_jump_p95_db": 8.911,
+        "func_to_content_dur_ratio": 0.5615,
+        "content_minus_func_db": 0.116,
+        "rtf": 0.0405
+      }
+    },
+    "zh_to_en_v11": {
+      "n": 10,
+      "sanity_ok": 10,
+      "total_gt6db_jumps": 132,
+      "total_gt9db_jumps": 20,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 22.4985,
+        "uv_2_8k_vs_lo_db": 0.055,
+        "vuv_flux_db": 5.242,
+        "f0_declination_corr": -0.1961,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 6.8005,
+        "loudness_p99_delta_db": 8.3925,
+        "loudness_max_delta_db": 12.088,
+        "loudness_gt6db_per_s": 4.0365,
+        "loudness_gt9db_per_s": 0.521,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 222.5,
+        "min_slot_rms_dbfs": -23.445,
+        "join_mel_jump_median_db": 5.016,
+        "feature_join_log_env_l2_db": 5.6085,
+        "frame5ms_mel_jump_p95_db": 8.4485,
+        "func_to_content_dur_ratio": 0.657,
+        "content_minus_func_db": -0.189,
+        "en_diphone_exact_pct": 100.0,
+        "rtf": 0.0612
+      }
+    },
+    "en_to_zh_v10_full": {
+      "n": 10,
+      "sanity_ok": 10,
+      "total_gt6db_jumps": 88,
+      "total_gt9db_jumps": 10,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 21.6579,
+        "uv_2_8k_vs_lo_db": -5.3137,
+        "vuv_flux_db": 5.5493,
+        "f0_declination_corr": -0.1409,
+        "click_outlier_rate_gt8": 0.0001,
+        "loudness_p95_delta_db": 6.64,
+        "loudness_p99_delta_db": 8.3475,
+        "loudness_max_delta_db": 10.5125,
+        "loudness_gt6db_per_s": 3.345,
+        "loudness_gt9db_per_s": 0.364,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 125.0,
+        "min_slot_rms_dbfs": -22.7,
+        "frame5ms_mel_jump_p95_db": 7.646,
+        "zh_whole_syl_pct": 72.73,
+        "rtf": 0.0294
+      }
+    },
+    "en_to_zh_v11": {
+      "n": 10,
+      "sanity_ok": 10,
+      "total_gt6db_jumps": 67,
+      "total_gt9db_jumps": 12,
+      "total_dropped_slots": 0,
+      "medians": {
+        "voiced_contrast_db": 21.4526,
+        "uv_2_8k_vs_lo_db": -7.7522,
+        "vuv_flux_db": 4.5334,
+        "f0_declination_corr": -0.1648,
+        "click_outlier_rate_gt8": 0.0,
+        "loudness_p95_delta_db": 5.944,
+        "loudness_p99_delta_db": 7.7845,
+        "loudness_max_delta_db": 9.5365,
+        "loudness_gt6db_per_s": 2.506,
+        "loudness_gt9db_per_s": 0.4045,
+        "syllable_peak_recall": 1.0,
+        "min_slot_active_ms": 117.5,
+        "min_slot_rms_dbfs": -23.11,
+        "join_mel_jump_median_db": 5.415,
+        "feature_join_log_env_l2_db": 4.037,
+        "frame5ms_mel_jump_p95_db": 6.789,
+        "zh_whole_syl_pct": 100.0,
+        "rtf": 0.0378
+      }
+    }
+  },
+  "listening_ab_manifest": [
+    {
+      "file": "01_zh_SSB05020122_real_v10_v11.wav",
+      "description": "SSB05020122 ZH LOO: real -> v10_full -> v11",
+      "duration_s": 8.2,
+      "sanity_ok": true,
+      "rms_dbfs": -21.05,
+      "peak": 0.5804,
+      "segments": [
+        {
+          "label": "real",
+          "start_s": 0.0,
+          "stop_s": 2.435
+        },
+        {
+          "label": "v10_full",
+          "start_s": 2.885,
+          "stop_s": 5.315
+        },
+        {
+          "label": "v11",
+          "start_s": 5.765,
+          "stop_s": 8.2
+        }
+      ]
+    },
+    {
+      "file": "02_zh_SSB15930193_real_v10_v11.wav",
+      "description": "SSB15930193 ZH LOO: real -> v10_full -> v11",
+      "duration_s": 8.97,
+      "sanity_ok": true,
+      "rms_dbfs": -20.96,
+      "peak": 0.7064,
+      "segments": [
+        {
+          "label": "real",
+          "start_s": 0.0,
+          "stop_s": 2.69
+        },
+        {
+          "label": "v10_full",
+          "start_s": 3.14,
+          "stop_s": 5.825
+        },
+        {
+          "label": "v11",
+          "start_s": 6.275,
+          "stop_s": 8.97
+        }
+      ]
+    },
+    {
+      "file": "03_en_slt_0030_real_v10_v11.wav",
+      "description": "slt_0030 EN Held-out: real -> v10_full -> v11 -> v11_cross_donor",
+      "duration_s": 9.575,
+      "sanity_ok": true,
+      "rms_dbfs": -21.73,
+      "peak": 0.6604,
+      "segments": [
+        {
+          "label": "real_slt",
+          "start_s": 0.0,
+          "stop_s": 1.665
+        },
+        {
+          "label": "v10_full",
+          "start_s": 2.115,
+          "stop_s": 4.165
+        },
+        {
+          "label": "v11",
+          "start_s": 4.615,
+          "stop_s": 6.87
+        },
+        {
+          "label": "v11_cross_donor",
+          "start_s": 7.32,
+          "stop_s": 9.575
+        }
+      ]
+    },
+    {
+      "file": "04_en_bdl_0030_real_v10_v11.wav",
+      "description": "bdl_0030 EN Held-out: real -> v10_full -> v11 -> v11_cross_donor",
+      "duration_s": 9.62,
+      "sanity_ok": true,
+      "rms_dbfs": -21.96,
+      "peak": 0.7138,
+      "segments": [
+        {
+          "label": "real_bdl",
+          "start_s": 0.0,
+          "stop_s": 1.71
+        },
+        {
+          "label": "v10_full",
+          "start_s": 2.16,
+          "stop_s": 4.21
+        },
+        {
+          "label": "v11",
+          "start_s": 4.66,
+          "stop_s": 6.915
+        },
+        {
+          "label": "v11_cross_donor",
+          "start_s": 7.365,
+          "stop_s": 9.62
+        }
+      ]
+    },
+    {
+      "file": "05_crossling_zh_en_v11.wav",
+      "description": "Cross-lingual v11: SSB0502_EN -> SSB0073_EN -> slt_ZH -> bdl_ZH",
+      "duration_s": 10.73,
+      "sanity_ok": true,
+      "rms_dbfs": -21.47,
+      "peak": 0.7707,
+      "segments": [
+        {
+          "label": "SSB0502_speaks_EN",
+          "start_s": 0.0,
+          "stop_s": 2.255
+        },
+        {
+          "label": "SSB0073_M133_speaks_EN",
+          "start_s": 2.705,
+          "stop_s": 4.96
+        },
+        {
+          "label": "slt_F188_speaks_ZH",
+          "start_s": 5.41,
+          "stop_s": 7.845
+        },
+        {
+          "label": "bdl_M119_speaks_ZH",
+          "start_s": 8.295,
+          "stop_s": 10.73
+        }
+      ]
+    },
+    {
+      "file": "06_codeswitch_v10_vs_v11_CS01.wav",
+      "description": "CS_01: v10_full_SSB0502 -> v11_SSB0502 -> v10_full_SSB0073 -> v11_SSB0073",
+      "duration_s": 14.88,
+      "sanity_ok": true,
+      "rms_dbfs": -21.44,
+      "peak": 0.7232,
+      "segments": [
+        {
+          "label": "v10_full_SSB0502",
+          "start_s": 0.0,
+          "stop_s": 3.31
+        },
+        {
+          "label": "v11_SSB0502",
+          "start_s": 3.76,
+          "stop_s": 7.215
+        },
+        {
+          "label": "v10_full_SSB0073",
+          "start_s": 7.665,
+          "stop_s": 10.975
+        },
+        {
+          "label": "v11_SSB0073",
+          "start_s": 11.425,
+          "stop_s": 14.88
+        }
+      ]
+    }
+  ]
+}
